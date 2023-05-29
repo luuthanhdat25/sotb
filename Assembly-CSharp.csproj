@@ -330,7 +330,6 @@
      <Folder Include="Assets\Sprites\UI\Font" />
      <Folder Include="Assets\FX\Sprites" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Destruction" />
-     <Folder Include="Assets\Scripts\ScriptableObjects" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Weapons\PNGs" />

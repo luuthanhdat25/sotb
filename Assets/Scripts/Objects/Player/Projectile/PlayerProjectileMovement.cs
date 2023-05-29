@@ -19,7 +19,7 @@ public class PlayerProjectileMovement : ObjectMovement
     protected override void ChangeDirection()
     {
         abstractDirection = CaculateBasePlayerSpeed();
-        transform.parent.Rotate(abstractDirection);
+        //transform.parent.Rotate(abstractDirection);
     }
 
     private Vector2 CaculateBasePlayerSpeed()

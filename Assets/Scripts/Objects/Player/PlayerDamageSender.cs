@@ -7,7 +7,7 @@ namespace Player
     public class PlayerDamageSender : DamageSender
     {
         [SerializeField] private int energiesDeductWhenPlayerDead = 2;
-        [SerializeField] private float timeDelayReborn = 1.5f;
+        [SerializeField] private float timeDelayReborn = 2f;
         [SerializeField] private CircleCollider2D circleCollider2D;
         [SerializeField] private bool isShieldUp = false;
     

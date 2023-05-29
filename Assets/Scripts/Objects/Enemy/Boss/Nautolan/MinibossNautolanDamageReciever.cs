@@ -12,6 +12,5 @@ public class MinibossNautolanDamageReciever : EnemyDamageReceiver
         MinibossNautolanCtrl.Instance.SetDeadAnimation();
         Debug.Log("BossDead");
         GameManager.Instance.IncreaseScore(scorePlus);
-        GameManager.Instance.WinGame();
     }
 }

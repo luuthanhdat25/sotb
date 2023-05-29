@@ -27,6 +27,7 @@ public class MusicSpawner : RepeatMonoBehaviour
     private int currentWaveIndex = 0;
     // Timer for spawning objects
     public float spawnTimer = 0.0f;
+    private float timer = 0;
 
     protected override void LoadComponents()
     {
@@ -61,10 +62,10 @@ public class MusicSpawner : RepeatMonoBehaviour
     
     private void SetCurrentWave() => currentWave = this.wavePrefabsManager.GetWaveByIndex(currentWaveIndex);
     //-----------------------------------------------------------------------------------------//
-    void Update()
+    void FixedUpdate()
     {
-        if (currentWaveIndex > wavePrefabsManager.GetWaveSpawnersList().Count) return;
-        // Calculate the time since the last beat
+        if (currentWaveIndex >= wavePrefabsManager.GetWaveSpawnersList().Count) return;
+        /*// Calculate the time since the last beat
         float timeSinceLastBeat = Time.time - lastBeatTime;
         this.SetCurrentWave();
         // If enough time has passed since the last beat, count the beat
@@ -102,18 +103,24 @@ public class MusicSpawner : RepeatMonoBehaviour
                 spawnTimer = 0.0f;
             }
         }
-        /*
-         * If the music change, need to reset bpm
-         */
-        // Increment the spawn timer
-        spawnTimer += Time.deltaTime;
+       
+        spawnTimer += Time.deltaTime;*/
+        this.SetCurrentWave();
+        if (currentWave.TryGetComponent<WaveSpawner>(out WaveSpawner waveCurrentSpawn))
+        {
+            wavesCurrentStartTime = waveCurrentSpawn.GetSpawnStartTime();
+        }
+        timer += Time.fixedDeltaTime;
+        if (timer > wavesCurrentStartTime)
+        {
+            SpawnWaveSpawner();
+            currentWaveIndex++;
+            Debug.Log(currentWaveIndex);
+        }
     }
 
     public void SpawnWaveSpawner()
     {
-        /*Transform newWave = Instantiate(currentWave);
-        newWave.parent = this.waveHolder;
-        newWave.gameObject.SetActive(true);*/
         currentWave.gameObject.SetActive(true);
     }
 }

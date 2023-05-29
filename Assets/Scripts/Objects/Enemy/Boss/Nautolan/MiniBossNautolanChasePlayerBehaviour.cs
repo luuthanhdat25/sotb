@@ -23,7 +23,11 @@ public class MiniBossNautolanChasePlayerBehaviour : StateMachineBehaviour
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (numberOfAttacks != 0) Behaviour(animator);
-        else MinibossNautolanCtrl.Instance.SetIsChasePlayer(false);
+        else
+        {
+            speedChase /= rateOfIncreaseSpeed;
+            MinibossNautolanCtrl.Instance.SetIsChasePlayer(false);
+        }
     }
     
     private void Behaviour(Animator animator)
@@ -57,6 +61,7 @@ public class MiniBossNautolanChasePlayerBehaviour : StateMachineBehaviour
         else
         {
             numberOfAttacks--;
+            speedChase *= rateOfIncreaseSpeed;
             isGoOverPlayer = false;
             ResetTargetPosition();
             TransformToTopScreen(animator);
