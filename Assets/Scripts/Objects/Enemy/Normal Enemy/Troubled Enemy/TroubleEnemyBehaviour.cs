@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Enemy.Troubled_Enemy
 {
-    public class TroubledEnemyBehaviour : MonoBehaviour
+    public class TroubleEnemyBehaviour : MonoBehaviour
     {
         private void Start()
         {

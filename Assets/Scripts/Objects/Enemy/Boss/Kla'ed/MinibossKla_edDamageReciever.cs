@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Enemy
 {
-    public class EnemyBossDamageReciever : EnemyDamageReceiver
+    public class MinibossKla_edDamageReciever : EnemyDamageReceiver
     {
         [SerializeField] private int scorePlus = 1000;
 

@@ -1797,7 +1797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDistance: 0
   mainCam: {fileID: 519420032}
-  distanceLimit: 15
+  distanceLimit: 20
 --- !u!1 &73148340
 GameObject:
   m_ObjectHideFlags: 0
@@ -47642,7 +47642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDistance: 0
   mainCam: {fileID: 519420032}
-  distanceLimit: 15
+  distanceLimit: 20
 --- !u!4 &1900893259748817043
 Transform:
   m_ObjectHideFlags: 0

@@ -31,6 +31,4 @@ public class CameraAnimation : RepeatMonoBehaviour
     {
         this.animator.SetTrigger(SHAKE_TRIGGER);
     }
-    
-    
 }

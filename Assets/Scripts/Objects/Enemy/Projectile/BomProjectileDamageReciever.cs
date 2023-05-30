@@ -2,7 +2,7 @@ using Damage;
 using Objects.Enemy.AttackEnemy;
 using UnityEngine;
 
-public class BomDamageSender : DamageReceiver
+public class BomProjectileDamageSender : DamageReceiver
 {
     protected override void OnDead()
     {

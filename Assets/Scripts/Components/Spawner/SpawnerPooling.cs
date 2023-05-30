@@ -75,10 +75,9 @@ public abstract class SpawnerPooling : RepeatMonoBehaviour
 
     protected virtual Transform GetObjectFromPool(Transform prefab)
     {
-        //Check Object in Holder
         foreach (Transform objectFromPool in poolObjsList)
         {
-            if (prefab.name == objectFromPool.name)
+            if (prefab.name == objectFromPool.name && !objectFromPool.gameObject.activeSelf)
             {
                 this.poolObjsList.Remove(objectFromPool);
                 return objectFromPool;

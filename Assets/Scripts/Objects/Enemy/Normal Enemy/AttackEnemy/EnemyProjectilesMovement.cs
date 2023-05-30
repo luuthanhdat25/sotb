@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Projectile
 {
-    public class EnemyProjectileMovement : ObjectMovement
+    public class EnemyProjectilesMovement : ObjectMovement
     {
         [SerializeField] protected float moveSpeed;
         protected override void ChangeSpeed()
