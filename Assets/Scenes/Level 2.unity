@@ -11119,7 +11119,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473265489
 GameObject:
@@ -12874,7 +12874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcf1bf3454df4d6faeb4fe44f18a0db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deadAnimatorTime: 1
+  deadAnimatorTime: 2
   healthStateAnimaiton: 4
   animator: {fileID: 536302656}
   normalWeapon: {fileID: 1065533754}
@@ -13059,7 +13059,7 @@ Transform:
   - {fileID: 2020963941}
   - {fileID: 1765199233}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &547414413
 GameObject:
@@ -13423,9 +13423,9 @@ GameObject:
   - component: {fileID: 559368293}
   - component: {fileID: 559368295}
   - component: {fileID: 559368296}
-  - component: {fileID: 559368294}
-  - component: {fileID: 7732539846871194520}
   - component: {fileID: 7732539846871194521}
+  - component: {fileID: 7732539846871194520}
+  - component: {fileID: 7732539846871194522}
   m_Layer: 6
   m_Name: Damage Sender/ Reciever
   m_TagString: Untagged
@@ -13448,18 +13448,6 @@ Transform:
   m_Father: {fileID: 219338503}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &559368294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559368292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc240ac00cb3ce45b076733f3fd056a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &559368295
 Rigidbody2D:
   serializedVersion: 4
@@ -22996,7 +22984,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -12.899963}
+  m_AnchoredPosition: {x: 0, y: -10.149719}
   m_SizeDelta: {x: 148.53, y: 17.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &982852206
@@ -25344,7 +25332,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1083675515
 GameObject:
@@ -25556,10 +25544,10 @@ MonoBehaviour:
   minibossNautolanShoot: {fileID: 914431922}
   timeWait: 2
   numberOfShootAttacks: 5
-  speedFollow: 6
+  speedFollow: 6.5
   timeShootInOneTime: 1
   numberOfChaseAttacks: 2
-  speedChase: 7.5
+  speedChase: 8
 --- !u!95 &1087027931
 Animator:
   serializedVersion: 5
@@ -27270,8 +27258,8 @@ Transform:
   m_Children:
   - {fileID: 1428106843}
   - {fileID: 249405778}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1928560924}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1158623581
 MonoBehaviour:
@@ -28317,7 +28305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1206138437
 Transform:
   m_ObjectHideFlags: 0
@@ -30538,7 +30526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMax: 6
-  speedMin: 1
+  speedMin: 6
 --- !u!1 &1308573563
 GameObject:
   m_ObjectHideFlags: 0
@@ -34563,8 +34551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -287, y: -470.5}
-  m_SizeDelta: {x: 148.53, y: 43.031}
+  m_AnchoredPosition: {x: -287, y: -473.25024}
+  m_SizeDelta: {x: 148.53, y: 37.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1548217699
 GameObject:
@@ -37246,7 +37234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 12.899963}
+  m_AnchoredPosition: {x: 0, y: 10.1502075}
   m_SizeDelta: {x: 148.53, y: 17.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1678694625
@@ -41732,6 +41720,7 @@ Transform:
   - {fileID: 1713322002}
   - {fileID: 906489246}
   - {fileID: 975836222}
+  - {fileID: 1158623580}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47022,7 +47011,7 @@ Transform:
   m_GameObject: {fileID: 1204832141598216704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1204832141612065155}
@@ -47180,7 +47169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c189f0b64c6e48d6b8e71126cb6b9507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTargetSpeed: 5
+  moveToTargetSpeed: 10
   addValue: 1.5
   timeEffective: 4
 --- !u!58 &1204832142103464986
@@ -47217,7 +47206,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.6
+  m_Radius: 0.45
 --- !u!50 &1204832142103464987
 Rigidbody2D:
   serializedVersion: 4
@@ -47257,8 +47246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1409c44d08e0467ea825f6a9f4161b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMax: 3
-  speedMin: 1
+  speedMax: 7
+  speedMin: 5
 --- !u!1 &1204832142117510014
 GameObject:
   m_ObjectHideFlags: 0
@@ -47550,7 +47539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultPosition: {fileID: 1385963838}
-  playerEnergiesMax: 6
+  playerEnergiesMax: 4
   playerBoostCeilsMax: 3
   isPlayerDead: 0
   playerMovement: {fileID: 812668865}
@@ -47560,6 +47549,7 @@ MonoBehaviour:
   playerUnti: {fileID: 6137460138386964102}
   playerBootCeils: {fileID: 7179083224954351612}
   playerDamageSender: {fileID: 7732539846871194520}
+  playerDamageReciever: {fileID: 7732539846871194522}
 --- !u!4 &1451069922450555000
 Transform:
   m_ObjectHideFlags: 0
@@ -51057,11 +51047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5818a3add6b9480bb316947b74bda1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
-  energiesDeductWhenPlayerDead: 1
-  timeDelayReborn: 1.5
-  circleCollider2D: {fileID: 559368296}
-  isShieldUp: 0
+  damage: 5
 --- !u!114 &7732539846871194521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51074,6 +51060,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8b8c911ffc4c269429c7c6d658db33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7732539846871194522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559368292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35204fce7ee04607bc55214a5c44a62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpCurrent: 1
+  hpMax: 1
+  isDead: 0
+  energiesDeductWhenPlayerDead: 1
+  timeDelayReborn: 2
+  circleCollider2D: {fileID: 559368296}
+  isShieldUp: 0
 --- !u!4 &7769192944954181258
 Transform:
   m_ObjectHideFlags: 0
@@ -51231,8 +51236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1409c44d08e0467ea825f6a9f4161b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMax: 3
-  speedMin: 2
+  speedMax: 7
+  speedMin: 5
 --- !u!4 &8072803291761686491
 Transform:
   m_ObjectHideFlags: 0
@@ -51493,8 +51498,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 042d1ba943e147e4b83f63d7bf0c2e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTargetSpeed: 6
-  reductionRate: 1.2
+  moveToTargetSpeed: 10
+  reductionRate: 1.5
   timeEffective: 4
 --- !u!4 &8072803293749666352
 Transform:
@@ -51736,8 +51741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1409c44d08e0467ea825f6a9f4161b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMax: 3
-  speedMin: 2
+  speedMax: 5
+  speedMin: 4
 --- !u!4 &8568087330910724043
 Transform:
   m_ObjectHideFlags: 0
@@ -51844,7 +51849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763d978c2ba04a0d94040cf2a42e140d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTargetSpeed: 5
+  moveToTargetSpeed: 10
   addValue: 1
 --- !u!4 &8568087331037471674
 Transform:

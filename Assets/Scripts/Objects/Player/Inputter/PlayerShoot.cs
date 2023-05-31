@@ -64,7 +64,7 @@ namespace Player
             }
             this.firingRate /= value;
             yield return new WaitForSeconds(time);
-            this.firingRate *= value - (value / 10);
+            this.firingRate *= value - (value / 35);
             if (this.firingRate <= 0.1f) this.firingRate = 0.1f;
         }
     }

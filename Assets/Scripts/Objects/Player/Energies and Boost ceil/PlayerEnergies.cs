@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using Player;
 using UnityEngine;
 
@@ -8,7 +9,19 @@ public class PlayerEnergies : MonoBehaviour
     
     private void Start() => this.currentEnergies = startEnergies;
     
-    public void DeductEnergies(int energiesDeduct) => currentEnergies -= energiesDeduct;
+    public void DeductEnergies(int energiesDeduct)
+    {
+        currentEnergies -= energiesDeduct;
+        this.CheckIsGameOver();
+    }
+
+    private void CheckIsGameOver()
+    {
+        if (currentEnergies > 0) return;
+        PlayerCtrl.Instance.SetPlayerDead(true);
+        PlayerCtrl.Instance.PlayerDamageReciever.SetActiveCollider(false);
+        GameManager.Instance.GameOver();
+    }
     
     public bool IsEnoughEnergies(int energiesDeduct) => currentEnergies > energiesDeduct;
     

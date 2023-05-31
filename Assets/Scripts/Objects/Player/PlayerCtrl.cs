@@ -33,6 +33,9 @@ namespace Player
         [SerializeField] private PlayerDamageSender playerDamageSender;
         public PlayerDamageSender PlayerDamageSender { get => playerDamageSender; }
         
+        [SerializeField] private PlayerDamageReciever playerDamageReciever;
+        public PlayerDamageReciever PlayerDamageReciever { get => playerDamageReciever; }
+        
         
         protected override void Awake()
         {
@@ -92,6 +95,12 @@ namespace Player
         {
             if (this.playerDamageSender != null) return;
             this.playerDamageSender = GetComponentInChildren<PlayerDamageSender>();
+        }
+        
+        private void LoadPlayerDamageReciever()
+        {
+            if (this.playerDamageReciever != null) return;
+            this.playerDamageReciever = GetComponentInChildren<PlayerDamageReciever>();
         }
         //-------------------------------------------------------------------------//
         private void Start() => transform.position = this.GetDefaultPosition();

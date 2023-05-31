@@ -9,8 +9,8 @@ namespace Damage
         public override void UseItem()
         {
             base.UseItem();
-            PlayerCtrl.Instance.PlayerAnimations.TurnOnShield();
-            PlayerCtrl.Instance.PlayerDamageSender.SetIsShieldUp(true);
+            PlayerCtrl.Instance.PlayerAnimations.SetActiveShield(true);
+            PlayerCtrl.Instance.PlayerDamageReciever.ShieldUp();
             //PlayMusic
             //PlayVFX
             //PlayUIBar

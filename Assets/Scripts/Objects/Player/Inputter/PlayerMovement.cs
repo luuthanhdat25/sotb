@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator Dash()
     {
         totalSpeed = dashSpeed;
-        PlayerCtrl.Instance.PlayerDamageSender.TurnOffCollider();
+        PlayerCtrl.Instance.PlayerDamageReciever.SetActiveCollider(false);
         float startTime = Time.time;
         float endTime = startTime + dashTime;
         while (Time.time < endTime)
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
             this.MoveBySpeedAndInputPlayer(totalSpeed);
             yield return null;
         }
-        PlayerCtrl.Instance.PlayerDamageSender.TurnOnCollider();
+        PlayerCtrl.Instance.PlayerDamageReciever.SetActiveCollider(true);
     }
 
     private void MoveBySpeedAndInputPlayer(float speed)

@@ -52,10 +52,10 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_ChasePlayer.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUpgradeEngineMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\MoveSpeedUpItem.cs" />
+     <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\PlayerItemReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Energies and Boost ceil\PlayerBoostCeils.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanChasePlayerBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerUnti.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\ItemMagnet.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\ArcShootStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ItemDropSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\EnemyProjectileDamageSender.cs" />
@@ -67,9 +67,9 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDespawnByDistance.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanModelShipAnimation.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_edDamageReciever.cs" />
+     <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageReciever.cs" />
      <Compile Include="Assets\InputSystems\PlayerInputActions.cs" />
      <Compile Include="Assets\Scripts\Components\RhythmScripts\AudioSourcesManager.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\PlayerDead.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\DespawnByTime.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\DefaultEngineItem.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\RepeatSceneManager.cs" />
@@ -120,7 +120,6 @@
      <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUntiShooting.cs" />
      <Compile Include="Assets\Scripts\Components\Damage\DamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanCtrl.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerItemReciever.cs" />
      <Compile Include="Assets\Scripts\Components\Pathfinder\Pathfinder.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndFiringBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageSender.cs" />
@@ -137,6 +136,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanSpinningBulletShoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanArcBomBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\ItemMagnet.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\NautolanScoutProjectileMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\BurstEngineItem.cs" />
@@ -164,7 +164,7 @@
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapon Effects - Projectiles" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Projectiles" />
-     <Folder Include="Assets\FX\Demo\FX001" />
+     <Folder Include="Assets\Sprites\FX\Demo\FX001" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Animations\Item" />
      <Folder Include="Assets\TextMesh Pro\Sprites" />
@@ -179,7 +179,7 @@
      <Folder Include="Assets\Animations\Player\Basic Shooting" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Designs - Base\PNGs" />
      <Folder Include="Assets\Prefabs\Path" />
-     <Folder Include="Assets\FX\Demo\FX002" />
+     <Folder Include="Assets\Sprites\FX\Demo\FX002" />
      <Folder Include="Assets\Prefabs\Background" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\Aseprite" />
      <None Include="Assets\Sprites\Void_PickupsPack\Readme.txt" />
@@ -194,7 +194,7 @@
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Destruction\PNGs" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy" />
-     <Folder Include="Assets\FX\Sprites\Smoke" />
+     <Folder Include="Assets\Sprites\FX\Sprites\Smoke" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Weapons\PNGs" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Destruction\Aseprite" />
@@ -214,7 +214,7 @@
      <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
      <Folder Include="Assets\Scripts\Objects\UI\HUD" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\PNGs" />
-     <Folder Include="Assets\FX\Sprites\Smoke\FX002\Anim" />
+     <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX002\Anim" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Animations\Camera" />
@@ -230,7 +230,7 @@
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2" />
      <Folder Include="Assets\Scripts\Components\RhythmScripts" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapon Effects - Projectiles" />
-     <Folder Include="Assets\FX" />
+     <Folder Include="Assets\Sprites\FX" />
      <Folder Include="Assets\Scripts\Objects\Enemy" />
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Weapons" />
      <Folder Include="Assets\Scripts\Components\Despawn" />
@@ -239,7 +239,7 @@
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Projectiles\PNGs" />
      <Folder Include="Assets\Animations\Enemy\MiniBoss" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Shields\Aseprite" />
-     <Folder Include="Assets\FX\Sprites\Smoke\FX002" />
+     <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX002" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets\Scripts\Objects\Player\Energies and Boost ceil" />
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engine Effects\PNGs" />
@@ -262,7 +262,7 @@
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Destruction" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Shields" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews" />
-     <Folder Include="Assets\FX\Demo\FX003" />
+     <Folder Include="Assets\Sprites\FX\Demo\FX003" />
      <Folder Include="Assets\Prefabs\Enemy\Kla&apos;ed" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Engine\PNGs" />
      <Folder Include="Assets\Animations\Enemy\ED_1" />
@@ -274,7 +274,7 @@
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Shields" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapon Effects - Projectiles\PNGs" />
      <Folder Include="Assets\Scripts\Resources" />
-     <Folder Include="Assets\FX\Sprites\LightFX\FX003\Anim" />
+     <Folder Include="Assets\Sprites\FX\Sprites\LightFX\FX003\Anim" />
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main ship weapons\PNGs" />
      <Folder Include="Assets\Animations\Enemy" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Designs - Base" />
@@ -306,7 +306,7 @@
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Base\PNGs" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Engines\PNGs" />
      <Folder Include="Assets\Prefabs\Enemy" />
-     <Folder Include="Assets\FX\Sprites\Smoke\FX001" />
+     <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX001" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapon Effects - Projectiles\Aseprite" />
      <Folder Include="Assets\Scripts\Components\InputSystem" />
      <Folder Include="Assets\Audio" />
@@ -321,7 +321,7 @@
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engines" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapons\PNGs" />
      <Folder Include="Assets\Animations\Enemy\ED_2" />
-     <Folder Include="Assets\FX\Sprites\Smoke\FX001\Anim" />
+     <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX001\Anim" />
      <Folder Include="Assets\Animations\Projectile" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Shields\PNGs" />
      <Folder Include="Assets\Animations\Player\Health State" />
@@ -335,12 +335,13 @@
      <Folder Include="Assets\Scripts\Objects\UI\Player" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Projectiles\Aseprite" />
      <Folder Include="Assets\Sprites\UI\Font" />
-     <Folder Include="Assets\FX\Sprites" />
+     <Folder Include="Assets\Sprites\FX\Sprites" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Destruction" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Weapons\PNGs" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Destruction\Aseprite" />
+     <Folder Include="Assets\Scripts\Objects\Player\ItemCollect" />
      <Folder Include="Assets\Prefabs" />
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engines\Aseprite" />
      <Folder Include="Assets\Prefabs\Position\Player" />
@@ -364,7 +365,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Destruction\PNGs" />
      <Folder Include="Assets\Sprites" />
-     <Folder Include="Assets\FX\Prefabs" />
+     <Folder Include="Assets\Sprites\FX\Prefabs" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Shield Generators\PNGs" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Shields\Aseprite" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Weapons\Aseprite" />
@@ -374,14 +375,14 @@
      <Folder Include="Assets\Animations\Player" />
      <Folder Include="Assets\Audio\SFX\UI" />
      <Folder Include="Assets\Prefabs\Position\Enemy\Attack" />
-     <Folder Include="Assets\FX\Sprites\LightFX" />
+     <Folder Include="Assets\Sprites\FX\Sprites\LightFX" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engine Effects\Aseprite" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Engine Effects\Aseprite" />
-     <Folder Include="Assets\FX\Demo" />
+     <Folder Include="Assets\Sprites\FX\Demo" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Engines" />
-     <Folder Include="Assets\FX\Sprites\LightFX\FX003" />
+     <Folder Include="Assets\Sprites\FX\Sprites\LightFX\FX003" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3" />
@@ -398,7 +399,6 @@
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Base\Aseprite" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\Sprites\Foozle_MainShip\Readme.txt" />
-     <Folder Include="Assets\FX\Scenes" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews\Kla&apos;ed\Destruction" />
      <Folder Include="Assets\Scripts\Objects\Player\Inputter" />
      <Folder Include="Assets\Scripts\Objects\Player\Projectile" />

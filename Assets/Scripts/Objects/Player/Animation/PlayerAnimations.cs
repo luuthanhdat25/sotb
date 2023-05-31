@@ -78,16 +78,10 @@ namespace Player
             this.untiWeapon.gameObject.SetActive(true);
         }
         
-        public void TurnOnShield()
+        public void SetActiveShield(bool isOn)
         {
             if (this.shield == null) return;
-            this.shield.gameObject.SetActive(true);
-        }
-        
-        public void TurnOffShield()
-        {
-            if (this.shield == null) return;
-            this.shield.gameObject.SetActive(false);
+            this.shield.gameObject.SetActive(isOn);
         }
 
         public void DeductHealthStateAnimaiton() => this.healthStateAnimaiton--;
