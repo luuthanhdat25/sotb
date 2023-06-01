@@ -8,7 +8,6 @@ namespace Projectile
         private Vector3 fxOffSet = new Vector3(0, 0.4f, 0);
         public override void GotHit()
         {
-            base.GotHit();
             PlayerProjectileSpawner.Instance.Despawn(transform.parent);
         }
 

@@ -1,4 +1,5 @@
 using DefaultNamespace;
+using DefaultNamespace.Components.Time;
 using Player;
 using UnityEngine;
 
@@ -20,6 +21,7 @@ public class PlayerEnergies : MonoBehaviour
         if (currentEnergies > 0) return;
         PlayerCtrl.Instance.SetPlayerDead(true);
         PlayerCtrl.Instance.PlayerDamageReciever.SetActiveCollider(false);
+        TimeManager.Instance?.SlowMotionEffect();
         GameManager.Instance.GameOver();
     }
     

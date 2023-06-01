@@ -15,14 +15,13 @@ namespace Despawn
             return false;
         }
 
-        protected virtual void SetDistanceLimit(float distance)
+        protected override void DespawnObject()
         {
-            this.abstractDistanceLimit = distance;
+            //For override
         }
 
-        protected virtual void SetTargetDistance(Vector3 target)
-        {
-            this.abstractTargetDistance = target;
-        }
+        protected virtual void SetDistanceLimit(float distance) => this.abstractDistanceLimit = distance;
+        protected virtual void SetTargetDistance(Vector3 target) => this.abstractTargetDistance = target;
+        
     }
 }

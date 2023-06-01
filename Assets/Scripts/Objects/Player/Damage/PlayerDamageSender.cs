@@ -1,6 +1,4 @@
-using System.Collections;
 using Damage;
-using UnityEngine;
 
 namespace Player
 {
@@ -8,7 +6,6 @@ namespace Player
     {
         public override void GotHit()
         {
-            base.GotHit();
             CameraAnimation.Instance.ShakeCamera();
         }
     }

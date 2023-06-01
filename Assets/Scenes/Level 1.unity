@@ -1089,6 +1089,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &42684050
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1814,6 +1815,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &105464024
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2273,6 +2275,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &142013590
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2450,6 +2453,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 89bc4ed69c9975045b03256390f5da4b, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &150605838
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2922,6 +2926,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &178888910
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3588,6 +3593,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &242138144
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4952,6 +4958,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 6fb9fe99fd053c44f9a2b2c9553abdbb, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &351024639
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5679,6 +5686,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &424585459
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5921,6 +5929,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 98119838440ac234eb3e306b22a1423a, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!114 &439521521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6637,6 +6646,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 6fb9fe99fd053c44f9a2b2c9553abdbb, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &491985865
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6799,6 +6809,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &500973327
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7923,6 +7934,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &546182988
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8126,6 +8138,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &547762835
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8570,6 +8583,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &560079142
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9476,6 +9490,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &634695479
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9825,6 +9840,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &663479931
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10336,6 +10352,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &715737419
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10804,6 +10821,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &780621054
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12805,6 +12823,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 6fb9fe99fd053c44f9a2b2c9553abdbb, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &894711657
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13577,6 +13596,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 6fb9fe99fd053c44f9a2b2c9553abdbb, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &934412988
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14355,6 +14375,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &961808178
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14738,6 +14759,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &988821232
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16393,7 +16415,7 @@ MonoBehaviour:
   mainCam: {fileID: 519420032}
   kla_edAnimator: {fileID: 1087027930}
   minibossKla_ed_Animation: {fileID: 1982332374}
-  enemyBossDamageReciever: {fileID: 1950825965}
+  minibossKlaEdDamageReciever: {fileID: 0}
   minibossKla_ed_NormalShoot: {fileID: 914431922}
   timeWait: 2
   numberOfShootAttacks: 3
@@ -16479,6 +16501,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1095323685
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16714,6 +16737,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1110119881
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17605,6 +17629,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1198034237
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17732,6 +17757,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 6fb9fe99fd053c44f9a2b2c9553abdbb, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1216717696
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20586,6 +20612,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1383677721
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21532,6 +21559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSourcesList:
   - {fileID: 268616898}
+  fadeDuration: 1
 --- !u!1 &1429745137
 GameObject:
   m_ObjectHideFlags: 0
@@ -21939,6 +21967,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1449420920
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22217,6 +22246,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1466925445
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22459,6 +22489,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1480115419
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22573,6 +22604,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 89bc4ed69c9975045b03256390f5da4b, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1489946073
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23054,6 +23086,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1528098235
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23286,6 +23319,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 6fb9fe99fd053c44f9a2b2c9553abdbb, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1533304465
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23706,6 +23740,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1575752044
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23880,6 +23915,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1584286024
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24349,6 +24385,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1623921736
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27245,6 +27282,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1791290299
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27372,6 +27410,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1791761280
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27918,6 +27957,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1823065336
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28550,6 +28590,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1846973344
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28761,6 +28802,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 6fb9fe99fd053c44f9a2b2c9553abdbb, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1849768164
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29692,6 +29734,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1895420754
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30611,37 +30654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
---- !u!1 &1954605500
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1954605501}
-  m_Layer: 0
-  m_Name: SFXController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1954605501
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954605500}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1972367435
 GameObject:
   m_ObjectHideFlags: 0
@@ -30707,6 +30719,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &1972367439
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31609,6 +31622,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 98119838440ac234eb3e306b22a1423a, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!114 &2051780268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32315,6 +32329,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &2093367222
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32704,6 +32719,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!58 &2119331742
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33379,6 +33395,53 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1132795736741578738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1132795736741578740}
+  - component: {fileID: 1132795736741578739}
+  m_Layer: 0
+  m_Name: TimeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1132795736741578739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132795736741578738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74838749971c4a8a96b877082fcf247c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slowMotionDuration: 2
+  slowlTimeScale: 0.4
+  normalTimeScale: 1
+--- !u!4 &1132795736741578740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132795736741578738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1136364478156137549
 Transform:
   m_ObjectHideFlags: 0
@@ -33893,6 +33956,7 @@ MonoBehaviour:
   playerUnti: {fileID: 6137460138386964102}
   playerBootCeils: {fileID: 7179083224954351612}
   playerDamageSender: {fileID: 7732539846871194520}
+  playerDamageReciever: {fileID: 0}
 --- !u!4 &1451069922450555000
 Transform:
   m_ObjectHideFlags: 0
@@ -36489,6 +36553,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: cc7f7bc00d9b7874d953a6ec7307216f, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!4 &6216726840954750645
 Transform:
   m_ObjectHideFlags: 0
@@ -37107,6 +37172,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 89bc4ed69c9975045b03256390f5da4b, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!114 &7526114584073004353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37150,10 +37216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  energiesDeductWhenPlayerDead: 1
-  timeDelayReborn: 1.5
-  circleCollider2D: {fileID: 559368296}
-  isShieldUp: 0
 --- !u!114 &7732539846871194521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38210,6 +38272,7 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 98119838440ac234eb3e306b22a1423a, type: 2}
   scorePlus: 101
+  dropBom: {fileID: 0}
 --- !u!1 &8572519414364175326
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,10 +7,7 @@ namespace Despawn
         [SerializeField] protected Transform mainCam;
         [SerializeField] protected float distanceLimit = 15f;
 
-        protected override void LoadComponents()
-        {
-            this.LoadCamera();
-        }
+        protected override void LoadComponents() => this.LoadCamera();
 
         protected virtual void LoadCamera()
         {

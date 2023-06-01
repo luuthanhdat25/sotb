@@ -46,6 +46,7 @@ namespace DefaultNamespace
             gameState = GameState.PlayerDie;
             HUDManager.Instance.SetActiveEnergiesBar(false);
             HUDManager.Instance.SetActiveBoostceilBar(false);
+            audioSourcesManager.MusicFadeOut();
             StartCoroutine(DelayGameOver());
         }
 
@@ -55,19 +56,18 @@ namespace DefaultNamespace
             HUDManager.Instance.UpdateScoreLossUI(score);
             HUDManager.Instance.SetActiveLossUI(true);
             Time.timeScale = 0;
-            audioSourcesManager.StopCurrentMusic();
         }
         
         public void WinGame()
         {
             gameState = GameState.WinGame;
+            audioSourcesManager.MusicFadeOut();
             StartCoroutine(DelayWinGame());
         }
         
         private IEnumerator DelayWinGame()
         {
             yield return new WaitForSeconds(4);
-            audioSourcesManager.StopCurrentMusic();
             HUDManager.Instance.UpdateScoreWinUI(score);
             HUDManager.Instance.SetActiveWinUI(true);
         }

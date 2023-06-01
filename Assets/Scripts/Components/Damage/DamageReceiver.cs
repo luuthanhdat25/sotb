@@ -33,17 +33,15 @@ namespace Damage
             this.CheckIsDead();
         }
 
+        protected virtual bool IsDead() => this.hpCurrent <= 0;
+        
         protected virtual void CheckIsDead()
         {
             if (!this.IsDead()) return;
             this.isDead = true;
             this.OnDead();
         }
-        protected virtual bool IsDead()
-        {
-            return this.hpCurrent <= 0;
-        }
-        
+
         protected abstract void OnDead();
 
         private void OnTriggerEnter2D(Collider2D col)

@@ -14,7 +14,7 @@ namespace Objects.Enemy.AttackEnemy
 
         protected override void Behaviour()
         {
-            float realSpeed = pathfinder.waveSpawner.GetMoveSpeed() * Time.fixedDeltaTime;
+            float realSpeed = pathfinder.GetWaveSpawner().GetMoveSpeed() * Time.fixedDeltaTime;
             timer += Time.fixedDeltaTime;
             if (timer > timeGoDown)
             {

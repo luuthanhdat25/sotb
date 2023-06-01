@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class Pathfinder : RepeatMonoBehaviour
 {
-    public WaveSpawner waveSpawner { get; private set; }
-    protected int wayPointIndex = 0;
-    [SerializeField] protected Transform behaviour;
+    [SerializeField] private Transform behaviour;
+    private WaveSpawner waveSpawner;
+    private int wayPointIndex = 0;
     
     protected override void LoadComponents()
     {
@@ -31,10 +31,7 @@ public class Pathfinder : RepeatMonoBehaviour
         this.behaviour.gameObject.SetActive(false);
     }
 
-    protected virtual void Start()
-    {
-        StartingMove();
-    }
+    protected virtual void Start() => StartingMove();
 
     protected virtual void StartingMove()
     {
@@ -42,11 +39,8 @@ public class Pathfinder : RepeatMonoBehaviour
         transform.position = waveSpawner.GetStartingWaypoint().position;
     }
     //------------------------------------------------------------------------//
-    protected virtual void FixedUpdate()
-    {
-        FollowPath();
-    }
-
+    protected virtual void FixedUpdate() => FollowPath();
+    
     protected virtual void FollowPath()
     {
         if(!IsFinishPath())
@@ -54,10 +48,7 @@ public class Pathfinder : RepeatMonoBehaviour
             var nextWavePointPosition = GetNextPointPosition();
             this.MoveToNextPoint(nextWavePointPosition);
         }
-        else
-        {
-            FinishPath();
-        }
+        else FinishPath();
     }
     
     protected virtual bool IsFinishPath() => wayPointIndex >= waveSpawner.pathWayPoints.Count;
@@ -78,8 +69,9 @@ public class Pathfinder : RepeatMonoBehaviour
 
     protected virtual void FinishPath()
     {
-        //For Override
         if(this.behaviour == null) return;
         this.behaviour.gameObject.SetActive(true);
     }
+
+    public WaveSpawner GetWaveSpawner() => this.waveSpawner;
 }

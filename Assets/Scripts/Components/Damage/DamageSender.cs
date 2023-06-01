@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Damage
@@ -12,8 +11,6 @@ namespace Damage
             return damage;
         }
 
-        public virtual void GotHit()
-        {
-        }
+        public abstract void GotHit();
     }
 }

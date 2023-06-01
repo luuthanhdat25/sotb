@@ -40,7 +40,7 @@ namespace Enemy
 
         protected virtual void MoveToDefaultPosition()
         {
-            float realSpeed = pathfinder.waveSpawner.GetMoveSpeed() * Time.fixedDeltaTime;
+            float realSpeed = pathfinder.GetWaveSpawner().GetMoveSpeed() * Time.fixedDeltaTime;
             transform.parent.position =
                 Vector2.MoveTowards(transform.parent.position, this.defaultPosition.position, realSpeed);
             

@@ -110,6 +110,7 @@
      <Compile Include="Assets\Scripts\Resources\Item\DropRate.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Resources\EnemyInfor\EnemySO.cs" />
+     <Compile Include="Assets\Scripts\Components\Time\TimeManager.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\HUD\HUDManager.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\EnergyItem.cs" />
      <Compile Include="Assets\Scripts\Components\InputSystem\GameInput.cs" />
@@ -181,6 +182,7 @@
      <Folder Include="Assets\Prefabs\Path" />
      <Folder Include="Assets\Sprites\FX\Demo\FX002" />
      <Folder Include="Assets\Prefabs\Background" />
+     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nairan" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\Aseprite" />
      <None Include="Assets\Sprites\Void_PickupsPack\Readme.txt" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Shield Generators" />
@@ -202,6 +204,7 @@
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engines\PNGs" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Projectiles" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapon Effects - Projectiles\PNGs" />
+     <Folder Include="Assets\Scripts\Components\Time" />
      <Folder Include="Assets\Prefabs\Enemy\Nautolan" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Destruction" />
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main ship weapons\Aseprite" />
