@@ -8,9 +8,9 @@ namespace Player
     public class PlayerUnti : Shoot
     {
         [SerializeField] private int energiesUse = 3;
+        [SerializeField] private bool isHasUntiWeapon = false;
         private float delayAnimaitonTime = 0.5f;
         private bool isFire = false;
-        private bool isHasUntiWeapon = false;
         
         protected override void Fire()
         {

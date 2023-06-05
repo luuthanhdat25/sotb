@@ -5,9 +5,9 @@ namespace Objects.Enemy.AttackEnemy
 {
     public class NautolanScoutProjectileMovement : MonoBehaviour
     {
-        public float amplitude = 1.0f; // Biên độ của đồ thị sin/cos
-        public float frequency = 1.0f; // Tần số của đồ thị sin/cos
-        public float speed = 5.0f; // Tốc độ di chuyển theo trục Y
+        [SerializeField] private float amplitude = 1.0f; 
+        [SerializeField] private float frequency = 1.0f; 
+        [SerializeField] private float speed = 5.0f; 
 
         private float startTime;
         private Vector3 initialPosition;
@@ -15,14 +15,14 @@ namespace Objects.Enemy.AttackEnemy
 
         private void OnEnable()
         {
-            startTime = Time.time; // Lưu thời điểm bắt đầu để tính thời gian đã trôi qua
+            startTime = Time.time; 
             initialPosition = transform.parent.position;
             RandomIsLeft();
         }
 
         private void FixedUpdate()
         {
-            float deltaTime = Time.time - startTime;  // Thời gian đã trôi qua từ lúc bắt đầu
+            float deltaTime = Time.time - startTime; 
             float xPos = amplitude * Mathf.Sin(2f * Mathf.PI * frequency * deltaTime);
 
             Vector3 newPosition = initialPosition;

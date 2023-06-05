@@ -58,9 +58,7 @@
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerUnti.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\ArcShootStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ItemDropSpawner.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\EnemyProjectileDamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\BomProjectileDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\EnemyProjectileDamageReceiver.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_FollowAndShootBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\BomEnemy\DropBom.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerMovement.cs" />
@@ -94,6 +92,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MiniBossKla_edCtrl.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Projectiles\ProjectileModelRotateAroundCenter.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageReceiver.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyNormalDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanFollowAndShootBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDamageReceiver.cs" />
@@ -114,14 +113,17 @@
      <Compile Include="Assets\Scripts\Objects\UI\HUD\HUDManager.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\EnergyItem.cs" />
      <Compile Include="Assets\Scripts\Components\InputSystem\GameInput.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\AbstractClass\ObjectMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_ed_NormalShoot.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectilesMovement.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\DespawnByDistance.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDespawnByDistance.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUntiShooting.cs" />
      <Compile Include="Assets\Scripts\Components\Damage\DamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanCtrl.cs" />
      <Compile Include="Assets\Scripts\Components\Pathfinder\Pathfinder.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NairanScoutProjectileMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndFiringBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\FollowAndShootStateMachineBehaviour.cs" />
@@ -131,6 +133,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanIdleStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\DespawnByDistanceCamera.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileMovement.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NautolanScoutProjectileMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimations.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationBaseShooting.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDamageSender.cs" />
@@ -139,7 +142,6 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanArcBomBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\ItemMagnet.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\NautolanScoutProjectileMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\BurstEngineItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Components\SFX\SFXCtrl.cs" />
@@ -153,7 +155,6 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanArcShootBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\EnergiesBar.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\BootCeilsBar.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\EnemyProjectilesMovement.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\Despawn.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
@@ -166,6 +167,7 @@
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Projectiles" />
      <Folder Include="Assets\Sprites\FX\Demo\FX001" />
+     <Folder Include="Assets\Animations\Enemy\Nairan" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Animations\Item" />
      <Folder Include="Assets\TextMesh Pro\Sprites" />
@@ -310,6 +312,7 @@
      <Folder Include="Assets\Sprites\Void_PickupsPack\Engines\PNGs" />
      <Folder Include="Assets\Prefabs\Enemy" />
      <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX001" />
+     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\PNGs\Boss" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapon Effects - Projectiles\Aseprite" />
      <Folder Include="Assets\Scripts\Components\InputSystem" />
      <Folder Include="Assets\Audio" />
@@ -323,6 +326,7 @@
      <None Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Readme.txt" />
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engines" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapons\PNGs" />
+     <Folder Include="Assets\Prefabs\Enemy\Nairan" />
      <Folder Include="Assets\Animations\Enemy\ED_2" />
      <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX001\Anim" />
      <Folder Include="Assets\Animations\Projectile" />
