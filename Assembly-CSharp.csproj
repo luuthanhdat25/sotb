@@ -114,9 +114,9 @@
      <Compile Include="Assets\Scripts\Objects\Item\EnergyItem.cs" />
      <Compile Include="Assets\Scripts\Components\InputSystem\GameInput.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageSender.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectilesMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\AbstractClass\ObjectMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_ed_NormalShoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectilesMovement.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\DespawnByDistance.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDespawnByDistance.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUntiShooting.cs" />
