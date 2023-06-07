@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Objects\Player\Energies and Boost ceil\PlayerEnergies.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_ChasePlayer.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MiniBossNairanCtrl.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUpgradeEngineMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\MoveSpeedUpItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\PlayerItemReciever.cs" />
@@ -58,8 +59,10 @@
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerUnti.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\ArcShootStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ItemDropSpawner.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\BomProjectileDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_FollowAndShootBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndShootBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\BomEnemy\DropBom.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDespawnByDistance.cs" />
@@ -95,13 +98,16 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageReceiver.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyNormalDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanFollowAndShootBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanModelShipAnimation.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDamageReceiver.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDespawnByTime.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanBomShoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\Item.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\PlayerCtrl.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ShieldItem.cs" />
      <Compile Include="Assets\Scripts\RepeatMonoBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\FX\FXSpawner.cs" />
+     <Compile Include="Assets\MiniBossNairanLazerSlideBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\AbstractClass\Shoot.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\BackgroundScroller.cs" />
@@ -111,6 +117,7 @@
      <Compile Include="Assets\Scripts\Resources\EnemyInfor\EnemySO.cs" />
      <Compile Include="Assets\Scripts\Components\Time\TimeManager.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\HUD\HUDManager.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanShootNormal.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\EnergyItem.cs" />
      <Compile Include="Assets\Scripts\Components\InputSystem\GameInput.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageSender.cs" />
@@ -122,9 +129,9 @@
      <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUntiShooting.cs" />
      <Compile Include="Assets\Scripts\Components\Damage\DamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanCtrl.cs" />
+     <Compile Include="Assets\MinibossNairanIdleStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Components\Pathfinder\Pathfinder.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NairanScoutProjectileMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndFiringBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\FollowAndShootStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\NormalWeaponItem.cs" />
@@ -155,7 +162,9 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanArcShootBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\EnergiesBar.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\BootCeilsBar.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanShootLazer.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\Despawn.cs" />
+     <Compile Include="Assets\MiniBossNairanFollowAndShootBehaviour.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Weapons\Aseprite" />
@@ -372,6 +381,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Destruction\PNGs" />
      <Folder Include="Assets\Sprites" />
+     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Boss" />
      <Folder Include="Assets\Sprites\FX\Prefabs" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Shield Generators\PNGs" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Shields\Aseprite" />
@@ -391,6 +401,7 @@
      <Folder Include="Assets\Sprites\Void_PickupsPack\Engines" />
      <Folder Include="Assets\Sprites\FX\Sprites\LightFX\FX003" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

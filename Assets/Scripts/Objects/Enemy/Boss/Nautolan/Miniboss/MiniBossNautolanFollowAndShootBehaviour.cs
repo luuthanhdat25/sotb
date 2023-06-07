@@ -1,7 +1,7 @@
 using Player;
 using UnityEngine;
 
-public class MiniBossNautolanFollowAndFiringBehaviour : StateMachineBehaviour
+public class MiniBossNautolanFollowAndShootBehaviour : StateMachineBehaviour
 {
     [SerializeField] protected float timeShootInOneTime; // 5
     [SerializeField] protected float speedFollow;
