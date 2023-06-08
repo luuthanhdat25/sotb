@@ -94,7 +94,6 @@ public class MiniBossNautolanChasePlayerBehaviour : StateMachineBehaviour
     {
         if (outVector.x >= 0) animator.transform.position = new Vector3(-outVector.x, 9.5f, outVector.z);
         else animator.transform.position = new Vector3(-outVector.x, 9.5f, outVector.z);
-        
     }
     
     private void ResetTargetPosition() => this.targetPosition = PlayerCtrl.Instance.GetCurrentPosition();

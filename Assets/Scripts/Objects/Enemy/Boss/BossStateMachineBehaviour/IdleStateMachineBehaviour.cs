@@ -9,7 +9,7 @@ public abstract class IdleStateMachineBehaviour : StateMachineBehaviour
     
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        this.GetTimeWait();
+        timeWait = GetTimeWait();
         this.Behaviour(animator);
     }
 

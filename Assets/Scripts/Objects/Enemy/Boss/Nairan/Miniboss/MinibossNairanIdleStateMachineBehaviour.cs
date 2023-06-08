@@ -10,11 +10,11 @@ public class MinibossNairanIdleStateMachineBehaviour : IdleStateMachineBehaviour
         int stateNumber = GetRandomState(2);
         Debug.Log("Miniboss Nairan boss state: " + stateNumber);
         if(stateNumber == 1) 
-            MiniBossNairanCtrl.Instance.SetIsFollowAndShoot(true);
-        else
             MiniBossNairanCtrl.Instance.SetIsLazerSlide(true);
+        else
+            MiniBossNairanCtrl.Instance.SetIsFollowAndShoot(true);
     }
 
-    protected override Vector3 GetDefaultPosition() => MinibossNautolanCtrl.Instance.GetDefaultPosition();
-    protected override float GetTimeWait() => MinibossNautolanCtrl.Instance.GetTimeWaitIdle();
+    protected override Vector3 GetDefaultPosition() => MiniBossNairanCtrl.Instance.GetDefaultPosition();
+    protected override float GetTimeWait() => MiniBossNairanCtrl.Instance.GetTimeWaitIdle();
 }

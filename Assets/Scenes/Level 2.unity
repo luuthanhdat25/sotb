@@ -416,7 +416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &30276569
 GameObject:
   m_ObjectHideFlags: 0
@@ -4273,7 +4272,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &161876995
 GameObject:
   m_ObjectHideFlags: 0
@@ -4527,7 +4525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &173792480
 Animator:
   serializedVersion: 5
@@ -8657,7 +8655,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &369976644
 GameObject:
   m_ObjectHideFlags: 0
@@ -16326,7 +16323,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &693702658
 GameObject:
   m_ObjectHideFlags: 0
@@ -22598,7 +22594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &969864836
 GameObject:
   m_ObjectHideFlags: 0
@@ -27290,7 +27285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1158623580
 Transform:
   m_ObjectHideFlags: 0
@@ -40878,7 +40873,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &1893557791
 GameObject:
   m_ObjectHideFlags: 0
@@ -50489,6 +50483,7 @@ MonoBehaviour:
   firingRate: 2
   isFiring: 0
   energiesUse: 3
+  isHasUntiWeapon: 0
 --- !u!212 &6237008692575580606
 SpriteRenderer:
   m_ObjectHideFlags: 0

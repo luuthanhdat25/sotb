@@ -96,4 +96,6 @@ public abstract class SpawnerPooling : RepeatMonoBehaviour
         this.poolObjsList.Add(obj);
         obj.gameObject.SetActive(false);
     }
+
+    public void PushToHolderManager(Transform transform) => transform.parent = this.holderManager;
 }

@@ -55,6 +55,7 @@ namespace Enemy.Boss.Nairan.Miniboss
         public void SetDeadAnimation()
         {
             this.minibossNairanModelShipAnimation.SetIsDestructionTrigger();
+            this.minibossNairanShootLazer.DespawnLazer();
             Debug.Log("set destruction");
             this.miniNairanAnimator.SetTrigger(IS_DESTRUCTION);
         }

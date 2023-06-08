@@ -64,7 +64,7 @@ namespace Enemy
             return new Vector3(playerPos.x, this.GetRandomYValue() + currentPos.y, playerPos.z);
         }
 
-        protected virtual float GetRandomYValue() => Random.Range(-2f, 2f);
+        protected virtual float GetRandomYValue() => Random.Range(-1.5f, 1.5f);
 
         protected abstract float GetSpeedFollow();
         protected abstract float GetTimeShootOneTime();

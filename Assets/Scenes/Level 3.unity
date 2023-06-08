@@ -1088,7 +1088,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &219338503
 Transform:
   m_ObjectHideFlags: 0
@@ -5848,7 +5848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087027927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 9.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5892,16 +5892,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCam: {fileID: 519420032}
-  miniNairanAnimator: {fileID: 1982332375}
+  miniNairanAnimator: {fileID: 1087027930}
   minibossNairanModelShipAnimation: {fileID: 1982332374}
   minibossNairanShootNormal: {fileID: 914431922}
   minibossNairanShootLazer: {fileID: 2005280265}
   timeWait: 1
-  numberOfShootAttacks: 8
-  speedFollow: 8
-  timeShootInOneTime: 1
-  speedSlide: 7
-  timeDelayBeforeSlide: 1
+  numberOfShootAttacks: 10
+  speedFollow: 10
+  timeShootInOneTime: 0.8
+  speedSlide: 10
+  timeDelayBeforeSlide: 1.2
 --- !u!1 &1116048701
 GameObject:
   m_ObjectHideFlags: 0
@@ -10657,7 +10657,6 @@ GameObject:
   - component: {fileID: 1950825964}
   - component: {fileID: 1950825961}
   - component: {fileID: 1950825966}
-  - component: {fileID: 1950825967}
   - component: {fileID: 1950825968}
   m_Layer: 7
   m_Name: DamageReceiver
@@ -10773,23 +10772,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
---- !u!114 &1950825967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950825959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b38c5a342a1d95459c5bfe0208178ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpCurrent: 1
-  hpMax: 5
-  isDead: 0
-  enemySO: {fileID: 11400000, guid: 19333941fc1170c4d955470825a62ba1, type: 2}
-  scorePlus: 1000
 --- !u!114 &1950825968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11141,7 +11123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4f3c235dd94fbaa9005668e16a7bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOn: 0
+  isLazerOn: 0
 --- !u!1 &2010819011
 GameObject:
   m_ObjectHideFlags: 0
@@ -13020,7 +13002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb83f308b2bf80c4a94e1d9a3f504700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startEnergies: 3
+  startEnergies: 8
   currentEnergies: 0
 --- !u!50 &2725400938503081745
 Rigidbody2D:
@@ -13580,9 +13562,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3438413385386591269}
   - component: {fileID: 9012958245445603393}
-  - component: {fileID: 4991288065811525224}
   - component: {fileID: 8477630360693161782}
   - component: {fileID: 9012958245445603394}
+  - component: {fileID: 9012958245445603395}
   m_Layer: 9
   m_Name: Damage Sender/Reciever
   m_TagString: Untagged
@@ -13823,19 +13805,6 @@ Transform:
   m_Father: {fileID: 720536338221444666}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4991288065811525224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3469968283653859060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23fde599400a43e588d2654a47b09950, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
 --- !u!1 &5296552946265152012
 GameObject:
   m_ObjectHideFlags: 0
@@ -15666,7 +15635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpCurrent: 1
-  hpMax: 1
+  hpMax: 50
   isDead: 0
 --- !u!4 &8533914773773916768
 Transform:
@@ -16262,6 +16231,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 18.929705}
   m_EdgeRadius: 0
+--- !u!114 &9012958245445603395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3469968283653859060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4af2d77985c4c0dbacc98bb784de561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &9041886512065694471
 GameObject:
   m_ObjectHideFlags: 0
@@ -16291,7 +16273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b7fcbfcc6fe45e6acb58013dfd8c0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeDelay: 2
+  timeDelay: 4
 --- !u!114 &9191690296798429381
 MonoBehaviour:
   m_ObjectHideFlags: 0

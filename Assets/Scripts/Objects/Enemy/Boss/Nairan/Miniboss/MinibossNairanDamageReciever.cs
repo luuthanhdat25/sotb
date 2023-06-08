@@ -10,7 +10,7 @@ namespace Enemy.Boss.Nairan.Miniboss
         protected override void OnDead()
         {
             base.OnDead();
-            //MinibossNautolanCtrl.Instance.SetDeadAnimation();
+            MiniBossNairanCtrl.Instance.SetDeadAnimation();
             Debug.Log("BossDead");
             GameManager.Instance.IncreaseScore(scorePlus);
         }
