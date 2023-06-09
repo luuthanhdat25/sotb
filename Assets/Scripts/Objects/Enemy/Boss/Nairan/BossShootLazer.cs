@@ -1,5 +1,3 @@
-using System.Collections;
-using Comman;
 using Objects.Enemy.AttackEnemy;
 using UnityEngine;
 
@@ -8,7 +6,7 @@ namespace Enemy.Boss.Nairan.Miniboss
     public class BossShootLazer : MonoBehaviour
     {
         [SerializeField] protected bool isTemporaryLazer;
-        protected Transform lazerTransform; 
+        protected Transform lazerTransform = null; 
         protected bool isLazerOn = false;
         
         public virtual void SpawnLazer()
@@ -35,7 +33,7 @@ namespace Enemy.Boss.Nairan.Miniboss
             if (!lazerTransform) return;
             EnemyProjectileSpawner.Instance.PushToHolderManager(lazerTransform);
             EnemyProjectileSpawner.Instance.Despawn(lazerTransform);
-            lazerTransform = null;
+            //lazerTransform = null;
             isLazerOn = false;
         }
 

@@ -937,6 +937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 173792482}
   - component: {fileID: 173792483}
+  - component: {fileID: 173792484}
   m_Layer: 7
   m_Name: BossNairanBattlecruiser
   m_TagString: Untagged
@@ -960,8 +961,8 @@ Transform:
   - {fileID: 1920696571}
   - {fileID: 1116048702}
   - {fileID: 2096131364}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1097696551}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &173792483
 Animator:
@@ -983,6 +984,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &173792484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173792479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d4e62d883749feaafa7ae8a2104fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 519420032}
+  bossSMBAnimator: {fileID: 173792483}
+  bossModelShipAnimation: {fileID: 1377600778}
+  bossShootLazer: {fileID: 1116048703}
+  bossNairanBattlecruiserShootShockWave: {fileID: 2096131365}
+  speedArcShockWave: 7
+  startPosition: {fileID: 1081726796}
+  endPosition: {fileID: 472012737}
+  speedRotate: 10
+  numberOfShootAttacks: 4
+  speedFollow: 10
+  timeShootInOneTime: 2
 --- !u!1 &199116324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,12 +3042,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1516973346}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &519420033
 Animator:
@@ -6558,13 +6583,71 @@ MonoBehaviour:
   miniNairanAnimator: {fileID: 1087027930}
   minibossNairanModelShipAnimation: {fileID: 1982332374}
   minibossNairanShootNormal: {fileID: 914431922}
-  bossShootLazer: {fileID: 0}
+  bossShootLazer: {fileID: 2005280265}
   timeWait: 1
   numberOfShootAttacks: 10
   speedFollow: 9
   timeShootInOneTime: 0.8
   speedSlide: 8
   timeDelayBeforeSlide: 1.2
+--- !u!1 &1097696549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097696551}
+  - component: {fileID: 1097696550}
+  m_Layer: 0
+  m_Name: DoubleBossNairan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1097696550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097696549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9075690a71ad4bc9976fbfd940e4e78c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossSMBAnimator: {fileID: 0}
+  timeWaitIdleOne: 3
+  defaultPosOneBattlecruiser: {fileID: 3134303013853986421}
+  defaultPosOneDreadnought: {fileID: 7223150381638194343}
+  timeWaitIdleTwo: 2
+  speedSlide: 6
+  timeDelayBeforeSlide: 1.5
+  numOfShootAttackSWBattlecruiser: 4
+  speedFollowSWBattlecruiser: 7
+  timeShootOneTimeSWBattlecruiser: 2
+  numOfShootAttackNDreadnought: 6
+  speedFollowNDreadnought: 7
+  timeShootOneTimeNDreadnought: 1
+--- !u!4 &1097696551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097696549}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 173792482}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116048701
 GameObject:
   m_ObjectHideFlags: 0
@@ -6609,7 +6692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4f3c235dd94fbaa9005668e16a7bd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTemporaryLazer: 1
+  isTemporaryLazer: 0
 --- !u!1 &1136856010
 GameObject:
   m_ObjectHideFlags: 0
@@ -9024,38 +9107,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 544442309}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1516973345
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1516973346}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1516973346
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1516973345}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 519420032}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1519732151
 GameObject:
