@@ -115,8 +115,8 @@ public class MiniBossNairanLazerSlideBehaviour : StateMachineBehaviour
 
     protected void SetProjectile(bool isOn)
     {
-        if(isOn) MiniBossNairanCtrl.Instance.MinibossNairanShootLazer.SpawnLazer();
-        else MiniBossNairanCtrl.Instance.MinibossNairanShootLazer.DespawnLazer();
+        if(isOn) MiniBossNairanCtrl.Instance.BossShootLazer.SpawnLazer();
+        else MiniBossNairanCtrl.Instance.BossShootLazer.DespawnLazer();
     }
 
     protected void UnSetAnimation() => MiniBossNairanCtrl.Instance.SetIsLazerSlide(false);

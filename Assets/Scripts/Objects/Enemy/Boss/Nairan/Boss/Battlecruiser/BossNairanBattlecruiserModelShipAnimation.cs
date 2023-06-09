@@ -1,11 +1,11 @@
 using UnityEngine;
 
-namespace Enemy.Boss.Nairan.Miniboss
+namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
 {
-    public class MinibossNairanModelShipAnimation : RepeatMonoBehaviour
+    public class BossNairanBattlecruiserModelShipAnimation : RepeatMonoBehaviour
     {
         private const string IS_DESTRUCTION = "isDestruction";
-        private Animator _animator;
+        [SerializeField] private Animator _animator;
     
         protected override void LoadComponents()
         {

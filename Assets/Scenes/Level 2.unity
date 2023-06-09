@@ -27285,7 +27285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1158623580
 Transform:
   m_ObjectHideFlags: 0
@@ -38156,10 +38156,10 @@ MonoBehaviour:
   - {fileID: 5738150456648626882}
   poolObjsList: []
   projectile1: Projectile1
-  projectile1_Miniboss_Kla_ed1: Projectile1_Miniboss_Kla_ed1
-  projectile1_Miniboss_Kla_ed2: Projectile1_Miniboss_Kla_ed2
-  projectile2_Miniboss_Kla_ed: Projectile2_Miniboss_Kla_ed
-  bom: Bom
+  projectile2: Projectile1_Miniboss_Kla_ed1
+  projectile3: Projectile1_Miniboss_Kla_ed2
+  projectile4: Projectile2_Miniboss_Kla_ed
+  projectile5: Bom
 --- !u!4 &1713322002
 Transform:
   m_ObjectHideFlags: 0

@@ -5,11 +5,13 @@ using UnityEngine;
 
 namespace Enemy.Boss.Nairan.Miniboss
 {
-    public class MinibossNairanShootLazer : MonoBehaviour
+    public class BossShootLazer : MonoBehaviour
     {
-        private Transform lazerTransform;
-        public bool isLazerOn = false;
-        public void SpawnLazer()
+        [SerializeField] protected bool isTemporaryLazer;
+        protected Transform lazerTransform; 
+        protected bool isLazerOn = false;
+        
+        public virtual void SpawnLazer()
         {
             if (isLazerOn) return;
             lazerTransform = GetProjectile();
@@ -21,14 +23,22 @@ namespace Enemy.Boss.Nairan.Miniboss
                 isLazerOn = true;
             }
         }
-        protected virtual Transform GetProjectile() => EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile1_Miniboss_Kla_ed1);
+        protected virtual Transform GetProjectile()
+        {
+            if(isTemporaryLazer) 
+                return EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile2);
+            return EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile3);
+        }
         
-        public void DespawnLazer()
+        public virtual void DespawnLazer()
         {
             if (!lazerTransform) return;
             EnemyProjectileSpawner.Instance.PushToHolderManager(lazerTransform);
             EnemyProjectileSpawner.Instance.Despawn(lazerTransform);
+            lazerTransform = null;
             isLazerOn = false;
         }
+
+        public void SetIsTemporaryLazer(bool isTemporary) => this.isTemporaryLazer = isTemporary;
     }
 }

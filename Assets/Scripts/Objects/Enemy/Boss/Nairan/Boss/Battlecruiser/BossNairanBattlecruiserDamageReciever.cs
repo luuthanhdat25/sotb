@@ -1,15 +1,14 @@
 using DefaultNamespace;
 using UnityEngine;
 
-namespace Enemy.Boss.Nairan.Miniboss
+namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
 {
-    public class MinibossNairanDamageReciever : EnemyDamageReceiver
+    public class BossNairanBattlecruiserDamageReciever : EnemyDamageReceiver
     {
         protected override void OnDead()
         {
             base.OnDead();
-            MiniBossNairanCtrl.Instance.SetDeadAnimation();
-            Debug.Log("BossDead");
+            //BossNautolanCtrl.Instance.SetDeadAnimation();
             GameManager.Instance.IncreaseScore(scorePlus);
         }
     }

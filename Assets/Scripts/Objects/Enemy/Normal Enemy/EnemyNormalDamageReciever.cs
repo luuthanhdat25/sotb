@@ -5,7 +5,6 @@ namespace Enemy
 {
     public class EnemyNormalDamageReciever : EnemyDamageReceiver
     {
-        [SerializeField] private int scorePlus = 101;
         [SerializeField] private DropBom dropBom = null;
         protected override void OnDead()
         {

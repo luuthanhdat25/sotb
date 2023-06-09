@@ -11,8 +11,8 @@ namespace Enemy.Boss.Nairan.Miniboss
         [SerializeField] private MinibossNairanModelShipAnimation minibossNairanModelShipAnimation;
         [SerializeField] private MinibossNairanShootNormal minibossNairanShootNormal;
         public MinibossNairanShootNormal MinibossNairanShootNormal { get => minibossNairanShootNormal; }
-        [SerializeField] private MinibossNairanShootLazer minibossNairanShootLazer;
-        public MinibossNairanShootLazer MinibossNairanShootLazer { get => minibossNairanShootLazer; }
+        [SerializeField] private BossShootLazer bossShootLazer;
+        public BossShootLazer BossShootLazer { get => bossShootLazer; }
 
         private const string IS_DESTRUCTION = "isDestruction";
         private const string IS_FOLLOW_AND_SHOOT = "isFollowAndShoot";
@@ -55,7 +55,7 @@ namespace Enemy.Boss.Nairan.Miniboss
         public void SetDeadAnimation()
         {
             this.minibossNairanModelShipAnimation.SetIsDestructionTrigger();
-            this.minibossNairanShootLazer.DespawnLazer();
+            this.bossShootLazer.DespawnLazer();
             Debug.Log("set destruction");
             this.miniNairanAnimator.SetTrigger(IS_DESTRUCTION);
         }

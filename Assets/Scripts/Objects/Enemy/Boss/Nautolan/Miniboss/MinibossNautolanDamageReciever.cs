@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MinibossNautolanDamageReciever : EnemyDamageReceiver
 {
-    [SerializeField] private int scorePlus = 1000;
-
     protected override void OnDead()
     {
         base.OnDead();

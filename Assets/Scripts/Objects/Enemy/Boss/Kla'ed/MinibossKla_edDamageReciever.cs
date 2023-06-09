@@ -5,8 +5,6 @@ namespace Enemy
 {
     public class MinibossKla_edDamageReciever : EnemyDamageReceiver
     {
-        [SerializeField] private int scorePlus = 1000;
-
         protected override void OnDead()
         {
             base.OnDead();

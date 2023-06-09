@@ -632,7 +632,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &20752559
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +2782,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &168339011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5066,7 +5064,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &371406380
 GameObject:
   m_ObjectHideFlags: 0
@@ -8419,7 +8416,6 @@ GameObject:
   - component: {fileID: 559368293}
   - component: {fileID: 559368295}
   - component: {fileID: 559368296}
-  - component: {fileID: 559368294}
   - component: {fileID: 7732539846871194520}
   - component: {fileID: 7732539846871194521}
   m_Layer: 6
@@ -8444,18 +8440,6 @@ Transform:
   m_Father: {fileID: 219338503}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &559368294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559368292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc240ac00cb3ce45b076733f3fd056a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &559368295
 Rigidbody2D:
   serializedVersion: 4
@@ -10123,7 +10107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &693416851
 GameObject:
   m_ObjectHideFlags: 0
@@ -14483,7 +14466,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &970386709
 GameObject:
   m_ObjectHideFlags: 0
@@ -25986,10 +25968,10 @@ MonoBehaviour:
   - {fileID: 1613453365}
   poolObjsList: []
   projectile1: Projectile1
-  projectile1_Miniboss_Kla_ed1: Projectile1_Miniboss_Kla_ed1
-  projectile1_Miniboss_Kla_ed2: Projectile1_Miniboss_Kla_ed2
-  projectile2_Miniboss_Kla_ed: Projectile2_Miniboss_Kla_ed
-  bom: Bom
+  projectile2: Projectile1_Miniboss_Kla_ed1
+  projectile3: Projectile1_Miniboss_Kla_ed2
+  projectile4: Projectile2_Miniboss_Kla_ed
+  projectile5: Bom
 --- !u!4 &1713322002
 Transform:
   m_ObjectHideFlags: 0
@@ -29668,7 +29650,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeDelay: 2
-  timer: 0
 --- !u!1 &1895420750
 GameObject:
   m_ObjectHideFlags: 0
@@ -36490,6 +36471,7 @@ MonoBehaviour:
   firingRate: 2
   isFiring: 0
   energiesUse: 3
+  isHasUntiWeapon: 0
 --- !u!114 &6166756655225999376
 MonoBehaviour:
   m_ObjectHideFlags: 0

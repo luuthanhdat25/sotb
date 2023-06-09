@@ -25,9 +25,9 @@ namespace Enemy.Boss
         
         IEnumerator FireContinously()
         {
-            Transform newProjectileLeft = EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile1_Miniboss_Kla_ed1);
+            Transform newProjectileLeft = EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile2);
             this.SetActiveProjectileAndMoveToNewPosition(newProjectileLeft, leftGunPosition.position);
-            Transform newProjectileRight = EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile1_Miniboss_Kla_ed2);
+            Transform newProjectileRight = EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile3);
             this.SetActiveProjectileAndMoveToNewPosition(newProjectileRight, rightGunPosition.position);
             
             yield return new WaitForSeconds(firingRate);

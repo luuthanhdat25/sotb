@@ -3,5 +3,5 @@ using UnityEngine;
 
 public class BossNautolanBomShoot : MinibossNautolanShoot
 {
-    protected override Transform GetProjectile() => EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.bom);
+    protected override Transform GetProjectile() => EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile5);
 }

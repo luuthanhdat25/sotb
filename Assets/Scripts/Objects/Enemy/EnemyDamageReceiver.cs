@@ -7,6 +7,7 @@ namespace Enemy
     public abstract class EnemyDamageReceiver: DamageReceiver
     {
         [SerializeField] protected EnemySO enemySO;
+        [SerializeField] protected int scorePlus = 100;
 
         protected override void LoadComponents()
         {
