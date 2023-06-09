@@ -118,6 +118,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanDamageReciever.cs" />
+     <Compile Include="Assets\BossNairanBattlecruiserIdleSMB.cs" />
      <Compile Include="Assets\Scripts\Resources\Item\DropRate.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Resources\EnemyInfor\EnemySO.cs" />
