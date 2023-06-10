@@ -1,6 +1,6 @@
 using Enemy;
 
-public class BossNautolanFollowAndShootBehaviour : FollowAndShootStateMachineBehaviour
+public class BossNautolanFollowAndShootBehaviour : AbsFollowAndShootSMB
 {
     protected override float GetSpeedFollow() => BossNautolanCtrl.Instance.GetSpeedFollow();
     protected override float GetTimeShootOneTime() => BossNautolanCtrl.Instance.GetTimeShootOneTime();

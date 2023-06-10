@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class IdleStateMachineBehaviour : StateMachineBehaviour
+public abstract class AbsIdleSMB : StateMachineBehaviour
 {
     [SerializeField] protected float speedMoveToPosDefault = 4f;
     [SerializeField] protected float timeWait;

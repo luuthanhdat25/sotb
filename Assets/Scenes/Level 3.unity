@@ -6619,13 +6619,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9075690a71ad4bc9976fbfd940e4e78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossSMBAnimator: {fileID: 0}
+  speedMoveToPosDefault: 4
+  stateNumber: 0
   timeWaitIdleOne: 3
   defaultPosOneBattlecruiser: {fileID: 3134303013853986421}
   defaultPosOneDreadnought: {fileID: 7223150381638194343}
   timeWaitIdleTwo: 2
   speedSlide: 6
-  timeDelayBeforeSlide: 1.5
+  timeDelayBeforeSlide: 1
   numOfShootAttackSWBattlecruiser: 4
   speedFollowSWBattlecruiser: 7
   timeShootOneTimeSWBattlecruiser: 2

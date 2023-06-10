@@ -365,7 +365,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: -3333263533918100091}
   m_StateMachineBehaviours:
-  - {fileID: 833750344654300900}
+  - {fileID: 4232932256783443809}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -394,43 +394,43 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsLazerSlide
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsFollowAndShootShockWave
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsArcShockWave
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsFollowAndShootLazer
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsIdle2
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsRotateLazer
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -481,6 +481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc641e4420f7e246a107d43746fae04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distanceLimit: 14
+  yDistanceFromDefaut: 3
 --- !u!1101 &2770691301092494744
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -548,6 +550,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c97fe8f45869dd42af8cb150843d97a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeShootInOneTime: 0
+  speedFollow: 0
+  numberOfAttacks: 0
+--- !u!114 &4232932256783443809
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc641e4420f7e246a107d43746fae04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceLimit: 14
+  yDistanceFromDefaut: 2
 --- !u!1102 &5595225283762669635
 AnimatorState:
   serializedVersion: 6
@@ -590,6 +609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3534dc8605db29f44b33d7598abe69ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedMoveToPosDefault: 4
+  timeWait: 0
 --- !u!1101 &8306587774624980682
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -675,7 +696,7 @@ AnimatorStateMachine:
     m_Position: {x: 530, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6307202736712513716}
-    m_Position: {x: 610, y: 200, z: 0}
+    m_Position: {x: 650, y: 180, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -6531192572110498768}

@@ -1,7 +1,7 @@
 using Enemy;
 using UnityEngine;
 
-public class BossNautolanArcBomBehaviour : ArcShootStateMachineBehaviour
+public class BossNautolanArcBomBehaviour : AbsArcShootSMB
 {
     protected override Vector3 GetStartPosition() => BossNautolanCtrl.Instance.GetEndPosition();
     protected override Vector3 GetEndPosition() => BossNautolanCtrl.Instance.GetStartPosition();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Enemy;
 using UnityEngine;
 
-public class BossNautolanFollowAndShootShockWaveBehaviour : FollowAndShootStateMachineBehaviour
+public class BossNautolanFollowAndShootShockWaveBehaviour : AbsFollowAndShootSMB
 {
     protected override float GetSpeedFollow() => BossNautolanCtrl.Instance.GetSpeedFollowShockWave();
     protected override float GetTimeShootOneTime() => BossNautolanCtrl.Instance.GetTimeShootOneTimeShockWave();

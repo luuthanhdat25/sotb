@@ -64,7 +64,6 @@
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerUnti.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Boss\Battlecruiser\BossNairanBattlecruiserIdleSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Boss\Battlecruiser\BossNairanBattlecruiserFollowAndShootShockWaveSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\ArcShootStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ItemDropSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\BomProjectileDamageReciever.cs" />
@@ -97,18 +96,18 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanShoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_ed_Animation.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanIdleStateMachineBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\IdleStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\AttackEnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ItemMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\ResourcePlayerBar.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MiniBossKla_edCtrl.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Projectiles\ProjectileModelRotateAroundCenter.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Boss\Battlecruiser\BossNairanBattlecruiserArcShockWaveSMB.cs" />
+     <Compile Include="Assets\Scripts\Objects\Projectiles\ProjectileModelRotateAroundCenter.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageReceiver.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyNormalDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanFollowAndShootBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsLazerSlideSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\AbsEnemyShoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanModelShipAnimation.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDamageReceiver.cs" />
@@ -126,7 +125,6 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Resources\Item\DropRate.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Boss\Battlecruiser\BossNairanBattlecruiserLazerSlideSMB.cs" />
      <Compile Include="Assets\Scripts\Resources\EnemyInfor\EnemySO.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Boss\Battlecruiser\BossNairanBattlecruiserRotateLazerSMB.cs" />
      <Compile Include="Assets\Scripts\Components\Time\TimeManager.cs" />
@@ -134,6 +132,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanShootNormal.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\EnergyItem.cs" />
      <Compile Include="Assets\Scripts\Components\InputSystem\GameInput.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Boss\Battlecruiser\BossNairanBattlecruiserLazerSliderSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectilesMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\AbstractClass\ObjectMovement.cs" />
@@ -146,7 +145,6 @@
      <Compile Include="Assets\Scripts\Components\Pathfinder\Pathfinder.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NairanScoutProjectileMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageSender.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\FollowAndShootStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\NormalWeaponItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyLazerDamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDespawn.cs" />
@@ -168,6 +166,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\AbsBossShoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\BurstEngineItem.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsArcShootSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Components\SFX\SFXCtrl.cs" />
      <Compile Include="Assets\Scripts\Components\RhythmScripts\SyncCenter.cs" />
@@ -181,6 +180,8 @@
      <Compile Include="Assets\Scripts\Objects\UI\Player\BootCeilsBar.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MiniBossNairanFollowAndShootBehaviour.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\Despawn.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsIdleSMB.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsFollowAndShootSMB.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Weapons\Aseprite" />

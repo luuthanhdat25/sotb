@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class KlaEdIdleStateMachineBehaviour : IdleStateMachineBehaviour
+public class KlaEdIdleStateMachineBehaviour : AbsIdleSMB
 {
     [SerializeField] private int numberOfState = 2;
     protected override void ChangeState(Animator animator)

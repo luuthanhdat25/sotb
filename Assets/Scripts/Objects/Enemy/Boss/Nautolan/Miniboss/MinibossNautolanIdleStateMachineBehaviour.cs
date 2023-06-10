@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MinibossNautolanIdleStateMachineBehaviour : IdleStateMachineBehaviour
+public class MinibossNautolanIdleStateMachineBehaviour : AbsIdleSMB
 {
     protected override void ChangeState(Animator animator)
     {

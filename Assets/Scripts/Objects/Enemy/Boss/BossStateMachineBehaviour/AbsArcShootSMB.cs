@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Enemy
 {
-    public abstract class ArcShootStateMachineBehaviour : StateMachineBehaviour
+    public abstract class AbsArcShootSMB : StateMachineBehaviour
     {
         [SerializeField] protected float curveHeight = 3f;   
         [SerializeField] protected float speedArc = 0.6f;

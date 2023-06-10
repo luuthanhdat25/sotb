@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
@@ -70,6 +71,11 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
             Debug.Log(transform.name + " Load: BossNairanBattlecruiserModelShipAnimation");
         }
 
+        private void Start()
+        {
+            defaultPosition = DoubleBossNairanCtrl.Instance.DefaultPosOneBattlecruiser.position;
+        }
+
         public override void SetDeadAnimation()
         {
             this.bossModelShipAnimation.SetIsDestructionTrigger();
@@ -78,20 +84,28 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
             this.bossSMBAnimator.SetTrigger(AnimatorParameter.IsDestruction.ToString());
         }
 
-        //public void SetIsFollowAndShoot(bool isTrue) => this.miniNairanAnimator.SetBool(IS_FOLLOW_AND_SHOOT, isTrue);
-        //public void SetIsLazerSlide(bool isTrue) => this.miniNairanAnimator.SetBool(IS_LAZER_SLIDE, isTrue);
+        public void SetIsLazerSlide(bool isTrue) 
+            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsLazerSlide.ToString(), isTrue);
+        
+        public void SetIsFollowAndShootShockWave(bool isTrue)
+            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsFollowAndShootShockWave.ToString(), isTrue);
+        
+        public void SetIsArcShockWave(bool isTrue)
+            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsArcShockWave.ToString(), isTrue);
+        
+        public void SetIsRotateLazer(bool isTrue)
+            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsRotateLazer.ToString(), isTrue);
+        
+        public void SetIsFollowAndShootLazer(bool isTrue)
+            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsFollowAndShootLazer.ToString(), isTrue);
+        
         public float SpeedArcShockWave => speedArcShockWave;
-
         public Transform StartPosition => startPosition;
-
         public Transform EndPosition => endPosition;
-
         public float SpeedRotate => speedRotate;
-
         public int NumberOfShootAttacks => numberOfShootAttacks;
-
         public float SpeedFollow => speedFollow;
-
         public float TimeShootInOneTime => timeShootInOneTime;
+        public bool IsInDefaultPosition() => transform.position == defaultPosition;
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Enemy
 {
-    public abstract class FollowAndShootStateMachineBehaviour : StateMachineBehaviour
+    public abstract class AbsFollowAndShootSMB : StateMachineBehaviour
     {
         [SerializeField] protected float timeShootInOneTime;
         [SerializeField] protected float speedFollow;

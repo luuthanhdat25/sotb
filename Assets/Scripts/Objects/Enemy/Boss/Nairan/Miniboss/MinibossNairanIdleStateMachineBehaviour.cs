@@ -1,7 +1,7 @@
 using Enemy.Boss.Nairan.Miniboss;
 using UnityEngine;
 
-public class MinibossNairanIdleStateMachineBehaviour : IdleStateMachineBehaviour
+public class MinibossNairanIdleStateMachineBehaviour : AbsIdleSMB
 {
     protected override void ChangeState(Animator animator)
     {

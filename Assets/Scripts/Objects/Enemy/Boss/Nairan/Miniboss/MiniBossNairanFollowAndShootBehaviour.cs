@@ -4,7 +4,7 @@ using Enemy;
 using Enemy.Boss.Nairan.Miniboss;
 using UnityEngine;
 
-public class MiniBossNairanFollowAndShootBehaviour : FollowAndShootStateMachineBehaviour
+public class MiniBossNairanFollowAndShootBehaviour : AbsFollowAndShootSMB
 {
     protected override float GetSpeedFollow() => MiniBossNairanCtrl.Instance.GetSpeedFollow();
     protected override float GetTimeShootOneTime() => MiniBossNairanCtrl.Instance.GetTimeShootOneTime();
