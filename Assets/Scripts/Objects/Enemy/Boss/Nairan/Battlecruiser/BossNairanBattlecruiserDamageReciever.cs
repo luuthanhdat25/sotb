@@ -8,7 +8,9 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
         protected override void OnDead()
         {
             base.OnDead();
-            //BossNautolanCtrl.Instance.SetDeadAnimation();
+            BossNairanBattlecruiserCtrl.Instance.SetDeadAnimation();
+            BossNairanBattlecruiserCtrl.Instance.IsDeadTrue();
+            DoubleBossNairanCtrl.Instance.OneShipDead();
             GameManager.Instance.IncreaseScore(scorePlus);
         }
     }

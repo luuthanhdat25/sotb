@@ -12,6 +12,9 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
         [SerializeField] private BossNairanBattlecruiserShootShockWave bossNairanBattlecruiserShootShockWave;
         public BossNairanBattlecruiserShootShockWave BossNairanBattlecruiserShootShockWave => bossNairanBattlecruiserShootShockWave;
 
+        private bool isDead = false;
+        public bool IsDead => isDead;
+
         private enum AnimatorParameter
         {
             IsIdle2,
@@ -24,20 +27,25 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
         }
         
         [Header("ArcShockWaveBehaviour")]
-        [SerializeField] private float speedArcShockWave = 7f;
+        [SerializeField] private float speedArcShockWave = 1f;
         [SerializeField] private Transform startPosition;
         [SerializeField] private Transform endPosition;
+        [SerializeField] private int numberOfLoop = 2;
         
         [Header("RotateLazerBehaviour")]
-        [SerializeField] private float speedRotate = 10f;
+        [SerializeField] private float rotationSpeed = 60f;
+        [SerializeField] private float speedGoToReadyPosition = 5f;
+        [SerializeField] private float degreeRotate = 720;
         
         [Header("ShootLazerBehaviour")]
         [SerializeField] private int numberOfShootAttacks = 4;
         [SerializeField] private float speedFollow = 10f;
         [SerializeField] private float timeShootInOneTime = 2f;
+        [SerializeField] private float timeDelayBeforeShoot = 1.5f;
         
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             if(Instance != null) Debug.LogError("There is more than one BossNairanBattlecruiserCtrl instance");
             Instance = this;
         }
@@ -71,17 +79,31 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
             Debug.Log(transform.name + " Load: BossNairanBattlecruiserModelShipAnimation");
         }
 
-        private void Start()
+        private void Update()
         {
-            defaultPosition = DoubleBossNairanCtrl.Instance.DefaultPosOneBattlecruiser.position;
+            if(isDead) return;
+            CheckIdle2Animation();
         }
 
+        private void CheckIdle2Animation() 
+            => bossSMBAnimator.SetBool(AnimatorParameter.IsIdle2.ToString(), DoubleBossNairanCtrl.Instance.Isdle2);
+        
         public override void SetDeadAnimation()
         {
             this.bossModelShipAnimation.SetIsDestructionTrigger();
             this.bossShootLazer.DespawnLazer();
             Debug.Log("set destruction");
             this.bossSMBAnimator.SetTrigger(AnimatorParameter.IsDestruction.ToString());
+        }
+
+        public override Vector3 GetDefaultPosition()
+        {
+            if (DoubleBossNairanCtrl.Instance.Isdle2) 
+                defaultPosition = DoubleBossNairanCtrl.Instance.DefaultPosTwo;
+            else 
+                defaultPosition = DoubleBossNairanCtrl.Instance.DefaultPosOneBattlecruiser.position;
+            
+            return defaultPosition;
         }
 
         public void SetIsLazerSlide(bool isTrue) 
@@ -100,12 +122,17 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
             => this.bossSMBAnimator.SetBool(AnimatorParameter.IsFollowAndShootLazer.ToString(), isTrue);
         
         public float SpeedArcShockWave => speedArcShockWave;
-        public Transform StartPosition => startPosition;
-        public Transform EndPosition => endPosition;
-        public float SpeedRotate => speedRotate;
+        public Vector3 GetStartPosition() => startPosition.position;
+        public Vector3 GetEndPosition() => endPosition.position;
+        public float RotationSpeed => rotationSpeed;
         public int NumberOfShootAttacks => numberOfShootAttacks;
         public float SpeedFollow => speedFollow;
         public float TimeShootInOneTime => timeShootInOneTime;
+        public float TimeDelayBeforeShoot => timeDelayBeforeShoot;
+        public float SpeedGoToReadyPosition => speedGoToReadyPosition;
+        public float DegreeRotate => degreeRotate;
+        public int NumberOfLoop => numberOfLoop;
         public bool IsInDefaultPosition() => transform.position == defaultPosition;
+        public void IsDeadTrue() => isDead = true;
     }
 }

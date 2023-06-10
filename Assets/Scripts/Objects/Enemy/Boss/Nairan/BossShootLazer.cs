@@ -1,3 +1,4 @@
+using System.Collections;
 using Objects.Enemy.AttackEnemy;
 using UnityEngine;
 
@@ -9,18 +10,25 @@ namespace Enemy.Boss.Nairan.Miniboss
         protected Transform lazerTransform = null; 
         protected bool isLazerOn = false;
         
-        public virtual void SpawnLazer()
+        public virtual void SpawnLazerAfterTime(float time)
         {
             if (isLazerOn) return;
+            isLazerOn = true;
+            StartCoroutine(SpawnLazer(time));
+        }
+
+        private IEnumerator SpawnLazer(float time)
+        {
+            yield return new WaitForSeconds(time);
             lazerTransform = GetProjectile();
             if (lazerTransform != null)
             {
                 lazerTransform.position = transform.parent.position;
                 lazerTransform.parent = transform.parent;
                 lazerTransform.gameObject.SetActive(true);
-                isLazerOn = true;
             }
         }
+        
         protected virtual Transform GetProjectile()
         {
             if(isTemporaryLazer) 
@@ -33,7 +41,7 @@ namespace Enemy.Boss.Nairan.Miniboss
             if (!lazerTransform) return;
             EnemyProjectileSpawner.Instance.PushToHolderManager(lazerTransform);
             EnemyProjectileSpawner.Instance.Despawn(lazerTransform);
-            //lazerTransform = null;
+            lazerTransform = null;
             isLazerOn = false;
         }
 

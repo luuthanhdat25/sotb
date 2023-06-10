@@ -13,7 +13,7 @@ public class BossNairanBattlecruiserIdleSMB : AbsIdleSMB
     }
 
     protected override Vector3 GetDefaultPosition()
-        => DoubleBossNairanCtrl.Instance.DefaultPosOneBattlecruiser.position;
+        => BossNairanBattlecruiserCtrl.Instance.GetDefaultPosition();
     
     protected override float GetTimeWait()
         => DoubleBossNairanCtrl.Instance.TimeWaitIdleOne;

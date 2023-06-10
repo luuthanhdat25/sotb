@@ -31,10 +31,13 @@ public class BossNairanBattlecruiserLazerSliderSMB : AbsLazerSlideSMB
 
     protected override void SetProjectile(bool isOn)
     {
-        if(isOn) BossNairanBattlecruiserCtrl.Instance.BossShootLazer.SpawnLazer();
+        if(isOn) BossNairanBattlecruiserCtrl.Instance.BossShootLazer.SpawnLazerAfterTime(0);
         else BossNairanBattlecruiserCtrl.Instance.BossShootLazer.DespawnLazer();
     }
 
     protected override void UnSetAnimation()
-        => BossNairanBattlecruiserCtrl.Instance.SetIsLazerSlide(false);
+    {
+        DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
+        BossNairanBattlecruiserCtrl.Instance.SetIsLazerSlide(false);
+    }
 }

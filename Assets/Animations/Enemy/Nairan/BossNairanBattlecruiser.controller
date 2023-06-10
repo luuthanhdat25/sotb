@@ -143,6 +143,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b42897b46134ab4eae7e8d328638b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedMoveToPosDefault: 4
+  timeWait: 0
 --- !u!1102 &-7115327212748254927
 AnimatorState:
   serializedVersion: 6
@@ -222,18 +224,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!114 &-5369621154493497423
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c2ccb49c9765a648874b96e3a21187e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1101 &-3845169402452241775
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -325,7 +315,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: -9028085039464064891}
   m_StateMachineBehaviours:
-  - {fileID: -5369621154493497423}
+  - {fileID: 4592212184119795451}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -352,6 +342,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99475d3c8f84d37489ef1bcc2ac13606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeShootInOneTime: 0
+  speedFollow: 0
+  numberOfAttacks: 0
 --- !u!1102 &-735127072568975315
 AnimatorState:
   serializedVersion: 6
@@ -567,6 +560,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanceLimit: 14
   yDistanceFromDefaut: 2
+--- !u!114 &4592212184119795451
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2ccb49c9765a648874b96e3a21187e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0
+  speedGotoReadyPosition: 0
+  degreeRotate: 0
 --- !u!1102 &5595225283762669635
 AnimatorState:
   serializedVersion: 6
@@ -745,3 +753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b5ad6d29dbe06b48b4d02b258de850d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curveHeight: 2
+  speedArc: 0.6
+  speedToStartPosition: 6

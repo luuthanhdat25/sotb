@@ -1,8 +1,9 @@
+using System;
 using Enemy;
 using Enemy.Boss.Nairan.Miniboss.Boss;
 using Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser;
 using Objects.Enemy.AttackEnemy;
-using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BossNairanBattlecruiserFollowAndShootShockWaveSMB : AbsFollowAndShootSMB
 {
@@ -21,5 +22,8 @@ public class BossNairanBattlecruiserFollowAndShootShockWaveSMB : AbsFollowAndSho
         => BossNairanBattlecruiserCtrl.Instance.BossNairanBattlecruiserShootShockWave.SetIsFiring(isOn);
 
     protected override void UnSetAnimation()
-        => BossNairanBattlecruiserCtrl.Instance.SetIsFollowAndShootShockWave(false);
+    {
+        DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
+        BossNairanBattlecruiserCtrl.Instance.SetIsFollowAndShootShockWave(false);
+    }
 }

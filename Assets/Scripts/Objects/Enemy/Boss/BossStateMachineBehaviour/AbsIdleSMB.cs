@@ -40,10 +40,7 @@ public abstract class AbsIdleSMB : StateMachineBehaviour
             speedMoveToPosDefault * Time.deltaTime);
     }
 
-    protected virtual int GetRandomState(int numberOfState)
-    {
-        return Random.Range(1, numberOfState + 1);
-    }
+    protected virtual int GetRandomState(int numberOfState) => Random.Range(1, numberOfState + 1);
     protected abstract void ChangeState(Animator animator);
     protected abstract Vector3 GetDefaultPosition();
     protected abstract float GetTimeWait();
