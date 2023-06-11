@@ -1,4 +1,5 @@
 using System;
+using Objects.Enemy.Boss.Nairan.Dreadnought;
 using UnityEngine;
 
 namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
@@ -14,6 +15,9 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
 
         private bool isDead = false;
         public bool IsDead => isDead;
+        private bool isFinishBehaviour = false;
+        public bool IsFinishBehaviour => isFinishBehaviour;
+        public void SetIsFinishBehaviour(bool isFinish) => isFinishBehaviour = isFinish;
 
         private enum AnimatorParameter
         {

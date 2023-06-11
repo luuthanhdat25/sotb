@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser;
+using Objects.Enemy.Boss.Nairan.Dreadnought;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -11,7 +12,6 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
         public static DoubleBossNairanCtrl Instance { get; private set; }
         [SerializeField] private bool isIdle2 = false;
         public bool Isdle2 => isIdle2;
-        [SerializeField] private float speedMoveToPosDefault = 4f;
         [SerializeField] private int stateNumber;
         public int StateNumber => stateNumber;
         private bool isInSMB = false;
@@ -61,13 +61,13 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
 
         private void DoubleBehaviour()
         {
-            if (!isInSMB && BossNairanBattlecruiserCtrl.Instance.IsInDefaultPosition() /*&& */)
+            if (!isInSMB && BossNairanDreadnoughtCtrl.Instance.IsInDefaultPosition() && BossNairanBattlecruiserCtrl.Instance.IsInDefaultPosition())
             {
                 isInSMB = true;
                 StartCoroutine(ChangeState(2, timeWaitIdleOne));
             }
         }
-
+        
         private IEnumerator ChangeState(int numOfState, float timeWaitIdle)
         {
             yield return new WaitForSeconds(timeWaitIdle);
@@ -102,7 +102,6 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
         public int NumOfShootAttackNDreadnought => numOfShootAttackNDreadnought;
         public float SpeedFollowNDreadnought => speedFollowNDreadnought;
         public float TimeShootOneTimeNDreadnought => timeShootOneTimeNDreadnought;
-        public float SpeedMoveToPosDefault => speedMoveToPosDefault;
         public void OneShipDead() => this.isIdle2 = true;
     }
 }

@@ -8,5 +8,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
     {
         protected override Transform GetProjectile()
             => EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile1);
+
+        public void SetFiringRate(float rate) => this.firingRate = rate;
     }
 }

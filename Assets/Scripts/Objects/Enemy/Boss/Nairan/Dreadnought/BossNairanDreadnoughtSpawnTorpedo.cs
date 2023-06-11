@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Enemy.Boss;
 using Objects.Enemy.AttackEnemy;
@@ -9,7 +10,10 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
     public class BossNairanDreadnoughtSpawnTorpedo : AbsBossShoot
     {
         [SerializeField] private float spawnYValue = 10f;
-        
+
+        private void Start() 
+            => this.firingRate = BossNairanDreadnoughtCtrl.Instance.SpawnRate;
+
         protected override IEnumerator FireContinously()
         {
             Transform newProjectile = GetProjectile();
@@ -30,5 +34,11 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         
         protected override Transform GetProjectile()
             => EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile5);
+
+        public override void SetIsFiring(bool isFiring)
+        {
+            if((!isFiring && this.isFiring) || (isFiring && !this.isFiring))
+                this.isFiring = isFiring;
+        }
     }
 }

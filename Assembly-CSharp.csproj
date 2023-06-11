@@ -129,8 +129,8 @@
      <Compile Include="Assets\Scripts\Objects\UI\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtModelShipAnimation.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtTeleportAndShootLazerSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserCtrl.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtTeleportAndShootLazerSMB.cs" />
      <Compile Include="Assets\Scripts\Resources\Item\DropRate.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyMovement.cs" />
      <Compile Include="Assets\Scripts\Resources\EnemyInfor\EnemySO.cs" />
@@ -175,8 +175,8 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\AbsBossShoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsArcShootSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\BurstEngineItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserFollowAndShootShockWaveSMB.cs" />
+     <Compile Include="Assets\Scripts\Objects\Item\BurstEngineItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Components\SFX\SFXCtrl.cs" />
      <Compile Include="Assets\Scripts\Components\RhythmScripts\SyncCenter.cs" />

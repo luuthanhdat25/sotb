@@ -7,6 +7,6 @@ namespace Enemy.Boss
     {
         protected abstract override Transform GetProjectile();
         public float GetFiringRate() => this.firingRate;
-        public void SetIsFiring(bool isFiring) => this.isFiring = isFiring;
+        public virtual void SetIsFiring(bool isFiring) => this.isFiring = isFiring;
     }
 }

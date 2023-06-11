@@ -1,11 +1,12 @@
 using Enemy;
 using Enemy.Boss.Nairan.Miniboss.Boss;
 using Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser;
+using Objects.Enemy.Boss.Nairan.Dreadnought;
 using UnityEngine;
 
 public class BossNairanBattlecruiserLazerSliderSMB : AbsLazerSlideSMB
 {
-    [SerializeField] private float yDistanceFromDefaut = 3;
+    [SerializeField] private float yDistanceFromDefaut = 2;
     
     protected override Vector3 GetTargetPosition(Vector3 currentPos)
         => new Vector3(currentPos.x, currentPos.y + yDistanceFromDefaut, currentPos.z);
@@ -37,7 +38,12 @@ public class BossNairanBattlecruiserLazerSliderSMB : AbsLazerSlideSMB
 
     protected override void UnSetAnimation()
     {
-        DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
-        BossNairanBattlecruiserCtrl.Instance.SetIsLazerSlide(false);
+        //DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
+        BossNairanBattlecruiserCtrl.Instance.SetIsFinishBehaviour(true);
+        /*if (BossNairanDreadnoughtCtrl.Instance.IsFinishBehaviour)
+        {
+            BossNairanBattlecruiserCtrl.Instance.SetIsFinishBehaviour(false);*/
+            BossNairanBattlecruiserCtrl.Instance.SetIsLazerSlide(false);
+        
     }
 }

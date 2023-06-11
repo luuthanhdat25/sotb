@@ -17,34 +17,39 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         public BossNairanDreadnoughtSpawnTorpedo BossNairanDreadnoughtSpawnTorpedo => bossNairanDreadnoughtSpawnTorpedo;
         private bool isDead = false;
         public bool IsDead => isDead;
+        private bool isFinishBehaviour = false;
+        public bool IsFinishBehaviour => isFinishBehaviour;
+        public void SetIsFinishBehaviour(bool isFinish) => isFinishBehaviour = isFinish;
 
         private enum AnimatorParameter
         {
             IsIdle2,
             IsLazerSlide,
-            IsFollowAndShootShockWave,
+            IsFollowAndShootNormal,
             IsDestruction,
-            IsArcShockWave,
-            IsRotateLazer,
-            IsFollowAndShootLazer
+            IsArcShootNormal,
+            IsSpawnTorpedo,
+            IsTeleportAndShootLazer
         }
         
-        [Header("ArcShockWaveBehaviour")]
+        [Header("ArcShootNormalBehaviour")]
         [SerializeField] private float speedArcShockWave = 1f;
         [SerializeField] private Transform startPosition;
         [SerializeField] private Transform endPosition;
         [SerializeField] private int numberOfLoop = 2;
+        [SerializeField] private float speedGoToReadyPosition = 6;
+        [SerializeField] private float firingRate = 0.4f;
         
-        [Header("RotateLazerBehaviour")]
-        [SerializeField] private float rotationSpeed = 60f;
-        [SerializeField] private float speedGoToReadyPosition = 5f;
-        [SerializeField] private float degreeRotate = 720;
-        
-        [Header("ShootLazerBehaviour")]
-        [SerializeField] private int numberOfShootAttacks = 4;
-        [SerializeField] private float speedFollow = 10f;
-        [SerializeField] private float timeShootInOneTime = 2f;
+        [Header("SpawnTorpedoBehaviour")]
+        [SerializeField] private float spawnRate = 0.6f;
+        [SerializeField] private float timeDelayBeforeSpawn = 1f;
+        [SerializeField] private float timeSpawnTorpedo = 5f;
+
+        [Header("TeleportAndShootLazerBehaviour")]
+        [SerializeField] private int numberOfShootAttacks = 3;
         [SerializeField] private float timeDelayBeforeShoot = 1.5f;
+        [SerializeField] private float timeShootInOneTime = 2f;
+        [SerializeField] private float timeDelayTeleport = 0.5f;
         
         protected override void Awake()
         {
@@ -112,7 +117,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             if (DoubleBossNairanCtrl.Instance.Isdle2) 
                 defaultPosition = DoubleBossNairanCtrl.Instance.DefaultPosTwo;
             else 
-                defaultPosition = DoubleBossNairanCtrl.Instance.DefaultPosOneBattlecruiser.position;
+                defaultPosition = DoubleBossNairanCtrl.Instance.DefaultPosOneDreadnought.position;
             
             return defaultPosition;
         }
@@ -120,30 +125,32 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         public void SetIsLazerSlide(bool isTrue) 
             => this.bossSMBAnimator.SetBool(AnimatorParameter.IsLazerSlide.ToString(), isTrue);
         
-        public void SetIsFollowAndShootShockWave(bool isTrue)
-            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsFollowAndShootShockWave.ToString(), isTrue);
+        public void SetIsFollowAndShootNormal(bool isTrue)
+            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsFollowAndShootNormal.ToString(), isTrue);
         
-        public void SetIsArcShockWave(bool isTrue)
-            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsArcShockWave.ToString(), isTrue);
+        public void SetIsArcShootNormal(bool isTrue)
+            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsArcShootNormal.ToString(), isTrue);
         
-        public void SetIsRotateLazer(bool isTrue)
-            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsRotateLazer.ToString(), isTrue);
+        public void SetIsSpawnTorpedo(bool isTrue)
+            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsSpawnTorpedo.ToString(), isTrue);
         
-        public void SetIsFollowAndShootLazer(bool isTrue)
-            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsFollowAndShootLazer.ToString(), isTrue);
-        
+        public void SetIsTeleportAndShootLazer(bool isTrue)
+            => this.bossSMBAnimator.SetBool(AnimatorParameter.IsTeleportAndShootLazer.ToString(), isTrue);
+
         public float SpeedArcShockWave => speedArcShockWave;
         public Vector3 GetStartPosition() => startPosition.position;
         public Vector3 GetEndPosition() => endPosition.position;
-        public float RotationSpeed => rotationSpeed;
+        public int NumberOfLoop => numberOfLoop;
+        public float SpawnRate => spawnRate;
+        public float TimeDelayBeforeSpawn => timeDelayBeforeSpawn;
         public int NumberOfShootAttacks => numberOfShootAttacks;
-        public float SpeedFollow => speedFollow;
+        public float TimeDelayTeleport => timeDelayTeleport;
         public float TimeShootInOneTime => timeShootInOneTime;
         public float TimeDelayBeforeShoot => timeDelayBeforeShoot;
         public float SpeedGoToReadyPosition => speedGoToReadyPosition;
-        public float DegreeRotate => degreeRotate;
-        public int NumberOfLoop => numberOfLoop;
+        public float FiringRate => firingRate;
+        public float TimeSpawnTorpedo => timeSpawnTorpedo;
         public bool IsInDefaultPosition() => transform.position == defaultPosition;
-        public void IsDeadTrue() => isDead = true;
+        public void IsDeadTrue() => this.isDead = true;
     }
 }

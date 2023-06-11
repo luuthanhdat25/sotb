@@ -1,33 +1,36 @@
+using Enemy;
+using Enemy.Boss.Nairan.Miniboss.Boss;
+using Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser;
 using UnityEngine;
 
 namespace Objects.Enemy.Boss.Nairan.Dreadnought
 {
-    public class BossNairanDreadnoughtFollowAndShootNormalSMB : StateMachineBehaviour
+    public class BossNairanDreadnoughtFollowAndShootNormalSMB : AbsFollowAndShootSMB
     {
-        public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo,
-            int layerIndex)
-        {
-            
-        }
+        
+        protected override float GetRandomYValue() => Random.Range(-1.2f, -0.5f);
+    
+        protected override float GetSpeedFollow()
+            => DoubleBossNairanCtrl.Instance.SpeedFollowNDreadnought;
 
-        public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo,
-            int layerIndex)
-        {
-        }
+        protected override float GetTimeShootOneTime()
+            => DoubleBossNairanCtrl.Instance.TimeShootOneTimeNDreadnought;
 
-        public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo,
-            int layerIndex)
-        {
-        }
+        protected override int GetNumberOfActack()
+            => DoubleBossNairanCtrl.Instance.NumOfShootAttackNDreadnought;
 
-        public override void OnStateMove(Animator animator, AnimatorStateInfo stateInfo,
-            int layerIndex)
-        {
-        }
+        protected override void SetProjectile(bool isOn)
+            => BossNairanDreadnoughtCtrl.Instance.BossNairanDreadnoughtShootNormal.SetIsFiring(isOn);
 
-        public override void OnStateIK(Animator animator, AnimatorStateInfo stateInfo,
-            int layerIndex)
+        protected override void UnSetAnimation()
         {
+            //DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
+            BossNairanDreadnoughtCtrl.Instance.SetIsFinishBehaviour(true);
+            if (BossNairanBattlecruiserCtrl.Instance.IsFinishBehaviour)
+            {
+                BossNairanDreadnoughtCtrl.Instance.SetIsFinishBehaviour(false);
+                BossNairanDreadnoughtCtrl.Instance.SetIsFollowAndShootNormal(false);
+            }
         }
     }
 }

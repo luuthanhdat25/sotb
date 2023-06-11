@@ -6,6 +6,8 @@ public class BossNairanBattlecruiserIdleSMB : AbsIdleSMB
 {
     protected override void ChangeState(Animator animator)
     {
+        //if (DoubleBossNairanCtrl.Instance.CanGetStateNumber == false) return;
+        //DoubleBossNairanCtrl.Instance.SetCanGetStateNumber(false);
         if (DoubleBossNairanCtrl.Instance.StateNumber == 1)
             BossNairanBattlecruiserCtrl.Instance.SetIsLazerSlide(true);
         else

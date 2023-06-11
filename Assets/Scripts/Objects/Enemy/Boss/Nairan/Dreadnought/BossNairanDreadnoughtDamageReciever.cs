@@ -10,8 +10,8 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         protected override void OnDead()
         {
             base.OnDead();
-            //BossNairanBattlecruiserCtrl.Instance.SetDeadAnimation();
-            //BossNairanBattlecruiserCtrl.Instance.IsDeadTrue();
+            BossNairanDreadnoughtCtrl.Instance.SetDeadAnimation();
+            BossNairanDreadnoughtCtrl.Instance.IsDeadTrue();
             DoubleBossNairanCtrl.Instance.OneShipDead();
             GameManager.Instance.IncreaseScore(scorePlus);
         }
