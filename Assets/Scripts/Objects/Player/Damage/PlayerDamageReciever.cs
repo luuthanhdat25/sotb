@@ -9,7 +9,7 @@ namespace Player
         [SerializeField] private int energiesDeductWhenPlayerDead = 1;
         [SerializeField] private float timeDelayReborn = 2f;
         [SerializeField] private CircleCollider2D circleCollider2D;
-        [SerializeField] private bool isShieldUp = false;
+        private bool isShieldUp = false;
         
         protected override void LoadComponents()
         {
@@ -58,20 +58,34 @@ namespace Player
 
         public override void Deduct(int hpDeduct)
         {
-            if (isShieldUp)
-            {
-                PlayerCtrl.Instance.PlayerAnimations.SetActiveShield(false);
-                isShieldUp = false;
-            }
+            if (isShieldUp) SetShieldDown();
             base.Deduct(hpDeduct);
+        }
+
+        private void SetShieldDown()
+        {
+            PlayerCtrl.Instance.PlayerAnimations.SetActiveShield(false);
+            isShieldUp = false;
         }
 
         public void SetActiveCollider(bool isOn) => this.circleCollider2D.enabled = isOn;
 
-        public void ShieldUp()
+        public void ShieldUp(float timeDespawn)
         {
             if(hpCurrent == 1) this.hpCurrent++;
             isShieldUp = true;
+            StartCoroutine(DespawnSheild(timeDespawn));
+        }
+        
+        private IEnumerator DespawnSheild(float timeDespawn)
+        {
+            PlayerCtrl.Instance.PlayerAnimations.ShieldDestructionAfterTime(timeDespawn);
+            yield return new WaitForSeconds(timeDespawn);
+            if (hpCurrent > 1 && isShieldUp)
+            {
+                this.hpCurrent--;
+                SetShieldDown();
+            }
         }
     }
 }

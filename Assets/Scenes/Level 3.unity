@@ -11056,7 +11056,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deadAnimatorTime: 2
   healthStateAnimaiton: 4
-  animator: {fileID: 536302656}
+  modelAnimator: {fileID: 536302656}
+  shieldAnimator: {fileID: 941487455}
   normalWeapon: {fileID: 1065533754}
   untiWeapon: {fileID: 727501063}
   defaultEngine: {fileID: 329363714}
@@ -24076,13 +24077,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e5508461f5ea146bb13bf8d8bd6ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpmCurrent: 161
   audioSourcesManager: {fileID: 1428106844}
   wavePrefabsManager: {fileID: 249405779}
   currentWave: {fileID: 0}
   wavesCurrentStartTime: 0
-  beatCount: 0
-  spawnTimer: 0
 --- !u!1 &1159930279
 GameObject:
   m_ObjectHideFlags: 0
@@ -26996,7 +26994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveToTargetSpeed: 10
-  timeEffective: 2
+  timeEffective: 4
 --- !u!1 &1316794260
 GameObject:
   m_ObjectHideFlags: 0
@@ -45146,7 +45144,6 @@ MonoBehaviour:
   energiesDeductWhenPlayerDead: 1
   timeDelayReborn: 2
   circleCollider2D: {fileID: 559368296}
-  isShieldUp: 0
 --- !u!1 &7847151770882131836
 GameObject:
   m_ObjectHideFlags: 0

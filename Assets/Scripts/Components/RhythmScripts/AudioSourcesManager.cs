@@ -20,9 +20,7 @@ namespace Damage.RhythmScripts
         private void LoadAudioSourceList()
         {
             if (this.audioSourcesList.Count != 0) return;
-            foreach (Transform transformHasAudioSource in this.transform)
-                if (transformHasAudioSource.TryGetComponent<AudioSource>(out AudioSource audioSource))
-                    this.audioSourcesList.Add(audioSource);
+            this.audioSourcesList.AddRange(GetComponentsInChildren<AudioSource>());
         }
         
         public void MusicFadeOut() => StartCoroutine(FadeOutCoroutine());

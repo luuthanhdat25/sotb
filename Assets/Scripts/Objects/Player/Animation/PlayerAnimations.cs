@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using DefaultNamespace;
 using UnityEngine;
@@ -8,7 +9,8 @@ namespace Player
     {
         [SerializeField] private float deadAnimatorTime = 2;
         [SerializeField] private int healthStateAnimaiton = 4;
-        [SerializeField] private Animator animator;
+        [SerializeField] private Animator modelAnimator;
+        [SerializeField] private Animator shieldAnimator;
         
         [SerializeField] private Transform normalWeapon;
         [SerializeField] private Transform untiWeapon;
@@ -16,39 +18,37 @@ namespace Player
         [SerializeField] private Transform upgradeEngine;
         [SerializeField] private Transform shield;
         
-        private const string IS_DESTRUCTION = "isDestruction";
-        private const string IS_COMBACK_HEALTHSTATE = "comebackHealthState";
-        
+        private enum AnimatorParameter
+        {
+            isDestruction,
+            comebackHealthState
+        }
         
         protected override void LoadComponents()
         {
             base.LoadComponents();
-            this.LoadAnimator();
+            this.LoadModelAnimator();
         }
 
-        private void LoadAnimator()
-        {
-            if (this.animator != null) return;
-            this.animator = GetComponent<Animator>();
-        }
+        private void LoadModelAnimator()
+            => this.modelAnimator ??= GetComponent<Animator>();
         
-        public void DestructionAnimation()
-        { 
-            //this.animator.SetBool(IS_DESTRUCTION, false);
-            this.animator.SetBool(IS_DESTRUCTION, true);
-            //this.animator.SetBool(IS_DESTRUCTION, false);
-        }
+        private void LoadShieldAnimator() 
+            => this.shieldAnimator ??= GetComponentInChildren<Animator>();
+
+        public void DestructionAnimation() 
+            => this.modelAnimator.SetBool(AnimatorParameter.isDestruction.ToString(), true);
+
         public void RebornAnimaiton()
         { 
-            this.animator.SetBool(IS_DESTRUCTION, false);
+            this.modelAnimator.SetBool(AnimatorParameter.isDestruction.ToString(), false);
             StartCoroutine(ComebackHealthState());
         }
 
         IEnumerator ComebackHealthState()
         {
             yield return new WaitForSeconds(deadAnimatorTime);
-            this.animator.SetBool(IS_COMBACK_HEALTHSTATE, true);
-           // this.animator.SetBool(IS_COMBACK_HEALTHSTATE, false);
+            this.modelAnimator.SetBool(AnimatorParameter.comebackHealthState.ToString(), true);
         }
 
         public float GetDeadAnimatorTime() => this.deadAnimatorTime;
@@ -82,6 +82,18 @@ namespace Player
         {
             if (this.shield == null) return;
             this.shield.gameObject.SetActive(isOn);
+        }
+
+        public void ShieldDestructionAfterTime(float time)
+        {
+            if (this.shieldAnimator == null) return;
+            StartCoroutine(DestructionShield(time - 2));
+        }
+
+        private IEnumerator DestructionShield(float time)
+        {
+            yield return new WaitForSeconds(time);
+            shieldAnimator.SetTrigger(AnimatorParameter.isDestruction.ToString());
         }
 
         public void DeductHealthStateAnimaiton() => this.healthStateAnimaiton--;
