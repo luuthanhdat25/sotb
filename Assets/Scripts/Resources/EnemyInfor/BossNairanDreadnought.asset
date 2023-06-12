@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98dd48acc920941ae68e3cd57fc3cb, type: 3}
   m_Name: BossNairanDreadnought
   m_EditorClassIdentifier: 
-  hpMax: 10
+  hpMax: 100
   dropList: []

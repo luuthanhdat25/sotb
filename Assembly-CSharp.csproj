@@ -95,6 +95,7 @@
      <Compile Include="Assets\Scripts\Objects\Item\UntiWeaponItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiseArcShockWaveSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanShoot.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\TorpedoEnemy\SpawnTorpedoEnemy.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_ed_Animation.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanIdleStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserModelShipAnimation.cs" />
@@ -430,6 +431,7 @@
      <Folder Include="Assets\Sprites\Void_PickupsPack\Engines" />
      <Folder Include="Assets\Sprites\FX\Sprites\LightFX\FX003" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy\TorpedoEnemy" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3" />

@@ -12,5 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98dd48acc920941ae68e3cd57fc3cb, type: 3}
   m_Name: Nairan_Torpedo
   m_EditorClassIdentifier: 
-  hpMax: 4
-  dropList: []
+  hpMax: 6
+  dropList:
+  - itemPrefab: {fileID: 3017870256857563869, guid: 919c922aa118ec049af9dce657664bab, type: 3}
+    dropRate: 20
+    maxDrop: 1
+    minDrop: 0
+  - itemPrefab: {fileID: 4809335115012410466, guid: a67c00984b1277f469b5e7da636dbed6, type: 3}
+    dropRate: 20
+    maxDrop: 2
+    minDrop: 0
+  - itemPrefab: {fileID: 6975302522514199112, guid: 58805eec1c9892940bbb004f8cf578de, type: 3}
+    dropRate: 50
+    maxDrop: 1
+    minDrop: 0

@@ -70,7 +70,7 @@ namespace Player
 
         public void ShieldUp()
         {
-            this.hpCurrent++;
+            if(hpCurrent == 1) this.hpCurrent++;
             isShieldUp = true;
         }
     }

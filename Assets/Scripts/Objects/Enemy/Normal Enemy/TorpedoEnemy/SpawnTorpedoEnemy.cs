@@ -1,20 +1,15 @@
-using System;
 using System.Collections;
-using Enemy.Boss;
 using Objects.Enemy.AttackEnemy;
 using Player;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
-namespace Objects.Enemy.Boss.Nairan.Dreadnought
+namespace Enemy.TorpedoEnemy
 {
-    public class BossNairanDreadnoughtSpawnTorpedo : AbsBossShoot
+    public class SpawnTorpedoEnemy : AbsEnemyShoot
     {
         [SerializeField] private float spawnYValue = 10f;
-
-        private void Start() 
-            => this.firingRate = BossNairanDreadnoughtCtrl.Instance.SpawnRate;
-
+        [SerializeField] private float paddingHorizontal = 0.5f;
+        
         protected override IEnumerator FireContinously()
         {
             Transform newProjectile = GetProjectile();
@@ -25,23 +20,18 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             }
         
             yield return new WaitForSeconds(firingRate);
+            firingRate -= Mathf.Abs(GetRandomPadding() / 10);
             firingCoroutine = null;
         }
 
         private Vector3 GetPositionSpawn()
-            => new Vector3(PlayerPosition().x + GetRandomPadding(), spawnYValue, transform.parent.position.z);
+            => new Vector3(PlayerPosition().x + GetRandomPadding(), spawnYValue);
 
-        private float GetRandomPadding() => Random.Range(-0.2f, 0.2f);
+        private float GetRandomPadding() => Random.Range(-paddingHorizontal, paddingHorizontal);
         
         private Vector3 PlayerPosition() => PlayerCtrl.Instance.GetCurrentPosition();
         
         protected override Transform GetProjectile()
             => EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile5);
-
-        public override void SetIsFiring(bool isFiring)
-        {
-            if((!isFiring && this.isFiring) || (isFiring && !this.isFiring))
-                this.isFiring = isFiring;
-        }
     }
 }
