@@ -15,6 +15,8 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
         [SerializeField] private int stateNumber;
         public int StateNumber => stateNumber;
         private bool isInSMB = false;
+        private bool isSlide;
+        public bool IsSlide => isSlide;
 
         [Header("Idle 1 Behaviour")]
         [SerializeField] private float timeWaitIdleOne = 3f;
@@ -45,7 +47,13 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
             if(Instance != null) Debug.LogError("There is more than one BossNairanBattlecruiserCtrl instance");
             Instance = this;
         }
-        
+
+        private void Start()
+        {
+            //stateNumber = 1;
+            isSlide = true;
+        }
+
         private void Update()
         {
             this.Behaviour();
@@ -70,10 +78,26 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
         
         private IEnumerator ChangeState(int numOfState, float timeWaitIdle)
         {
-            yield return new WaitForSeconds(timeWaitIdle);
-            stateNumber = GetRandomState(numOfState);
+            stateNumber = 0;
+            yield return new WaitForSeconds(timeWaitIdle - 0.1f);
+            stateNumber = GetStateNumber(numOfState);
             Debug.Log("Double boss state: " + stateNumber);
             isInSMB = false;
+        }
+
+        private int GetStateNumber(int numberOfState)
+        {
+            if (numberOfState > 2) return GetRandomState(numberOfState);
+            if (isSlide)
+            {
+                isSlide = false;
+                return 1;
+            }
+            else
+            {
+                isSlide = true;
+                return 2;
+            }
         }
 
         private  int GetRandomState(int numberOfState) => Random.Range(1, numberOfState + 1);

@@ -24,11 +24,9 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
 
         protected override void UnSetAnimation()
         {
-            //DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
             BossNairanDreadnoughtCtrl.Instance.SetIsFinishBehaviour(true);
             if (BossNairanBattlecruiserCtrl.Instance.IsFinishBehaviour)
             {
-                BossNairanDreadnoughtCtrl.Instance.SetIsFinishBehaviour(false);
                 BossNairanDreadnoughtCtrl.Instance.SetIsFollowAndShootNormal(false);
             }
         }

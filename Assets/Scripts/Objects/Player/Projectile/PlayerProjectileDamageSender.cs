@@ -8,7 +8,7 @@ namespace Projectile
         private Vector3 fxOffSet = new Vector3(0, 0.4f, 0);
         public override void GotHit()
         {
-            PlayerProjectileSpawner.Instance.Despawn(transform.parent);
+            //PlayerProjectileSpawner.Instance.Despawn(transform.parent);
         }
 
         private void OnTriggerEnter2D(Collider2D col)

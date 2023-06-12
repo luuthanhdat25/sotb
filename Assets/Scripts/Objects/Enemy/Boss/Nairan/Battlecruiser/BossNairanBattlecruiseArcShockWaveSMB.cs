@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class BossNairanBattlecruiserArcShockWaveSMB : StateMachineBehaviour
 {
-    [SerializeField] protected float curveHeight = 2f;   
+    [SerializeField] protected float curveHeight = 2f;
+    [SerializeField] protected float firingRate = 0.7f;
     [SerializeField] protected float speedArc;
     [SerializeField] protected float speedToStartPosition;
     private int numberLoop = 2;
@@ -17,6 +18,7 @@ public class BossNairanBattlecruiserArcShockWaveSMB : StateMachineBehaviour
     
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        BossNairanBattlecruiserCtrl.Instance.BossNairanBattlecruiserShootShockWave.SetFiringRate(firingRate);
         startPosition = GetStartPosition();
         endPosition = GetEndPosition();
         numberLoop = GetNumberLoop();

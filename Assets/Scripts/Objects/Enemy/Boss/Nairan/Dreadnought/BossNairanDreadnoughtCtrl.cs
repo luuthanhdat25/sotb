@@ -1,3 +1,4 @@
+using System;
 using Enemy.Boss;
 using Enemy.Boss.Nairan.Miniboss;
 using Enemy.Boss.Nairan.Miniboss.Boss;
@@ -95,6 +96,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             Debug.Log(transform.name + " Load: BossNairanDreadnoughtModelShipAnimation");
         }
 
+
         private void Update()
         {
             if(isDead) return;
@@ -106,6 +108,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         
         public override void SetDeadAnimation()
         {
+            this.isFinishBehaviour = true;
             this.bossModelShipAnimation.SetIsDestructionTrigger();
             this.bossShootLazer.DespawnLazer();
             Debug.Log("set destruction");

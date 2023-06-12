@@ -3,13 +3,17 @@ using UnityEngine;
 public abstract class AbsIdleSMB : StateMachineBehaviour
 {
     [SerializeField] protected float speedMoveToPosDefault = 4f;
-    [SerializeField] protected float timeWait;
-    private float timer;
+    protected float timeWait;
+    protected float timer;
     private bool isStopTimer = false;
-    
-    public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+
+    public virtual void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timeWait = GetTimeWait();
+    }
+
+    public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
         this.Behaviour(animator);
     }
 
@@ -33,7 +37,7 @@ public abstract class AbsIdleSMB : StateMachineBehaviour
         }
     }
 
-    private void MoveToDefaultPosition(Animator animator, Vector3 defaultPosition)
+    protected void MoveToDefaultPosition(Animator animator, Vector3 defaultPosition)
     {
         animator.transform.position = Vector3.MoveTowards(animator.transform.position,
             defaultPosition,

@@ -6707,17 +6707,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIdle2: 0
   stateNumber: 0
-  timeWaitIdleOne: 3
+  timeWaitIdleOne: 2
   defaultPosOneBattlecruiser: {fileID: 3134303013853986421}
   defaultPosOneDreadnought: {fileID: 7223150381638194343}
   timeWaitIdleTwo: 2
   speedSlide: 6
   timeDelayBeforeSlide: 1
   numOfShootAttackSWBattlecruiser: 2
-  speedFollowSWBattlecruiser: 10
+  speedFollowSWBattlecruiser: 12
   timeShootOneTimeSWBattlecruiser: 2
   numOfShootAttackNDreadnought: 4
-  speedFollowNDreadnought: 7
+  speedFollowNDreadnought: 8
   timeShootOneTimeNDreadnought: 1
 --- !u!4 &1097696551
 Transform:
@@ -12476,7 +12476,7 @@ MonoBehaviour:
   numberOfLoop: 2
   speedGoToReadyPosition: 6
   firingRate: 0.25
-  spawnRate: 0.8
+  spawnRate: 0.5
   timeDelayBeforeSpawn: 1
   timeSpawnTorpedo: 5
   numberOfShootAttacks: 3
@@ -12863,7 +12863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00406cd2e6d14ffe80684c144e0bbce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firingRate: 0.8
+  firingRate: 1.2
   isFiring: 0
 --- !u!1 &2134441742
 GameObject:
@@ -15258,7 +15258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e09b3ea1fd534fb0ac9cdef746db4e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 9
 --- !u!114 &5848867156804068828
 MonoBehaviour:
   m_ObjectHideFlags: 0

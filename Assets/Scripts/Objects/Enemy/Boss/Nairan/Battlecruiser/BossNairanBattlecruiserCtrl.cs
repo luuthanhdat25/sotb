@@ -94,6 +94,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
         
         public override void SetDeadAnimation()
         {
+            this.isFinishBehaviour = true;
             this.bossModelShipAnimation.SetIsDestructionTrigger();
             this.bossShootLazer.DespawnLazer();
             Debug.Log("set destruction");

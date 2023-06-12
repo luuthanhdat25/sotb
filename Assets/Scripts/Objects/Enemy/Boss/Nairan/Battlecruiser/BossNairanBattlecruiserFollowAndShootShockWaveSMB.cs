@@ -22,12 +22,10 @@ public class BossNairanBattlecruiserFollowAndShootShockWaveSMB : AbsFollowAndSho
 
     protected override void UnSetAnimation()
     {
-        //DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
         BossNairanBattlecruiserCtrl.Instance.SetIsFinishBehaviour(true);
-        /*if (BossNairanDreadnoughtCtrl.Instance.IsFinishBehaviour)
+        if (BossNairanDreadnoughtCtrl.Instance.IsFinishBehaviour)
         {
-            BossNairanBattlecruiserCtrl.Instance.SetIsFinishBehaviour(false);*/
             BossNairanBattlecruiserCtrl.Instance.SetIsFollowAndShootShockWave(false);
-        
+        }
     }
 }

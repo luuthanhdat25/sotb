@@ -1,4 +1,5 @@
 using Objects.Enemy.AttackEnemy;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
@@ -7,5 +8,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
     {
         protected override Transform GetProjectile() 
             => EnemyProjectileSpawner.Instance.Spawn(EnemyProjectileSpawner.Instance.projectile4);
+
+        public void SetFiringRate(float firingRate) => this.firingRate = firingRate;
     }
 }
