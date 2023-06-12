@@ -6713,10 +6713,10 @@ MonoBehaviour:
   timeWaitIdleTwo: 2
   speedSlide: 6
   timeDelayBeforeSlide: 1
-  numOfShootAttackSWBattlecruiser: 2
+  numOfShootAttackSWBattlecruiser: 3
   speedFollowSWBattlecruiser: 12
   timeShootOneTimeSWBattlecruiser: 2
-  numOfShootAttackNDreadnought: 4
+  numOfShootAttackNDreadnought: 6
   speedFollowNDreadnought: 8
   timeShootOneTimeNDreadnought: 1
 --- !u!4 &1097696551

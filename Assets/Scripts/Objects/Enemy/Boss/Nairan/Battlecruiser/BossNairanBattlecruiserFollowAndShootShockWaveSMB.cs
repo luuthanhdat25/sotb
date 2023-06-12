@@ -25,6 +25,7 @@ public class BossNairanBattlecruiserFollowAndShootShockWaveSMB : AbsFollowAndSho
         BossNairanBattlecruiserCtrl.Instance.SetIsFinishBehaviour(true);
         if (BossNairanDreadnoughtCtrl.Instance.IsFinishBehaviour)
         {
+            DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
             BossNairanBattlecruiserCtrl.Instance.SetIsFollowAndShootShockWave(false);
         }
     }

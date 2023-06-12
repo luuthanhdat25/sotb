@@ -34,8 +34,6 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         protected override void ChangeState(Animator animator)
         {
             if (BossNairanBattlecruiserCtrl.Instance.IsInDefaultPosition() == false) return;
-            //DoubleBossNairanCtrl.Instance.SetCanGetStateNumber(false);
-            Debug.Log(animator.transform.name + " Action");
             if (DoubleBossNairanCtrl.Instance.StateNumber == 1)
             {
                 isReady = false;
@@ -54,6 +52,6 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             => BossNairanDreadnoughtCtrl.Instance.GetDefaultPosition();
     
         protected override float GetTimeWait()
-            => DoubleBossNairanCtrl.Instance.TimeWaitIdleOne /*+ 0.2f*/;
+            => DoubleBossNairanCtrl.Instance.TimeWaitIdleOne;
     }
 }

@@ -53,5 +53,5 @@ public class BossNairanBattlecruiserIdleSMB : AbsIdleSMB
         => BossNairanBattlecruiserCtrl.Instance.GetDefaultPosition();
     
     protected override float GetTimeWait()
-        => DoubleBossNairanCtrl.Instance.TimeWaitIdleOne/* + 0.2f*/;
+        => DoubleBossNairanCtrl.Instance.TimeWaitIdleOne;
 }

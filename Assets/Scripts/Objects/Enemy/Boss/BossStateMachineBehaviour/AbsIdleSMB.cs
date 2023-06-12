@@ -22,16 +22,16 @@ public abstract class AbsIdleSMB : StateMachineBehaviour
         if (animator.transform.position != GetDefaultPosition())
         {
             MoveToDefaultPosition(animator, GetDefaultPosition());
-            if (animator.transform.position == GetDefaultPosition())
-                isStopTimer = false;
+            /*if (animator.transform.position == GetDefaultPosition())
+                isStopTimer = false;*/
         }
         else
         {
-            if (!isStopTimer) timer += Time.deltaTime;
-            if (timer >= timeWait && !isStopTimer)
+            /*if (!isStopTimer) */timer += Time.deltaTime;
+            if (timer >= timeWait /*&& !isStopTimer*/)
             {
                 timer = 0;
-                isStopTimer = true;
+                //isStopTimer = true;
                 this.ChangeState(animator);
             }
         }

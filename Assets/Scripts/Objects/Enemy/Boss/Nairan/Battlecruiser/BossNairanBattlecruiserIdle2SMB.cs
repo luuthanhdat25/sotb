@@ -6,7 +6,7 @@ public class BossNairanBattlecruiserIdle2SMB : AbsIdleSMB
 {
     protected override void ChangeState(Animator animator)
     {
-        switch (DoubleBossNairanCtrl.Instance.StateNumber)
+        switch (DoubleBossNairanCtrl.Instance.GetRandomState(3))
         {
             case 1: BossNairanBattlecruiserCtrl.Instance.SetIsRotateLazer(true); break;
             case 2: BossNairanBattlecruiserCtrl.Instance.SetIsArcShockWave(true); break;

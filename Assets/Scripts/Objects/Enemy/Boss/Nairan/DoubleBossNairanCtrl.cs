@@ -48,11 +48,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
             Instance = this;
         }
 
-        private void Start()
-        {
-            //stateNumber = 1;
-            isSlide = true;
-        }
+        private void Start() => isSlide = false;
 
         private void Update()
         {
@@ -100,7 +96,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
             }
         }
 
-        private  int GetRandomState(int numberOfState) => Random.Range(1, numberOfState + 1);
+        public  int GetRandomState(int numberOfState) => Random.Range(1, numberOfState + 1);
 
         private void SingleBehaviour(){
             if (!isInSMB /*&& (BossNairanBattlecruiserCtrl.Instance.IsDead*/ /*|| BossNairanBattlecruiserCtrl.Instance.IsDead*/)
