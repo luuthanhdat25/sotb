@@ -36,6 +36,6 @@ namespace DefaultNamespace
         public bool IsFirePressed()    => playerInputActions.Player.Fire.IsPressed();
         public bool IsDashPressed() => playerInputActions.Player.Speed.IsPressed();
         public bool IsUntiPressed()    => playerInputActions.Player.Unti.IsPressed();
-       
+        public bool IsEscapePressed()    => playerInputActions.UI.Escape.IsPressed();
     }
 }

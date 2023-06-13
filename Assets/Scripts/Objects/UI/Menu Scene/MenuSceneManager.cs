@@ -77,7 +77,7 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
         private void QuitButtonTurnOffTotalUI()
         {
             SetActiveTransfrom(totalUI, false);
-            yesExitGameButton.Select();
+            noExitGameButton.Select();
         }
         
         private void QuitButtonTurnOnTotalUI()

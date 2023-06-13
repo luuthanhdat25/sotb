@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class RepeatSceneManager : RepeatMonoBehaviour
 {
+    public virtual void CombackToMenu()
+        => LoadSceneByIndex(0);
+    
     public virtual void NextSceneIndex()
         => LoadSceneByIndex(SceneManager.GetActiveScene().buildIndex + 1);
     

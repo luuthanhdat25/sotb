@@ -26,7 +26,7 @@ namespace DefaultNamespace
             PlayerDie
         }
         private GameState gameState = GameState.MainMenu;
-
+        
         protected override void Awake()
         {
             if(Instance != null) Debug.LogError("There is more than one PlayerCtrl instance");
@@ -91,6 +91,5 @@ namespace DefaultNamespace
         }
 
         public int GetScore() => this.score;
-        public void QuitGame() => Application.Quit();
     }
 }
