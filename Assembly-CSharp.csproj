@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDespawnByDistance.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanModelShipAnimation.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_edDamageReciever.cs" />
+     <Compile Include="Assets\Scripts\Objects\UI\Menu Scene\MenuSceneManager.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtArcShootNormalSMB.cs" />
      <Compile Include="Assets\InputSystems\PlayerInputActions.cs" />
@@ -260,6 +261,7 @@
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\PNGs" />
      <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX002\Anim" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <Folder Include="Assets\Scripts\Objects\UI\Menu Scene" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Animations\Camera" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
