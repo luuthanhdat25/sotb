@@ -6,11 +6,9 @@ namespace DefaultNamespace.Objects.UI
 {
     public class BossHealthBar : MonoBehaviour
     {
-        public int healthTest = 80;
-        public float healthBarSpacing = 3.5f;
-        public GameObject BossGameobject;
-        public RectTransform healthBarContainer;
-        public GameObject healthBarPrefab;
+        [SerializeField] private float healthBarSpacing = 3.5f;
+        [SerializeField] private RectTransform healthBarContainer;
+        [SerializeField] private GameObject healthBarPrefab;
     
         private int maxHealth;
         private float healthBarWidth;
@@ -18,10 +16,11 @@ namespace DefaultNamespace.Objects.UI
         private float barHeight;
         private void Start()
         {
+            maxHealth = MiniBossKla_edCtrl.Instance.MinibossKlaEdDamageReciever.HpMax;
             healthBarWidth = healthBarContainer.rect.width;
             healthBarHeight = healthBarContainer.rect.height;
             barHeight = (healthBarHeight - (healthBarSpacing * (maxHealth - 1))) / maxHealth;
-            SetMaxHealth(healthTest);
+            SetMaxHealth(maxHealth);
         }
 
         public void SetMaxHealth(int maxHealth)
@@ -39,25 +38,27 @@ namespace DefaultNamespace.Objects.UI
         {
             ClearHealthBars();
 
+            RectTransform healthBarRectTransform = healthBarPrefab.GetComponent<RectTransform>(); // Retrieve the RectTransform component once
+
             for (int i = 0; i < maxHealth; i++)
             {
-                Vector2 position = new Vector2(0f, i * (barHeight + healthBarSpacing) - ((healthBarHeight - barHeight) / 2)); // Đặt vị trí của thanh máu để nằm ở giữa healthBarContainer
+                Vector2 position = new Vector2(0f, i * (barHeight + healthBarSpacing) - ((healthBarHeight - barHeight) / 2)); // Set the position of the health bar to be centered within healthBarContainer
                 GameObject healthBar = Instantiate(healthBarPrefab, healthBarContainer);
-                RectTransform healthBarRectTransform = healthBar.GetComponent<RectTransform>();
                 healthBarRectTransform.sizeDelta = new Vector2(healthBarWidth, barHeight);
                 healthBarRectTransform.anchoredPosition = position;
-                healthBar.GetComponent<Image>().enabled = true; // Bật thành phần Image
-                healthBarRectTransform.anchorMin = new Vector2(0.5f, 0.5f); // Đặt giá trị anchorMin và anchorMax để thanh máu nằm ở giữa healthBarContainer
+                healthBar.GetComponent<Image>().enabled = true; // Enable the Image component
+                healthBarRectTransform.anchorMin = new Vector2(0.5f, 0.5f); // Set the anchorMin and anchorMax values to center the health bar within healthBarContainer
                 healthBarRectTransform.anchorMax = new Vector2(0.5f, 0.5f);
-                healthBarRectTransform.pivot = new Vector2(0.5f, 0.5f); // Đặt pivot để thanh máu xoay quanh trung tâm
+                healthBarRectTransform.pivot = new Vector2(0.5f, 0.5f); // Set the pivot to rotate the health bar around the center
             }
         }
 
 
 
+
         private void UpdateHealthBars()
         {
-            int visibleHealthBars = Mathf.Clamp(healthTest, 0, maxHealth);
+            int visibleHealthBars = Mathf.Clamp(MiniBossKla_edCtrl.Instance.MinibossKlaEdDamageReciever.HpCurrent, 0, maxHealth);
 
             for (int i = 0; i < maxHealth; i++)
             {

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using DefaultNamespace;
 using Enemy;
 using Enemy.Boss;
 using UnityEngine;
@@ -16,10 +17,15 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     
     [SerializeField] private MinibossKla_ed_NormalShoot minibossKla_ed_NormalShoot;
     public MinibossKla_ed_NormalShoot MinibossKla_ed_NormalShoot { get => minibossKla_ed_NormalShoot; }
+
+    [SerializeField] private GameObject healthBar;
     
-    private const string IS_DESTRUCTION = "isDestruction";
-    private const string IS_FOLLOW_AND_SHOOT = "isFollowAndShoot";
-    private const string IS_CHASE_PLAYER = "isChasePlayer";
+    private enum AnimationParameter
+    {
+        isDestruction,
+        isFollowAndShoot,
+        isChasePlayer
+    }
     
     [Header("IdleBehaviour")]
     [SerializeField] private float timeWait = 2f;
@@ -37,6 +43,11 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     {
         if(Instance != null) Debug.LogError("There is more than one MiniBossKla_edCtrl instance");
         Instance = this;
+    }
+
+    private void OnEnable()
+    {
+        healthBar?.SetActive(true);
     }
 
     private void Start()
@@ -58,11 +69,11 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     public void SetDeadAnimation()
     {
         this.minibossKla_ed_Animation.SetIsDestructionTrigger();
-        this.kla_edAnimator.SetTrigger(IS_DESTRUCTION);
+        this.kla_edAnimator.SetTrigger(AnimationParameter.isDestruction.ToString());
     }
 
-    public void SetIsFollowAndShoot(bool isTrue) => this.kla_edAnimator.SetBool(IS_FOLLOW_AND_SHOOT, isTrue);
-    public void SetIsChasePlayer(bool isTrue) => this.kla_edAnimator.SetBool(IS_CHASE_PLAYER, isTrue);
+    public void SetIsFollowAndShoot(bool isTrue) => this.kla_edAnimator.SetBool(AnimationParameter.isFollowAndShoot.ToString(), isTrue);
+    public void SetIsChasePlayer(bool isTrue) => this.kla_edAnimator.SetBool(AnimationParameter.isChasePlayer.ToString(), isTrue);
 
     public Vector3 GetCameraPosition() => this.mainCam.position;
     public Vector3 GetDefaultPosition() => this.defaultPosition;
