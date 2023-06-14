@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\BomProjectileDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_FollowAndShootBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Objects\UI\IPauseGame.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndShootBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\BomEnemy\DropBom.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerMovement.cs" />

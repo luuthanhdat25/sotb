@@ -26,4 +26,14 @@ public class RepeatSceneManager : RepeatMonoBehaviour
         => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
 
     public virtual void QuitGame() => Application.Quit();
+
+    public virtual void WinGame()
+    {
+        //For override
+    }
+    
+    public virtual void LossGame()
+    {
+        //For override
+    }
 }

@@ -30,8 +30,8 @@ namespace Objects.UI.HUD
         public void SetActiveBoostceilBar(bool isTrue) => boostceilBar.gameObject.SetActive(isTrue);
         public void SetActiveWinUI(bool isTrue) => winUI.gameObject.SetActive(isTrue);
         public void SetActiveLossUI(bool isTrue) => lossUI.gameObject.SetActive(isTrue);
-        public void UpdateScoreLossUI(int score) => scoreLossText.text = score + "";
-        public void UpdateScoreWinUI(int score) => scoreWinText.text = score + "";
+        public void UpdateScoreLossUI(int score) => scoreText.text = score + "";
+        public void UpdateScoreWinUI(int score) => scoreText.text = score + "";
         
         public void UpdateScore()
         {

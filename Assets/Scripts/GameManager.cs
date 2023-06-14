@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Damage.RhythmScripts;
 using Objects.UI.HUD;
@@ -14,6 +15,10 @@ namespace DefaultNamespace
         [SerializeField] private int score = 0;
         [SerializeField] private int deathCount = 0;
         [SerializeField] private AudioSourcesManager audioSourcesManager;
+        [SerializeField] private RepeatSceneManager sceneManager;
+
+        [SerializeField] private bool isLoss = false;
+        public bool IsLoss => isLoss;
         
         public UnityEvent onScoreChanged;
         public UnityEvent onDeath;
@@ -22,10 +27,10 @@ namespace DefaultNamespace
             Started,
             Pause,
             WinGame,
-            MainMenu,
             PlayerDie
         }
-        private GameState gameState = GameState.MainMenu;
+        private GameState gameState = GameState.Started;
+        
         
         protected override void Awake()
         {
@@ -33,19 +38,9 @@ namespace DefaultNamespace
             Instance = this;
         }
         
-        public void Start()
-        {
-            if (gameState == GameState.MainMenu)
-            {
-                gameState = GameState.Started;
-            }
-        }
-        
         public void GameOver()
         {
             gameState = GameState.PlayerDie;
-            HUDManager.Instance.SetActiveEnergiesBar(false);
-            HUDManager.Instance.SetActiveBoostceilBar(false);
             audioSourcesManager.MusicFadeOut();
             StartCoroutine(DelayGameOver());
         }
@@ -54,8 +49,7 @@ namespace DefaultNamespace
         {
             yield return new WaitForSeconds(2.5f);
             HUDManager.Instance.UpdateScoreLossUI(score);
-            HUDManager.Instance.SetActiveLossUI(true);
-            Time.timeScale = 0;
+            sceneManager.LossGame();
         }
         
         public void WinGame()
@@ -69,13 +63,7 @@ namespace DefaultNamespace
         {
             yield return new WaitForSeconds(4);
             HUDManager.Instance.UpdateScoreWinUI(score);
-            HUDManager.Instance.SetActiveWinUI(true);
-        }
-        
-        public void PlayAgain()
-        {
-            Time.timeScale = 1;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            sceneManager.WinGame();
         }
         
         public void IncreaseScore(int amount)
