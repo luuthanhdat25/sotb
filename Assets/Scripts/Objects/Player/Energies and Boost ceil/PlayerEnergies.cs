@@ -25,7 +25,7 @@ public class PlayerEnergies : MonoBehaviour
         GameManager.Instance.GameOver();
     }
     
-    public bool IsEnoughEnergies(int energiesDeduct) => currentEnergies > energiesDeduct;
+    public bool IsEnoughEnergies(int energiesDeduct) => currentEnergies >= energiesDeduct;
     
     public void AddEnergies(int addValue)
     {

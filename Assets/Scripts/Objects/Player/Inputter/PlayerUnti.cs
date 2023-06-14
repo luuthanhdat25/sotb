@@ -7,7 +7,7 @@ namespace Player
 {
     public class PlayerUnti : Shoot
     {
-        [SerializeField] private int energiesUse = 3;
+        [SerializeField] private int boostCeilsUse = 2;
         [SerializeField] private bool isHasUntiWeapon = false;
         private float delayAnimaitonTime = 0.5f;
         private bool isFire = false;
@@ -28,7 +28,7 @@ namespace Player
             this.isFiring = IsEnoughEnergiesForUnti();
         }
         
-        private bool IsEnoughEnergiesForUnti() => PlayerCtrl.Instance.PlayerEnergies.IsEnoughEnergies(this.energiesUse);
+        private bool IsEnoughEnergiesForUnti() => PlayerCtrl.Instance.PlayerEnergies.IsEnoughEnergies(this.boostCeilsUse);
         
         private IEnumerator FireContinously()
         {
@@ -38,7 +38,7 @@ namespace Player
             Transform newProjectile = PlayerProjectileSpawner.Instance.Spawn(PlayerProjectileSpawner.Instance.unti);
             if (newProjectile != null)
             {
-                PlayerCtrl.Instance.PlayerEnergies.DeductEnergies(this.energiesUse);
+                PlayerCtrl.Instance.PlayerBootCeils.DeductCeilsByValue(this.boostCeilsUse);
                 
                 newProjectile.transform.position = transform.parent.position;
                 newProjectile.gameObject.SetActive(true);
@@ -50,7 +50,6 @@ namespace Player
             
         }
 
-        public int GetEnergiesUse() => this.energiesUse;
         public bool GetIsFire() =>  this.isFire;
         public void SetIsHasUntiWeaponTrue() => this.isHasUntiWeapon = true;
     }

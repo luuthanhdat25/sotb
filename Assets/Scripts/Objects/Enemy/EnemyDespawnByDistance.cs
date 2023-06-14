@@ -1,4 +1,5 @@
 using Despawn;
+using Objects.Enemy.AttackEnemy;
 using UnityEngine;
 
 namespace Enemy
@@ -8,7 +9,7 @@ namespace Enemy
         protected override void DespawnObject()
         {
             base.DespawnObject();
-            Destroy(transform.parent.gameObject);
+            EnemyProjectileSpawner.Instance.Despawn(transform.parent);
         }
     }
 }

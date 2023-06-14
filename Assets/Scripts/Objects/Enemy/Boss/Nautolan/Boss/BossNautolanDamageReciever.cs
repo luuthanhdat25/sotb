@@ -16,9 +16,8 @@ namespace Enemy.Nautolan
 
         public bool IsLowerHealth(float persent)
         {
-            // ReSharper disable once PossibleLossOfFraction
-            float currentPersent = (float)(hpCurrent / hpMax) * 100;
-            return currentPersent < persent;
+            int currentPersent = (hpCurrent / hpMax) * 100;
+            return currentPersent > persent;
         }
     }
 }

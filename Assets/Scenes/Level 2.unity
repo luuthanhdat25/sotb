@@ -34106,7 +34106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpCurrent: 1
   hpMax: 5
-  isDead: 0
+  isDead: 1
   enemySO: {fileID: 11400000, guid: a4ce5c6ab8b197a4db6c2ad2fd70af82, type: 2}
   scorePlus: 120
   dropBom: {fileID: 0}
@@ -42567,8 +42567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultPosition: {fileID: 1385963838}
-  playerEnergiesMax: 6
-  playerBoostCeilsMax: 6
+  playerEnergiesMax: 4
+  playerBoostCeilsMax: 4
   isPlayerDead: 0
   playerMovement: {fileID: 4406481845903318330}
   playerShoot: {fileID: 7496897568183722385}
@@ -47758,6 +47758,7 @@ GameObject:
   - component: {fileID: 5738150457136408390}
   - component: {fileID: 5738150457136408393}
   - component: {fileID: 5738150457136408396}
+  - component: {fileID: 5738150457136408397}
   m_Layer: 9
   m_Name: Interact
   m_TagString: Untagged
@@ -47795,6 +47796,19 @@ MonoBehaviour:
   hpCurrent: 1
   hpMax: 1
   isDead: 0
+--- !u!114 &5738150457136408397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5738150457136408394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fde599400a43e588d2654a47b09950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!4 &5738150457267346234
 Transform:
   m_ObjectHideFlags: 0
@@ -48568,7 +48582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firingRate: 2
   isFiring: 0
-  energiesUse: 2
+  boostCeilsUse: 2
   isHasUntiWeapon: 0
 --- !u!4 &7496897568192509054
 Transform:

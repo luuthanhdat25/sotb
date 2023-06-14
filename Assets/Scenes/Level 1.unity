@@ -33858,7 +33858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firingRate: 2
   isFiring: 0
-  energiesUse: 2
+  boostCeilsUse: 2
   isHasUntiWeapon: 1
 --- !u!4 &773976994595984474
 Transform:
@@ -35825,7 +35825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultPosition: {fileID: 6287017269615205627}
-  playerEnergiesMax: 4
+  playerEnergiesMax: 3
   playerBoostCeilsMax: 3
   isPlayerDead: 0
   playerMovement: {fileID: 6890823271424607528}

@@ -20640,8 +20640,8 @@ MonoBehaviour:
   timeWaitIdleOne: 1
   defaultPosOneBattlecruiser: {fileID: 3134303013853986421}
   defaultPosOneDreadnought: {fileID: 7223150381638194343}
-  timeWaitIdleTwo: 0.6
-  speedSlide: 6
+  timeWaitIdleTwo: 0.8
+  speedSlide: 5.5
   timeDelayBeforeSlide: 1
   numOfShootAttackSWBattlecruiser: 2
   speedFollowSWBattlecruiser: 13
@@ -37808,8 +37808,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultPosition: {fileID: 1385963838}
-  playerEnergiesMax: 8
-  playerBoostCeilsMax: 6
+  playerEnergiesMax: 5
+  playerBoostCeilsMax: 5
   isPlayerDead: 0
   playerMovement: {fileID: 812668865}
   playerShoot: {fileID: 6137460138377915242}
@@ -40381,7 +40381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb83f308b2bf80c4a94e1d9a3f504700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startEnergies: 6
+  startEnergies: 5
   currentEnergies: 0
 --- !u!50 &2725400938503081745
 Rigidbody2D:
@@ -43728,7 +43728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firingRate: 2
   isFiring: 0
-  energiesUse: 2
+  boostCeilsUse: 2
   isHasUntiWeapon: 1
 --- !u!212 &6237008692575580606
 SpriteRenderer:

@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class BossNautolanIdleStateMachineBehaviour : AbsIdleSMB
 {
+    int stateNumber;
     protected override void ChangeState(Animator animator)
     {
-        int stateNumber;
         if (!BossNautolanCtrl.Instance.BossNautolanDamageReciever.IsLowerHealth(40))
             stateNumber = GetRandomState(1, 3);
         else 
@@ -19,7 +19,7 @@ public class BossNautolanIdleStateMachineBehaviour : AbsIdleSMB
         }
     }
 
-    protected int GetRandomState(int min, int max) => Random.Range(min, max);
+    protected int GetRandomState(int min, int max) => Random.Range(min, max + 1);
     protected override Vector3 GetDefaultPosition() => BossNautolanCtrl.Instance.GetDefaultPosition();
     protected override float GetTimeWait() => BossNautolanCtrl.Instance.GetTimeWaitIdle();
 }
