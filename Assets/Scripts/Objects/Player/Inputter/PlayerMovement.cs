@@ -71,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IEnumerator Dash()
     {
+        canMoveNormal = false;
         totalSpeed = dashSpeed;
         PlayerCtrl.Instance.PlayerDamageReciever.SetActiveCollider(false);
         float startTime = Time.time;
@@ -81,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
         PlayerCtrl.Instance.PlayerDamageReciever.SetActiveCollider(true);
+        canMoveNormal = true;
     }
 
     private void MoveBySpeedAndInputPlayer(float speed)

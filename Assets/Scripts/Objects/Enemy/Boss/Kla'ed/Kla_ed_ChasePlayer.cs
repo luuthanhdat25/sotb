@@ -43,14 +43,14 @@ public class Kla_ed_ChasePlayer : StateMachineBehaviour
         {
             if(!isGoOverPlayer)
             {
-                MoveTowardsTo(targetPosition, animator);
+                MoveTowardsTo(targetPosition, speedChase, animator);
                 if (animator.transform.position == targetPosition)
                     isGoOverPlayer = true;
             }
             else
             {
                 ResetOutVector();
-                MoveTowardsTo(outVector, animator);
+                MoveTowardsTo(outVector, speedChase * rateOfIncreaseSpeed, animator);
             }
         }
         else
@@ -63,10 +63,10 @@ public class Kla_ed_ChasePlayer : StateMachineBehaviour
         }
     }
 
-    private void MoveTowardsTo(Vector3 vectorMove, Animator animator)
+    private void MoveTowardsTo(Vector3 vectorMove, float speed, Animator animator)
     {
         animator.transform.position = Vector3.MoveTowards(animator.transform.position,
-            vectorMove, speedChase * Time.deltaTime);
+            vectorMove, speed * Time.deltaTime);
     }
 
     private void ResetOutVector()

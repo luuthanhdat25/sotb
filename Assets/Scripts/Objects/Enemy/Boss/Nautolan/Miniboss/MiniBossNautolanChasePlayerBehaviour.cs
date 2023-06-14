@@ -25,7 +25,6 @@ public class MiniBossNautolanChasePlayerBehaviour : StateMachineBehaviour
         if (numberOfAttacks != 0) Behaviour(animator);
         else
         {
-            speedChase /= rateOfIncreaseSpeed;
             MinibossNautolanCtrl.Instance.SetIsChasePlayer(false);
         }
     }
@@ -48,20 +47,19 @@ public class MiniBossNautolanChasePlayerBehaviour : StateMachineBehaviour
         {
             if(!isGoOverPlayer)
             {
-                MoveTowardsTo(targetPosition, animator);
+                MoveTowardsTo(targetPosition, speedChase, animator);
                 if (animator.transform.position == targetPosition)
                     isGoOverPlayer = true;
             }
             else
             {
                 ResetOutVector();
-                MoveTowardsTo(outVector, animator);
+                MoveTowardsTo(outVector, speedChase * rateOfIncreaseSpeed, animator);
             }
         }
         else
         {
             numberOfAttacks--;
-            speedChase *= rateOfIncreaseSpeed;
             isGoOverPlayer = false;
             ResetTargetPosition();
             TransformToTopScreen(animator);
@@ -69,10 +67,10 @@ public class MiniBossNautolanChasePlayerBehaviour : StateMachineBehaviour
         }
     }
 
-    private void MoveTowardsTo(Vector3 vectorMove, Animator animator)
+    private void MoveTowardsTo(Vector3 vectorMove, float speed, Animator animator)
     {
         animator.transform.position = Vector3.MoveTowards(animator.transform.position,
-            vectorMove, speedChase * Time.deltaTime);
+            vectorMove, speed * Time.deltaTime);
     }
     
     private void ResetOutVector()

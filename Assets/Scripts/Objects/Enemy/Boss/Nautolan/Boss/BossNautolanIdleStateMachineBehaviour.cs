@@ -8,7 +8,7 @@ public class BossNautolanIdleStateMachineBehaviour : AbsIdleSMB
         if (!BossNautolanCtrl.Instance.BossNautolanDamageReciever.IsLowerHealth(40))
             stateNumber = GetRandomState(1, 3);
         else 
-            stateNumber = GetRandomState(1, 4);
+            stateNumber = GetRandomState(3, 4);
         Debug.Log("Boss Nautolan boss state: " + stateNumber);
         switch (stateNumber)
         {

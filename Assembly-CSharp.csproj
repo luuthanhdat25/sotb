@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_FollowAndShootBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\IPauseGame.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndShootBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Objects\UI\BossHealthBar.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\BomEnemy\DropBom.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDespawnByDistance.cs" />
@@ -152,6 +153,7 @@
      <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUntiShooting.cs" />
      <Compile Include="Assets\Scripts\Components\Damage\DamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanCtrl.cs" />
+     <Compile Include="Assets\Scripts\Objects\UI\Level 3\LevelThreeSceneManager.cs" />
      <Compile Include="Assets\Scripts\Components\Pathfinder\Pathfinder.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NairanScoutProjectileMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageSender.cs" />
@@ -264,6 +266,7 @@
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\PNGs" />
      <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX002\Anim" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <Folder Include="Assets\Prefabs\Level GameObjects" />
      <Folder Include="Assets\Scripts\Objects\UI\Menu Scene" />
      <Folder Include="Assets\Scripts\Objects\UI\Level 1" />
      <Folder Include="Assets\Scripts" />

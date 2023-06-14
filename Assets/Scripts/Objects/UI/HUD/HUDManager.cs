@@ -1,3 +1,4 @@
+using System.Collections;
 using DefaultNamespace;
 using TMPro;
 using UnityEngine;
@@ -12,9 +13,13 @@ namespace Objects.UI.HUD
         [SerializeField] private Transform boostceilBar;
         [SerializeField] private Transform winUI;
         [SerializeField] private Transform lossUI;
-        [SerializeField] private TMP_Text scoreWinText;
-        [SerializeField] private TMP_Text scoreLossText;
+        
+        [SerializeField] private TMP_Text totalScoreText;
         [SerializeField] private TMP_Text scoreText;
+        [SerializeField] private float scoreIncreaseDuration = 1.0f;
+        
+        private int targetScore;
+        private int currentScore = 0;
         protected override void Awake()
         {
             if(Instance != null) Debug.LogError("There is more than one MiniBossKla_edCtrl instance");
@@ -30,8 +35,25 @@ namespace Objects.UI.HUD
         public void SetActiveBoostceilBar(bool isTrue) => boostceilBar.gameObject.SetActive(isTrue);
         public void SetActiveWinUI(bool isTrue) => winUI.gameObject.SetActive(isTrue);
         public void SetActiveLossUI(bool isTrue) => lossUI.gameObject.SetActive(isTrue);
-        public void UpdateScoreLossUI(int score) => scoreText.text = score + "";
-        public void UpdateScoreWinUI(int score) => scoreText.text = score + "";
+        public void TotalScore(int score)
+        {
+            targetScore = score;
+            StartCoroutine(IncreaseScore());
+        }
+
+        private IEnumerator IncreaseScore()
+        {
+            float elapsedTime = 0f;
+            int startScore = 0;
+    
+            while (currentScore < targetScore)
+            {
+                elapsedTime += Time.deltaTime;
+                currentScore = Mathf.RoundToInt(Mathf.Lerp(startScore, targetScore, elapsedTime / scoreIncreaseDuration));
+                totalScoreText.text = currentScore.ToString();
+                yield return null;
+            }
+        }
         
         public void UpdateScore()
         {

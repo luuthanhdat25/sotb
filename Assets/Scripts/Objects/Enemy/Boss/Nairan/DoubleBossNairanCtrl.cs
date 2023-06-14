@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using DefaultNamespace;
 using Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser;
 using Objects.Enemy.Boss.Nairan.Dreadnought;
 using UnityEngine;
@@ -13,6 +14,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
         [SerializeField] private bool isIdle2 = false;
         public bool Isdle2 => isIdle2;
         [SerializeField] private int stateNumber;
+        private int bossDie = 0;
         public int StateNumber => stateNumber;
         private bool isInSMB = false;
         private bool isSlide;
@@ -52,6 +54,12 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
 
         private void Update()
         {
+            if (bossDie == 2)
+            {
+                GameManager.Instance.WinGame();
+                bossDie++;
+                return;
+            }
             this.Behaviour();
         }
 
@@ -122,6 +130,11 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
         public int NumOfShootAttackNDreadnought => numOfShootAttackNDreadnought;
         public float SpeedFollowNDreadnought => speedFollowNDreadnought;
         public float TimeShootOneTimeNDreadnought => timeShootOneTimeNDreadnought;
-        public void OneShipDead() => this.isIdle2 = true;
+
+        public void OneShipDead()
+        {
+            this.isIdle2 = true;
+            bossDie++;
+        }
     }
 }

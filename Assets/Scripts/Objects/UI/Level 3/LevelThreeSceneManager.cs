@@ -1,12 +1,11 @@
-using System;
 using System.Collections;
 using Damage.RhythmScripts;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DefaultNamespace.Objects.UI.Level_1
+namespace DefaultNamespace.Objects.UI.Level_3
 {
-    public class LevelOneSceneManager : RepeatSceneManager
+    public class LevelThreeSceneManager : RepeatSceneManager
     {
         [SerializeField] private AudioSourcesManager audioSourcesManager;
         [SerializeField] private bool isPause = false;
@@ -36,10 +35,8 @@ namespace DefaultNamespace.Objects.UI.Level_1
         [SerializeField] private Transform quitMenu;
         [SerializeField] private Button noQuitButton;
 
-        [Header("Next Level UI")]
-        [SerializeField] private Transform nextLevelUIContent;
-        //[SerializeField] private Transform nextLevelButtonTransform;
-        [SerializeField] private Button nextLevelButton;
+        [Header("Win Game UI")]
+        [SerializeField] private Transform winGameUIContent;
 
         private bool isWinOrLoss = false;
         private bool isEntered = false;
@@ -167,18 +164,23 @@ namespace DefaultNamespace.Objects.UI.Level_1
             isWinOrLoss = true;
             playerHud?.gameObject.SetActive(false);
             pauseUIContent?.gameObject.SetActive(false);
-            appButtonUI?.gameObject.SetActive(false);
-
             totalAppUI?.gameObject.SetActive(true);
+            appButtonUI?.gameObject.SetActive(false);
+            restartButton?.transform.gameObject.SetActive(false);
+            quitButton?.transform.gameObject.SetActive(false);
+            
             score?.gameObject.SetActive(true);
-            StartCoroutine(NextLevelButtonActive());
+            //Other infor
+            StartCoroutine(Congratulation());
         }
 
-        private IEnumerator NextLevelButtonActive()
+        private IEnumerator Congratulation()
         {
             yield return new WaitForSeconds(3f);
-            nextLevelUIContent?.gameObject.SetActive(true);
-            nextLevelButton?.Select();
+            winGameUIContent?.gameObject.SetActive(true);
+            yield return new WaitForSeconds(2f);
+            appButtonUI?.gameObject.SetActive(true);
+            combackButton.Select();
             StopGame();
         }
 
@@ -194,12 +196,6 @@ namespace DefaultNamespace.Objects.UI.Level_1
             appButtonUI?.gameObject.SetActive(true);
             StopGame();
             //Delay after time and stop game
-        }
-
-        public override void NextSceneIndex()
-        {
-            base.NextSceneIndex();
-            Continue();
         }
         
         public override void CombackToMenu()

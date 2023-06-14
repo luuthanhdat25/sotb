@@ -40,5 +40,7 @@ namespace Enemy
             ItemDropSpawner.Instance.Drop(this.enemySO.dropList, transform.parent.position);
         }
         
+        public int HpCurrent => hpCurrent;
+        public int HpMax => hpMax;
     }
 }

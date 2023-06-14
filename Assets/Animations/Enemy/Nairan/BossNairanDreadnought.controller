@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81fc9856c7034c7e9cfc6f3021d1c325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeDelayBeforeSpawn: 1
+  timeDelayBeforeSpawn: 0.7
 --- !u!1102 &-8718542113790565393
 AnimatorState:
   serializedVersion: 6
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ae455f0f4fa488781337b50b181fdf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMoveToPosDefault: 4
+  speedMoveToPosDefault: 5
 --- !u!1101 &1358384129921953964
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

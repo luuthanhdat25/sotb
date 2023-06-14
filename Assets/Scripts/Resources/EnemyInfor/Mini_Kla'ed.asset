@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98dd48acc920941ae68e3cd57fc3cb, type: 3}
   m_Name: Mini_Kla'ed
   m_EditorClassIdentifier: 
-  hpMax: 60
+  hpMax: 80
   dropList:
   - itemPrefab: {fileID: 4554535327546694522, guid: e418869c89af65449acff5a6567601b0, type: 3}
     dropRate: 100

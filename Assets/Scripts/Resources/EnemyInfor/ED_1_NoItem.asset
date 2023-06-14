@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: ED_1_NoItem
   m_EditorClassIdentifier: 
   hpMax: 2
-  dropList: []
+  dropList:
+  - itemPrefab: {fileID: 7468104912061709676, guid: 7e6712b81d404744db1ab2de21b9ebc5, type: 3}
+    dropRate: 10
+    maxDrop: 1
+    minDrop: 0

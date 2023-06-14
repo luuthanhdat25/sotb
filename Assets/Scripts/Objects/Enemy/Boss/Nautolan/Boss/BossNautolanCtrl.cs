@@ -34,7 +34,6 @@ public class BossNautolanCtrl : RepeatMonoBehaviour
     [SerializeField] private float timeShootInOneTime = 5f;
     
     [Header("ArcShootBehaviour")]
-    [SerializeField] private float speedMove = 7f;
     [SerializeField] private Transform startPoint;    
     [SerializeField] private Transform endPoint;    
     

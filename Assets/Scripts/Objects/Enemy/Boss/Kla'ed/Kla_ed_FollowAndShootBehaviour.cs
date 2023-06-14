@@ -9,7 +9,6 @@ public class Kla_ed_FollowAndShootBehaviour : StateMachineBehaviour
     private Vector3 targetPosition = Vector3.zero;
     private int numberOfAttacks;
     private float timer;
-    private bool isStopTimer;
     
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -35,18 +34,16 @@ public class Kla_ed_FollowAndShootBehaviour : StateMachineBehaviour
                 if (animator.transform.position == targetPosition)
                 {
                     MiniBossKla_edCtrl.Instance.MinibossKla_ed_NormalShoot.SetIsFiring(true);
-                    isStopTimer = false;
                 }
             }
             else
             {
-                if (!isStopTimer) timer += Time.deltaTime;
-                if (!isStopTimer && timer >= timeShootInOneTime)
+                timer += Time.deltaTime;
+                if ( timer >= timeShootInOneTime)
                 {
                     MiniBossKla_edCtrl.Instance.MinibossKla_ed_NormalShoot.SetIsFiring(false);
-                    targetPosition = GetTargetPosition(PlayerCtrl.Instance.GetCurrentPosition(), animator.transform.position);
+                    targetPosition = GetNewTargetPosition(animator);
                     timer = 0;
-                    isStopTimer = true;
                     numberOfAttacks--;
                 }
             }
@@ -58,10 +55,26 @@ public class Kla_ed_FollowAndShootBehaviour : StateMachineBehaviour
         }
     }
 
+    private Vector3 GetNewTargetPosition(Animator animator)
+    {
+        Vector3 newTargetPosition = GetTargetPosition(PlayerCtrl.Instance.GetCurrentPosition(), animator.transform.position);
+        if (newTargetPosition.x == targetPosition.x)
+            return new Vector3(PlayerCtrl.Instance.GetCurrentPosition().x + GetRandomXValue(),
+                this.GetRandomYValue() + animator.transform.position.y, animator.transform.position.z);
+        return newTargetPosition;
+    }
+
     private Vector3 GetTargetPosition(Vector3 playerPos, Vector3 currentPos)
     {
         return new Vector3(playerPos.x, this.GetRandomYValue() + currentPos.y, playerPos.z);
     }
 
-    private float GetRandomYValue() => Random.Range(-2f, 2f);
+    private float GetRandomYValue() => Random.Range(-2f, 1f);
+    private float GetRandomXValue()
+    {
+        float randomValue = Random.Range(-0.8f, -0.4f);
+        if (Random.Range(0, 2) == 0)
+            randomValue *= -1;
+        return randomValue;
+    }
 }
