@@ -33781,7 +33781,7 @@ MonoBehaviour:
   firingRate: 2
   isFiring: 0
   boostCeilsUse: 2
-  isHasUntiWeapon: 1
+  isHasUntiWeapon: 0
 --- !u!4 &773976994595984474
 Transform:
   m_ObjectHideFlags: 0

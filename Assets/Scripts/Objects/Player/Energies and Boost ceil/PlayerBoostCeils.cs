@@ -66,6 +66,8 @@ public class PlayerBoostCeils : MonoBehaviour
         currentBoostCeils = Mathf.Min(currentBoostCeils + addValue, PlayerCtrl.Instance.GetBoostCeilsDefault());
     }
     
+    public bool IsEnough(int ceilsUse) => currentBoostCeils >= ceilsUse;
+    
     private void ResetTimer() => timer = 0;
     
     public void DeductCeilsByValue(int value)

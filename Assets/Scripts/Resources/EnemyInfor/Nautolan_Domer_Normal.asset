@@ -26,3 +26,7 @@ MonoBehaviour:
     dropRate: 15
     maxDrop: 2
     minDrop: 0
+  - itemPrefab: {fileID: 6975302522514199112, guid: 58805eec1c9892940bbb004f8cf578de, type: 3}
+    dropRate: 15
+    maxDrop: 1
+    minDrop: 0

@@ -47,7 +47,8 @@ namespace DefaultNamespace
 
         IEnumerator DelayGameOver()
         {
-            yield return new WaitForSeconds(2.5f);
+            yield return new WaitForSeconds(2f);
+            Debug.Log(score);
             HUDManager.Instance.TotalScore(score);
             sceneManager.LossGame();
         }

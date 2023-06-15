@@ -15,8 +15,8 @@ MonoBehaviour:
   hpMax: 3
   dropList:
   - itemPrefab: {fileID: 3017870256857563869, guid: 919c922aa118ec049af9dce657664bab, type: 3}
-    dropRate: 20
-    maxDrop: 2
+    dropRate: 30
+    maxDrop: 1
     minDrop: 0
   - itemPrefab: {fileID: 7468104912061709676, guid: 7e6712b81d404744db1ab2de21b9ebc5, type: 3}
     dropRate: 20

@@ -194,7 +194,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             totalAppUI?.gameObject.SetActive(true);
             score?.gameObject.SetActive(true);
             appButtonUI?.gameObject.SetActive(true);
-            StopGame();
+            Invoke("StopGame", 2);
             //Delay after time and stop game
         }
         

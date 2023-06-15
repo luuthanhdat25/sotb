@@ -25,10 +25,10 @@ namespace Player
         private void ResetIsFiring()
         {
             //Check all condition for Firing
-            this.isFiring = IsEnoughEnergiesForUnti();
+            this.isFiring = IsBoostCeilForUnti();
         }
         
-        private bool IsEnoughEnergiesForUnti() => PlayerCtrl.Instance.PlayerEnergies.IsEnoughEnergies(this.boostCeilsUse);
+        private bool IsBoostCeilForUnti() => PlayerCtrl.Instance.PlayerBootCeils.IsEnough(this.boostCeilsUse);
         
         private IEnumerator FireContinously()
         {
