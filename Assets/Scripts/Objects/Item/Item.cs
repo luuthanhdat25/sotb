@@ -33,6 +33,7 @@ namespace Damage
 
         private void MoveToTargetWhenInteract()
         {
+            if (isMoveToTarget && !PlayerCtrl.Instance.GetIsPlayerDead()) isMoveToTarget = false;
             if (!isMoveToTarget || PlayerCtrl.Instance.GetIsPlayerDead()) return;
             Vector3 directionToMove = PlayerCtrl.Instance.GetCurrentPosition() - transform.parent.position;
             transform.parent.Translate(directionToMove * moveToTargetSpeed * Time.fixedDeltaTime);

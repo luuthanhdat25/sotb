@@ -12,8 +12,7 @@ namespace Damage
             base.UseItem();
             PlayerCtrl.Instance.PlayerMovement.AddMoveSpeedInTime(this.addValue, this.timeEffective);
             PlayerCtrl.Instance.PlayerBootCeils.AddBoostCeils(2);
-            //PlayVFX
-            //PlayUIBar
+            PlayerCtrl.Instance.PlayerParticleEffect.BuffMoveSpeedEffect();
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
     }

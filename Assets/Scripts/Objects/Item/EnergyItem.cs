@@ -12,7 +12,7 @@ namespace Damage
             base.UseItem();
             PlayerCtrl.Instance.PlayerEnergies.AddEnergies(this.addValue);
             //PlayMusic
-            //PlayVFX
+            PlayerCtrl.Instance.PlayerParticleEffect.HealthEffect();
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
     }

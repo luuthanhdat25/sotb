@@ -25,12 +25,12 @@ public class PlayerEnergies : MonoBehaviour
         GameManager.Instance.GameOver();
     }
     
-    public bool IsEnoughEnergies(int energiesDeduct) => currentEnergies >= energiesDeduct;
+    public bool IsEnoughEnergies(int energiesDeduct) 
+        => currentEnergies >= energiesDeduct;
     
-    public void AddEnergies(int addValue)
-    {
-        currentEnergies = Mathf.Min(currentEnergies + addValue, PlayerCtrl.Instance.GetEnergiesDefault());
-    }
-    
+    public void AddEnergies(int addValue) 
+        => currentEnergies = Mathf.Min(currentEnergies + addValue, PlayerCtrl.Instance.GetEnergiesDefault());
+
     public int GetCurrentEnergies() => this.currentEnergies;
+    public bool IsMaxHealth() => this.currentEnergies == startEnergies;
 }

@@ -33,7 +33,7 @@ namespace Player
         private void Dead()
         {
             PlayerCtrl.Instance.PlayerEnergies.DeductEnergies(energiesDeductWhenPlayerDead);
-            PlayerCtrl.Instance.PlayerAnimations.DestructionAnimation();
+            //PlayerCtrl.Instance.PlayerAnimations.DestructionAnimation();
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(false);
             PlayerCtrl.Instance.SetPlayerDead(true);
         }

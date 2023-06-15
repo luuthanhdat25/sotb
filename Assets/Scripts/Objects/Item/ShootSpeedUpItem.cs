@@ -12,8 +12,7 @@ namespace Damage
             base.UseItem();
             PlayerCtrl.Instance.PlayerShoot.DecreaseFireRateInTime(this.reductionRate, this.timeEffective);
             //PlayMusic
-            //PlayVFX
-            //PlayUIBar
+            PlayerCtrl.Instance.PlayerParticleEffect.BuffShootSpeedEffect();
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
     }

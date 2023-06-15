@@ -18,12 +18,29 @@ namespace Player
             instance.transform.LookAt(directionSpawn);
             instance.transform.position = transform.parent.position;
             instance.transform.parent = transform.parent;
-            Debug.Log(directionSpawn);
             Destroy(instance.gameObject, dashDuration);
         }
-        
-        
-
         public Vector2 GetOppositeVector(Vector2 vector) => new Vector2(-vector.x, -vector.y);
+        
+        public void HealthEffect()
+        {
+            if(PlayerCtrl.Instance.PlayerEnergies.IsMaxHealth()) return;
+            ItemEffect(healthEffect);
+        }
+
+        public void BuffMoveSpeedEffect() => ItemEffect(buffMoveSpeedEffect);
+        
+        public void BuffShootSpeedEffect() => ItemEffect(buffShootSpeedEffect);
+
+        private void ItemEffect(ParticleSystem particle)
+        {
+            if(particle == null) return;
+            ParticleSystem instance = Instantiate(particle);
+            Vector3 directionSpawn = Vector3.up;
+            instance.transform.LookAt(directionSpawn);
+            instance.transform.position = transform.parent.position;
+            instance.transform.parent = transform.parent;
+            Destroy(instance.gameObject, instance.main.duration);
+        }
     }
 }
