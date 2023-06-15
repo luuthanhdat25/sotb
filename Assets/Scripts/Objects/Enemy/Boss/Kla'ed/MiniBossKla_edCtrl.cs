@@ -12,6 +12,7 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     [SerializeField] protected Transform mainCam;
     [SerializeField] private Animator kla_edAnimator;
     [SerializeField] private MinibossKla_ed_Animation minibossKla_ed_Animation;
+    public MinibossKla_ed_Animation MinibossKla_ed_Animation { get => minibossKla_ed_Animation; }
     [SerializeField] private MinibossKla_edDamageReciever minibossKlaEdDamageReciever;
     public MinibossKla_edDamageReciever MinibossKlaEdDamageReciever { get => minibossKlaEdDamageReciever; }
     

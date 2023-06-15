@@ -15572,8 +15572,8 @@ MonoBehaviour:
   numberOfShootAttacks: 3
   speedFollow: 7
   timeShootInOneTime: 1.5
-  numberOfChaseAttacks: 2
-  speedChase: 8
+  numberOfChaseAttacks: 3
+  speedChase: 9
 --- !u!114 &1087027932
 MonoBehaviour:
   m_ObjectHideFlags: 0

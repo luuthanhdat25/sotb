@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Damage;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,14 +11,14 @@ namespace DefaultNamespace.Objects.UI
         [SerializeField] private float healthBarSpacing = 3.5f;
         [SerializeField] private RectTransform healthBarContainer;
         [SerializeField] private GameObject healthBarPrefab;
+        [SerializeField] private DamageReceiver damageReceiver;
 
         private int maxHealth;
         private List<GameObject> healthBars = new List<GameObject>();
 
         private void Start()
         {
-            maxHealth = MiniBossKla_edCtrl.Instance.MinibossKlaEdDamageReciever.HpMax;
-            
+            maxHealth = damageReceiver.GetHpMax();
             SetMaxHealth(maxHealth);
         }
 
@@ -27,10 +28,7 @@ namespace DefaultNamespace.Objects.UI
             CreateHealthBars();
         }
 
-        private void Update()
-        {
-            UpdateHealthBars();
-        }
+        private void Update() => UpdateHealthBars();
 
         private void CreateHealthBars()
         {
@@ -69,7 +67,7 @@ namespace DefaultNamespace.Objects.UI
 
         private void UpdateHealthBars()
         {
-            int visibleHealthBars = Mathf.Clamp(MiniBossKla_edCtrl.Instance.MinibossKlaEdDamageReciever.HpCurrent, 0, maxHealth);
+            int visibleHealthBars = Mathf.Clamp(damageReceiver.GetCurrentHp(), 0, maxHealth);
 
             for (int i = 0; i < healthBars.Count; i++)
             {

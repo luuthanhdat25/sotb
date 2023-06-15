@@ -271,6 +271,7 @@
      <Folder Include="Assets\Scripts\Objects\UI\Level 1" />
      <Folder Include="Assets\Scripts" />
      <Folder Include="Assets\Animations\Camera" />
+     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Boss Behaviour" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Projectile" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
@@ -404,6 +405,7 @@
      <Folder Include="Assets\Prefabs\Position\Player" />
      <Folder Include="Assets\Scripts\Objects\Projectiles" />
      <Folder Include="Assets\Prefabs\Player Ship" />
+     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Boss Behaviour" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Designs - Base" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy" />
      <None Include="Assets\Sprites\Nautolan_Ship_Level 2\Readme.txt" />

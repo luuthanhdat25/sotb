@@ -22,11 +22,16 @@ public class Kla_ed_ChasePlayer : StateMachineBehaviour
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (numberOfAttacks != 0) Behaviour(animator);
-        else MiniBossKla_edCtrl.Instance.SetIsChasePlayer(false);
+        else
+        {
+            MiniBossKla_edCtrl.Instance.MinibossKla_ed_Animation.SetIsChasePlayer(false);
+            MiniBossKla_edCtrl.Instance.SetIsChasePlayer(false);
+        }
     }
     
     private void Behaviour(Animator animator)
     {
+        MiniBossKla_edCtrl.Instance.MinibossKla_ed_Animation.SetIsChasePlayer(true);
         AssignTargetPositionIfEqualVectorZero();
         MoveToTarget(animator);
     }

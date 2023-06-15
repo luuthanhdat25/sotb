@@ -1,13 +1,16 @@
+using System;
 using Enemy.Nautolan;
 using UnityEngine;
 
 public class BossNautolanCtrl : RepeatMonoBehaviour
 {
     public static BossNautolanCtrl Instance { get; private set; }
-    [SerializeField] private Vector3 defaultPosition = new Vector3(0f, 5f, 0f);
+    [SerializeField] private GameObject healthBar;
+    private Vector3 defaultPosition = new Vector3(0f, 5f, 0f);
     [Header("Component")]
     [SerializeField] private Animator nautolanAnimator;
     [SerializeField] private BossNautolanModelShipAnimation bossNautolanModelShipAnimation;
+    public BossNautolanModelShipAnimation BossNautolanModelShipAnimation => bossNautolanModelShipAnimation;
     [SerializeField] private MinibossNautolanShoot minibossNautolanShoot;
     public MinibossNautolanShoot MinibossNautolanShoot { get => minibossNautolanShoot;}
     [SerializeField] private BossNautolanBomShoot bossNautolanBomShoot;
@@ -63,6 +66,8 @@ public class BossNautolanCtrl : RepeatMonoBehaviour
         speedChase = 12;
         timeWait = 1f;
     }*/
+
+    private void OnEnable() => healthBar?.SetActive(true);
 
     public void SetDeadAnimation()
     {

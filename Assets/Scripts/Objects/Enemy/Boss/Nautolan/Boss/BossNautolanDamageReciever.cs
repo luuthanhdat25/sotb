@@ -16,8 +16,9 @@ namespace Enemy.Nautolan
 
         public bool IsLowerHealth(float persent)
         {
-            int currentPersent = (hpCurrent / hpMax) * 100;
-            return currentPersent > persent;
+            byte currentPersent = (byte)(((float)hpCurrent / (float)hpMax) * 100);
+            Debug.Log(currentPersent);
+            return currentPersent < persent;
         }
     }
 }

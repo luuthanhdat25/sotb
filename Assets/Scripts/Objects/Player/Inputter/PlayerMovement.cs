@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float dashSpeed = 7f;
     [SerializeField] private float dashTime = 0.2f;
     [SerializeField] private int dashEnergiesUse = 1;
+    [SerializeField] private ParticleSystem dashEffect;
     private bool alreadyDash = false;
     
     [Header("Paddings")] 
@@ -74,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
         canMoveNormal = false;
         totalSpeed = dashSpeed;
         PlayerCtrl.Instance.PlayerDamageReciever.SetActiveCollider(false);
+        DashEffect();
         float startTime = Time.time;
         float endTime = startTime + dashTime;
         while (Time.time < endTime)
@@ -85,6 +87,17 @@ public class PlayerMovement : MonoBehaviour
         canMoveNormal = true;
     }
 
+    private void DashEffect()
+    {
+        if(dashEffect == null) return;
+        Vector3 moveDirection = GameInput.Instance.GetRawInputNormalized();
+        Debug.Log(moveDirection);
+        ParticleSystem instance = Instantiate(dashEffect);
+        instance.transform.position = transform.parent.position;
+        instance.transform.parent = transform.parent;
+        Destroy(instance.gameObject, instance.main.duration);
+    }
+    
     private void MoveBySpeedAndInputPlayer(float speed)
     {
         var velocity = CalculateVelocity(speed);
