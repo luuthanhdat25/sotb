@@ -10175,6 +10175,8 @@ MonoBehaviour:
   defaultEngine: {fileID: 329363714}
   upgradeEngine: {fileID: 1651983678}
   shield: {fileID: 150121333}
+  spritesToBlur: []
+  blurOpacity: 0.5
 --- !u!95 &536302656
 Animator:
   serializedVersion: 5
@@ -29714,7 +29716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c78a783ae41cff4aa4d107f1ec299de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 15
 --- !u!60 &1670182415
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33779,7 +33781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c78a783ae41cff4aa4d107f1ec299de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 15
 --- !u!60 &1920696574
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -34478,7 +34480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c78a783ae41cff4aa4d107f1ec299de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 15
 --- !u!114 &1950825968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37819,6 +37821,7 @@ MonoBehaviour:
   playerBootCeils: {fileID: 7179083224954351612}
   playerDamageSender: {fileID: 7732539846871194520}
   playerDamageReciever: {fileID: 7732539846871194522}
+  playerParticleEffect: {fileID: 0}
 --- !u!4 &1451069922450555000
 Transform:
   m_ObjectHideFlags: 0

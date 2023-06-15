@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -11,12 +12,16 @@ namespace Player
         [SerializeField] private int healthStateAnimaiton = 4;
         [SerializeField] private Animator modelAnimator;
         [SerializeField] private Animator shieldAnimator;
-        
+
         [SerializeField] private Transform normalWeapon;
         [SerializeField] private Transform untiWeapon;
         [SerializeField] private Transform defaultEngine;
         [SerializeField] private Transform upgradeEngine;
         [SerializeField] private Transform shield;
+        
+        public List<SpriteRenderer> spritesToBlur;
+        public float blurOpacity = 0.5f;
+        private float originalOpacity;
         
         private enum AnimatorParameter
         {
@@ -28,6 +33,7 @@ namespace Player
         {
             base.LoadComponents();
             this.LoadModelAnimator();
+            CollectSpriteRenderersFromPrefab(gameObject);
         }
 
         private void LoadModelAnimator()
@@ -35,15 +41,61 @@ namespace Player
         
         private void LoadShieldAnimator() 
             => this.shieldAnimator ??= GetComponentInChildren<Animator>();
+        
+        public void CollectSpriteRenderersFromPrefab(GameObject prefab)
+        {
+            if(spritesToBlur.Count != 0) return;
+            CollectSpriteRenderersRecursive(prefab);
+        }
 
+        private void CollectSpriteRenderersRecursive(GameObject gameObject)
+        {
+            SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                spritesToBlur.Add(spriteRenderer);
+            }
+
+            foreach (Transform child in gameObject.transform)
+            {
+                CollectSpriteRenderersRecursive(child.gameObject);
+            }
+        }
+        
         public void DestructionAnimation() 
             => this.modelAnimator.SetBool(AnimatorParameter.isDestruction.ToString(), true);
 
+        private void Start()
+        {
+            originalOpacity = 1;
+        }
+        
+        public void SpriteBlur()
+        {
+            foreach (SpriteRenderer sprite in spritesToBlur)
+            {
+                Color spriteColor = sprite.color;
+                spriteColor.a = blurOpacity;
+                sprite.color = spriteColor;
+            }
+        }
+        
+        
+        public void ResetOpacity()
+        {
+            foreach (SpriteRenderer sprite in spritesToBlur)
+            {
+                Color spriteColor = sprite.color;
+                spriteColor.a = originalOpacity;
+                sprite.color = spriteColor;
+            }
+        }
         public void RebornAnimaiton()
         { 
             this.modelAnimator.SetBool(AnimatorParameter.isDestruction.ToString(), false);
             StartCoroutine(ComebackHealthState());
         }
+        
 
         IEnumerator ComebackHealthState()
         {

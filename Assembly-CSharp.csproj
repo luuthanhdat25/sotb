@@ -86,6 +86,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanModelShipAnimation.cs" />
      <Compile Include="Assets\Scripts\Components\Damage\DamageReceiver.cs" />
      <Compile Include="Assets\Scripts\Components\Spawner\SpawnerPooling.cs" />
+     <Compile Include="Assets\Scripts\Objects\Player\PlayerParticleEffect.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\KlaEdIdleStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Components\RhythmScripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtCtrl.cs" />
@@ -244,6 +245,7 @@
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy" />
      <Folder Include="Assets\Sprites\FX\Sprites\Smoke" />
+     <Folder Include="Assets\Sprites\VFX sprites" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Weapons\PNGs" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Destruction\Aseprite" />
@@ -439,6 +441,7 @@
      <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engine Effects\Aseprite" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Engine Effects\Aseprite" />
      <Folder Include="Assets\Sprites\FX\Demo" />
+     <Folder Include="Assets\Prefabs\Player" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Engines" />
      <Folder Include="Assets\Sprites\FX\Sprites\LightFX\FX003" />
