@@ -22,22 +22,19 @@ namespace Player
             if (isFiring && firingCoroutine == null)
             {
                 firingCoroutine = StartCoroutine(FireContinously());
-                if(playerAnimationBaseShooting != null) playerAnimationBaseShooting.SetIsFiring(true);
-            }
-            else
-            {
-                if(playerAnimationBaseShooting != null) playerAnimationBaseShooting.SetIsFiring(false);
-            }
+            }else playerAnimationBaseShooting?.SetIsFiring(false);
         }
 
         IEnumerator FireContinously()
         {
+            playerAnimationBaseShooting?.SetIsFiring(true);
             Transform newProjectileLeft = PlayerProjectileSpawner.Instance.Spawn(PlayerProjectileSpawner.Instance.projectile1);
             this.SetActiveProjectileAndMoveToNewPosition(newProjectileLeft, leftGunPosition.position);
             Transform newProjectileRight = PlayerProjectileSpawner.Instance.Spawn(PlayerProjectileSpawner.Instance.projectile2);
             this.SetActiveProjectileAndMoveToNewPosition(newProjectileRight, rightGunPosition.position);
             
             yield return new WaitForSeconds(firingRate);
+            
             firingCoroutine = null;
         }
 
