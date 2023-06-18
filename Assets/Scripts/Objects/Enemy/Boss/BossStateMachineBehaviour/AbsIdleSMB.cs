@@ -5,9 +5,8 @@ public abstract class AbsIdleSMB : StateMachineBehaviour
     [SerializeField] protected float speedMoveToPosDefault = 4f;
     protected float timeWait;
     protected float timer;
-    private bool isStopTimer = false;
 
-    public virtual void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         timeWait = GetTimeWait();
     }
@@ -22,16 +21,13 @@ public abstract class AbsIdleSMB : StateMachineBehaviour
         if (animator.transform.position != GetDefaultPosition())
         {
             MoveToDefaultPosition(animator, GetDefaultPosition());
-            /*if (animator.transform.position == GetDefaultPosition())
-                isStopTimer = false;*/
         }
         else
         {
-            /*if (!isStopTimer) */timer += Time.deltaTime;
-            if (timer >= timeWait /*&& !isStopTimer*/)
+            timer += Time.deltaTime;
+            if (timer >= timeWait)
             {
                 timer = 0;
-                //isStopTimer = true;
                 this.ChangeState(animator);
             }
         }

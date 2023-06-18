@@ -31416,7 +31416,6 @@ MonoBehaviour:
   deathCount: 0
   audioSourcesManager: {fileID: 1428106844}
   sceneManager: {fileID: 6276599608200740759}
-  isLoss: 0
   onScoreChanged:
     m_PersistentCalls:
       m_Calls: []

@@ -8,6 +8,7 @@ public class MinibossNautolanCtrl : RepeatMonoBehaviour
     [SerializeField] protected Transform mainCam;
     [SerializeField] private Animator miniNautolanAnimator;
     [SerializeField] private MinibossNautolanModelShipAnimation minibossNautolanModelShipAnimation;
+    public MinibossNautolanModelShipAnimation MinibossNautolanModelShipAnimation => minibossNautolanModelShipAnimation;
     [SerializeField] private MinibossNautolanShoot minibossNautolanShoot;
 
     public MinibossNautolanShoot MinibossNautolanShoot { get => minibossNautolanShoot; }

@@ -8,7 +8,6 @@ namespace Damage.RhythmScripts
     {
         [SerializeField] private List<AudioSource> audioSourcesList;
         [SerializeField] private float fadeDuration = 1f;
-        private float fadeTimer = 0f;
         private float startVolume;
 
         protected override void LoadComponents()

@@ -126,11 +126,8 @@ public class PlayerMovement : MonoBehaviour
     public float GetTotalSpeed() => this.totalSpeed;
     public void SetCanUseDashToTrue() => this.canUseDash = true;
     public void SetCanMoveNormal(bool canMove) => this.canMoveNormal = canMove;
-    public void AddMoveSpeedInTime(float value, float time)
-    {
-        StartCoroutine(CouroutineAddMoveSpeed(value, time));
-    }
-    
+    public void AddMoveSpeedInTime(float value, float time) => StartCoroutine(CouroutineAddMoveSpeed(value, time));
+
     IEnumerator CouroutineAddMoveSpeed(float value, float time)
     {
         this.basicMoveSpeed += value;

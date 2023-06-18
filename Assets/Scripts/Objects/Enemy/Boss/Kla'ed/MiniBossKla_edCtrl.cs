@@ -11,8 +11,8 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     [SerializeField] private Vector3 defaultPosition = new Vector3(0f, 5f, 0f);
     [SerializeField] protected Transform mainCam;
     [SerializeField] private Animator kla_edAnimator;
-    [SerializeField] private MinibossKla_ed_Animation minibossKla_ed_Animation;
-    public MinibossKla_ed_Animation MinibossKla_ed_Animation { get => minibossKla_ed_Animation; }
+    [SerializeField] private MinibossKla_edModelShipAnimation minibossKlaEdModelShipModelShipAnimation;
+    public MinibossKla_edModelShipAnimation MinibossKlaEdModelShipAnimation { get => minibossKlaEdModelShipModelShipAnimation; }
     [SerializeField] private MinibossKla_edDamageReciever minibossKlaEdDamageReciever;
     public MinibossKla_edDamageReciever MinibossKlaEdDamageReciever { get => minibossKlaEdDamageReciever; }
     
@@ -69,7 +69,7 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
 
     public void SetDeadAnimation()
     {
-        this.minibossKla_ed_Animation.SetIsDestructionTrigger();
+        this.minibossKlaEdModelShipModelShipAnimation.SetIsDestructionTrigger();
         this.kla_edAnimator.SetTrigger(AnimationParameter.isDestruction.ToString());
     }
 

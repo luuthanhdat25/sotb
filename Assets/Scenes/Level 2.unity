@@ -22353,7 +22353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1087027929
 Transform:
   m_ObjectHideFlags: 0
@@ -22394,7 +22394,7 @@ MonoBehaviour:
   numberOfShootAttacks: 5
   speedFollow: 7
   timeShootInOneTime: 1
-  numberOfChaseAttacks: 2
+  numberOfChaseAttacks: 3
   speedChase: 9
 --- !u!95 &1087027931
 Animator:
@@ -23956,7 +23956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1158623580
 Transform:
   m_ObjectHideFlags: 0
@@ -33739,7 +33739,6 @@ MonoBehaviour:
   deathCount: 0
   audioSourcesManager: {fileID: 1428106844}
   sceneManager: {fileID: 3707205406897229293}
-  isLoss: 0
   onScoreChanged:
     m_PersistentCalls:
       m_Calls: []

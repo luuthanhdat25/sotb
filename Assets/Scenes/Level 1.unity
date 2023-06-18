@@ -25020,6 +25020,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8189301283440825970, guid: 7fdd5ff1d25f309458180ecbda86e486, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26744,7 +26748,6 @@ MonoBehaviour:
   deathCount: 0
   audioSourcesManager: {fileID: 1428106844}
   sceneManager: {fileID: 339937721}
-  isLoss: 0
   onScoreChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -35796,8 +35799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultPosition: {fileID: 6287017269615205627}
-  playerEnergiesMax: 3
-  playerBoostCeilsMax: 0
+  playerEnergiesMax: 5
+  playerBoostCeilsMax: 3
   isPlayerDead: 0
   playerMovement: {fileID: 6890823271424607528}
   playerShoot: {fileID: 760470877108222339}

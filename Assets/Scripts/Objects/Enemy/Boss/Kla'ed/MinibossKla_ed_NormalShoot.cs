@@ -9,17 +9,17 @@ namespace Enemy.Boss
     {
         [SerializeField] private Transform leftGunPosition;
         [SerializeField] private Transform rightGunPosition;
-        [SerializeField] private MinibossKla_ed_Animation minibossKlaEdAnimation;
+        [SerializeField] private MinibossKla_edModelShipAnimation minibossKlaEdModelShipAnimation;
         protected override void Fire()
         {
             if (isFiring && firingCoroutine == null)
             {
                 firingCoroutine = StartCoroutine(FireContinously());
-                if(minibossKlaEdAnimation != null) minibossKlaEdAnimation.SetIsFiring(true);
+                if(minibossKlaEdModelShipAnimation != null) minibossKlaEdModelShipAnimation.SetIsFiring(true);
             }
             else
             {
-                if(minibossKlaEdAnimation != null) minibossKlaEdAnimation.SetIsFiring(false);
+                if(minibossKlaEdModelShipAnimation != null) minibossKlaEdModelShipAnimation.SetIsFiring(false);
             }
         }
         

@@ -233,7 +233,7 @@
                 {
                     "name": "",
                     "id": "af3999d2-17e6-4a01-b6d4-718699ec764b",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -244,7 +244,7 @@
                 {
                     "name": "",
                     "id": "2cfeb4be-4071-44c6-aa8c-b78242fb771d",
-                    "path": "<Keyboard>/ctrl",
+                    "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -255,7 +255,7 @@
                 {
                     "name": "",
                     "id": "54f95bb4-a122-4ed2-a502-e60064161343",
-                    "path": "<Keyboard>/shift",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -288,6 +288,74 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Escape ",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Level",
+            "id": "1929a98a-346c-42bf-892c-e254cff64cf3",
+            "actions": [
+                {
+                    "name": "One",
+                    "type": "Button",
+                    "id": "a88db63c-190a-405b-b506-443967c614f2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Two",
+                    "type": "Button",
+                    "id": "ec6623c3-ca2a-4795-9ec1-dfdc3aa4ad82",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Three",
+                    "type": "Button",
+                    "id": "1e4ede15-583d-471f-8e31-5c54e6872c13",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4cafbabe-a5cc-4917-8ac0-f081eac51a94",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "One",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f7ff3175-bce1-46dd-83a0-bf44fe848b7f",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Two",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6587a6e3-4f33-4c9d-a3f3-b9cdf53b87e3",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Three",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

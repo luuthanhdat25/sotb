@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Damage.RhythmScripts;
 using Objects.UI.HUD;
+using Player;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -16,21 +17,9 @@ namespace DefaultNamespace
         [SerializeField] private int deathCount = 0;
         [SerializeField] private AudioSourcesManager audioSourcesManager;
         [SerializeField] private RepeatSceneManager sceneManager;
-
-        [SerializeField] private bool isLoss = false;
-        public bool IsLoss => isLoss;
         
         public UnityEvent onScoreChanged;
         public UnityEvent onDeath;
-        public enum GameState
-        {
-            Started,
-            Pause,
-            WinGame,
-            PlayerDie
-        }
-        private GameState gameState = GameState.Started;
-        
         
         protected override void Awake()
         {
@@ -40,7 +29,7 @@ namespace DefaultNamespace
         
         public void GameOver()
         {
-            gameState = GameState.PlayerDie;
+            PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(false);
             audioSourcesManager.MusicFadeOut();
             StartCoroutine(DelayGameOver());
         }
@@ -55,7 +44,6 @@ namespace DefaultNamespace
         
         public void WinGame()
         {
-            gameState = GameState.WinGame;
             audioSourcesManager.MusicFadeOut();
             StartCoroutine(DelayWinGame());
         }

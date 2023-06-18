@@ -2,8 +2,14 @@ using UnityEngine;
 
 public class MinibossNautolanModelShipAnimation : RepeatMonoBehaviour
 {
-    private const string IS_DESTRUCTION = "isDestruction";
     [SerializeField] private Animator _animator;
+ 
+    private enum AnimationParameter
+    {
+        isDestruction,
+        isFollowAndShoot,
+        isChasePlayer
+    }
     
     protected override void LoadComponents()
     {
@@ -12,5 +18,7 @@ public class MinibossNautolanModelShipAnimation : RepeatMonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    public void SetIsDestructionTrigger() =>this._animator.SetTrigger(IS_DESTRUCTION);
+    public void SetIsDestructionTrigger() =>this._animator.SetTrigger(AnimationParameter.isDestruction.ToString());
+    public void SetIsFollowAndShoot(bool isOn) =>this._animator.SetBool(AnimationParameter.isFollowAndShoot.ToString(), isOn);
+    public void SetIsChasePlayer(bool isOn) =>this._animator.SetBool(AnimationParameter.isChasePlayer.ToString(), isOn);
 }

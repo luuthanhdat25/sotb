@@ -11,4 +11,6 @@ public class MiniBossNairanFollowAndShootBehaviour : AbsFollowAndShootSMB
     protected override int GetNumberOfActack() => MiniBossNairanCtrl.Instance.GetNumberOfAttacksFollowAndShootBehaviour();
     protected override void SetProjectile(bool isOn) => MiniBossNairanCtrl.Instance.MinibossNairanShootNormal.SetIsFiring(isOn);
     protected override void UnSetAnimation() => MiniBossNairanCtrl.Instance.SetIsFollowAndShoot(false);
+    
+    protected override float GetRandomYValue() => Random.Range(-1.5f, 1f);
 }

@@ -255,7 +255,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""af3999d2-17e6-4a01-b6d4-718699ec764b"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<Keyboard>/j"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
@@ -266,7 +266,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""2cfeb4be-4071-44c6-aa8c-b78242fb771d"",
-                    ""path"": ""<Keyboard>/ctrl"",
+                    ""path"": ""<Keyboard>/l"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
@@ -277,7 +277,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""54f95bb4-a122-4ed2-a502-e60064161343"",
-                    ""path"": ""<Keyboard>/shift"",
+                    ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
@@ -310,6 +310,74 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Escape "",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Level"",
+            ""id"": ""1929a98a-346c-42bf-892c-e254cff64cf3"",
+            ""actions"": [
+                {
+                    ""name"": ""One"",
+                    ""type"": ""Button"",
+                    ""id"": ""a88db63c-190a-405b-b506-443967c614f2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Two"",
+                    ""type"": ""Button"",
+                    ""id"": ""ec6623c3-ca2a-4795-9ec1-dfdc3aa4ad82"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Three"",
+                    ""type"": ""Button"",
+                    ""id"": ""1e4ede15-583d-471f-8e31-5c54e6872c13"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""4cafbabe-a5cc-4917-8ac0-f081eac51a94"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""One"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f7ff3175-bce1-46dd-83a0-bf44fe848b7f"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Two"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6587a6e3-4f33-4c9d-a3f3-b9cdf53b87e3"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Three"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -388,6 +456,11 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Escape = m_UI.FindAction("Escape ", throwIfNotFound: true);
+        // Level
+        m_Level = asset.FindActionMap("Level", throwIfNotFound: true);
+        m_Level_One = m_Level.FindAction("One", throwIfNotFound: true);
+        m_Level_Two = m_Level.FindAction("Two", throwIfNotFound: true);
+        m_Level_Three = m_Level.FindAction("Three", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -533,6 +606,55 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         }
     }
     public UIActions @UI => new UIActions(this);
+
+    // Level
+    private readonly InputActionMap m_Level;
+    private ILevelActions m_LevelActionsCallbackInterface;
+    private readonly InputAction m_Level_One;
+    private readonly InputAction m_Level_Two;
+    private readonly InputAction m_Level_Three;
+    public struct LevelActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public LevelActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @One => m_Wrapper.m_Level_One;
+        public InputAction @Two => m_Wrapper.m_Level_Two;
+        public InputAction @Three => m_Wrapper.m_Level_Three;
+        public InputActionMap Get() { return m_Wrapper.m_Level; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(LevelActions set) { return set.Get(); }
+        public void SetCallbacks(ILevelActions instance)
+        {
+            if (m_Wrapper.m_LevelActionsCallbackInterface != null)
+            {
+                @One.started -= m_Wrapper.m_LevelActionsCallbackInterface.OnOne;
+                @One.performed -= m_Wrapper.m_LevelActionsCallbackInterface.OnOne;
+                @One.canceled -= m_Wrapper.m_LevelActionsCallbackInterface.OnOne;
+                @Two.started -= m_Wrapper.m_LevelActionsCallbackInterface.OnTwo;
+                @Two.performed -= m_Wrapper.m_LevelActionsCallbackInterface.OnTwo;
+                @Two.canceled -= m_Wrapper.m_LevelActionsCallbackInterface.OnTwo;
+                @Three.started -= m_Wrapper.m_LevelActionsCallbackInterface.OnThree;
+                @Three.performed -= m_Wrapper.m_LevelActionsCallbackInterface.OnThree;
+                @Three.canceled -= m_Wrapper.m_LevelActionsCallbackInterface.OnThree;
+            }
+            m_Wrapper.m_LevelActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @One.started += instance.OnOne;
+                @One.performed += instance.OnOne;
+                @One.canceled += instance.OnOne;
+                @Two.started += instance.OnTwo;
+                @Two.performed += instance.OnTwo;
+                @Two.canceled += instance.OnTwo;
+                @Three.started += instance.OnThree;
+                @Three.performed += instance.OnThree;
+                @Three.canceled += instance.OnThree;
+            }
+        }
+    }
+    public LevelActions @Level => new LevelActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -588,5 +710,11 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     public interface IUIActions
     {
         void OnEscape(InputAction.CallbackContext context);
+    }
+    public interface ILevelActions
+    {
+        void OnOne(InputAction.CallbackContext context);
+        void OnTwo(InputAction.CallbackContext context);
+        void OnThree(InputAction.CallbackContext context);
     }
 }

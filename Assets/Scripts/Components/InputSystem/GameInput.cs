@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -37,5 +38,9 @@ namespace DefaultNamespace
         public bool IsDashPressed() => playerInputActions.Player.Speed.IsPressed();
         public bool IsUntiPressed()    => playerInputActions.Player.Unti.IsPressed();
         public bool IsEscapePressed()    => playerInputActions.UI.Escape.IsPressed();
+
+        public bool IsTestOne() => playerInputActions.Level.One.IsPressed();
+        public bool IsTestTwo() => playerInputActions.Level.Two.IsPressed();
+        public bool IsTestThree() => playerInputActions.Level.Three.IsPressed();
     }
 }

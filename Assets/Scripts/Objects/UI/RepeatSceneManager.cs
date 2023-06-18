@@ -1,3 +1,5 @@
+using System;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,5 +37,15 @@ public class RepeatSceneManager : RepeatMonoBehaviour
     public virtual void LossGame()
     {
         //For override
+    }
+
+    private void Update()
+    {
+        if(GameInput.Instance.IsTestOne())
+            LoadSceneByIndex(1);
+        if(GameInput.Instance.IsTestTwo())
+            LoadSceneByIndex(2);
+        if(GameInput.Instance.IsTestThree())
+            LoadSceneByIndex(3);
     }
 }
