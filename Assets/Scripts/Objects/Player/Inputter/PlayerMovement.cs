@@ -1,4 +1,5 @@
 using System.Collections;
+using Damage.RhythmScripts;
 using DefaultNamespace;
 using Player;
 using UnityEngine;
@@ -6,8 +7,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     // Speed 
-    [SerializeField] private float totalSpeed;
     [SerializeField] private float basicMoveSpeed = 5f;
+    public float BasicMoveSpeed => basicMoveSpeed;
     [SerializeField] private bool canMoveNormal = false;
     [SerializeField] private bool canUseDash = false;
     [SerializeField] private float dashSpeed = 7f;
@@ -23,11 +24,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float paddingTop;
     [SerializeField] private float paddingBottom;
 
-    private void Start()
-    {
-        InitializeBounds();
-    }
-    
+    private void Start() => InitializeBounds();
+
     private void InitializeBounds()
     {
         //Use var to easyer to change
@@ -36,11 +34,8 @@ public class PlayerMovement : MonoBehaviour
         maxBounds = mainCamera.ViewportToWorldPoint(new Vector2(1, 1));
     }
     //---------------------------------------------------------------------------//
-    private void FixedUpdate()
-    {
-        HandleMovement();
-    }
-    
+    private void FixedUpdate() => HandleMovement();
+
     private void HandleMovement()
     {
         if (PlayerCtrl.Instance.GetIsPlayerDead()) return;
@@ -72,18 +67,20 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator Dash()
     {
         canMoveNormal = false;
-        totalSpeed = dashSpeed;
         PlayerCtrl.Instance.PlayerDamageReciever.SetActiveCollider(false);
         PlayerCtrl.Instance.PlayerParticleEffect.DashEffect(dashTime);
         PlayerCtrl.Instance.PlayerAnimations.SpriteBlur();
+        PlayerCtrl.Instance.BackgroundScroller.Dash(true);
+        AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.Dash);
         float startTime = Time.time;
         float endTime = startTime + dashTime;
         while (Time.time < endTime)
         {
-            this.MoveBySpeedAndInputPlayer(totalSpeed);
+            this.MoveBySpeedAndInputPlayer(dashSpeed);
             yield return null;
         }
         PlayerCtrl.Instance.PlayerDamageReciever.SetActiveCollider(true);
+        PlayerCtrl.Instance.BackgroundScroller.Dash(false);
         PlayerCtrl.Instance.PlayerAnimations.ResetOpacity();
         canMoveNormal = true;
     }
@@ -117,13 +114,11 @@ public class PlayerMovement : MonoBehaviour
     private void MoveFollowNormalSpeed()
     {
         if (!canMoveNormal) return;
-        totalSpeed = basicMoveSpeed;
-        var velocity = CalculateVelocity(totalSpeed);
+        var velocity = CalculateVelocity(basicMoveSpeed);
         var newPosition = CalculateNewPosition(velocity);
         this.MoveToNewPosition(newPosition);
     }
     
-    public float GetTotalSpeed() => this.totalSpeed;
     public void SetCanUseDashToTrue() => this.canUseDash = true;
     public void SetCanMoveNormal(bool canMove) => this.canMoveNormal = canMove;
     public void AddMoveSpeedInTime(float value, float time) => StartCoroutine(CouroutineAddMoveSpeed(value, time));

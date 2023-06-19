@@ -1,3 +1,4 @@
+using Damage.RhythmScripts;
 using Player;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ namespace Damage
             base.UseItem();
             PlayerCtrl.Instance.PlayerAnimations.TurnOnNormalWeapon();
             PlayerCtrl.Instance.PlayerShoot.SetIsHasWeapon(true);
-            //PlayMusic
+            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.UpgradeItem);
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
     }

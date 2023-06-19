@@ -1,5 +1,6 @@
 using System.Collections;
 using Damage;
+using Damage.RhythmScripts;
 using UnityEngine;
 
 namespace Player
@@ -26,8 +27,13 @@ namespace Player
         protected override void OnDead()
         {
             this.Dead();
+            
             if (PlayerCtrl.Instance.PlayerEnergies.GetCurrentEnergies() > 0)
                 StartCoroutine(this.RebornCoroutine());
+            else
+            {
+                AudioManager.Instance.PlayerDeadOver();
+            }
         }
         
         private void Dead()
@@ -40,6 +46,7 @@ namespace Player
 
         private IEnumerator RebornCoroutine()
         {
+            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.ExplosionPlayer);
             this.SetActiveCollider(false);
             yield return new WaitForSeconds(this.timeDelayReborn);
             this.CombackToDefaultPositionWithRebornAnimation();

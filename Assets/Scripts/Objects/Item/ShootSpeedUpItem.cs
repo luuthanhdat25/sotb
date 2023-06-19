@@ -1,3 +1,4 @@
+using Damage.RhythmScripts;
 using Player;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace Damage
         {
             base.UseItem();
             PlayerCtrl.Instance.PlayerShoot.DecreaseFireRateInTime(this.reductionRate, this.timeEffective);
-            //PlayMusic
+            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.Buff);
             PlayerCtrl.Instance.PlayerParticleEffect.BuffShootSpeedEffect();
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }

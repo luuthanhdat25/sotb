@@ -62,7 +62,6 @@
      <Compile Include="Assets\Scripts\Objects\Item\ItemDropSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\BomProjectileDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_FollowAndShootBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\IPauseGame.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\BossHealthBar.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\BomEnemy\DropBom.cs" />
@@ -74,7 +73,6 @@
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtArcShootNormalSMB.cs" />
      <Compile Include="Assets\InputSystems\PlayerInputActions.cs" />
-     <Compile Include="Assets\Scripts\Components\RhythmScripts\AudioSourcesManager.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtIdle2SMB.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\DespawnByTime.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\DefaultEngineItem.cs" />
@@ -89,11 +87,11 @@
      <Compile Include="Assets\Scripts\Components\RhythmScripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtCtrl.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanFollowAndShootShockWaveBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Components\RhythmScripts\MusicSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\FX\FXDespawn.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtLazerSlideSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Camera\CameraAnimation.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\DoubleBossNairanCtrl.cs" />
+     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_FollowAndShootSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\UntiWeaponItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiseArcShockWaveSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanShoot.cs" />
@@ -123,12 +121,14 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserIdleSMB.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\PlayerCtrl.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ShieldItem.cs" />
-     <Compile Include="Assets\Scripts\RepeatMonoBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndShootSMB.cs" />
+     <Compile Include="Assets\Scripts\RepeatMonoBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Components\RhythmScripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Objects\FX\FXSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\AbstractClass\Shoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtSpawnTorpedo.cs" />
      <Compile Include="Assets\FastScriptReload\Examples\Scripts\FunctionLibrary.cs" />
+     <Compile Include="Assets\Scripts\Components\RhythmScripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanDamageReciever.cs" />

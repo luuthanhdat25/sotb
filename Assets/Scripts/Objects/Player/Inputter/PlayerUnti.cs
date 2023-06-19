@@ -1,5 +1,6 @@
 using System.Collections;
 using Comman;
+using Damage.RhythmScripts;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -39,7 +40,7 @@ namespace Player
             if (newProjectile != null)
             {
                 PlayerCtrl.Instance.PlayerBootCeils.DeductCeilsByValue(this.boostCeilsUse);
-                
+                AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.UntiPlayer);
                 newProjectile.transform.position = transform.parent.position;
                 newProjectile.gameObject.SetActive(true);
             }

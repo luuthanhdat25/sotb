@@ -1,3 +1,4 @@
+using Damage.RhythmScripts;
 using Player;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace Damage
         {
             base.UseItem();
             PlayerCtrl.Instance.PlayerEnergies.AddEnergies(this.addValue);
-            //PlayMusic
+            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.Health);
             PlayerCtrl.Instance.PlayerParticleEffect.HealthEffect();
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }

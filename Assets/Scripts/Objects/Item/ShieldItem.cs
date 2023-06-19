@@ -1,3 +1,4 @@
+using Damage.RhythmScripts;
 using Player;
 using UnityEngine;
 
@@ -11,9 +12,7 @@ namespace Damage
             base.UseItem();
             PlayerCtrl.Instance.PlayerAnimations.SetActiveShield(true);
             PlayerCtrl.Instance.PlayerDamageReciever.ShieldUp(timeEffective);
-            //PlayMusic
-            //PlayVFX
-            //PlayUIBar
+            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.Buff);
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
     }

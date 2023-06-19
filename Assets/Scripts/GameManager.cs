@@ -15,7 +15,7 @@ namespace DefaultNamespace
         
         [SerializeField] private int score = 0;
         [SerializeField] private int deathCount = 0;
-        [SerializeField] private AudioSourcesManager audioSourcesManager;
+        [SerializeField] private AudioManager audioManager;
         [SerializeField] private RepeatSceneManager sceneManager;
         
         public UnityEvent onScoreChanged;
@@ -30,7 +30,7 @@ namespace DefaultNamespace
         public void GameOver()
         {
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(false);
-            audioSourcesManager.MusicFadeOut();
+            AudioManager.Instance.MusicFadeOut();
             StartCoroutine(DelayGameOver());
         }
 
@@ -44,7 +44,7 @@ namespace DefaultNamespace
         
         public void WinGame()
         {
-            audioSourcesManager.MusicFadeOut();
+            AudioManager.Instance.MusicFadeOut();
             StartCoroutine(DelayWinGame());
         }
         

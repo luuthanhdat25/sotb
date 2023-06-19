@@ -46,15 +46,9 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
         Instance = this;
     }
 
-    private void OnEnable()
-    {
-        healthBar?.SetActive(true);
-    }
+    private void OnEnable() => healthBar?.SetActive(true);
 
-    private void Start()
-    {
-        StartCoroutine(AfterOnMinute());
-    }
+    private void Start() => StartCoroutine(AfterOnMinute());
 
     private IEnumerator AfterOnMinute()
     {
@@ -77,11 +71,18 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     public void SetIsChasePlayer(bool isTrue) => this.kla_edAnimator.SetBool(AnimationParameter.isChasePlayer.ToString(), isTrue);
 
     public Vector3 GetCameraPosition() => this.mainCam.position;
+    
     public Vector3 GetDefaultPosition() => this.defaultPosition;
+    
     public int GetNumberOfAttacksFollowAndShootBehaviour() => this.numberOfShootAttacks;
+    
     public int GetNumberOfAttacksChaseBehaviour() => this.numberOfChaseAttacks;
+    
     public float GetSpeedChase() => this.speedChase;
+    
     public float GetSpeedFollow() => this.speedFollow;
+    
     public float GetTimeShootOneTime() => this.timeShootInOneTime;
+    
     public float GetTimeWaitIdle() => this.timeWait;
 }

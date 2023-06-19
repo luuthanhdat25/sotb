@@ -7,7 +7,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
 {
     public class LevelThreeSceneManager : RepeatSceneManager
     {
-        [SerializeField] private AudioSourcesManager audioSourcesManager;
+        [SerializeField] private AudioManager audioManager;
         [SerializeField] private bool isPause = false;
         [SerializeField] private Transform totalAppUI;
         [SerializeField] private Transform appButtonUI;
@@ -140,7 +140,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
         private void StopGame()
         {
             Time.timeScale = 0;
-            audioSourcesManager.GetAudioSourceByIndex(0).Pause();
+            AudioManager.Instance.CurrentSoundTrack.Pause();
         }
 
         public void Continue()
@@ -150,7 +150,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             totalAppUI?.gameObject.SetActive(false);
             appButtonUI?.gameObject.SetActive(false);
             pauseUIContent?.gameObject.SetActive(false);
-            audioSourcesManager.GetAudioSourceByIndex(0).Play();
+            AudioManager.Instance.CurrentSoundTrack.Play();
         }
 
         public override void ReloadScene()

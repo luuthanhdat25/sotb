@@ -30,7 +30,7 @@ public class PlayerProjectileMovement : ObjectMovement
         }
         else
         {
-            deviation = PlayerCtrl.Instance.PlayerMovement.GetTotalSpeed() / PERSENT_DEVIATION;
+            deviation = PlayerCtrl.Instance.PlayerMovement.BasicMoveSpeed / PERSENT_DEVIATION;
             return Vector2.up + GameInput.Instance.GetRawInputNormalized() * deviation;
         }
     }

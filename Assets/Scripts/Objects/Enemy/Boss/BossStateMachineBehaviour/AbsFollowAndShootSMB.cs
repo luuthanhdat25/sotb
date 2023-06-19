@@ -8,10 +8,9 @@ namespace Enemy
         [SerializeField] protected float timeShootInOneTime;
         [SerializeField] protected float speedFollow;
         [SerializeField] protected int numberOfAttacks;
-        private Vector3 targetPosition = Vector3.zero;
-        private float timer;
-        private bool isStopTimer;
-        
+        protected Vector3 targetPosition = Vector3.zero;
+        protected float timer;
+
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             targetPosition = GetTargetPosition(PlayerCtrl.Instance.GetCurrentPosition(), animator.transform.position);
@@ -25,7 +24,7 @@ namespace Enemy
             this.Behaviour(animator);
         }
 
-        private void Behaviour(Animator animator)
+        protected virtual void Behaviour(Animator animator)
         {
             if (numberOfAttacks != 0)
             {
@@ -36,18 +35,16 @@ namespace Enemy
                     if (animator.transform.position == targetPosition)
                     {
                         SetProjectile(true);
-                        isStopTimer = false;
                     }
                 }
                 else
                 {
-                    if (!isStopTimer) timer += Time.deltaTime;
-                    if (!isStopTimer && timer >= timeShootInOneTime)
+                    timer += Time.deltaTime;
+                    if (timer >= timeShootInOneTime)
                     {
                         SetProjectile(false);
                         targetPosition = GetTargetPosition(PlayerCtrl.Instance.GetCurrentPosition(), animator.transform.position);
                         timer = 0;
-                        isStopTimer = true;
                         numberOfAttacks--;
                     }
                 }

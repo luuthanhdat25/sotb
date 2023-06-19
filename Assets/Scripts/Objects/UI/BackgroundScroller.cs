@@ -4,8 +4,9 @@ using UnityEngine;
 public class BackgroundScroller : MonoBehaviour
 {
     [SerializeField] private MeshRenderer meshRenderer;
-    [SerializeField] private float scrollSpeed = 0.3f;
-    
+    [SerializeField] private float scrollSpeedDefault = 0.3f;
+    [SerializeField] private float scrollDashSpeed = 0.6f;
+    private bool isDash = false;
 
     private void Awake()
     {
@@ -15,12 +16,15 @@ public class BackgroundScroller : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Scroll();
+        if(!isDash) Scroll(scrollSpeedDefault);
+        else Scroll(scrollDashSpeed);
     }
 
-    private void Scroll()
+    public void Dash(bool isOn) => this.isDash = isOn;
+
+    private void Scroll(float speed)
     {
-        float speed = scrollSpeed / transform.localScale.x;
-        meshRenderer.material.mainTextureOffset += Vector2.up * speed * Time.fixedDeltaTime;
+        float delta = speed / transform.localScale.x;
+        meshRenderer.material.mainTextureOffset += Vector2.up * delta * Time.fixedDeltaTime;
     }
 }

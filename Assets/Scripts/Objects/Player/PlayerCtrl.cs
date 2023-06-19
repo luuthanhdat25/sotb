@@ -11,7 +11,8 @@ namespace Player
         [SerializeField] private int playerEnergiesMax; 
         [SerializeField] private int playerBoostCeilsMax;
         [SerializeField] private bool isPlayerDead = false;
-
+        [SerializeField] private BackgroundScroller backgroundScroller;
+        public BackgroundScroller BackgroundScroller => backgroundScroller;
         [SerializeField] private PlayerMovement playerMovement;
         public PlayerMovement PlayerMovement { get => playerMovement; }
         
