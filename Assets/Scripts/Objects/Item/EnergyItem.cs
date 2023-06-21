@@ -12,7 +12,7 @@ namespace Damage
         {
             base.UseItem();
             PlayerCtrl.Instance.PlayerEnergies.AddEnergies(this.addValue);
-            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.Health);
+            AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.Health);
             PlayerCtrl.Instance.PlayerParticleEffect.HealthEffect();
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }

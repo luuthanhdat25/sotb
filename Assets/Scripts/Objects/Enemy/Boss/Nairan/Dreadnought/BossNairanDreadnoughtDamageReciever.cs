@@ -11,7 +11,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         protected override void OnDead()
         {
             base.OnDead();
-            AudioManager.Instance.SpawnEnemyEffect(AudioManager.SoundEffectEnum.ExplosionBoss);
+            AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
             BossNairanDreadnoughtCtrl.Instance.SetDeadAnimation();
             BossNairanDreadnoughtCtrl.Instance.IsDeadTrue();
             DoubleBossNairanCtrl.Instance.OneShipDead();

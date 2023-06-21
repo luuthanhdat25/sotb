@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerCtrl.Instance.PlayerParticleEffect.DashEffect(dashTime);
         PlayerCtrl.Instance.PlayerAnimations.SpriteBlur();
         PlayerCtrl.Instance.BackgroundScroller.Dash(true);
-        AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.Dash);
+        AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.Dash);
         float startTime = Time.time;
         float endTime = startTime + dashTime;
         while (Time.time < endTime)

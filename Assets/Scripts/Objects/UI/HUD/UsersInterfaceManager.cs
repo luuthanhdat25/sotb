@@ -5,9 +5,9 @@ using UnityEngine;
 
 namespace Objects.UI.HUD
 {
-    public class HUDManager : RepeatMonoBehaviour
+    public class UsersInterfaceManager : RepeatMonoBehaviour
     {
-        public static HUDManager Instance { get; private set; }
+        public static UsersInterfaceManager Instance { get; private set; }
 
         [SerializeField] private Transform energiesBar;
         [SerializeField] private Transform boostceilBar;

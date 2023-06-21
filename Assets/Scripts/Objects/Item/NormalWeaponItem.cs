@@ -11,7 +11,7 @@ namespace Damage
             base.UseItem();
             PlayerCtrl.Instance.PlayerAnimations.TurnOnNormalWeapon();
             PlayerCtrl.Instance.PlayerShoot.SetIsHasWeapon(true);
-            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.UpgradeItem);
+            AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.UpgradeItem);
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
     }

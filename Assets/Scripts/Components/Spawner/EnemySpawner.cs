@@ -27,7 +27,7 @@ public class EnemySpawner : RepeatMonoBehaviour
         this.SetCurrentWave();
     }
 
-    private void PlayStartAudioSource() => AudioManager.Instance.CurrentSoundTrack.Play();
+    private void PlayStartAudioSource() => AudioSpawner.Instance.CurrentSoundTrack.Play();
     
     private void SetCurrentWave() => currentWave = this.wavePrefabManager.GetWaveByIndex(currentWaveIndex);
     //-----------------------------------------------------------------------------------------//

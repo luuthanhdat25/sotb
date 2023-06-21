@@ -11,7 +11,7 @@ namespace Enemy
         {
             base.OnDead();
             this.OnDeadFX();
-            AudioManager.Instance.SpawnEnemyEffect(AudioManager.SoundEffectEnum.ExplosionNormalEnemy);
+            AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionNormalEnemy);
             if(dropBom != null) dropBom.Drop();
             GameManager.Instance.IncreaseScore(scorePlus);
             transform.parent.gameObject.SetActive(false);

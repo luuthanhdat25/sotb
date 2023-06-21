@@ -4,6 +4,7 @@ using Objects.UI.HUD;
 using Player;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 namespace DefaultNamespace
 {
@@ -13,7 +14,7 @@ namespace DefaultNamespace
         
         [SerializeField] private int score = 0;
         [SerializeField] private int deathCount = 0;
-        [SerializeField] private AudioManager audioManager;
+        [FormerlySerializedAs("audioManager")] [SerializeField] private AudioSpawner audioSpawner;
         [SerializeField] private RepeatSceneManager sceneManager;
         
         public UnityEvent onScoreChanged;
@@ -41,7 +42,7 @@ namespace DefaultNamespace
         {
             gameState = GameState.GameOver;
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(false);
-            AudioManager.Instance.MusicFadeOut();
+            AudioSpawner.Instance.MusicFadeOut();
             StartCoroutine(DelayGameOver());
         }
 
@@ -49,21 +50,21 @@ namespace DefaultNamespace
         {
             yield return new WaitForSeconds(2f);
             Debug.Log(score);
-            HUDManager.Instance.TotalScore(score);
+            UsersInterfaceManager.Instance.TotalScore(score);
             sceneManager.LossGame();
         }
         
         public void WinGame()
         {
             gameState = GameState.WinGame;
-            AudioManager.Instance.MusicFadeOut();
+            AudioSpawner.Instance.MusicFadeOut();
             StartCoroutine(DelayWinGame());
         }
         
         private IEnumerator DelayWinGame()
         {
             yield return new WaitForSeconds(4);
-            HUDManager.Instance.TotalScore(score);
+            UsersInterfaceManager.Instance.TotalScore(score);
             sceneManager.WinGame();
         }
         

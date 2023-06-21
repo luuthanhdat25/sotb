@@ -9,7 +9,7 @@ namespace Enemy.Nautolan
         protected override void OnDead()
         {
             base.OnDead();
-            AudioManager.Instance.SpawnEnemyEffect(AudioManager.SoundEffectEnum.ExplosionBoss);
+            AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
             BossNautolanCtrl.Instance.SetDeadAnimation();
             Debug.Log("BossDead");
             GameManager.Instance.IncreaseScore(scorePlus);

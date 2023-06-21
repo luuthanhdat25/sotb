@@ -12,7 +12,7 @@ namespace Damage
             base.UseItem();
             PlayerCtrl.Instance.PlayerAnimations.SetActiveShield(true);
             PlayerCtrl.Instance.PlayerDamageReciever.ShieldUp(timeEffective);
-            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.Buff);
+            AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.Buff);
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
     }

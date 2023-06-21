@@ -32,7 +32,7 @@ namespace Player
                 StartCoroutine(this.RebornCoroutine());
             else
             {
-                AudioManager.Instance.PlayerDeadOver();
+                AudioSpawner.Instance.PlayerDeadOver();
             }
         }
         
@@ -46,7 +46,7 @@ namespace Player
 
         private IEnumerator RebornCoroutine()
         {
-            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.ExplosionPlayer);
+            AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.ExplosionPlayer);
             this.SetActiveCollider(false);
             yield return new WaitForSeconds(this.timeDelayReborn);
             this.CombackToDefaultPositionWithRebornAnimation();

@@ -9,7 +9,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
         protected override void OnDead()
         {
             base.OnDead();
-            AudioManager.Instance.SpawnEnemyEffect(AudioManager.SoundEffectEnum.ExplosionBoss);
+            AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
             BossNairanBattlecruiserCtrl.Instance.SetDeadAnimation();
             BossNairanBattlecruiserCtrl.Instance.IsDeadTrue();
             DoubleBossNairanCtrl.Instance.OneShipDead();

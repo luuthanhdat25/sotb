@@ -40,7 +40,7 @@ namespace Player
             if (newProjectile != null)
             {
                 PlayerCtrl.Instance.PlayerBootCeils.DeductCeilsByValue(this.boostCeilsUse);
-                AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.UntiPlayer);
+                AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.UntiPlayer);
                 newProjectile.transform.position = transform.parent.position;
                 newProjectile.gameObject.SetActive(true);
             }

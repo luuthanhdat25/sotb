@@ -1,4 +1,4 @@
-using System;
+    using System;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
@@ -6,9 +6,9 @@ using UnityEngine;
 
 namespace Damage.RhythmScripts
 {
-    public class AudioManager : RepeatMonoBehaviour
+    public class AudioSpawner : RepeatMonoBehaviour
     {
-        public static AudioManager Instance { get; set; }
+        public static AudioSpawner Instance { get; set; }
         [SerializeField] private float fadeDuration = 1f;
         [SerializeField] private List<AudioSource> soundTrackList;
         public List<AudioSource> SoundTrackList => soundTrackList;
@@ -29,12 +29,13 @@ namespace Damage.RhythmScripts
             Dash,
             ExplosionBoss,
             ExplosionNormalEnemy,
-            Button
+            Button,
+            ScoreRaise
         }
         
         protected override void Awake()
         {
-            if(Instance != null) Debug.LogError("There is more than one AudioManager instance");
+            if(Instance != null) Debug.LogError("There is more than one AudioSpawner instance");
             Instance = this;
             
             indexSoundTrack = 0;
@@ -220,5 +221,33 @@ namespace Damage.RhythmScripts
                 elapsedTime += Time.deltaTime;
             }
         }
+
+        /*public bool isScoreRaise = false;
+        public void SetIsScoreRaise(bool isScoreRaise) => this.isScoreRaise = isScoreRaise;
+        [SerializeField] private GameObject scoreRaiseSound;
+        private void Update()
+        {
+            if (!isScoreRaise) return;
+            ScoreRaise();
+        }
+        public float toggleInterval = 0.2f;
+        private float timer = 0f;
+        public void ScoreRaise()
+        {
+            timer += Time.deltaTime;
+            if (timer >= toggleInterval)
+            {
+                if(toggleInterval > 0.1) toggleInterval -= Time.deltaTime / 2;
+                ToggleObject();
+                timer = 0f;
+            }
+        }
+        
+        private void ToggleObject()
+        {
+            GameObject scoreRaise = Instantiate(scoreRaiseSound);
+            scoreRaise.SetActive(true);
+            Destroy(scoreRaise, 1f);
+        }*/
     }
 }

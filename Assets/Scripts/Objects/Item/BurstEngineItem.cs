@@ -12,8 +12,8 @@ namespace Damage
             PlayerCtrl.Instance.PlayerAnimations.SetBurstEngineUpgrade();
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(true);
             PlayerCtrl.Instance.PlayerMovement.SetCanUseDashToTrue();
-            HUDManager.Instance.SetActiveBoostceilBar(true);
-            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.UpgradeItem);
+            UsersInterfaceManager.Instance.SetActiveBoostceilBar(true);
+            AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.UpgradeItem);
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
     }

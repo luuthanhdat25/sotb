@@ -1,13 +1,14 @@
 using System.Collections;
 using Damage.RhythmScripts;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace DefaultNamespace.Objects.UI.Level_3
 {
     public class LevelThreeSceneManager : RepeatSceneManager
     {
-        [SerializeField] private AudioManager audioManager;
+        [FormerlySerializedAs("audioManager")] [SerializeField] private AudioSpawner audioSpawner;
         [SerializeField] private bool isPause = false;
         [SerializeField] private Transform totalAppUI;
         [SerializeField] private Transform appButtonUI;
@@ -118,7 +119,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             }
         }
         
-        private void PlayUIEffect() => AudioManager.Instance.UIEffect();
+        private void PlayUIEffect() => AudioSpawner.Instance.UIEffect();
 
         private void CheckPauseOrContinue()
         {
@@ -164,7 +165,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
         private void StopGame()
         {
             Time.timeScale = 0;
-            AudioManager.Instance.CurrentSoundTrack.Pause();
+            AudioSpawner.Instance.CurrentSoundTrack.Pause();
         }
 
         public void Continue()
@@ -175,7 +176,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             appButtonUI?.gameObject.SetActive(false);
             pauseUIContent?.gameObject.SetActive(false);
             PlayUIEffect();
-            AudioManager.Instance.CurrentSoundTrack.Play();
+            AudioSpawner.Instance.CurrentSoundTrack.Play();
         }
 
         public override void ReloadScene()

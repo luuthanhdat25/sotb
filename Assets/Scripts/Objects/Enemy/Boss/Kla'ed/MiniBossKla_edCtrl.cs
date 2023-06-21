@@ -67,7 +67,7 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     {
         TimeManager.Instance.SlowMotionEffect();
         this.minibossKlaEdModelShipModelShipAnimation.SetIsDestructionTrigger();
-        AudioManager.Instance.SpawnEnemyEffect(AudioManager.SoundEffectEnum.ExplosionBoss);
+        AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
         this.kla_edAnimator.SetTrigger(AnimationParameter.isDestruction.ToString());
     }
 

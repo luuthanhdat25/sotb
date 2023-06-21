@@ -12,7 +12,7 @@ namespace Damage
         {
             base.UseItem();
             PlayerCtrl.Instance.PlayerShoot.DecreaseFireRateInTime(this.reductionRate, this.timeEffective);
-            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.Buff);
+            AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.Buff);
             PlayerCtrl.Instance.PlayerParticleEffect.BuffShootSpeedEffect();
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }

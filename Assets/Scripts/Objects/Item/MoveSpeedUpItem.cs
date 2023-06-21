@@ -14,7 +14,7 @@ namespace Damage
             PlayerCtrl.Instance.PlayerMovement.AddMoveSpeedInTime(this.addValue, this.timeEffective);
             PlayerCtrl.Instance.PlayerBootCeils.AddBoostCeils(2);
             PlayerCtrl.Instance.PlayerParticleEffect.BuffMoveSpeedEffect();
-            AudioManager.Instance.SpawnPlayerEffect(AudioManager.SoundEffectEnum.Buff);
+            AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.Buff);
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
     }
