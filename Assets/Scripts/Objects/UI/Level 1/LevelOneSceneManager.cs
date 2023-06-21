@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Damage.RhythmScripts;
 using UnityEngine;
@@ -38,11 +37,11 @@ namespace DefaultNamespace.Objects.UI.Level_1
 
         [Header("Next Level UI")]
         [SerializeField] private Transform nextLevelUIContent;
-        //[SerializeField] private Transform nextLevelButtonTransform;
         [SerializeField] private Button nextLevelButton;
 
         private bool isWinOrLoss = false;
-        private bool isEntered = false;
+        private bool isEscapeButtonEntered = false;
+        private bool isDirectionButtonEntered = false;
         private void Start()
         {
             LoadRestart();
@@ -63,6 +62,7 @@ namespace DefaultNamespace.Objects.UI.Level_1
             menuOff?.gameObject.SetActive(false);
             menuOn?.gameObject.SetActive(true);
             button.Select();
+            PlayUIEffect();
         }
         
         private void NoRestartButton() => NoButtonReturnToTotalUI(restartMenu, restartButton);
@@ -75,6 +75,7 @@ namespace DefaultNamespace.Objects.UI.Level_1
             else score?.gameObject.SetActive(true);
 
             buttonSelect?.Select();
+            PlayUIEffect();
             appButtonUI?.gameObject.SetActive(true);
         }
         
@@ -98,16 +99,20 @@ namespace DefaultNamespace.Objects.UI.Level_1
         
         private void NoQuitButton() => NoButtonReturnToTotalUI(quitMenu, quitButton);
 
-        private void Update() => CheckPauseOrContinue();
+        private void Update()
+        {
+            ButtonSelectedAudio();
+            CheckPauseOrContinue();
+        }
 
         private void CheckPauseOrContinue()
         {
             if (isWinOrLoss) return;
-            if (GameInput.Instance.IsEscapePressed() && !isEntered)
+            if (GameInput.Instance.IsEscapePressed() && !isEscapeButtonEntered)
             {
-                isEntered = true;
+                isEscapeButtonEntered = true;
             }
-            else if (!GameInput.Instance.IsEscapePressed() && isEntered)
+            else if (!GameInput.Instance.IsEscapePressed() && isEscapeButtonEntered)
             {
                 if (!isPause) PauseGame();
                 else
@@ -117,15 +122,32 @@ namespace DefaultNamespace.Objects.UI.Level_1
                     else if(quitMenu.gameObject.activeSelf) NoQuitButton();
                     else Continue();
                 }
-                isEntered = false;
+                isEscapeButtonEntered = false;
             }
         }
+
+        private void ButtonSelectedAudio()
+        {
+            if (!isPause) return;
+            if (GameInput.Instance.GetRawInputNormalized() != Vector2.zero && !isDirectionButtonEntered)
+            {
+                isDirectionButtonEntered = true;
+            }
+            else if (GameInput.Instance.GetRawInputNormalized() == Vector2.zero && isDirectionButtonEntered)
+            {
+                PlayUIEffect();
+                isDirectionButtonEntered = false;
+            }
+        }
+
+        private void PlayUIEffect() => AudioManager.Instance.UIEffect();
 
         private void PauseGame()
         {
             StopGame();            
             isPause = true;
             continueButton?.Select();
+            PlayUIEffect();
             TurnOffAllSmallMenu();
             
             totalAppUI?.gameObject.SetActive(true);
@@ -153,6 +175,7 @@ namespace DefaultNamespace.Objects.UI.Level_1
             totalAppUI?.gameObject.SetActive(false);
             appButtonUI?.gameObject.SetActive(false);
             pauseUIContent?.gameObject.SetActive(false);
+            PlayUIEffect();
             AudioManager.Instance.CurrentSoundTrack.Play();
         }
 
@@ -179,6 +202,7 @@ namespace DefaultNamespace.Objects.UI.Level_1
             yield return new WaitForSeconds(3f);
             nextLevelUIContent?.gameObject.SetActive(true);
             nextLevelButton?.Select();
+            PlayUIEffect();
             StopGame();
         }
 

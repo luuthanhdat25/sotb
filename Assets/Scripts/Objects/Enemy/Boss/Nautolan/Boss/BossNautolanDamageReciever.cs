@@ -1,3 +1,4 @@
+using Damage.RhythmScripts;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace Enemy.Nautolan
         protected override void OnDead()
         {
             base.OnDead();
+            AudioManager.Instance.SpawnEnemyEffect(AudioManager.SoundEffectEnum.ExplosionBoss);
             BossNautolanCtrl.Instance.SetDeadAnimation();
             Debug.Log("BossDead");
             GameManager.Instance.IncreaseScore(scorePlus);

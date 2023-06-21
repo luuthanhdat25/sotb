@@ -3187,7 +3187,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 24771047558fa1b4e9b2028e645e595d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12261,8 +12261,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 09062d53e9df30946aa2a7c730e3a1db, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
-  m_Pitch: 1
+  m_Volume: 0.4
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -15363,7 +15363,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7b2a21a1461fa3b4a84b380a1c7c8bd4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ba8491c7c107b2b44b337011d39fbbba, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1
@@ -17336,7 +17336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e5508461f5ea146bb13bf8d8bd6ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wavePrefabsManager: {fileID: 249405779}
+  wavePrefabManager: {fileID: 0}
   currentWave: {fileID: 0}
   wavesCurrentStartTime: 0
 --- !u!1 &1170958475
@@ -18366,7 +18366,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 54f6b9b2443d25a4da8f27304590711d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4
-  m_Pitch: 1
+  m_Pitch: 0.5
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -22486,7 +22486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1448315871
 Transform:
   m_ObjectHideFlags: 0
@@ -26030,14 +26030,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267979602958453830, guid: 7fdd5ff1d25f309458180ecbda86e486, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8189301283440825970, guid: 7fdd5ff1d25f309458180ecbda86e486, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8407765637824535566, guid: 7fdd5ff1d25f309458180ecbda86e486, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -30826,10 +30818,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5d1ecfba405afbf418738b8912419b50, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 24771047558fa1b4e9b2028e645e595d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 1
+  m_Volume: 0.3
+  m_Pitch: 2.5
   Loop: 0
   Mute: 0
   Spatialize: 0

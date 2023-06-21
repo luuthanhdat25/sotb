@@ -1,11 +1,9 @@
-using System;
 using System.Collections;
 using Damage.RhythmScripts;
 using Objects.UI.HUD;
 using Player;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
 {
@@ -21,6 +19,18 @@ namespace DefaultNamespace
         public UnityEvent onScoreChanged;
         public UnityEvent onDeath;
         
+        
+        private enum GameState
+        {
+            Started,
+            Pause,
+            WinGame,
+            GameOver,
+        }
+        private GameState gameState = GameState.Started;
+
+        public bool IsFinishGame() => gameState != GameState.Started;
+        
         protected override void Awake()
         {
             if(Instance != null) Debug.LogError("There is more than one PlayerCtrl instance");
@@ -29,6 +39,7 @@ namespace DefaultNamespace
         
         public void GameOver()
         {
+            gameState = GameState.GameOver;
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(false);
             AudioManager.Instance.MusicFadeOut();
             StartCoroutine(DelayGameOver());
@@ -44,6 +55,7 @@ namespace DefaultNamespace
         
         public void WinGame()
         {
+            gameState = GameState.WinGame;
             AudioManager.Instance.MusicFadeOut();
             StartCoroutine(DelayWinGame());
         }

@@ -1,3 +1,4 @@
+using Damage.RhythmScripts;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
         protected override void OnDead()
         {
             base.OnDead();
+            AudioManager.Instance.SpawnEnemyEffect(AudioManager.SoundEffectEnum.ExplosionBoss);
             BossNairanBattlecruiserCtrl.Instance.SetDeadAnimation();
             BossNairanBattlecruiserCtrl.Instance.IsDeadTrue();
             DoubleBossNairanCtrl.Instance.OneShipDead();

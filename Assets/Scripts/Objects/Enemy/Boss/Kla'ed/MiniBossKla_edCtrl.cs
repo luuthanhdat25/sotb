@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
+using Damage.RhythmScripts;
 using DefaultNamespace;
+using DefaultNamespace.Components.Time;
 using Enemy;
 using Enemy.Boss;
 using UnityEngine;
@@ -63,7 +65,9 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
 
     public void SetDeadAnimation()
     {
+        TimeManager.Instance.SlowMotionEffect();
         this.minibossKlaEdModelShipModelShipAnimation.SetIsDestructionTrigger();
+        AudioManager.Instance.SpawnEnemyEffect(AudioManager.SoundEffectEnum.ExplosionBoss);
         this.kla_edAnimator.SetTrigger(AnimationParameter.isDestruction.ToString());
     }
 

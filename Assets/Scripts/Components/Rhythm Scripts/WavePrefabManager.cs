@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Damage.RhythmScripts
 {
-    public class WavePrefabsManager : RepeatMonoBehaviour
+    public class WavePrefabManager : RepeatMonoBehaviour
     {
         //Load List WavePrefabs
         [SerializeField] private List<Transform> waveSpawnersList;

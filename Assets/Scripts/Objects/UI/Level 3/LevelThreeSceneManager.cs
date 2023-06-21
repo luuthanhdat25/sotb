@@ -40,6 +40,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
 
         private bool isWinOrLoss = false;
         private bool isEntered = false;
+        private bool isDirectionButtonEntered = false;
         private void Start()
         {
             LoadRestart();
@@ -60,6 +61,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             menuOff?.gameObject.SetActive(false);
             menuOn?.gameObject.SetActive(true);
             button.Select();
+            PlayUIEffect();
         }
         
         private void NoRestartButton() => NoButtonReturnToTotalUI(restartMenu, restartButton);
@@ -72,6 +74,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             else score?.gameObject.SetActive(true);
 
             buttonSelect?.Select();
+            PlayUIEffect();
             appButtonUI?.gameObject.SetActive(true);
         }
         
@@ -95,7 +98,27 @@ namespace DefaultNamespace.Objects.UI.Level_3
         
         private void NoQuitButton() => NoButtonReturnToTotalUI(quitMenu, quitButton);
 
-        private void Update() => CheckPauseOrContinue();
+        private void Update()
+        {
+            ButtonSelectedAudio();
+            CheckPauseOrContinue();
+        }
+        
+        private void ButtonSelectedAudio()
+        {
+            if (!isPause) return;
+            if (GameInput.Instance.GetRawInputNormalized() != Vector2.zero && !isDirectionButtonEntered)
+            {
+                isDirectionButtonEntered = true;
+            }
+            else if (GameInput.Instance.GetRawInputNormalized() == Vector2.zero && isDirectionButtonEntered)
+            {
+                PlayUIEffect();
+                isDirectionButtonEntered = false;
+            }
+        }
+        
+        private void PlayUIEffect() => AudioManager.Instance.UIEffect();
 
         private void CheckPauseOrContinue()
         {
@@ -123,6 +146,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             StopGame();            
             isPause = true;
             continueButton?.Select();
+            PlayUIEffect();
             TurnOffAllSmallMenu();
             
             totalAppUI?.gameObject.SetActive(true);
@@ -150,6 +174,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             totalAppUI?.gameObject.SetActive(false);
             appButtonUI?.gameObject.SetActive(false);
             pauseUIContent?.gameObject.SetActive(false);
+            PlayUIEffect();
             AudioManager.Instance.CurrentSoundTrack.Play();
         }
 
@@ -181,6 +206,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             yield return new WaitForSeconds(2f);
             appButtonUI?.gameObject.SetActive(true);
             combackButton.Select();
+            PlayUIEffect();
             StopGame();
         }
 

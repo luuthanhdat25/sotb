@@ -70,6 +70,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanModelShipAnimation.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_edDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Menu Scene\MenuSceneManager.cs" />
+     <Compile Include="Assets\Scripts\Components\Rhythm Scripts\WavePrefabManager.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtArcShootNormalSMB.cs" />
      <Compile Include="Assets\InputSystems\PlayerInputActions.cs" />
@@ -84,7 +85,6 @@
      <Compile Include="Assets\Scripts\Components\Spawner\SpawnerPooling.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\PlayerParticleEffect.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\KlaEdIdleStateMachineBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Components\RhythmScripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtCtrl.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanFollowAndShootShockWaveBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\FX\FXDespawn.cs" />
@@ -98,12 +98,14 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\TorpedoEnemy\SpawnTorpedoEnemy.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanIdleStateMachineBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserModelShipAnimation.cs" />
+     <Compile Include="Assets\Scripts\Components\Rhythm Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\AttackEnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ItemMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\ResourcePlayerBar.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MiniBossKla_edCtrl.cs" />
+     <Compile Include="Assets\Scripts\Components\Rhythm Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Projectiles\ProjectileModelRotateAroundCenter.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageReceiver.cs" />
@@ -123,12 +125,10 @@
      <Compile Include="Assets\Scripts\Objects\Item\ShieldItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndShootSMB.cs" />
      <Compile Include="Assets\Scripts\RepeatMonoBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Components\RhythmScripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Objects\FX\FXSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\AbstractClass\Shoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtSpawnTorpedo.cs" />
      <Compile Include="Assets\FastScriptReload\Examples\Scripts\FunctionLibrary.cs" />
-     <Compile Include="Assets\Scripts\Components\RhythmScripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanDamageReciever.cs" />
@@ -137,6 +137,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtTeleportAndShootLazerSMB.cs" />
      <Compile Include="Assets\Scripts\Resources\Item\DropRate.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyMovement.cs" />
+     <Compile Include="Assets\Scripts\Components\Rhythm Scripts\SyncCenter.cs" />
      <Compile Include="Assets\Scripts\Resources\EnemyInfor\EnemySO.cs" />
      <Compile Include="Assets\Scripts\Components\Time\TimeManager.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\HUD\HUDManager.cs" />
@@ -157,6 +158,7 @@
      <Compile Include="Assets\Scripts\Components\Pathfinder\Pathfinder.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NairanScoutProjectileMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageSender.cs" />
+     <Compile Include="Assets\Scripts\Components\Spawner\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\NormalWeaponItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyLazerDamageSender.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDespawn.cs" />
@@ -188,10 +190,8 @@
      <Compile Include="Assets\Scripts\Objects\Item\BurstEngineItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Components\SFX\SFXCtrl.cs" />
-     <Compile Include="Assets\Scripts\Components\RhythmScripts\SyncCenter.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerShoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDamageReceiver.cs" />
-     <Compile Include="Assets\Scripts\Components\RhythmScripts\WavePrefabsManager.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_edModelShipAnimation.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ShootSpeedUpItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanCtrl.cs" />
@@ -290,7 +290,6 @@
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews" />
      <Folder Include="Assets\Scripts\Objects\AbstractClass" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2" />
-     <Folder Include="Assets\Scripts\Components\RhythmScripts" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapon Effects - Projectiles" />
      <Folder Include="Assets\Sprites\FX" />
      <Folder Include="Assets\Scripts\Objects\Enemy" />
@@ -364,6 +363,7 @@
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews\Kla&apos;ed\Engine" />
      <Folder Include="Assets\Scripts\Objects\Player\Damage" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Destruction" />
+     <Folder Include="Assets\Scripts\Components\Rhythm Scripts" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <Folder Include="Assets\Scripts\Objects\Item" />

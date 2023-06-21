@@ -6,4 +6,5 @@
 	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/FiltersState/=SpellingFilter/@EntryIndexedValue">Off</s:String>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.InputSystem.dll" /&gt;&#xD;
+  &lt;Assembly Path="D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

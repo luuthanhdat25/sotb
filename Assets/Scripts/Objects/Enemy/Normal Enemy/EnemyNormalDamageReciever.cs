@@ -1,3 +1,4 @@
+using Damage.RhythmScripts;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ namespace Enemy
         {
             base.OnDead();
             this.OnDeadFX();
+            AudioManager.Instance.SpawnEnemyEffect(AudioManager.SoundEffectEnum.ExplosionNormalEnemy);
             if(dropBom != null) dropBom.Drop();
             GameManager.Instance.IncreaseScore(scorePlus);
             transform.parent.gameObject.SetActive(false);
