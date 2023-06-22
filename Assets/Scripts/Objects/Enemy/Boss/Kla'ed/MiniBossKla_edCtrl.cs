@@ -55,12 +55,12 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     private IEnumerator AfterOnMinute()
     {
         yield return new WaitForSeconds(60);
-        numberOfShootAttacks = 5;
-        speedFollow = 10;
+        numberOfShootAttacks = 6;
+        speedFollow = 12;
         timeShootInOneTime = 1;
         numberOfChaseAttacks = 3;
-        speedChase = 12;
-        timeWait = 1f;
+        speedChase = 13;
+        timeWait = 0.8f;
     }
 
     public void SetDeadAnimation()

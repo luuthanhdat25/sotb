@@ -7,6 +7,7 @@ public class BackgroundScroller : MonoBehaviour
     [SerializeField] private float scrollSpeedDefault = 0.3f;
     [SerializeField] private float scrollDashSpeed = 0.6f;
     private bool isDash = false;
+    private bool isReverseBackground = false;
 
     private void Awake()
     {
@@ -25,6 +26,14 @@ public class BackgroundScroller : MonoBehaviour
     private void Scroll(float speed)
     {
         float delta = speed / transform.localScale.x;
-        meshRenderer.material.mainTextureOffset += Vector2.up * delta * Time.fixedDeltaTime;
+        meshRenderer.material.mainTextureOffset += GetVectorMove() * delta * Time.fixedDeltaTime;
     }
+
+    private Vector2 GetVectorMove()
+    {
+        if(!isReverseBackground) return Vector2.up;
+        return Vector2.down;
+    }
+    
+    public void ReverseBackground() => isReverseBackground = true;
 }

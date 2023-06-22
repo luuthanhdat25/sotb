@@ -1,4 +1,4 @@
-    using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
@@ -10,27 +10,23 @@ namespace Damage.RhythmScripts
     {
         public static AudioSpawner Instance { get; set; }
         [SerializeField] private float fadeDuration = 1f;
-        [SerializeField] private List<AudioSource> soundTrackList;
-        public List<AudioSource> SoundTrackList => soundTrackList;
+        [SerializeField] private BackgroundScroller backgroundScroller;
+        [SerializeField] private Transform soundTrackAudioTransform;
+        [SerializeField] private AudioClip sourceOne, sourceTwo;
+        [SerializeField] private AudioSource currentSoundTrack;
+        public AudioSource CurrentSoundTrack => currentSoundTrack;
+        
         [SerializeField] private List<Transform> soundEffectPlayerList;
         [SerializeField] private List<Transform> soundEffectEnemyList;
         [SerializeField] private List<Transform> soundUIList;
-        private AudioSource currentSoundTrack;
-        public AudioSource CurrentSoundTrack => currentSoundTrack;
-        private byte indexSoundTrack;
         private float startVolume;
+        private bool isChangeSong = false;
+        public bool IsChangeSong => isChangeSong;
         public enum SoundEffectEnum
         {
-            ExplosionPlayer,
-            Health,
-            UpgradeItem,
-            Buff,
-            UntiPlayer,
-            Dash,
-            ExplosionBoss,
-            ExplosionNormalEnemy,
-            Button,
-            ScoreRaise
+            ExplosionPlayer, Health, UpgradeItem, Buff, UntiPlayer, Dash,
+            ExplosionBoss, ExplosionNormalEnemy,
+            Button, ScoreRaise
         }
         
         protected override void Awake()
@@ -38,25 +34,23 @@ namespace Damage.RhythmScripts
             if(Instance != null) Debug.LogError("There is more than one AudioSpawner instance");
             Instance = this;
             
-            indexSoundTrack = 0;
-            currentSoundTrack = soundTrackList[indexSoundTrack];
+            currentSoundTrack.clip = sourceOne;
         }
 
         protected override void LoadComponents()
         {
             base.LoadComponents();
-            this.LoadSoundTrackList();
+            this.LoadSoundTrackAudioSource();
             this.LoadSoundEffectPlayerList();
             this.LoadSoundEffectEnemyList();
             this.LoadSoundUIList();
-            //this.LoadHolderManager();  
         }
 
-        private void LoadSoundTrackList()
+        private void LoadSoundTrackAudioSource()
         {
-            if (soundTrackList.Count != 0) return;
-            Transform soundTrack = transform.Find("SoundTrack");
-            LoadAudioSources(soundTrack, soundTrackList);
+            if (this.soundTrackAudioTransform != null) return;
+            this.soundTrackAudioTransform = transform.Find("Soundtrack");
+            this.currentSoundTrack = soundTrackAudioTransform.GetComponent<AudioSource>();
         }
         
         private void LoadAudioSources(Transform parent, List<AudioSource> list)
@@ -103,28 +97,24 @@ namespace Damage.RhythmScripts
             LoadTransforms(UI, soundUIList);
         }
         
-        //private void LoadHolderManager() => this.holderManager ??= transform.Find("HolderManager");
-        //------------------------------------------------------------------------------------------------//
         private void FixedUpdate()
         {
-            if (IsChangeSoundTrack())
+            if (!IsChangeSoundTrack()) return;
+
+            if (!isChangeSong)
             {
-                ChangeMusic();
+                isChangeSong = true;
+                Invoke("ChangeMusic", 0.5f);
             }
         }
 
+        private bool IsChangeSoundTrack() => !isChangeSong && !currentSoundTrack.isPlaying && Time.timeScale != 0 && !GameManager.Instance.IsFinishGame();
+
         private void ChangeMusic()
         {
-            indexSoundTrack++;
-            currentSoundTrack = soundTrackList[indexSoundTrack];
+            currentSoundTrack.clip = sourceTwo;
+            backgroundScroller?.ReverseBackground();
             currentSoundTrack.Play();
-            Debug.Log("Change Song");
-        }
-
-        private bool IsChangeSoundTrack()
-        {
-            int nextIndex = indexSoundTrack + 1;
-            return Time.timeScale != 0 && !currentSoundTrack.isPlaying && nextIndex < soundTrackList.Count && !GameManager.Instance.IsFinishGame();
         }
 
         public void MusicFadeOut() => StartCoroutine(FadeOutCoroutine());
@@ -185,7 +175,6 @@ namespace Damage.RhythmScripts
             {
                 if (effectEnum.ToString().Equals(transform.name))
                 {
-                    //AudioSource audioSource = transform.GetComponent<AudioSource>();
                     transform.gameObject.SetActive(false);
                     transform.gameObject.SetActive(true);
                 }

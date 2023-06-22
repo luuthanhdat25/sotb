@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98dd48acc920941ae68e3cd57fc3cb, type: 3}
   m_Name: MiniNairanFrigate
   m_EditorClassIdentifier: 
-  hpMax: 60
+  hpMax: 90
   dropList: []

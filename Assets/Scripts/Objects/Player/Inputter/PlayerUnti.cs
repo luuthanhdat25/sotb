@@ -15,7 +15,7 @@ namespace Player
         
         protected override void Fire()
         {
-            if (!isHasUntiWeapon) return;
+            if (PlayerCtrl.Instance.GetIsPlayerDead() || !isHasUntiWeapon) return;
             if (!GameInput.Instance.IsUntiPressed()) return;
             
             this.ResetIsFiring();
