@@ -71,7 +71,6 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_edDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Menu Scene\MenuSceneManager.cs" />
      <Compile Include="Assets\Scripts\Components\Rhythm Scripts\WavePrefabManager.cs" />
-     <Compile Include="Assets\AudioSourseEnableRandom.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtArcShootNormalSMB.cs" />
      <Compile Include="Assets\InputSystems\PlayerInputActions.cs" />
@@ -181,6 +180,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanSpinningBulletShoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanArcBomBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Components\Audio\MenuAudioManager.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\ItemMagnet.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\AbsBossShoot.cs" />
@@ -200,6 +200,7 @@
      <Compile Include="Assets\Scripts\Objects\UI\Player\EnergiesBar.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\BootCeilsBar.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MiniBossNairanFollowAndShootBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Components\Audio\AudioSourseEnableRandom.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtIdleSMB.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\Despawn.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsIdleSMB.cs" />
@@ -440,6 +441,7 @@
      <None Include="Assets\FastScriptReload\Plugins\Roslyn\RoslynLicense.txt" />
      <Folder Include="Assets\Scripts\Objects\FX" />
      <Folder Include="Assets\Animations\FX" />
+     <Folder Include="Assets\Scripts\Components\Audio" />
      <Folder Include="Assets\Scripts\Objects\Player\Animation" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Destruction\PNGs" />

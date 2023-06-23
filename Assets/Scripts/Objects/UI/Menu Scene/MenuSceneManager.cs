@@ -1,3 +1,4 @@
+using DefaultNamespace.Components.Audio;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,6 +6,7 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
 {
     public class MenuSceneManager : RepeatSceneManager
     {
+        [SerializeField] private MenuAudioManager menuAudioManager;
         [SerializeField] private Transform totalUI;
         
         [Header("Play")]
@@ -20,6 +22,7 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
         [SerializeField] private Transform quitMenu;
         [SerializeField] private Button yesExitGameButton;
         [SerializeField] private Button noExitGameButton;
+        private bool isDirectionButtonEntered = false;
 
         //LoadComponent
         private void Start()
@@ -66,27 +69,48 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
         {
             SetActiveTransfrom(totalUI, false);
             outCreditButton.Select();
+            PlayUIEffect();
         }
         
         private void CreditButtonTurnOnTotalUI()
         {
             SetActiveTransfrom(totalUI, true);
-            playGameButton.Select();
+            creditButton.Select();
+            PlayUIEffect();
         }
         
         private void QuitButtonTurnOffTotalUI()
         {
             SetActiveTransfrom(totalUI, false);
             noExitGameButton.Select();
+            PlayUIEffect();
         }
         
         private void QuitButtonTurnOnTotalUI()
         {
             SetActiveTransfrom(totalUI, true);
             playGameButton.Select();
+            PlayUIEffect();
         }
 
         private void SetActiveTransfrom(Transform transform, bool isOn) 
             => transform?.gameObject.SetActive(isOn);
+
+        private void Update() => ButtonSelectedAudio();
+        
+        private void ButtonSelectedAudio()
+        {
+            if (GameInput.Instance.GetRawInputNormalized() != Vector2.zero && !isDirectionButtonEntered)
+            {
+                isDirectionButtonEntered = true;
+            }
+            else if (GameInput.Instance.GetRawInputNormalized() == Vector2.zero && isDirectionButtonEntered)
+            {
+                PlayUIEffect();
+                isDirectionButtonEntered = false;
+            }
+        }
+
+        private void PlayUIEffect() => menuAudioManager?.UIEffect();
     }
 }

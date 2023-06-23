@@ -1575,6 +1575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveToTargetSpeed: 5
+  tutorialUI: {fileID: 0}
 --- !u!1 &8189301283230113299
 GameObject:
   m_ObjectHideFlags: 0
