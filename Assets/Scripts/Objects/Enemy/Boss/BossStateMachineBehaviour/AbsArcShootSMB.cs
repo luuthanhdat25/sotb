@@ -18,6 +18,9 @@ namespace Enemy
         {
             startPosition = GetStartPosition();
             endPosition = GetEndPosition();
+            curveHeight = GetCurveHeight();
+            speedArc = GetSpeedArc();
+            speedToStartPosition = GetSpeedToStartPosition();
         }
         
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -62,8 +65,17 @@ namespace Enemy
         }
         
         protected abstract Vector3 GetStartPosition();
+        
         protected abstract Vector3 GetEndPosition();
+
+        protected abstract float GetCurveHeight();
+        
+        protected abstract float GetSpeedArc();
+
+        protected abstract float GetSpeedToStartPosition();
+        
         protected abstract void SetProjectile(bool isOn);
+        
         protected abstract void UnSetAniamtion();
     }
 }

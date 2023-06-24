@@ -37191,7 +37191,7 @@ MonoBehaviour:
   basicMoveSpeed: 4
   canMoveNormal: 1
   canUseDash: 0
-  dashSpeed: 15
+  dashSpeed: 5
   dashTime: 0.1
   dashEnergiesUse: 1
   paddingLeft: 1

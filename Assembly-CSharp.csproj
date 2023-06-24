@@ -234,6 +234,7 @@
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Designs - Base\PNGs" />
      <Folder Include="Assets\Prefabs\Path" />
      <Folder Include="Assets\Sprites\FX\Demo\FX002" />
+     <Folder Include="Assets\Sprites\UI\Button" />
      <Folder Include="Assets\Prefabs\Background" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nairan" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\Aseprite" />

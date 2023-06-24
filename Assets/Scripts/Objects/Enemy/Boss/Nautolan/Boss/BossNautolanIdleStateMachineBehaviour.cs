@@ -5,7 +5,7 @@ public class BossNautolanIdleStateMachineBehaviour : AbsIdleSMB
     int stateNumber;
     protected override void ChangeState(Animator animator)
     {
-        if (!BossNautolanCtrl.Instance.BossNautolanDamageReciever.IsLowerHealth(40))
+        if (!BossNautolanCtrl.Instance.BossNautolanDamageReciever.IsLowerHealth(50))
             stateNumber = GetRandomState(1, 3);
         else 
             stateNumber = GetRandomState(3, 4);

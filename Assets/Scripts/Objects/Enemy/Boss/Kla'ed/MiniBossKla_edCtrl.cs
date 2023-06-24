@@ -50,11 +50,9 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
 
     private void OnEnable() => healthBar?.SetActive(true);
 
-    private void Start() => StartCoroutine(AfterOnMinute());
-
-    private IEnumerator AfterOnMinute()
+    private IEnumerator Start()
     {
-        yield return new WaitForSeconds(60);
+        yield return new WaitForSeconds(58);
         numberOfShootAttacks = 6;
         speedFollow = 12;
         timeShootInOneTime = 1;
@@ -62,7 +60,7 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
         speedChase = 13;
         timeWait = 0.8f;
     }
-
+    
     public void SetDeadAnimation()
     {
         TimeManager.Instance.SlowMotionEffect();
@@ -72,6 +70,7 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     }
 
     public void SetIsFollowAndShoot(bool isTrue) => this.kla_edAnimator.SetBool(AnimationParameter.isFollowAndShoot.ToString(), isTrue);
+    
     public void SetIsChasePlayer(bool isTrue) => this.kla_edAnimator.SetBool(AnimationParameter.isChasePlayer.ToString(), isTrue);
 
     public Vector3 GetCameraPosition() => this.mainCam.position;

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Enemy.Nautolan;
 using UnityEngine;
 
@@ -35,8 +36,11 @@ public class BossNautolanCtrl : RepeatMonoBehaviour
     [SerializeField] private int numberOfShootAttacks = 1;
     [SerializeField] private float speedFollow = 6f;
     [SerializeField] private float timeShootInOneTime = 5f;
-    
-    [Header("ArcShootBehaviour")]
+
+    [Header("ArcShootBehaviour")] 
+    [SerializeField] private float curveHeight = 3f; 
+    [SerializeField] protected float speedArc = 1f;
+    [SerializeField] protected float speedToStartPosition = 6.5f;
     [SerializeField] private Transform startPoint;    
     [SerializeField] private Transform endPoint;    
     
@@ -51,21 +55,21 @@ public class BossNautolanCtrl : RepeatMonoBehaviour
         Instance = this;
     }
 
-    /*private void Start()
+    private IEnumerator Start()
     {
-        StartCoroutine(AfterOnMinute());
+        yield return new WaitForSeconds(66.5f);
+        timeWait = 0.8f;
+        numberOfShootAttacks = 8;
+        speedFollow = 13;
+        timeShootInOneTime = 0.5f;
+        curveHeight = 3.5f;
+        speedArc = 1.1f;
+        speedToStartPosition = 7f;
+        numberOfShootAttacksShockWave = 4;
+        speedFollowShockWave = 14f;
+        bossNautolanBomShoot.SetFiringRate(0.09f);
     }
-
-    private IEnumerator AfterOnMinute()
-    {
-        yield return new WaitForSeconds(60);
-        numberOfShootAttacks = 5;
-        speedFollow = 10;
-        timeShootInOneTime = 1;
-        numberOfChaseAttacks = 3;
-        speedChase = 12;
-        timeWait = 1f;
-    }*/
+    
 
     private void OnEnable() => healthBar?.SetActive(true);
 
@@ -90,4 +94,7 @@ public class BossNautolanCtrl : RepeatMonoBehaviour
     public float GetSpeedFollowShockWave() => this.speedFollowShockWave;
     public float GetTimeShootOneTimeShockWave() => this.timeShootInOneTimeShockWave;
     public int GetNumberOfAttacksShockWave() => this.numberOfShootAttacksShockWave;
+    public float GetCurveHeight() => this.curveHeight;
+    public float GetSpeedArc() => this.speedArc;
+    public float GetSpeedToStartPosition() => this.speedToStartPosition;
 }
