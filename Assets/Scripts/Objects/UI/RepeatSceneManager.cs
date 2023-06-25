@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class RepeatSceneManager : RepeatMonoBehaviour
 {
+    protected override void Awake()
+    {
+        base.Awake();
+        Application.targetFrameRate = 70;
+    }
+
     public virtual void CombackToMenu()
         => LoadSceneByIndex(0);
     

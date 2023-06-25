@@ -8,29 +8,29 @@ namespace DefaultNamespace.Objects.UI
 {
     public class BossHealthBar : MonoBehaviour
     {
-        [SerializeField] private float healthBarSpacing = 3.5f;
-        [SerializeField] private RectTransform healthBarContainer;
-        [SerializeField] private GameObject healthBarPrefab;
-        [SerializeField] private DamageReceiver damageReceiver;
+        [SerializeField] protected float healthBarSpacing = 3.5f;
+        [SerializeField] protected RectTransform healthBarContainer;
+        [SerializeField] protected GameObject healthBarPrefab;
+        [SerializeField] protected DamageReceiver damageReceiver;
 
-        private int maxHealth;
-        private List<GameObject> healthBars = new List<GameObject>();
+        protected int maxHealth;
+        protected List<GameObject> healthBars = new List<GameObject>();
 
-        private void Start()
+        protected virtual void Start()
         {
             maxHealth = damageReceiver.GetHpMax();
             SetMaxHealth(maxHealth);
         }
 
-        private void SetMaxHealth(int maxHealth)
+        protected virtual void SetMaxHealth(int maxHealth)
         {
             this.maxHealth = maxHealth;
             CreateHealthBars();
         }
 
-        private void Update() => UpdateHealthBars();
+        protected virtual void Update() => UpdateHealthBars();
 
-        private void CreateHealthBars()
+        protected virtual void CreateHealthBars()
         {
             ClearHealthBars();
             RectTransform healthBarRectTransform = healthBarPrefab.GetComponent<RectTransform>();
@@ -65,9 +65,9 @@ namespace DefaultNamespace.Objects.UI
             }
         }
 
-        private void UpdateHealthBars()
+        protected virtual void UpdateHealthBars()
         {
-            int visibleHealthBars = Mathf.Clamp(damageReceiver.GetCurrentHp(), 0, maxHealth);
+            int visibleHealthBars = Mathf.Clamp( GetCurrentHealth(),0, maxHealth);
 
             for (int i = 0; i < healthBars.Count; i++)
             {
@@ -75,8 +75,10 @@ namespace DefaultNamespace.Objects.UI
                 healthBar.SetActive(i < visibleHealthBars);
             }
         }
+        
+        protected virtual int GetCurrentHealth() => damageReceiver.GetCurrentHp();
 
-        private void ClearHealthBars()
+        protected virtual void ClearHealthBars()
         {
             foreach (GameObject healthBar in healthBars)
             {

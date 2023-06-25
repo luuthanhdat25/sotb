@@ -34,6 +34,7 @@ namespace Player
         private IEnumerator FireContinously()
         {
             isFire = true;
+            PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(false);
             yield return new WaitForSeconds(delayAnimaitonTime);
             
             Transform newProjectile = PlayerProjectileSpawner.Instance.Spawn(PlayerProjectileSpawner.Instance.unti);
@@ -45,6 +46,7 @@ namespace Player
                 newProjectile.gameObject.SetActive(true);
             }
             
+            PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(true);
             isFire = false;
             yield return new WaitForSeconds(firingRate);
             firingCoroutine = null;

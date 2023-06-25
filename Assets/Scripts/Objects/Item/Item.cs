@@ -1,5 +1,6 @@
 using System;
 using System.Net.NetworkInformation;
+using DefaultNamespace;
 using Player;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -13,6 +14,7 @@ namespace Damage
         
         public virtual void MoveItemToPlayer()
         {
+            Debug.Log("Move to player");
             this.isMoveToTarget = true;
         }
 
@@ -33,9 +35,9 @@ namespace Damage
 
         private void MoveToTargetWhenInteract()
         {
-            if (isMoveToTarget && !PlayerCtrl.Instance.GetIsPlayerDead()) isMoveToTarget = false;
+            if (isMoveToTarget && PlayerCtrl.Instance.GetIsPlayerDead() && !GameManager.Instance.IsFinishGame()) isMoveToTarget = false;
             if (!isMoveToTarget || PlayerCtrl.Instance.GetIsPlayerDead()) return;
-            Vector3 directionToMove = PlayerCtrl.Instance.GetCurrentPosition() - transform.parent.position;
+            Vector3 directionToMove = (PlayerCtrl.Instance.GetCurrentPosition() - transform.parent.position).normalized;
             transform.parent.Translate(directionToMove * moveToTargetSpeed * Time.fixedDeltaTime);
         }
     }

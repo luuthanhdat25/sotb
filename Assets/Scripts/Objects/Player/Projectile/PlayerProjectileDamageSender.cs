@@ -11,7 +11,7 @@ namespace Projectile
             //PlayerProjectileSpawner.Instance.Despawn(transform.parent);
         }
 
-        private void OnTriggerEnter2D(Collider2D col)
+        /*private void OnTriggerEnter2D(Collider2D col)
         {
             this.CreateImpactFX(col);
         }
@@ -28,6 +28,6 @@ namespace Projectile
         protected virtual string GetRandomImpactFXName()
         {
             return "Impact_" + UnityEngine.Random.Range(1, 4);
-        }
+        }*/
     }
 }

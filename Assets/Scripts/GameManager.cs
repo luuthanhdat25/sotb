@@ -57,6 +57,7 @@ namespace DefaultNamespace
         public void WinGame()
         {
             gameState = GameState.WinGame;
+            PlayerCtrl.Instance.ItemMagnet.SetRadiusItemMagnet(10f);
             AudioSpawner.Instance.MusicFadeOut();
             StartCoroutine(DelayWinGame());
         }

@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\PlayerItemReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Energies and Boost ceil\PlayerBoostCeils.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\EnemyAttackShoot.cs" />
+     <Compile Include="Assets\Scripts\Objects\UI\DoubleBossHealthBar.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerUnti.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ItemDropSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanDamageReciever.cs" />

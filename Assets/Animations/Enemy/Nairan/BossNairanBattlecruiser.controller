@@ -751,7 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b5ad6d29dbe06b48b4d02b258de850d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curveHeight: 2
-  firingRate: 0.65
-  speedArc: 0.6
-  speedToStartPosition: 6
+  curveHeight: 4
+  firingRate: 0.3
+  speedArc: 1
+  speedToStartPosition: 7

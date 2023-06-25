@@ -1,3 +1,4 @@
+using Damage;
 using UnityEngine;
 
 namespace Player
@@ -38,7 +39,8 @@ namespace Player
         public PlayerDamageReciever PlayerDamageReciever { get => playerDamageReciever; }
         [SerializeField] private PlayerParticleEffect playerParticleEffect;
         public PlayerParticleEffect PlayerParticleEffect { get => playerParticleEffect; }
-        
+        [SerializeField] private ItemMagnet playerItemMagnet;
+        public ItemMagnet ItemMagnet { get => playerItemMagnet; }
         
         protected override void Awake()
         {
@@ -55,59 +57,31 @@ namespace Player
             this.LoadPlayerEnergies();
             this.LoadPlayerBoostCeils();
             this.LoadPlayerUnti();
+            this.LoadPlayerDamageReciever();
             this.LoadPlayerDamageSender();
+            this.LoadPlayerItemMagnet();
+            this.LoadPlayerParticle();
         }
 
-        private void LoadPlayerMovement()
-        {
-            if (this.playerMovement != null) return;
-            this.playerMovement = GetComponentInChildren<PlayerMovement>();
-        }
-        
-        private void LoadPlayerShoot()
-        {
-            if (this.playerShoot != null) return;
-            this.playerShoot = GetComponentInChildren<PlayerShoot>();
-        }
-        
-        private void LoadPlayerAnimation()
-        {
-            if (this.playerAnimations != null) return;
-            this.playerAnimations = GetComponentInChildren<PlayerAnimations>();
-        }
-        
-        private void LoadPlayerEnergies()
-        {
-            if (this.playerEnergies != null) return;
-            this.playerEnergies = GetComponentInChildren<PlayerEnergies>();
-        }
-        
-        private void LoadPlayerBoostCeils()
-        {
-            if (this.playerBootCeils != null) return;
-            this.playerBootCeils = GetComponentInChildren<PlayerBoostCeils>();
-        }
+        private void LoadPlayerMovement() => this.playerMovement ??= GetComponentInChildren<PlayerMovement>();
 
-        private void LoadPlayerUnti()
-        {
-            if (this.playerUnti != null) return;
-            this.playerUnti = GetComponentInChildren<PlayerUnti>();
-        }
+        private void LoadPlayerShoot() => this.playerShoot ??= GetComponentInChildren<PlayerShoot>();
+
+        private void LoadPlayerAnimation() => this.playerAnimations ??= GetComponentInChildren<PlayerAnimations>();
+
+        private void LoadPlayerEnergies() => this.playerEnergies ??= GetComponentInChildren<PlayerEnergies>();
+
+        private void LoadPlayerBoostCeils() => this.playerBootCeils ??= GetComponentInChildren<PlayerBoostCeils>();
+
+        private void LoadPlayerUnti() => this.playerUnti ??= GetComponentInChildren<PlayerUnti>();
+
+        private void LoadPlayerDamageSender() => this.playerDamageSender ??= GetComponentInChildren<PlayerDamageSender>();
+
+        private void LoadPlayerDamageReciever() => this.playerDamageReciever ??= GetComponentInChildren<PlayerDamageReciever>();
         
-        private void LoadPlayerDamageSender()
-        {
-            if (this.playerDamageSender != null) return;
-            this.playerDamageSender = GetComponentInChildren<PlayerDamageSender>();
-        }
-        
-        private void LoadPlayerDamageReciever()
-        {
-            if (this.playerDamageReciever != null) return;
-            this.playerDamageReciever = GetComponentInChildren<PlayerDamageReciever>();
-        }
-        
-        private void LoadPlayerParticle() 
-            => this.playerParticleEffect ??= GetComponentInChildren<PlayerParticleEffect>();
+        private void LoadPlayerItemMagnet() => this.playerItemMagnet ??= GetComponentInChildren<ItemMagnet>();
+
+        private void LoadPlayerParticle() => this.playerParticleEffect ??= GetComponentInChildren<PlayerParticleEffect>();
 
         //-------------------------------------------------------------------------//
         private void Start() => transform.position = this.GetDefaultPosition();

@@ -1,11 +1,12 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class BackgroundScroller : MonoBehaviour
 {
     [SerializeField] private MeshRenderer meshRenderer;
     [SerializeField] private float scrollSpeedDefault = 0.3f;
-    [SerializeField] private float scrollDashSpeed = 0.6f;
+    [SerializeField] private float rateDashSpeed = 1.2f;
     private bool isDash = false;
     private bool isReverseBackground = false;
 
@@ -18,7 +19,7 @@ public class BackgroundScroller : MonoBehaviour
     private void FixedUpdate()
     {
         if(!isDash) Scroll(scrollSpeedDefault);
-        else Scroll(scrollDashSpeed);
+        else Scroll(scrollSpeedDefault * rateDashSpeed);
     }
 
     public void Dash(bool isOn) => this.isDash = isOn;

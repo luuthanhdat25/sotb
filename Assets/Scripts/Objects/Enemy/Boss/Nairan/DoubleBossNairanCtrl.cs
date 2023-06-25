@@ -11,6 +11,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
     public class DoubleBossNairanCtrl : MonoBehaviour
     {
         public static DoubleBossNairanCtrl Instance { get; private set; }
+        [SerializeField] private GameObject healthBar;
         [SerializeField] private bool isIdle2 = false;
         public bool Isdle2 => isIdle2;
         [SerializeField] private int stateNumber;
@@ -48,6 +49,14 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
         {
             if(Instance != null) Debug.LogError("There is more than one BossNairanBattlecruiserCtrl instance");
             Instance = this;
+        }
+
+        private void OnEnable() => StartCoroutine(TurnOnHealthBar());
+
+        private IEnumerator TurnOnHealthBar()
+        {
+            yield return new WaitForSeconds(1f);
+            healthBar?.SetActive(true);  
         }
 
         private void Start() => isSlide = false;
