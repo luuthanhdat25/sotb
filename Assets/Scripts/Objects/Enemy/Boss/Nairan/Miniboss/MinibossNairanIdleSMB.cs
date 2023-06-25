@@ -1,7 +1,7 @@
 using Enemy.Boss.Nairan.Miniboss;
 using UnityEngine;
 
-public class MinibossNairanIdleStateMachineBehaviour : AbsIdleSMB
+public class MinibossNairanIdleSMB : AbsIdleSMB
 {
     protected override void ChangeState(Animator animator)
     {
@@ -14,5 +14,6 @@ public class MinibossNairanIdleStateMachineBehaviour : AbsIdleSMB
     }
 
     protected override Vector3 GetDefaultPosition() => MiniBossNairanCtrl.Instance.GetDefaultPosition();
+    
     protected override float GetTimeWait() => MiniBossNairanCtrl.Instance.GetTimeWaitIdle();
 }

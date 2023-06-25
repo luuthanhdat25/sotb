@@ -37,7 +37,7 @@ namespace Enemy
             {
                 if (animator.transform.position != targetPosition && isStopTimer)
                 {
-                    //Move To Ready Position
+                    SetAnimation(true);
                     MoveTowardsTo(targetPosition, speedFollow, animator);
                     if (animator.transform.position == targetPosition) isStopTimer = false;
                 }
@@ -66,6 +66,7 @@ namespace Enemy
                     outVector = Vector3.zero;
                     isSlideGoOut = false;
                     SetProjectile(false);
+                    SetAnimation(false);
                     UnSetAnimation();
                 }
             }
@@ -108,10 +109,15 @@ namespace Enemy
         protected virtual float GetRandomYValue() => Random.Range(-2f, 2f);
 
         protected abstract float GetSpeedSlide();
+        
         protected abstract float GetSpeedFollow();
+        
         protected abstract float GetTimeDelayBeforeSlide();
 
         protected abstract void SetProjectile(bool isOn);
+
+        protected abstract void SetAnimation(bool isOn);
+        
         protected abstract void UnSetAnimation();
     }
 }

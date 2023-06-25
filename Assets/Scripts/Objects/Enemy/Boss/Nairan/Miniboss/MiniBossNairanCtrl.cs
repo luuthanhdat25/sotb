@@ -9,6 +9,7 @@ namespace Enemy.Boss.Nairan.Miniboss
         [SerializeField] protected Transform mainCam;
         [SerializeField] private Animator miniNairanAnimator;
         [SerializeField] private MinibossNairanModelShipAnimation minibossNairanModelShipAnimation;
+        public MinibossNairanModelShipAnimation MinibossNairanModelShipAnimation => minibossNairanModelShipAnimation;
         [SerializeField] private MinibossNairanShootNormal minibossNairanShootNormal;
         public MinibossNairanShootNormal MinibossNairanShootNormal { get => minibossNairanShootNormal; }
         [SerializeField] private BossShootLazer bossShootLazer;

@@ -2,18 +2,26 @@ using UnityEngine;
 
 namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
 {
-    public class BossNairanBattlecruiserModelShipAnimation : RepeatMonoBehaviour
+    public class BossNairanBattlecruiserModelShipAnimation : MonoBehaviour
     {
-        private const string IS_DESTRUCTION = "isDestruction";
-        [SerializeField] private Animator _animator;
+        private Animator _animator;
     
-        protected override void LoadComponents()
+        private enum AnimatorParameter
         {
-            base.LoadComponents();
-            if (_animator != null) return;
-            _animator = GetComponent<Animator>();
+            isDestruction,
+            isLazerSlide,
+            isFollowAndShootShockWave,
+            isFollowAndShootLazer
         }
+        
+        private void Start() => _animator ??= GetComponent<Animator>();
 
-        public void SetIsDestructionTrigger() =>this._animator.SetTrigger(IS_DESTRUCTION);
+        public void SetIsDestructionTrigger() =>this._animator.SetTrigger(AnimatorParameter.isDestruction.ToString());
+        
+        public void SetIsLazerSlide(bool isOn) =>this._animator.SetBool(AnimatorParameter.isLazerSlide.ToString(), isOn);
+
+        public void SetIsFollowAndShootShockWave(bool isOn) =>this._animator.SetBool(AnimatorParameter.isFollowAndShootShockWave.ToString(), isOn);
+        
+        public void SetIsFollowAndShootLazer(bool isOn) =>this._animator.SetBool(AnimatorParameter.isFollowAndShootLazer.ToString(), isOn);
     }
 }

@@ -37,6 +37,11 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             else BossNairanDreadnoughtCtrl.Instance.BossShootLazer.DespawnLazer();
         }
 
+        protected override void SetAnimation(bool isOn)
+        {
+            throw new System.NotImplementedException();
+        }
+
         protected override void UnSetAnimation()
         {
             BossNairanDreadnoughtCtrl.Instance.SetIsLazerSlide(false);

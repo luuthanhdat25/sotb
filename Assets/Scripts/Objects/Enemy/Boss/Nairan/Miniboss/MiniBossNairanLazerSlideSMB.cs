@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using Enemy.Boss.Nairan.Miniboss;
 using Player;
 using UnityEngine;
 
-public class MiniBossNairanLazerSlideBehaviour : StateMachineBehaviour
+public class MiniBossNairanLazerSlideSMB : StateMachineBehaviour
 {
     [SerializeField] protected float timeDelayBeforeSlide;
     [SerializeField] protected float speedSlide;
@@ -36,7 +34,7 @@ public class MiniBossNairanLazerSlideBehaviour : StateMachineBehaviour
         {
             if (animator.transform.position != targetPosition && isStopTimer)
             {
-                //Move To Ready Position
+                MiniBossNairanCtrl.Instance.MinibossNairanModelShipAnimation.SetIsShootLazer(true);
                 MoveTowardsTo(targetPosition, speedFollow, animator);
                 if (animator.transform.position == targetPosition) isStopTimer = false;
             }
@@ -64,6 +62,7 @@ public class MiniBossNairanLazerSlideBehaviour : StateMachineBehaviour
                 outVector = Vector3.zero;
                 isSlideGoOut = false;
                 SetProjectile(false);
+                MiniBossNairanCtrl.Instance.MinibossNairanModelShipAnimation.SetIsShootLazer(false);
                 UnSetAnimation();
             }
         }

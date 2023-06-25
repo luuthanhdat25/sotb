@@ -4651,7 +4651,6 @@ Transform:
   - {fileID: 1495161767}
   - {fileID: 1203656783}
   - {fileID: 1199475698}
-  - {fileID: 2082093114}
   m_Father: {fileID: 1158623580}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12418,7 +12417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b35df63671274c179fdeffc5aa1e612b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 629085355}
 --- !u!1 &639844178
 GameObject:
   m_ObjectHideFlags: 0
@@ -20377,7 +20375,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1087027929
 Transform:
   m_ObjectHideFlags: 0
@@ -20551,7 +20549,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1097696550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21779,7 +21777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1158623580
 Transform:
   m_ObjectHideFlags: 0
@@ -22606,7 +22604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnStartTime: 120
   spawnRate: 1
-  enemyMoveSpeed: 10
+  enemyMoveSpeed: 9
   pathPrefabs: {fileID: 901898000432054167, guid: 25482bbd47c3d0847a6a6d8b6d0be946, type: 3}
   prefabsManager: {fileID: 1776062597}
   enemyPrefabsList:
@@ -25192,7 +25190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5820ed6fc5428596807aec92f28db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 1377600779}
 --- !u!95 &1377600779
 Animator:
   serializedVersion: 5
@@ -26452,7 +26449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1432579058
 Transform:
   m_ObjectHideFlags: 0
@@ -33965,6 +33962,7 @@ Transform:
   - {fileID: 906489246}
   - {fileID: 975836222}
   - {fileID: 2114157308}
+  - {fileID: 2082093114}
   - {fileID: 1158623580}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -36300,7 +36298,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2082093114
 Transform:
   m_ObjectHideFlags: 0
@@ -36314,7 +36312,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1141950691}
-  m_Father: {fileID: 249405778}
+  m_Father: {fileID: 1928560924}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2082093115

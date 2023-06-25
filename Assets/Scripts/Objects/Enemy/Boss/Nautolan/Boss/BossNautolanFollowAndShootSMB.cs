@@ -1,7 +1,7 @@
 using Enemy;
 using UnityEngine;
 
-public class BossNautolanFollowAndShootBehaviour : AbsFollowAndShootSMB
+public class BossNautolanFollowAndShootSMB : AbsFollowAndShootSMB
 {
     protected override float GetSpeedFollow() => BossNautolanCtrl.Instance.GetSpeedFollow();
     

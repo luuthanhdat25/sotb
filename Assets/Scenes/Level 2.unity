@@ -4464,7 +4464,7 @@ MonoBehaviour:
   bossNautolanSpinningBulletShoot: {fileID: 2096131365}
   bossNautolanShockWaveShoot: {fileID: 2010819012}
   bossNautolanDamageReciever: {fileID: 1920696576}
-  timeWait: 1.2
+  timeWait: 1
   numberOfShootAttacks: 6
   speedFollow: 10
   timeShootInOneTime: 0.7
@@ -6376,7 +6376,6 @@ Transform:
   - {fileID: 8649606}
   - {fileID: 1895261520}
   - {fileID: 1149756443}
-  - {fileID: 1592798602}
   m_Father: {fileID: 1158623580}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27482,6 +27481,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 249405778}
+  - {fileID: 1592798602}
   m_Father: {fileID: 1928560924}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35444,7 +35444,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 160209235}
-  m_Father: {fileID: 249405778}
+  m_Father: {fileID: 1158623580}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1592798603
@@ -43828,7 +43828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1483aa6bdb0d8084fbdb7263e18c13d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firingRate: 1.2
+  firingRate: 0.7
   isFiring: 0
 --- !u!4 &2010819013
 Transform:

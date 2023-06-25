@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class BossNautolanIdleStateMachineBehaviour : AbsIdleSMB
+public class BossNautolanIdleSMB : AbsIdleSMB
 {
     int stateNumber;
     protected override void ChangeState(Animator animator)
     {
-        if (!BossNautolanCtrl.Instance.BossNautolanDamageReciever.IsLowerHealth(50))
+        if (!BossNautolanCtrl.Instance.BossNautolanDamageReciever.IsLowerHealth(52))
             stateNumber = GetRandomState(1, 3);
         else 
             stateNumber = GetRandomState(3, 4);

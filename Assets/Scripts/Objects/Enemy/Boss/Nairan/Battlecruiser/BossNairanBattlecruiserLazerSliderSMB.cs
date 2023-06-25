@@ -36,6 +36,11 @@ public class BossNairanBattlecruiserLazerSliderSMB : AbsLazerSlideSMB
         else BossNairanBattlecruiserCtrl.Instance.BossShootLazer.DespawnLazer();
     }
 
+    protected override void SetAnimation(bool isOn)
+    {
+        throw new System.NotImplementedException();
+    }
+
     protected override void UnSetAnimation()
     {
         DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
