@@ -28,6 +28,7 @@ public class BossNairanBattlecruiserArcShockWaveSMB : StateMachineBehaviour
     
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        SetAnimaiton(true);
         if (moveToStartPoint)
             MoveToStartPoint(animator);
         else
@@ -66,6 +67,7 @@ public class BossNairanBattlecruiserArcShockWaveSMB : StateMachineBehaviour
         {
             moveToStartPoint = true;
             SetProjectile(false);
+            SetAnimaiton(false);
             UnSetAniamtion();
         }
     }
@@ -76,6 +78,10 @@ public class BossNairanBattlecruiserArcShockWaveSMB : StateMachineBehaviour
 
     protected void SetProjectile(bool isOn) 
         => BossNairanBattlecruiserCtrl.Instance.BossNairanBattlecruiserShootShockWave.SetIsFiring(isOn);
+
+    protected void SetAnimaiton(bool isOn)
+        => BossNairanBattlecruiserCtrl.Instance.BossNairanBattlecruiserModelShipAnimation.SetIsArcShockWave(isOn);
+    
     protected Vector3 GetStartPosition() => BossNairanBattlecruiserCtrl.Instance.GetStartPosition();
     protected  Vector3 GetEndPosition() => BossNairanBattlecruiserCtrl.Instance.GetEndPosition();
     protected void UnSetAniamtion() => BossNairanBattlecruiserCtrl.Instance.SetIsArcShockWave(false);

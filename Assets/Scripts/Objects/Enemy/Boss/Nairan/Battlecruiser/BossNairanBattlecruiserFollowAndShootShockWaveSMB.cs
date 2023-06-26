@@ -18,7 +18,10 @@ public class BossNairanBattlecruiserFollowAndShootShockWaveSMB : AbsFollowAndSho
         => DoubleBossNairanCtrl.Instance.NumOfShootAttackSWBattlecruiser;
 
     protected override void SetProjectile(bool isOn)
-        => BossNairanBattlecruiserCtrl.Instance.BossNairanBattlecruiserShootShockWave.SetIsFiring(isOn);
+    {
+        BossNairanBattlecruiserCtrl.Instance.BossNairanBattlecruiserModelShipAnimation.SetIsFollowAndShootShockWave(isOn);
+        BossNairanBattlecruiserCtrl.Instance.BossNairanBattlecruiserShootShockWave.SetIsFiring(isOn);
+    }
 
     protected override void UnSetAnimation()
     {
@@ -26,6 +29,7 @@ public class BossNairanBattlecruiserFollowAndShootShockWaveSMB : AbsFollowAndSho
         if (BossNairanDreadnoughtCtrl.Instance.IsFinishBehaviour)
         {
             DoubleBossNairanCtrl.Instance.SwapDefaultPosition();
+            //BossNairanDreadnoughtCtrl.Instance.SetIsFinishBehaviour(false);
             BossNairanBattlecruiserCtrl.Instance.SetIsFollowAndShootShockWave(false);
         }
     }

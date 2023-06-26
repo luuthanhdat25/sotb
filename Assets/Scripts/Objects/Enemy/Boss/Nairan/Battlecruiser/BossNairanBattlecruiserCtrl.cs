@@ -8,6 +8,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
     {
         public static BossNairanBattlecruiserCtrl Instance { get; private set; }
         [SerializeField] private BossNairanBattlecruiserModelShipAnimation bossModelShipAnimation;
+        public BossNairanBattlecruiserModelShipAnimation BossNairanBattlecruiserModelShipAnimation => bossModelShipAnimation;
         [SerializeField] private BossShootLazer bossShootLazer;
         public BossShootLazer BossShootLazer => bossShootLazer;
         [SerializeField] private BossNairanBattlecruiserShootShockWave bossNairanBattlecruiserShootShockWave;
@@ -62,26 +63,13 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
             this.LoadBossModelShipAnimationScript();
         }
 
-        private void LoadBossShootLazer()
-        {
-            if (this.bossShootLazer != null) return;
-            this.bossShootLazer = GetComponentInChildren<BossShootLazer>();
-            Debug.Log(transform.name + " Load: BossShootLazer");
-        }
-        
-        private void LoadBossShootShockWave()
-        {
-            if (this.bossNairanBattlecruiserShootShockWave != null) return;
-            this.bossNairanBattlecruiserShootShockWave = GetComponentInChildren<BossNairanBattlecruiserShootShockWave>();
-            Debug.Log(transform.name + " Load: bossNairanBattlecruiserShootShockWave");
-        }
-        
-        private void LoadBossModelShipAnimationScript()
-        {
-            if (this.bossModelShipAnimation != null) return;
-            this.bossModelShipAnimation = GetComponentInChildren<BossNairanBattlecruiserModelShipAnimation>();
-            Debug.Log(transform.name + " Load: BossNairanBattlecruiserModelShipAnimation");
-        }
+        private void LoadBossShootLazer() => this.bossShootLazer ??= GetComponentInChildren<BossShootLazer>();
+
+        private void LoadBossShootShockWave() 
+            => this.bossNairanBattlecruiserShootShockWave ??= GetComponentInChildren<BossNairanBattlecruiserShootShockWave>();
+
+        private void LoadBossModelShipAnimationScript() 
+            => this.bossModelShipAnimation ??= GetComponentInChildren<BossNairanBattlecruiserModelShipAnimation>();
 
         private void Update()
         {
@@ -127,17 +115,29 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
             => this.bossSMBAnimator.SetBool(AnimatorParameter.IsFollowAndShootLazer.ToString(), isTrue);
         
         public float SpeedArcShockWave => speedArcShockWave;
+        
         public Vector3 GetStartPosition() => startPosition.position;
+        
         public Vector3 GetEndPosition() => endPosition.position;
+        
         public float RotationSpeed => rotationSpeed;
+        
         public int NumberOfShootAttacks => numberOfShootAttacks;
+        
         public float SpeedFollow => speedFollow;
+        
         public float TimeShootInOneTime => timeShootInOneTime;
+        
         public float TimeDelayBeforeShoot => timeDelayBeforeShoot;
+        
         public float SpeedGoToReadyPosition => speedGoToReadyPosition;
+        
         public float DegreeRotate => degreeRotate;
+        
         public int NumberOfLoop => numberOfLoop;
+        
         public bool IsInDefaultPosition() => transform.position == defaultPosition;
+        
         public void IsDeadTrue() => isDead = true;
     }
 }

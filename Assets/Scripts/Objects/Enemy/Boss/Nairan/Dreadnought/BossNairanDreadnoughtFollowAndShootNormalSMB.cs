@@ -20,12 +20,15 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             => DoubleBossNairanCtrl.Instance.NumOfShootAttackNDreadnought;
 
         protected override void SetProjectile(bool isOn)
-            => BossNairanDreadnoughtCtrl.Instance.BossNairanDreadnoughtShootNormal.SetIsFiring(isOn);
+        {
+            BossNairanDreadnoughtCtrl.Instance.BossNairanDreadnoughtModelShipAnimation.SetIsFollowAndShootNormal(isOn);
+            BossNairanDreadnoughtCtrl.Instance.BossNairanDreadnoughtShootNormal.SetIsFiring(isOn);
+        }
 
         protected override void UnSetAnimation()
         {
             BossNairanDreadnoughtCtrl.Instance.SetIsFinishBehaviour(true);
-            if (BossNairanBattlecruiserCtrl.Instance.IsFinishBehaviour)
+            if (BossNairanBattlecruiserCtrl.Instance.IsFinishBehaviour && BossNairanBattlecruiserCtrl.Instance.IsInDefaultPosition())
             {
                 BossNairanDreadnoughtCtrl.Instance.SetIsFollowAndShootNormal(false);
             }

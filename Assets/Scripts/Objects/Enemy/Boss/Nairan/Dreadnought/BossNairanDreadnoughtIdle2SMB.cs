@@ -7,7 +7,8 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
     {
         protected override void ChangeState(Animator animator)
         {
-            switch (DoubleBossNairanCtrl.Instance.GetRandomState(3))
+            int randomState = DoubleBossNairanCtrl.Instance.GetRandomState(3);
+            switch (randomState)
             {
                 case 1: BossNairanDreadnoughtCtrl.Instance.SetIsSpawnTorpedo(true); break;
                 case 2: BossNairanDreadnoughtCtrl.Instance.SetIsArcShootNormal(true); break;

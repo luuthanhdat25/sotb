@@ -6,7 +6,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
     {
         [SerializeField] private float timeDelayBeforeSpawn = 1f;
         private float timeSpawnTorpedo;
-        private float speedToReadyPosition = 3f;
+        [SerializeField] private float speedToReadyPosition = 5f;
         private Vector3 readyPosition = Vector3.zero;
         private float timer;
         
@@ -25,6 +25,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             }
             else
             {
+                SetAnimation(true);
                 timer += Time.deltaTime;
                 if (timer >= timeDelayBeforeSpawn && timer < timeSpawnTorpedo)
                 {
@@ -33,11 +34,15 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
                 {
                     timer = 0;
                     SetProjectile(false);
+                    SetAnimation(false);
                     UnSetAnimation();
                 }
             }
         }
 
+        protected void SetAnimation(bool isOn)
+            => BossNairanDreadnoughtCtrl.Instance.BossNairanDreadnoughtModelShipAnimation.SetIsSpawnTorpedo(isOn);
+        
         protected float GetTimeSpawnTorpedo() 
             => BossNairanDreadnoughtCtrl.Instance.TimeSpawnTorpedo;
 

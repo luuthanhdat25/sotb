@@ -10,16 +10,21 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
     {
         public static BossNairanDreadnoughtCtrl Instance { get; private set; }
         [SerializeField] private BossNairanDreadnoughtModelShipAnimation bossModelShipAnimation;
+        public BossNairanDreadnoughtModelShipAnimation BossNairanDreadnoughtModelShipAnimation => bossModelShipAnimation;
         [SerializeField] private BossShootLazer bossShootLazer;
         public BossShootLazer BossShootLazer => bossShootLazer;
         [SerializeField] private BossNairanDreadnoughtShootNormal bossNairanDreadnoughtShootNormal;
         public BossNairanDreadnoughtShootNormal BossNairanDreadnoughtShootNormal => bossNairanDreadnoughtShootNormal;
         [SerializeField] private BossNairanDreadnoughtSpawnTorpedo bossNairanDreadnoughtSpawnTorpedo;
         public BossNairanDreadnoughtSpawnTorpedo BossNairanDreadnoughtSpawnTorpedo => bossNairanDreadnoughtSpawnTorpedo;
+        [SerializeField] private SpriteRenderer engineSpriteRenderer;
+        [SerializeField] private PolygonCollider2D polygonCollider2D;
+        
         private bool isDead = false;
         public bool IsDead => isDead;
         private bool isFinishBehaviour = false;
         public bool IsFinishBehaviour => isFinishBehaviour;
+        
         public void SetIsFinishBehaviour(bool isFinish) => isFinishBehaviour = isFinish;
 
         private enum AnimatorParameter
@@ -68,33 +73,16 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             this.LoadBossModelShipAnimationScript();
         }
 
-        private void LoadBossShootLazer()
-        {
-            if (this.bossShootLazer != null) return;
-            this.bossShootLazer = GetComponentInChildren<BossShootLazer>();
-            Debug.Log(transform.name + " Load: BossShootLazer");
-        }
-        
-        private void LoadBossNairanDreadnoughtShootNormal()
-        {
-            if (this.bossNairanDreadnoughtShootNormal != null) return;
-            this.bossNairanDreadnoughtShootNormal = GetComponentInChildren<BossNairanDreadnoughtShootNormal>();
-            Debug.Log(transform.name + " Load: BossNairanDreadnoughtShootNormal");
-        }
-        
-        private void LoadBossBossNairanDreadnoughtSpawnTorpedo()
-        {
-            if (this.bossNairanDreadnoughtSpawnTorpedo != null) return;
-            this.bossNairanDreadnoughtSpawnTorpedo = GetComponentInChildren<BossNairanDreadnoughtSpawnTorpedo>();
-            Debug.Log(transform.name + " Load: BossNairanDreadnoughtSpawnTorpedo");
-        }
-        
-        private void LoadBossModelShipAnimationScript()
-        {
-            if (this.bossModelShipAnimation != null) return;
-            this.bossModelShipAnimation = GetComponentInChildren<BossNairanDreadnoughtModelShipAnimation>();
-            Debug.Log(transform.name + " Load: BossNairanDreadnoughtModelShipAnimation");
-        }
+        private void LoadBossShootLazer() => this.bossShootLazer ??= GetComponentInChildren<BossShootLazer>();
+
+        private void LoadBossNairanDreadnoughtShootNormal() 
+            => this.bossNairanDreadnoughtShootNormal ??= GetComponentInChildren<BossNairanDreadnoughtShootNormal>();
+
+        private void LoadBossBossNairanDreadnoughtSpawnTorpedo() 
+            => this.bossNairanDreadnoughtSpawnTorpedo ??= GetComponentInChildren<BossNairanDreadnoughtSpawnTorpedo>();
+
+        private void LoadBossModelShipAnimationScript() 
+            => this.bossModelShipAnimation ??= GetComponentInChildren<BossNairanDreadnoughtModelShipAnimation>();
 
 
         private void Update()
@@ -141,19 +129,37 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             => this.bossSMBAnimator.SetBool(AnimatorParameter.IsTeleportAndShootLazer.ToString(), isTrue);
 
         public float SpeedArcShockWave => speedArcShockWave;
+        
         public Vector3 GetStartPosition() => startPosition.position;
+        
         public Vector3 GetEndPosition() => endPosition.position;
+        
         public int NumberOfLoop => numberOfLoop;
+        
         public float SpawnRate => spawnRate;
+        
         public float TimeDelayBeforeSpawn => timeDelayBeforeSpawn;
+        
         public int NumberOfShootAttacks => numberOfShootAttacks;
+        
         public float TimeDelayTeleport => timeDelayTeleport;
+        
         public float TimeShootInOneTime => timeShootInOneTime;
+        
         public float TimeDelayBeforeShoot => timeDelayBeforeShoot;
+        
         public float SpeedGoToReadyPosition => speedGoToReadyPosition;
+        
         public float FiringRate => firingRate;
+        
         public float TimeSpawnTorpedo => timeSpawnTorpedo;
+        
         public bool IsInDefaultPosition() => transform.position == defaultPosition;
+        
         public void IsDeadTrue() => this.isDead = true;
+
+        public void SetActiveEngine(bool active) => engineSpriteRenderer.enabled = active;
+        
+        public void SetActiveCollider(bool active) => polygonCollider2D.enabled = active;
     }
 }

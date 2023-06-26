@@ -616,7 +616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3534dc8605db29f44b33d7598abe69ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMoveToPosDefault: 4
+  speedMoveToPosDefault: 6
 --- !u!1101 &8306587774624980682
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

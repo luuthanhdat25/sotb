@@ -9,14 +9,13 @@ public class BossNairanBattlecruiserIdleSMB : AbsIdleSMB
     
     protected override void Behaviour(Animator animator)
     {
-        
         if (animator.transform.position != GetDefaultPosition() && !isReady)
         {
             MoveToDefaultPosition(animator, GetDefaultPosition());
             if (animator.transform.position == GetDefaultPosition())
             {
                 isReady = true;
-                BossNairanBattlecruiserCtrl.Instance.SetIsFinishBehaviour(false);
+                //BossNairanBattlecruiserCtrl.Instance.SetIsFinishBehaviour(false);
             }
         }
         else 

@@ -11,7 +11,8 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
             isDestruction,
             isLazerSlide,
             isFollowAndShootShockWave,
-            isFollowAndShootLazer
+            isFollowAndShootLazer,
+            isArcShockWave
         }
         
         private void Start() => _animator ??= GetComponent<Animator>();
@@ -23,5 +24,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
         public void SetIsFollowAndShootShockWave(bool isOn) =>this._animator.SetBool(AnimatorParameter.isFollowAndShootShockWave.ToString(), isOn);
         
         public void SetIsFollowAndShootLazer(bool isOn) =>this._animator.SetBool(AnimatorParameter.isFollowAndShootLazer.ToString(), isOn);
+        
+        public void SetIsArcShockWave(bool isOn) =>this._animator.SetBool(AnimatorParameter.isArcShockWave.ToString(), isOn);
     }
 }

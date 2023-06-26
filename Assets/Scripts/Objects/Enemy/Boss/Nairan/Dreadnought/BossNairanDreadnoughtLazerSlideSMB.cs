@@ -37,14 +37,10 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             else BossNairanDreadnoughtCtrl.Instance.BossShootLazer.DespawnLazer();
         }
 
-        protected override void SetAnimation(bool isOn)
-        {
-            throw new System.NotImplementedException();
-        }
+        protected override void SetAnimation(bool isOn) 
+            => BossNairanDreadnoughtCtrl.Instance.BossNairanDreadnoughtModelShipAnimation.SetIsLazerSlide(isOn);
 
-        protected override void UnSetAnimation()
-        {
-            BossNairanDreadnoughtCtrl.Instance.SetIsLazerSlide(false);
-        }
+        protected override void UnSetAnimation() 
+            => BossNairanDreadnoughtCtrl.Instance.SetIsLazerSlide(false);
     }
 }

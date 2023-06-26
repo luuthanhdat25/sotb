@@ -31,7 +31,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         private Vector3 GetPositionSpawn()
             => new Vector3(PlayerPosition().x + GetRandomPadding(), spawnYValue, transform.parent.position.z);
 
-        private float GetRandomPadding() => Random.Range(-0.2f, 0.2f);
+        private float GetRandomPadding() => Random.Range(-1.5f, 1.5f);
         
         private Vector3 PlayerPosition() => PlayerCtrl.Instance.GetCurrentPosition();
         

@@ -26,6 +26,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+            SetAnimation(true);
             if (moveToStartPoint)
                 MoveToStartPoint(animator);
             else
@@ -64,6 +65,7 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
             {
                 moveToStartPoint = true;
                 SetProjectile(false);
+                SetAnimation(false);
                 UnSetAniamtion();
             }
         }
@@ -74,6 +76,10 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
 
         protected void SetProjectile(bool isOn) 
             => BossNairanDreadnoughtCtrl.Instance.BossNairanDreadnoughtShootNormal.SetIsFiring(isOn);
+        
+        protected void SetAnimation(bool isOn) 
+            => BossNairanDreadnoughtCtrl.Instance.BossNairanDreadnoughtModelShipAnimation.SetIsArcShootNormal(isOn);
+        
         protected Vector3 GetStartPosition() => BossNairanDreadnoughtCtrl.Instance.GetStartPosition();
         protected  Vector3 GetEndPosition() => BossNairanDreadnoughtCtrl.Instance.GetEndPosition();
         protected void UnSetAniamtion() => BossNairanDreadnoughtCtrl.Instance.SetIsArcShootNormal(false);

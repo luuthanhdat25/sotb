@@ -19,6 +19,8 @@ public class BossNairanBattlecruiserFollowAndShootLazerSMB : AbsFollowAndShootSM
             BossNairanBattlecruiserCtrl.Instance.BossShootLazer.SpawnLazerAfterTime(BossNairanBattlecruiserCtrl.Instance.TimeDelayBeforeShoot);
         else 
             BossNairanBattlecruiserCtrl.Instance.BossShootLazer.DespawnLazer();
+        
+        BossNairanBattlecruiserCtrl.Instance.BossNairanBattlecruiserModelShipAnimation.SetIsFollowAndShootLazer(isOn); 
     }
 
     protected override void UnSetAnimation()

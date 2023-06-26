@@ -10,6 +10,7 @@ public class BossNairanBattlecruiserRotateLazerSMB : StateMachineBehaviour
     [SerializeField] protected float rotationSpeed;
     [SerializeField] protected float speedGotoReadyPosition;
     [SerializeField] protected float degreeRotate; 
+    
     private Vector3 targetPosition = Vector3.zero;
     private float timer;
     private bool isStopTimer; 
@@ -36,6 +37,7 @@ public class BossNairanBattlecruiserRotateLazerSMB : StateMachineBehaviour
             if (animator.transform.position == targetPosition)
             {
                 SetProjectile(true);
+                SetAnimation(true);
                 isStopTimer = false;
             }
         }
@@ -53,20 +55,19 @@ public class BossNairanBattlecruiserRotateLazerSMB : StateMachineBehaviour
                     timer = 0; isStopTimer = true;
                     totalRotation = 0;
                     SetProjectile(false);
+                    SetAnimation(false);
                     UnSetAnimation();
                 }
             }
         }
     }
-
-    protected virtual Vector3 GetTargetPosition(Vector3 playerPos, Vector3 currentPos) => Vector3.zero;
-
-    protected virtual float GetRandomYValue() => Random.Range(-1.5f, 1.5f);
-
+    
     protected float GetRotationSpeed() => BossNairanBattlecruiserCtrl.Instance.RotationSpeed;
+   
     protected float GetSpeedGotoReadyPosition() => BossNairanBattlecruiserCtrl.Instance.SpeedGoToReadyPosition;
 
     protected virtual float GetDegreeRotate() => BossNairanBattlecruiserCtrl.Instance.DegreeRotate;
+    
     protected void SetProjectile(bool isOn)
     {
         if (isOn)
@@ -74,6 +75,9 @@ public class BossNairanBattlecruiserRotateLazerSMB : StateMachineBehaviour
         else
             BossNairanBattlecruiserCtrl.Instance.BossShootLazer.DespawnLazer();
     }
+
+    protected void SetAnimation(bool isOn)
+        => BossNairanBattlecruiserCtrl.Instance.BossNairanBattlecruiserModelShipAnimation.SetIsLazerSlide(isOn);
 
     protected void UnSetAnimation() => BossNairanBattlecruiserCtrl.Instance.SetIsRotateLazer(false);
     

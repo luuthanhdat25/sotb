@@ -3198,13 +3198,13 @@ MonoBehaviour:
   startPosition: {fileID: 1081726796}
   endPosition: {fileID: 472012737}
   numberOfLoop: 1
-  rotationSpeed: 12.5
-  speedGoToReadyPosition: 6
+  rotationSpeed: 14
+  speedGoToReadyPosition: 7
   degreeRotate: 720
-  numberOfShootAttacks: 4
+  numberOfShootAttacks: 3
   speedFollow: 14
-  timeShootInOneTime: 1.8
-  timeDelayBeforeShoot: 0.6
+  timeShootInOneTime: 1.5
+  timeDelayBeforeShoot: 0.7
 --- !u!1 &181280578
 GameObject:
   m_ObjectHideFlags: 0
@@ -4651,6 +4651,7 @@ Transform:
   - {fileID: 1495161767}
   - {fileID: 1203656783}
   - {fileID: 1199475698}
+  - {fileID: 2082093114}
   m_Father: {fileID: 1158623580}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16156,7 +16157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ec45712b634318ac40282bf901e069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firingRate: 0.7
+  firingRate: 0.6
   isFiring: 0
   spawnYValue: 10
 --- !u!1 &887103465
@@ -20568,15 +20569,15 @@ MonoBehaviour:
   timeWaitIdleOne: 1
   defaultPosOneBattlecruiser: {fileID: 3134303013853986421}
   defaultPosOneDreadnought: {fileID: 7223150381638194343}
-  timeWaitIdleTwo: 0.8
+  timeWaitIdleTwo: 0.7
   speedSlide: 5.7
   timeDelayBeforeSlide: 1
-  numOfShootAttackSWBattlecruiser: 2
+  numOfShootAttackSWBattlecruiser: 3
   speedFollowSWBattlecruiser: 13
   timeShootOneTimeSWBattlecruiser: 1.7
-  numOfShootAttackNDreadnought: 6
-  speedFollowNDreadnought: 8
-  timeShootOneTimeNDreadnought: 1
+  numOfShootAttackNDreadnought: 5
+  speedFollowNDreadnought: 9
+  timeShootOneTimeNDreadnought: 0.8
 --- !u!4 &1097696551
 Transform:
   m_ObjectHideFlags: 0
@@ -21777,7 +21778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1158623580
 Transform:
   m_ObjectHideFlags: 0
@@ -26449,7 +26450,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1432579058
 Transform:
   m_ObjectHideFlags: 0
@@ -29489,6 +29490,10 @@ PrefabInstance:
     - target: {fileID: 6057587597191699096, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
       propertyPath: m_Name
       value: AudioSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057587597191699096, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6057587597191699097, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
       propertyPath: m_RootOrder
@@ -33962,7 +33967,6 @@ Transform:
   - {fileID: 906489246}
   - {fileID: 975836222}
   - {fileID: 2114157308}
-  - {fileID: 2082093114}
   - {fileID: 1158623580}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -35593,19 +35597,21 @@ MonoBehaviour:
   bossShootLazer: {fileID: 1567709292}
   bossNairanDreadnoughtShootNormal: {fileID: 692908273}
   bossNairanDreadnoughtSpawnTorpedo: {fileID: 882611008}
-  speedArcShockWave: 1
+  engineSpriteRenderer: {fileID: 1803180706}
+  polygonCollider2D: {fileID: 1670182415}
+  speedArcShockWave: 0.6
   startPosition: {fileID: 472012737}
   endPosition: {fileID: 1081726796}
   numberOfLoop: 2
   speedGoToReadyPosition: 7
   firingRate: 0.15
-  spawnRate: 0.4
-  timeDelayBeforeSpawn: 0.5
+  spawnRate: 0.35
+  timeDelayBeforeSpawn: 0.4
   timeSpawnTorpedo: 5
   numberOfShootAttacks: 3
-  timeDelayBeforeShoot: 0.8
-  timeShootInOneTime: 1.5
-  timeDelayTeleport: 1.4
+  timeDelayBeforeShoot: 0.7
+  timeShootInOneTime: 1.4
+  timeDelayTeleport: 1.2
 --- !u!95 &2064543255
 Animator:
   serializedVersion: 5
@@ -36298,7 +36304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2082093114
 Transform:
   m_ObjectHideFlags: 0
@@ -36312,7 +36318,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1141950691}
-  m_Father: {fileID: 1928560924}
+  m_Father: {fileID: 249405778}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2082093115
@@ -36330,7 +36336,7 @@ MonoBehaviour:
   spawnStartTime: 130
   spawnRate: 0.5
   enemyMoveSpeed: 5
-  pathPrefabs: {fileID: 162003461242351404, guid: 4dd51647852b7e342952620837fe571c, type: 3}
+  pathPrefabs: {fileID: 6295470719784227843, guid: d617af9c83e22c844817607dee6d9a28, type: 3}
   prefabsManager: {fileID: 1141950691}
   enemyPrefabsList:
   - {fileID: 1097696551}
