@@ -6,16 +6,21 @@ namespace DefaultNamespace.Components.Audio
 {
     public class MenuAudioManager: MonoBehaviour
     {
+        private static MenuAudioManager instance;
+        public static MenuAudioManager Instance => instance;
         [SerializeField] private float fadeInDuration = 1f;
-        [SerializeField] private float fadeOutDuration = 1f;
         [SerializeField] private AudioSource currentSoundTrack;
         [SerializeField] private List<AudioClip> backgroundAudioList;
         [SerializeField] private GameObject buttonSound;
         private bool isChangeSong;
-        
         private float targetVolume;
         
-    
+        private void Awake()
+        {
+            if(MenuAudioManager.Instance != null) Debug.LogError("Only one MenuAudioManager allowed");
+            instance = this;
+        }
+        
         private void Start()
         {
             targetVolume = currentSoundTrack.volume;
@@ -59,17 +64,17 @@ namespace DefaultNamespace.Components.Audio
             currentSoundTrack.Play();
         }
 
-        public void MusicFadeOut() => StartCoroutine(FadeOutCoroutine());
+        public void FadeOutMusic(float timeFadeOut) => StartCoroutine(FadeOutCoroutine(timeFadeOut));
         
-        private IEnumerator FadeOutCoroutine()
+        private IEnumerator FadeOutCoroutine(float timeFadeOut) 
         {
             float startVolume = this.currentSoundTrack.volume;
             float timer = 0f;
 
-            while (timer < fadeOutDuration)
+            while (timer < timeFadeOut)
             {
                 timer += UnityEngine.Time.deltaTime;
-                float t = timer / fadeOutDuration;
+                float t = timer / timeFadeOut;
                 this.currentSoundTrack.volume = Mathf.Lerp(startVolume, 0f, t);
                 yield return new WaitForFixedUpdate();
             }

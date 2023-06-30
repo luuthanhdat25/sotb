@@ -1,116 +1,42 @@
+using System.Collections;
 using DefaultNamespace.Components.Audio;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace DefaultNamespace.Objects.UI.Menu_Scene
 {
     public class MenuSceneManager : RepeatSceneManager
     {
-        [SerializeField] private MenuAudioManager menuAudioManager;
-        [SerializeField] private Transform totalUI;
+        private static MenuSceneManager instance;
+        public static MenuSceneManager Instance => instance;
+        [SerializeField] private BackgroundScroller backgroundScroller;
         
-        [Header("Play")]
-        [SerializeField] private Button playGameButton;
-        
-        [Header("Credit")]
-        [SerializeField] private Button creditButton;
-        [SerializeField] private Transform creditMenu;
-        [SerializeField] private Button outCreditButton;
-        
-        [Header("Exit")]
-        [SerializeField] private Button quitGameButton;
-        [SerializeField] private Transform quitMenu;
-        [SerializeField] private Button yesExitGameButton;
-        [SerializeField] private Button noExitGameButton;
-        private bool isDirectionButtonEntered = false;
+        [Header("Setting FadeOut")]
+        [SerializeField] private float timeFadeOutText = 3f; 
+        [SerializeField] private float timeFadeOutBackground = 5f; 
 
-        //LoadComponent
-        private void Start()
+        protected override void Awake()
         {
-            LoadPlayButton();
-            LoadCreditButton();
-            LoadOutCreditButton();
-            LoadQuitGameButton();
-            LoadQuitMenu();
-        }
-        
-        private void LoadPlayButton()
-        {
-            playGameButton?.onClick.AddListener(NextSceneIndex);
-            playGameButton?.Select();
-        }
-        
-        private void LoadCreditButton()
-        {
-            creditButton?.onClick.AddListener(() => SetActiveTransfrom(creditMenu, true));
-            creditButton?.onClick.AddListener(CreditButtonTurnOffTotalUI);
-        }
-        
-        private void LoadOutCreditButton()
-        {
-            outCreditButton?.onClick.AddListener(() => SetActiveTransfrom(creditMenu, false));
-            outCreditButton?.onClick.AddListener(CreditButtonTurnOnTotalUI);
-        }
-        
-        private void LoadQuitGameButton()
-        {
-            quitGameButton?.onClick.AddListener(() => SetActiveTransfrom(quitMenu, true));
-            quitGameButton?.onClick.AddListener(QuitButtonTurnOffTotalUI);
-        }
-        
-        private void LoadQuitMenu()
-        {
-            yesExitGameButton?.onClick.AddListener(QuitGame);
-            noExitGameButton?.onClick.AddListener(() => SetActiveTransfrom(quitMenu, false));
-            noExitGameButton?.onClick.AddListener(QuitButtonTurnOnTotalUI);
+            base.Awake();
+            if(MenuSceneManager.Instance != null) Debug.LogError("Only one MenuSceneManager allowed");
+            instance = this;
         }
 
-        private void CreditButtonTurnOffTotalUI()
-        {
-            SetActiveTransfrom(totalUI, false);
-            outCreditButton.Select();
-            PlayUIEffect();
-        }
-        
-        private void CreditButtonTurnOnTotalUI()
-        {
-            SetActiveTransfrom(totalUI, true);
-            creditButton.Select();
-            PlayUIEffect();
-        }
-        
-        private void QuitButtonTurnOffTotalUI()
-        {
-            SetActiveTransfrom(totalUI, false);
-            noExitGameButton.Select();
-            PlayUIEffect();
-        }
-        
-        private void QuitButtonTurnOnTotalUI()
-        {
-            SetActiveTransfrom(totalUI, true);
-            playGameButton.Select();
-            PlayUIEffect();
-        }
+        public void FadeOutScene() => StartCoroutine(FadeOutSceneCoroutine());
 
-        private void SetActiveTransfrom(Transform transform, bool isOn) 
-            => transform?.gameObject.SetActive(isOn);
-
-        private void Update() => ButtonSelectedAudio();
-        
-        private void ButtonSelectedAudio()
+        private IEnumerator FadeOutSceneCoroutine()
         {
-            if (GameInput.Instance.GetRawInputNormalized() != Vector2.zero && !isDirectionButtonEntered)
-            {
-                isDirectionButtonEntered = true;
-            }
-            else if (GameInput.Instance.GetRawInputNormalized() == Vector2.zero && isDirectionButtonEntered)
-            {
-                PlayUIEffect();
-                isDirectionButtonEntered = false;
-            }
+            //Turn off all UI and button sound
+            //MenuUI.Instance.SetActiveGameTitle(false);
+            //MenuUI.Instance.SetActiveTotalUI(false);
+            MenuUI.Instance.SetCanPlayUISFX(false);
+            MenuUI.Instance?.FadeOutText(this.timeFadeOutText);
+            MenuAudioManager.Instance?.FadeOutMusic(this.timeFadeOutBackground + this.timeFadeOutText);
+            backgroundScroller?.FadeOutBackground(this.timeFadeOutBackground);
+            yield return new WaitForSeconds(this.timeFadeOutText);
+            MenuUI.Instance?.FadeOutWhiteBackground(this.timeFadeOutBackground);
+            yield return new WaitForSeconds(this.timeFadeOutBackground);
+            //NextScene
+            this.NextSceneIndex();
         }
-
-        private void PlayUIEffect() => menuAudioManager?.UIEffect();
     }
 }

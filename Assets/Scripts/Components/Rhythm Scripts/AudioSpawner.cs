@@ -25,7 +25,7 @@ namespace Damage.RhythmScripts
         public enum SoundEffectEnum
         {
             ExplosionPlayer, Health, UpgradeItem, Buff, UntiPlayer, Dash,
-            ExplosionBoss, ExplosionNormalEnemy,
+            ExplosionBoss, ExplosionNormalEnemy, Hurt,
             Button, ScoreRaise
         }
         
@@ -163,11 +163,9 @@ namespace Damage.RhythmScripts
             }
         }
 
-        private void SetActiveTransform(Transform transform)
-        {
-            transform.gameObject.SetActive(true);
-        }
-        
+        private void SetActiveTransform(Transform transform) 
+            => transform.gameObject.SetActive(true);
+
         public void UIEffect()
         {
             SoundEffectEnum effectEnum = SoundEffectEnum.Button;

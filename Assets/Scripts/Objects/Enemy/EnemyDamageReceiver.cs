@@ -1,4 +1,5 @@
 using Damage;
+using Damage.RhythmScripts;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -29,16 +30,21 @@ namespace Enemy
             base.Reborn();
         }
 
-        protected override void OnDead()
-        {
-            this.DropItem();
-        }
+        protected override void OnDead() => this.DropItem();
 
         protected virtual void DropItem()
         {
             if (this.enemySO.dropList.Count == 0) return;
             ItemDropSpawner.Instance.Drop(this.enemySO.dropList, transform.parent.position);
         }
+        
+        public override void Deduct(int hpDeduct)
+        {
+            base.Deduct(hpDeduct);
+            PlaySFX();
+        }
+
+        private void PlaySFX() => AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.Hurt);
         
         public int HpCurrent => hpCurrent;
         public int HpMax => hpMax;

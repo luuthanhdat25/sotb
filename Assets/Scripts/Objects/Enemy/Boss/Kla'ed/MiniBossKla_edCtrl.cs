@@ -5,6 +5,7 @@ using DefaultNamespace;
 using DefaultNamespace.Components.Time;
 using Enemy;
 using Enemy.Boss;
+using Objects.Enemy.AttackEnemy;
 using UnityEngine;
 
 public class MiniBossKla_edCtrl : RepeatMonoBehaviour
@@ -65,9 +66,14 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     {
         TimeManager.Instance.SlowMotionEffect();
         this.minibossKlaEdModelShipModelShipAnimation.SetIsDestructionTrigger();
-        AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
+        EnemyProjectileSpawner.Instance.DespawnAllPool();
+        PlayExplosionAudio();
+        Invoke("PlayExplosionAudio", 0.2f);
+        Invoke("PlayExplosionAudio", 0.5f);
         this.kla_edAnimator.SetTrigger(AnimationParameter.isDestruction.ToString());
     }
+    
+    private void PlayExplosionAudio() => AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
 
     public void SetIsFollowAndShoot(bool isTrue) => this.kla_edAnimator.SetBool(AnimationParameter.isFollowAndShoot.ToString(), isTrue);
     

@@ -5,7 +5,7 @@ public class AudioSourseEnableRandom : MonoBehaviour
     private AudioSource audioSource;
     [Header("Volume")]
     [SerializeField] private float minVolume = 0.1f;
-    [Range(0.2f, 1f)]
+    [Range(0.2f, 2f)]
     [SerializeField] private float maxVolume;
     [Header("Pitch")]
     [SerializeField] private float minPitch = 0.1f;

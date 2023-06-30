@@ -4643,8 +4643,8 @@ Transform:
   - {fileID: 101956162}
   - {fileID: 1015748798}
   - {fileID: 1300947216}
-  - {fileID: 1432579058}
   - {fileID: 1869513427}
+  - {fileID: 1432579058}
   - {fileID: 53939670}
   - {fileID: 1081746140}
   - {fileID: 92718312}
@@ -12038,11 +12038,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &623164787 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6057587597011038471, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
-  m_PrefabInstance: {fileID: 1639779783}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &624621186
 GameObject:
   m_ObjectHideFlags: 0
@@ -18773,9 +18768,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272c54a43946a6f4cab8723b60e8cb5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshRenderer: {fileID: 0}
   scrollSpeedDefault: 0.7
   rateDashSpeed: 1.2
+  speedLight: 4
 --- !u!4 &1021093379
 Transform:
   m_ObjectHideFlags: 0
@@ -29491,10 +29486,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioSpawner
       objectReference: {fileID: 0}
-    - target: {fileID: 6057587597191699096, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6057587597191699097, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -29540,21 +29531,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6057587597191699098, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
-      propertyPath: sourceOne
-      value: 
-      objectReference: {fileID: 8300000, guid: 2f3e654b85474b9419c5b98998ffe535, type: 3}
-    - target: {fileID: 6057587597191699098, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
       propertyPath: backgroundScroller
       value: 
       objectReference: {fileID: 1021093378}
-    - target: {fileID: 6057587597191699098, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
-      propertyPath: soundTrackAudioTransform
-      value: 
-      objectReference: {fileID: 623164787}
-    - target: {fileID: 6057587597641814394, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
-      propertyPath: m_Volume
-      value: 0.8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40081,7 +40060,7 @@ MonoBehaviour:
     m_Mode: 4
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 6750400296350640055}
-    m_SelectOnDown: {fileID: 6750400294592736921}
+    m_SelectOnDown: {fileID: 6750400295537514523}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -44285,7 +44264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &6750400294592736920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44578,7 +44557,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 6750400294592736921}
+    m_SelectOnUp: {fileID: 2405676401403564424}
     m_SelectOnDown: {fileID: 6750400296350640055}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}

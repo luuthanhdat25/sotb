@@ -1,25 +1,39 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class BackgroundScroller : MonoBehaviour
 {
-    [SerializeField] private MeshRenderer meshRenderer;
+    private MeshRenderer meshRenderer;
+    
     [SerializeField] private float scrollSpeedDefault = 0.3f;
     [SerializeField] private float rateDashSpeed = 1.2f;
+    
+    [Header("Fade Out Scene")]
+    [SerializeField] private float speedLight = 4f;
+    
     private bool isDash = false;
     private bool isReverseBackground = false;
-
-    private void Awake()
-    {
-        if(this.meshRenderer != null) return;
-        meshRenderer = GetComponent<MeshRenderer>();
-    }
+    private float currentSpeed;
+    private bool isInSceneTransitions = false; 
+    
+    private void Start() => meshRenderer = GetComponent<MeshRenderer>();
 
     private void FixedUpdate()
     {
-        if(!isDash) Scroll(scrollSpeedDefault);
-        else Scroll(scrollSpeedDefault * rateDashSpeed);
+        if (!isInSceneTransitions)
+        {
+            if (!isDash)
+            {
+                currentSpeed = scrollSpeedDefault;
+            }
+            else
+            {
+                currentSpeed = scrollSpeedDefault * rateDashSpeed;
+            } 
+        }
+        Scroll(currentSpeed);
     }
 
     public void Dash(bool isOn) => this.isDash = isOn;
@@ -37,4 +51,23 @@ public class BackgroundScroller : MonoBehaviour
     }
     
     public void ReverseBackground() => isReverseBackground = true;
+
+    public void FadeOutBackground(float timeFadeOut)
+    {
+        isInSceneTransitions = true;
+        StartCoroutine(IncreaseSpeed(timeFadeOut));   
+    }
+    
+    private IEnumerator IncreaseSpeed(float timeFadeOut) 
+    {
+        float elapsedTime = 0;
+        float timeIncreaseSpeed = timeFadeOut;
+        while (elapsedTime < timeIncreaseSpeed)
+        {
+            currentSpeed = Mathf.Lerp(currentSpeed, speedLight, elapsedTime / timeIncreaseSpeed);
+            elapsedTime += UnityEngine.Time.deltaTime;
+            yield return null;
+        }
+        currentSpeed = speedLight;
+    }
 }

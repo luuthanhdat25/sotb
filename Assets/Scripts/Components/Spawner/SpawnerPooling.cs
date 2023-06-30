@@ -97,5 +97,13 @@ public abstract class SpawnerPooling : RepeatMonoBehaviour
         obj.gameObject.SetActive(false);
     }
 
+    public virtual void DespawnAllPool()
+    {
+        foreach (Transform transform in holderManager)
+        {
+            transform.gameObject.SetActive(false);
+        }
+    }
+
     public void PushToHolderManager(Transform transform) => transform.parent = this.holderManager;
 }

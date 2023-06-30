@@ -50,7 +50,7 @@ namespace Objects.UI.HUD
             {
                 elapsedTime += Time.deltaTime;
                 currentScore = Mathf.RoundToInt(Mathf.Lerp(startScore, targetScore, elapsedTime / scoreIncreaseDuration));
-                totalScoreText.text = currentScore.ToString();
+                totalScoreText.text = $"Score: {currentScore.ToString()}";
                 yield return null;
             }
         }
@@ -59,13 +59,13 @@ namespace Objects.UI.HUD
         {
             if (scoreText == null) return;
             int score = GameManager.Instance.GetScore();
-            if(score < 999) this.scoreText.text = "000" + score + "";
+            if(score < 999) this.scoreText.text = $"000{score}";
             else if(score < 9999)
             {
-                this.scoreText.text = "00" + score + "";
+                this.scoreText.text = $"00{score}";
             }else if(score < 99990)
             {
-                this.scoreText.text = "0" + score + "";
+                this.scoreText.text = $"0{score}";
             }else this.scoreText.text = score + "";
         }
     }

@@ -188,6 +188,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
         public override void WinGame()
         {
             isWinOrLoss = true;
+            isPause = true;
             playerHud?.gameObject.SetActive(false);
             pauseUIContent?.gameObject.SetActive(false);
             totalAppUI?.gameObject.SetActive(true);
@@ -214,6 +215,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
         public override void LossGame()
         {
             isWinOrLoss = true;
+            isPause = true;
             restartButton?.Select();
             pauseUIContent?.gameObject.SetActive(false);
             playerHud?.gameObject.SetActive(false);
