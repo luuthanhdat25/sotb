@@ -980,6 +980,7 @@ MonoBehaviour:
   - {fileID: 1987314150}
   soundUIList:
   - {fileID: 6057587598076025306}
+  scoreRaiseSound: {fileID: 6057587597775493860}
 --- !u!1 &6057587597302821335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,7 +1189,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 517587a9f9a02f44782e4205b41efacf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9b9bef14c0ade3e4f8b1b14821f8dd9c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

@@ -49,8 +49,8 @@ namespace DefaultNamespace
         IEnumerator DelayGameOver()
         {
             yield return new WaitForSeconds(2f);
-            Debug.Log(score);
             UsersInterfaceManager.Instance.TotalScore(score);
+            if(score > 0) AudioSpawner.Instance.ScoreRaiseSound();
             sceneManager.LossGame();
         }
         
@@ -66,6 +66,7 @@ namespace DefaultNamespace
         {
             yield return new WaitForSeconds(4);
             UsersInterfaceManager.Instance.TotalScore(score);
+            if(score > 0) AudioSpawner.Instance.ScoreRaiseSound();
             sceneManager.WinGame();
         }
         

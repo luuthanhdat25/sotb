@@ -19,6 +19,7 @@ namespace Damage.RhythmScripts
         [SerializeField] private List<Transform> soundEffectPlayerList;
         [SerializeField] private List<Transform> soundEffectEnemyList;
         [SerializeField] private List<Transform> soundUIList;
+        [SerializeField] private GameObject scoreRaiseSound;
         private float startVolume;
         private bool isChangeSong = false;
         public bool IsChangeSong => isChangeSong;
@@ -209,32 +210,6 @@ namespace Damage.RhythmScripts
             }
         }
 
-        /*public bool isScoreRaise = false;
-        public void SetIsScoreRaise(bool isScoreRaise) => this.isScoreRaise = isScoreRaise;
-        [SerializeField] private GameObject scoreRaiseSound;
-        private void Update()
-        {
-            if (!isScoreRaise) return;
-            ScoreRaise();
-        }
-        public float toggleInterval = 0.2f;
-        private float timer = 0f;
-        public void ScoreRaise()
-        {
-            timer += Time.deltaTime;
-            if (timer >= toggleInterval)
-            {
-                if(toggleInterval > 0.1) toggleInterval -= Time.deltaTime / 2;
-                ToggleObject();
-                timer = 0f;
-            }
-        }
-        
-        private void ToggleObject()
-        {
-            GameObject scoreRaise = Instantiate(scoreRaiseSound);
-            scoreRaise.SetActive(true);
-            Destroy(scoreRaise, 1f);
-        }*/
+        public void ScoreRaiseSound() => this.scoreRaiseSound?.SetActive(true);
     }
 }
