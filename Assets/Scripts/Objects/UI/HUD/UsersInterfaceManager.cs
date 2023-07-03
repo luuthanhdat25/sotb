@@ -17,6 +17,8 @@ namespace Objects.UI.HUD
         [SerializeField] private TMP_Text totalScoreText;
         [SerializeField] private TMP_Text scoreText;
         [SerializeField] private float scoreIncreaseDuration = 1.0f;
+        private Animator animator;
+        private const string IS_FADE_OUT = "isFadeOut";
         
         private int targetScore;
         private int currentScore = 0;
@@ -29,12 +31,25 @@ namespace Objects.UI.HUD
         private void Start()
         {
             GameManager.Instance.onScoreChanged.AddListener(UpdateScore);
+            LoadAnimator();
+        }
+
+        private void LoadAnimator()
+        {
+            if(this.animator != null) return;
+            this.animator = GetComponent<Animator>();
         }
 
         public void SetActiveEnergiesBar(bool isTrue) => energiesBar.gameObject.SetActive(isTrue);
+        
+        public void SetActiveScoreHUD(bool isTrue) => scoreText.gameObject.SetActive(isTrue);
+
         public void SetActiveBoostceilBar(bool isTrue) => boostceilBar.gameObject.SetActive(isTrue);
+        
         public void SetActiveWinUI(bool isTrue) => winUI.gameObject.SetActive(isTrue);
+        
         public void SetActiveLossUI(bool isTrue) => lossUI.gameObject.SetActive(isTrue);
+        
         public void TotalScore(int score)
         {
             targetScore = score;
@@ -68,5 +83,7 @@ namespace Objects.UI.HUD
                 this.scoreText.text = $"0{score}";
             }else this.scoreText.text = score + "";
         }
+
+        public void FadeOutAnimation() => this.animator?.SetTrigger(IS_FADE_OUT);
     }
 }

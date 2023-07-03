@@ -10,30 +10,27 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
     {
         private static MenuUI instance;
         public static MenuUI Instance => instance;
-        [SerializeField] private GameObject gameTitle;
-        [SerializeField] private TMP_Text gameTitleText;
         [SerializeField] private Transform totalUI;
         [SerializeField] private Image whiteBackground;
         
         [Header("Play")]
         [SerializeField] private Button playGameButton;
-        [SerializeField] private TMP_Text playGameText;
         
         [Header("Credit")]
         [SerializeField] private Button creditButton;
         [SerializeField] private Transform creditMenu;
         [SerializeField] private Button outCreditButton;
-        [SerializeField] private TMP_Text creditGameText;
         
         [Header("Exit")]
         [SerializeField] private Button quitGameButton;
         [SerializeField] private Transform quitMenu;
         [SerializeField] private Button yesExitGameButton;
         [SerializeField] private Button noExitGameButton;
-        [SerializeField] private TMP_Text quiteGameText;
         
         private bool isDirectionButtonEntered = false;
         private bool canPlayUISFX = true;
+        private Animator animator;
+        private const string IS_FADE_OUT = "isFadeOut";
 
         private void Awake()
         {
@@ -49,6 +46,7 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
             LoadOutCreditButton();
             LoadQuitGameButton();
             LoadQuitMenu();
+            LoadAnimator();
         }
         
         private void LoadPlayButton()
@@ -110,6 +108,12 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
             PlayUIEffect();
         }
 
+        private void LoadAnimator()
+        {
+            if(this.animator != null) return;
+            this.animator = GetComponent<Animator>();
+        }
+
         private void SetActiveTransfrom(Transform transform, bool isOn) 
             => transform?.gameObject.SetActive(isOn);
 
@@ -131,47 +135,7 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
 
         private void PlayUIEffect() => MenuAudioManager.Instance?.UIEffect();
 
-        public void FadeOutWhiteBackground(float timeFadeOut)
-        {
-            whiteBackground.gameObject.SetActive(true);
-            StartCoroutine(FadeOutWhiteBackgroundCoroutine(timeFadeOut));
-        }
-        
-        public void FadeOutText(float timeFadeOut) => StartCoroutine(FadeOutButtonCoroutine(timeFadeOut));
-
-
-        private IEnumerator FadeOutWhiteBackgroundCoroutine(float timeFadeOut)
-        {
-            Color startColor = whiteBackground.color;
-            Color targetColor = new Color(startColor.r, startColor.g, startColor.b, 1f);
-
-            float timer = 0f;
-            while (timer < timeFadeOut)
-            {
-                timer += Time.deltaTime;
-                whiteBackground.color = Color.Lerp(startColor, targetColor, timer / timeFadeOut);
-                yield return null;
-            }
-        }
-        
-        private IEnumerator FadeOutButtonCoroutine(float timeFadeOut)
-        {
-            Color startButtonColor = playGameText.color;
-            Color targetButtonColor = new Color(startButtonColor.a, startButtonColor.g, startButtonColor.b, 0);
-
-            float timer = 0f;
-            while (timer < timeFadeOut)
-            {
-                timer += Time.deltaTime;
-                float t = timer / timeFadeOut;
-                gameTitleText.color = playGameText.color = creditGameText.color = quiteGameText.color = Color.Lerp(startButtonColor, targetButtonColor, timer / timeFadeOut);
-                yield return null;
-            }
-        }
-
-        public void SetActiveGameTitle(bool isOn) => this.gameTitle?.SetActive(isOn);
-        
-        public void SetActiveTotalUI(bool isOn) => this.totalUI?.gameObject.SetActive(isOn);
+        public void FadeOutAnimation() => this.animator?.SetTrigger(IS_FADE_OUT);
         
         public void SetCanPlayUISFX(bool isTrue) => this.canPlayUISFX = isTrue;
     }

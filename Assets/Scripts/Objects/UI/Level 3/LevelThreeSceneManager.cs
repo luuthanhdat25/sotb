@@ -8,7 +8,9 @@ namespace DefaultNamespace.Objects.UI.Level_3
 {
     public class LevelThreeSceneManager : RepeatSceneManager
     {
-        [FormerlySerializedAs("audioManager")] [SerializeField] private AudioSpawner audioSpawner;
+        [SerializeField] private BackgroundScroller backgroundScroller;
+        [SerializeField] private float timeFadeIn = 7f;
+        
         [SerializeField] private bool isPause = false;
         [SerializeField] private Transform totalAppUI;
         [SerializeField] private Transform appButtonUI;
@@ -44,6 +46,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
         private bool isDirectionButtonEntered = false;
         private void Start()
         {
+            backgroundScroller?.FadeInBackground(timeFadeIn);
             LoadRestart();
             LoadComback();
             LoadQuit();
@@ -165,7 +168,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
         private void StopGame()
         {
             Time.timeScale = 0;
-            AudioSpawner.Instance.CurrentSoundTrack.Pause();
+            AudioSpawner.Instance.PauseCurrentSoundTrack();
         }
 
         public void Continue()
@@ -176,7 +179,7 @@ namespace DefaultNamespace.Objects.UI.Level_3
             appButtonUI?.gameObject.SetActive(false);
             pauseUIContent?.gameObject.SetActive(false);
             PlayUIEffect();
-            AudioSpawner.Instance.CurrentSoundTrack.Play();
+            AudioSpawner.Instance.PlayCurrentSoundTrack();
         }
 
         public override void ReloadScene()

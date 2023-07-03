@@ -1,3 +1,4 @@
+using Damage.RhythmScripts;
 using UnityEngine;
 
 namespace Enemy.Boss.Nairan.Miniboss
@@ -55,11 +56,17 @@ namespace Enemy.Boss.Nairan.Miniboss
 
         public void SetDeadAnimation()
         {
-            this.minibossNairanModelShipAnimation.SetIsDestructionTrigger();
             this.bossShootLazer.DespawnLazer();
-            Debug.Log("set destruction");
+            
+            PlayExplosionAudio();
+            Invoke("PlayExplosionAudio", 0.2f);
+            Invoke("PlayExplosionAudio", 0.5f);
+            
+            this.minibossNairanModelShipAnimation.SetIsDestructionTrigger();
             this.miniNairanAnimator.SetTrigger(IS_DESTRUCTION);
         }
+        
+        private void PlayExplosionAudio() => AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
 
         public void SetIsFollowAndShoot(bool isTrue) => this.miniNairanAnimator.SetBool(IS_FOLLOW_AND_SHOOT, isTrue);
         public void SetIsLazerSlide(bool isTrue) => this.miniNairanAnimator.SetBool(IS_LAZER_SLIDE, isTrue);

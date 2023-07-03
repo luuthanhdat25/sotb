@@ -65,11 +65,13 @@ public class MiniBossKla_edCtrl : RepeatMonoBehaviour
     public void SetDeadAnimation()
     {
         TimeManager.Instance.SlowMotionEffect();
-        this.minibossKlaEdModelShipModelShipAnimation.SetIsDestructionTrigger();
         EnemyProjectileSpawner.Instance.DespawnAllPool();
+        
         PlayExplosionAudio();
         Invoke("PlayExplosionAudio", 0.2f);
         Invoke("PlayExplosionAudio", 0.5f);
+        
+        this.minibossKlaEdModelShipModelShipAnimation.SetIsDestructionTrigger();
         this.kla_edAnimator.SetTrigger(AnimationParameter.isDestruction.ToString());
     }
     

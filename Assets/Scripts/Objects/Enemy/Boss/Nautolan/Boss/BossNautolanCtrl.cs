@@ -1,6 +1,9 @@
 using System;
 using System.Collections;
+using Damage.RhythmScripts;
+using DefaultNamespace.Components.Time;
 using Enemy.Nautolan;
+using Objects.Enemy.AttackEnemy;
 using UnityEngine;
 
 public class BossNautolanCtrl : RepeatMonoBehaviour
@@ -75,10 +78,18 @@ public class BossNautolanCtrl : RepeatMonoBehaviour
 
     public void SetDeadAnimation()
     {
+        TimeManager.Instance.SlowMotionEffect();
+        EnemyProjectileSpawner.Instance.DespawnAllPool();
+        
+        PlayExplosionAudio();
+        Invoke("PlayExplosionAudio", 0.2f);
+        Invoke("PlayExplosionAudio", 0.5f);
+        
         this.bossNautolanModelShipAnimation.SetIsDestructionTrigger();
-        Debug.Log("set destruction");
         this.nautolanAnimator.SetTrigger(IS_DESTRUCTION);
     }
+    
+    private void PlayExplosionAudio() => AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
 
     public void SetIsFollowAndShoot(bool isTrue) => this.nautolanAnimator.SetBool(IS_FOLLOW_AND_SHOOT, isTrue);
     public void SetIsArcShoot(bool isTrue) => this.nautolanAnimator.SetBool(IS_ARC_SHOOT, isTrue);

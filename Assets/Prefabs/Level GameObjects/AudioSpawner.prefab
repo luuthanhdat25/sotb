@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74261822b33637445aa88dd7a9606eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minVolume: 1
-  maxVolume: 1.332
+  minVolume: 0.7
+  maxVolume: 1
   minPitch: 0.7
   maxPitch: 0.9
 --- !u!1 &6057587596188530349
@@ -700,7 +700,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
@@ -961,10 +961,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3fd45f66c14b80a430fa19f08ba52c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDuration: 1
   backgroundScroller: {fileID: 0}
   soundTrackAudioTransform: {fileID: 6057587597011038471}
-  sourceOne: {fileID: 8300000, guid: 2f3e654b85474b9419c5b98998ffe535, type: 3}
+  sourceOne: {fileID: 8300000, guid: 18b7bfb63199c1c4da541fe7e8ce25b7, type: 3}
   sourceTwo: {fileID: 8300000, guid: 12943d7982f201349980310911df51d7, type: 3}
   currentSoundTrack: {fileID: 9192638158310798390}
   soundEffectPlayerList:

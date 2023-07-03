@@ -18,6 +18,9 @@ namespace Player
         [SerializeField] private Transform defaultEngine;
         [SerializeField] private Transform upgradeEngine;
         [SerializeField] private Transform shield;
+
+        [SerializeField] private GameObject fullHealthModel;
+        [SerializeField] private GameObject destroyHealthModel;
         
         public List<SpriteRenderer> spritesToBlur;
         public float blurOpacity = 0.5f;
@@ -146,6 +149,12 @@ namespace Player
         {
             yield return new WaitForSeconds(time);
             shieldAnimator.SetTrigger(AnimatorParameter.isDestruction.ToString());
+        }
+
+        public void FullHealth()
+        {
+            destroyHealthModel?.SetActive(false);
+            fullHealthModel?.SetActive(true);
         }
 
         public void DeductHealthStateAnimaiton() => this.healthStateAnimaiton--;

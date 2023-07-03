@@ -1,4 +1,5 @@
 using System.Collections;
+using Damage.RhythmScripts;
 using UnityEngine;
 
 public class MinibossNautolanCtrl : RepeatMonoBehaviour
@@ -53,11 +54,15 @@ public class MinibossNautolanCtrl : RepeatMonoBehaviour
 
     public void SetDeadAnimation()
     {
+        PlayExplosionAudio();
+        Invoke("PlayExplosionAudio", 0.4f);
+        
         this.minibossNautolanModelShipAnimation.SetIsDestructionTrigger();
-        Debug.Log("set destruction");
-        this.miniNautolanAnimator.SetTrigger(IS_DESTRUCTION);
+        this.miniNautolanAnimator.SetTrigger(IS_DESTRUCTION);   
     }
 
+    private void PlayExplosionAudio() => AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
+    
     public void SetIsFollowAndShoot(bool isTrue) => this.miniNautolanAnimator.SetBool(IS_FOLLOW_AND_SHOOT, isTrue);
     public void SetIsChasePlayer(bool isTrue) => this.miniNautolanAnimator.SetBool(IS_CHASE_PLAYER, isTrue);
     public Vector3 GetCameraPosition() => this.mainCam.position;

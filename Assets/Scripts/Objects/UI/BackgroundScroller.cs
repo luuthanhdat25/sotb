@@ -70,4 +70,24 @@ public class BackgroundScroller : MonoBehaviour
         }
         currentSpeed = speedLight;
     }
+    
+    public void FadeInBackground(float timeFadeIn)
+    {
+        isInSceneTransitions = true;
+        StartCoroutine(DecreaseSpeed(timeFadeIn));   
+    }
+    
+    private IEnumerator DecreaseSpeed(float timeFadeIn) 
+    {
+        float elapsedTime = 0;
+        float timeIncreaseSpeed = timeFadeIn;
+        while (elapsedTime < timeIncreaseSpeed)
+        {
+            currentSpeed = Mathf.Lerp(speedLight, scrollSpeedDefault, elapsedTime / timeIncreaseSpeed);
+            elapsedTime += UnityEngine.Time.deltaTime;
+            yield return null;
+        }
+        currentSpeed = scrollSpeedDefault;
+        isInSceneTransitions = false;
+    }
 }

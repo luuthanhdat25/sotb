@@ -1,5 +1,6 @@
 using System.Collections;
 using Damage.RhythmScripts;
+using Objects.UI.HUD;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -8,6 +9,10 @@ namespace DefaultNamespace.Objects.UI.Level_1
 {
     public class LevelOneSceneManager : RepeatSceneManager
     {
+        [SerializeField] private BackgroundScroller backgroundScroller;
+        [SerializeField] private float timeFadeIn = 7f;
+        [SerializeField] private float timeFadeOut = 3f;
+        
         [SerializeField] private bool isPause = false;
         [SerializeField] private Transform totalAppUI;
         [SerializeField] private Transform appButtonUI;
@@ -42,8 +47,11 @@ namespace DefaultNamespace.Objects.UI.Level_1
         private bool isWinOrLoss = false;
         private bool isEscapeButtonEntered = false;
         private bool isDirectionButtonEntered = false;
+        private bool canPlayUISFX = true;
+        
         private void Start()
         {
+            backgroundScroller?.FadeInBackground(timeFadeIn);
             LoadRestart();
             LoadComback();
             LoadQuit();
@@ -128,6 +136,7 @@ namespace DefaultNamespace.Objects.UI.Level_1
 
         private void ButtonSelectedAudio()
         {
+            if (!canPlayUISFX) return;
             if (!isPause) return;
             if (GameInput.Instance.GetRawInputNormalized() != Vector2.zero && !isDirectionButtonEntered)
             {
@@ -165,7 +174,7 @@ namespace DefaultNamespace.Objects.UI.Level_1
         private void StopGame()
         {
             Time.timeScale = 0;
-            AudioSpawner.Instance.CurrentSoundTrack.Pause();
+            AudioSpawner.Instance.PauseCurrentSoundTrack();
         }
 
         public void Continue()
@@ -176,7 +185,7 @@ namespace DefaultNamespace.Objects.UI.Level_1
             appButtonUI?.gameObject.SetActive(false);
             pauseUIContent?.gameObject.SetActive(false);
             PlayUIEffect();
-            AudioSpawner.Instance.CurrentSoundTrack.Play();
+            AudioSpawner.Instance.PlayCurrentSoundTrack();
         }
 
         public override void ReloadScene()
@@ -233,6 +242,18 @@ namespace DefaultNamespace.Objects.UI.Level_1
         {
             base.CombackToMenu();
             Continue();
+        }
+
+        public void NextScene() => StartCoroutine(FadeOutSceneCoroutine());
+
+        private IEnumerator FadeOutSceneCoroutine()
+        {
+            Time.timeScale = 1;
+            canPlayUISFX = false;
+            UsersInterfaceManager.Instance?.FadeOutAnimation();
+            backgroundScroller?.FadeOutBackground(this.timeFadeOut);
+            yield return new WaitForSeconds(this.timeFadeOut);
+            this.NextSceneIndex();
         }
     }
 }

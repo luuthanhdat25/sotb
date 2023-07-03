@@ -104,6 +104,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\AttackEnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\ItemMovement.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\ResourcePlayerBar.cs" />
+     <Compile Include="Assets\RotateWhenEnable.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MiniBossKla_edCtrl.cs" />
@@ -288,6 +289,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Projectile" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
+     <Folder Include="Assets\Animations\MenuScene" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Weapons" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Bases" />
      <Folder Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour" />
@@ -410,6 +412,7 @@
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Shields\PNGs" />
      <Folder Include="Assets\TextMesh Pro\Fonts" />
      <Folder Include="Assets\Prefabs\Projectile" />
+     <Folder Include="Assets\Animations\Level 1 Scene" />
      <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Bases" />
      <Folder Include="Assets\Scripts\Objects\Camera" />
      <Folder Include="Assets\Scripts\Objects\UI\Player" />
@@ -441,6 +444,7 @@
      <Folder Include="Assets\Scripts\Components" />
      <Folder Include="Assets\FastScriptReload\Plugins\Harmony\net48" />
      <Folder Include="Assets\Scripts\Objects\Player" />
+     <Folder Include="Assets\Animations\Level 2 Scene" />
      <Folder Include="Assets\Sprites\Void_PickupsPack" />
      <Folder Include="Assets\FastScriptReload\Examples" />
      <None Include="Assets\FastScriptReload\Plugins\Roslyn\RoslynLicense.txt" />
@@ -508,6 +512,7 @@
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Engines" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapons\Aseprite" />
      <Folder Include="Assets\Prefabs\Position\Enemy" />
+     <Folder Include="Assets\Animations\Level 3 Scene" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

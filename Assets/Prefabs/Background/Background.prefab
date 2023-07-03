@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6232526244811212303
 MonoBehaviour:
@@ -46,8 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272c54a43946a6f4cab8723b60e8cb5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshRenderer: {fileID: 0}
-  scrollSpeed: 0.3
+  scrollSpeedDefault: 0.3
+  rateDashSpeed: 1.2
+  speedLight: 8
+  currentSpeed: 0
 --- !u!33 &6232526244811212300
 MeshFilter:
   m_ObjectHideFlags: 0

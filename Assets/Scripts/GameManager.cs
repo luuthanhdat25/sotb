@@ -42,7 +42,7 @@ namespace DefaultNamespace
         {
             gameState = GameState.GameOver;
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(false);
-            AudioSpawner.Instance.MusicFadeOut();
+            AudioSpawner.Instance.FadeOutMusic(5);
             StartCoroutine(DelayGameOver());
         }
 
@@ -50,6 +50,7 @@ namespace DefaultNamespace
         {
             yield return new WaitForSeconds(2f);
             UsersInterfaceManager.Instance.TotalScore(score);
+            AudioSpawner.Instance.UIEffect();
             if(score > 0) AudioSpawner.Instance.ScoreRaiseSound();
             sceneManager.LossGame();
         }
@@ -58,7 +59,7 @@ namespace DefaultNamespace
         {
             gameState = GameState.WinGame;
             PlayerCtrl.Instance.ItemMagnet.SetRadiusItemMagnet(10f);
-            AudioSpawner.Instance.MusicFadeOut();
+            AudioSpawner.Instance.FadeOutMusic(5);
             StartCoroutine(DelayWinGame());
         }
         

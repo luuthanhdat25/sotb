@@ -1,8 +1,10 @@
+using System.Collections;
 using Damage.RhythmScripts;
 using UnityEngine;
 
 public class EnemySpawner : RepeatMonoBehaviour
 {
+    [SerializeField] private float timeDelayStartWave = 0;
     [SerializeField] private WavePrefabManager wavePrefabManager;
     
     [Header("Current")] 
@@ -11,6 +13,7 @@ public class EnemySpawner : RepeatMonoBehaviour
     
     private int currentWaveIndex = 0;
     private float timer = 0;
+    private bool isStartSpawn = false;
 
     protected override void LoadComponents()
     {
@@ -21,19 +24,22 @@ public class EnemySpawner : RepeatMonoBehaviour
     private void LoadWavePrefabsManager() 
         => this.wavePrefabManager ??= transform.GetComponentInChildren<WavePrefabManager>();
 
-    void Start()
+    private IEnumerator Start()
     {
+        yield return new WaitForSeconds(timeDelayStartWave);
         this.PlayStartAudioSource();
-        this.SetCurrentWave();
+        isStartSpawn = true;
     }
 
-    private void PlayStartAudioSource() => AudioSpawner.Instance.CurrentSoundTrack.Play();
+    private void PlayStartAudioSource() => AudioSpawner.Instance.PlayStartAudioSource();
     
     private void SetCurrentWave() => currentWave = this.wavePrefabManager.GetWaveByIndex(currentWaveIndex);
     //-----------------------------------------------------------------------------------------//
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (IsAllWaveSpawn()) return;
+        if (!isStartSpawn) return;
+        if (currentWaveIndex >= wavePrefabManager.GetWaveSpawnersList().Count) return;
+        
         this.SetCurrentWave();
         if (currentWave.TryGetComponent<WaveSpawner>(out WaveSpawner waveCurrentSpawn))
         {
@@ -48,8 +54,6 @@ public class EnemySpawner : RepeatMonoBehaviour
             Debug.Log(currentWaveIndex);
         }
     }
-
-    private bool IsAllWaveSpawn() => currentWaveIndex >= wavePrefabManager.GetWaveSpawnersList().Count;
 
     public void SpawnWaveSpawner() => currentWave.gameObject.SetActive(true);
 }

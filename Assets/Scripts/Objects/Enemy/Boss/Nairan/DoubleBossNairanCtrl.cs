@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using DefaultNamespace;
+using DefaultNamespace.Components.Time;
 using Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser;
+using Objects.Enemy.AttackEnemy;
 using Objects.Enemy.Boss.Nairan.Dreadnought;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -66,6 +68,8 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss
             if (bossDie == 2)
             {
                 GameManager.Instance.WinGame();
+                TimeManager.Instance.SlowMotionEffect();
+                EnemyProjectileSpawner.Instance.DespawnAllPool();
                 bossDie++;
                 return;
             }

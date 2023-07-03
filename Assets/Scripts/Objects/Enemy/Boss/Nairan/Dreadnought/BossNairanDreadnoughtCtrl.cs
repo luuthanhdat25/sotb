@@ -1,7 +1,9 @@
 using System;
+using Damage.RhythmScripts;
 using Enemy.Boss;
 using Enemy.Boss.Nairan.Miniboss;
 using Enemy.Boss.Nairan.Miniboss.Boss;
+using Objects.Enemy.AttackEnemy;
 using UnityEngine;
 
 namespace Objects.Enemy.Boss.Nairan.Dreadnought
@@ -97,11 +99,18 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         public override void SetDeadAnimation()
         {
             this.isFinishBehaviour = true;
-            this.bossModelShipAnimation.SetIsDestructionTrigger();
             this.bossShootLazer.DespawnLazer();
-            Debug.Log("set destruction");
+            EnemyProjectileSpawner.Instance.DespawnAllPool();
+            
+            PlayExplosionAudio();
+            Invoke("PlayExplosionAudio", 0.2f);
+            Invoke("PlayExplosionAudio", 0.5f);
+            
+            this.bossModelShipAnimation.SetIsDestructionTrigger();
             this.bossSMBAnimator.SetTrigger(AnimatorParameter.IsDestruction.ToString());
         }
+        
+        private void PlayExplosionAudio() => AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
 
         public override Vector3 GetDefaultPosition()
         {

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98dd48acc920941ae68e3cd57fc3cb, type: 3}
   m_Name: BossNairanDreadnought
   m_EditorClassIdentifier: 
-  hpMax: 140
+  hpMax: 2
   dropList:
   - itemPrefab: {fileID: 4809335115012410466, guid: a67c00984b1277f469b5e7da636dbed6, type: 3}
     dropRate: 30

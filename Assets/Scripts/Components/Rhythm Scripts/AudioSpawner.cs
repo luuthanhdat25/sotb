@@ -9,19 +9,17 @@ namespace Damage.RhythmScripts
     public class AudioSpawner : RepeatMonoBehaviour
     {
         public static AudioSpawner Instance { get; set; }
-        [SerializeField] private float fadeDuration = 1f;
         [SerializeField] private BackgroundScroller backgroundScroller;
         [SerializeField] private Transform soundTrackAudioTransform;
         [SerializeField] private AudioClip sourceOne, sourceTwo;
         [SerializeField] private AudioSource currentSoundTrack;
-        public AudioSource CurrentSoundTrack => currentSoundTrack;
         
         [SerializeField] private List<Transform> soundEffectPlayerList;
         [SerializeField] private List<Transform> soundEffectEnemyList;
         [SerializeField] private List<Transform> soundUIList;
         [SerializeField] private GameObject scoreRaiseSound;
         private float startVolume;
-        private bool isChangeSong = false;
+        private bool isChangeSong = true;
         public bool IsChangeSong => isChangeSong;
         public enum SoundEffectEnum
         {
@@ -34,8 +32,6 @@ namespace Damage.RhythmScripts
         {
             if(Instance != null) Debug.LogError("There is more than one AudioSpawner instance");
             Instance = this;
-            
-            currentSoundTrack.clip = sourceOne;
         }
 
         protected override void LoadComponents()
@@ -97,6 +93,14 @@ namespace Damage.RhythmScripts
             Transform UI = transform.Find("UI");
             LoadTransforms(UI, soundUIList);
         }
+
+        public void PlayStartAudioSource()
+        {
+            currentSoundTrack.clip = sourceOne;
+            currentSoundTrack.Play();
+            isChangeSong = false;
+        }
+        
         
         private void FixedUpdate()
         {
@@ -118,17 +122,17 @@ namespace Damage.RhythmScripts
             currentSoundTrack.Play();
         }
 
-        public void MusicFadeOut() => StartCoroutine(FadeOutCoroutine());
+        public void FadeOutMusic(float timeFadeOut) => StartCoroutine(FadeOutCoroutine(timeFadeOut));
         
-        private IEnumerator FadeOutCoroutine()
+        private IEnumerator FadeOutCoroutine(float timeFadeOut)
         {
             float startVolume = this.currentSoundTrack.volume;
             float timer = 0f;
 
-            while (timer < fadeDuration)
+            while (timer < timeFadeOut)
             {
                 timer += Time.fixedDeltaTime;
-                float t = timer / fadeDuration;
+                float t = timer / timeFadeOut;
                 this.currentSoundTrack.volume = Mathf.Lerp(startVolume, 0f, t);
                 yield return new WaitForFixedUpdate();
             }
@@ -211,5 +215,9 @@ namespace Damage.RhythmScripts
         }
 
         public void ScoreRaiseSound() => this.scoreRaiseSound?.SetActive(true);
+
+        public void PlayCurrentSoundTrack() => this.currentSoundTrack.Play();
+
+        public void PauseCurrentSoundTrack() => this.currentSoundTrack.Pause();
     }
 }

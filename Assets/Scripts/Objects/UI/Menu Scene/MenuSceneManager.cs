@@ -11,8 +11,7 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
         [SerializeField] private BackgroundScroller backgroundScroller;
         
         [Header("Setting FadeOut")]
-        [SerializeField] private float timeFadeOutText = 3f; 
-        [SerializeField] private float timeFadeOutBackground = 5f; 
+        [SerializeField] private float timeFadeOut = 5f; 
 
         protected override void Awake()
         {
@@ -25,17 +24,11 @@ namespace DefaultNamespace.Objects.UI.Menu_Scene
 
         private IEnumerator FadeOutSceneCoroutine()
         {
-            //Turn off all UI and button sound
-            //MenuUI.Instance.SetActiveGameTitle(false);
-            //MenuUI.Instance.SetActiveTotalUI(false);
             MenuUI.Instance.SetCanPlayUISFX(false);
-            MenuUI.Instance?.FadeOutText(this.timeFadeOutText);
-            MenuAudioManager.Instance?.FadeOutMusic(this.timeFadeOutBackground + this.timeFadeOutText);
-            backgroundScroller?.FadeOutBackground(this.timeFadeOutBackground);
-            yield return new WaitForSeconds(this.timeFadeOutText);
-            MenuUI.Instance?.FadeOutWhiteBackground(this.timeFadeOutBackground);
-            yield return new WaitForSeconds(this.timeFadeOutBackground);
-            //NextScene
+            MenuUI.Instance?.FadeOutAnimation();
+            MenuAudioManager.Instance?.FadeOutMusic(this.timeFadeOut);
+            backgroundScroller?.FadeOutBackground(this.timeFadeOut);
+            yield return new WaitForSeconds(this.timeFadeOut);
             this.NextSceneIndex();
         }
     }
