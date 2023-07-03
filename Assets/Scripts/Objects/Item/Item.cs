@@ -14,7 +14,6 @@ namespace Damage
         
         public virtual void MoveItemToPlayer()
         {
-            Debug.Log("Move to player");
             this.isMoveToTarget = true;
         }
 

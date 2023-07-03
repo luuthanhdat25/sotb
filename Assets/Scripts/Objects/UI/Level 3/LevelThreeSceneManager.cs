@@ -178,7 +178,6 @@ namespace DefaultNamespace.Objects.UI.Level_3
             totalAppUI?.gameObject.SetActive(false);
             appButtonUI?.gameObject.SetActive(false);
             pauseUIContent?.gameObject.SetActive(false);
-            PlayUIEffect();
             AudioSpawner.Instance.PlayCurrentSoundTrack();
         }
 
