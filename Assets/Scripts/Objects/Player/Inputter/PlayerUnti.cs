@@ -18,17 +18,11 @@ namespace Player
             if (PlayerCtrl.Instance.GetIsPlayerDead() || !isHasUntiWeapon) return;
             if (!GameInput.Instance.IsUntiPressed()) return;
             
-            this.ResetIsFiring();
+            isFiring = IsBoostCeilForUnti();
             if (firingCoroutine == null && this.isFiring)
                 firingCoroutine = StartCoroutine(FireContinously());
         }
-        
-        private void ResetIsFiring()
-        {
-            //Check all condition for Firing
-            this.isFiring = IsBoostCeilForUnti();
-        }
-        
+
         private bool IsBoostCeilForUnti() => PlayerCtrl.Instance.PlayerBootCeils.IsEnough(this.boostCeilsUse);
         
         private IEnumerator FireContinously()
@@ -36,7 +30,7 @@ namespace Player
             isFire = true;
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(false);
             yield return new WaitForSeconds(delayAnimaitonTime);
-            
+            //Shoot
             Transform newProjectile = PlayerProjectileSpawner.Instance.Spawn(PlayerProjectileSpawner.Instance.unti);
             if (newProjectile != null)
             {
@@ -45,6 +39,8 @@ namespace Player
                 newProjectile.transform.position = transform.parent.position;
                 newProjectile.gameObject.SetActive(true);
             }
+            
+            PlayerCtrl.Instance.PlayerParticleEffect.UntiShootEffect();
             
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(true);
             isFire = false;

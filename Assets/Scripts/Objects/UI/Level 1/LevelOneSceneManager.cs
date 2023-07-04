@@ -249,7 +249,7 @@ namespace DefaultNamespace.Objects.UI.Level_1
         {
             Time.timeScale = 1;
             canPlayUISFX = false;
-            UsersInterfaceManager.Instance?.FadeOutAnimation();
+            UIManager.Instance?.FadeOutAnimation();
             backgroundScroller?.FadeOutBackground(this.timeFadeOut);
             yield return new WaitForSeconds(this.timeFadeOut);
             this.NextSceneIndex();

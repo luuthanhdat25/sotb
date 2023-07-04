@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Damage.RhythmScripts;
 using Objects.UI.HUD;
@@ -10,22 +11,23 @@ namespace DefaultNamespace
 {
     public class GameManager : RepeatMonoBehaviour
     {
+        public class ScoreEventArgs : EventArgs
+        {
+            public int Score { get; set; }
+        }
+        
         public static GameManager Instance { get; private set; }
         
         [SerializeField] private int score = 0;
-        [SerializeField] private int deathCount = 0;
-        [FormerlySerializedAs("audioManager")] [SerializeField] private AudioSpawner audioSpawner;
         [SerializeField] private RepeatSceneManager sceneManager;
         
-        public UnityEvent onScoreChanged;
-        public UnityEvent onDeath;
         
+        public event EventHandler<ScoreEventArgs> OnScoreChanged;
+        public event EventHandler<ScoreEventArgs> OnScoreResults;
         
         private enum GameState
         {
-            Started,
-            Pause,
-            WinGame,
+            Started, Pause, WinGame,
             GameOver,
         }
         private GameState gameState = GameState.Started;
@@ -49,9 +51,9 @@ namespace DefaultNamespace
         IEnumerator DelayGameOver()
         {
             yield return new WaitForSeconds(2f);
-            UsersInterfaceManager.Instance.TotalScore(score);
+            OnScoreResults?.Invoke(this, new ScoreEventArgs(){Score = this.score});
             AudioSpawner.Instance.UIEffect();
-            if(score > 0) AudioSpawner.Instance.ScoreRaiseSound();
+            if(score > 0) AudioSpawner.Instance.ScoreRaiseSound(true);
             sceneManager.LossGame();
         }
         
@@ -66,23 +68,17 @@ namespace DefaultNamespace
         private IEnumerator DelayWinGame()
         {
             yield return new WaitForSeconds(4);
-            UsersInterfaceManager.Instance.TotalScore(score);
-            if(score > 0) AudioSpawner.Instance.ScoreRaiseSound();
+            OnScoreResults?.Invoke(this, new ScoreEventArgs(){Score = this.score});
+            if(score > 0) AudioSpawner.Instance.ScoreRaiseSound(true);
             sceneManager.WinGame();
         }
         
         public void IncreaseScore(int amount)
         {
             score += amount;
-            onScoreChanged?.Invoke();
+            OnScoreChanged?.Invoke(this, new ScoreEventArgs(){Score = this.score});
         }
         
-        public void IncreaseDeathCount()
-        {
-            deathCount++;
-            onDeath?.Invoke();
-        }
-
         public int GetScore() => this.score;
     }
 }

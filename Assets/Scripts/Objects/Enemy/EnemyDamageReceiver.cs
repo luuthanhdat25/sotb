@@ -41,10 +41,16 @@ namespace Enemy
         public override void Deduct(int hpDeduct)
         {
             base.Deduct(hpDeduct);
-            PlaySFX();
+            PlaySFX(hpDeduct);
         }
 
-        private void PlaySFX() => AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.Hurt);
+        private void PlaySFX(int hpDeduct)
+        {
+            if(hpDeduct < 2)
+                AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.Hurt);
+            else
+                AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.HurtByUnti);
+        }
         
         public int HpCurrent => hpCurrent;
         public int HpMax => hpMax;

@@ -9,6 +9,7 @@ namespace Player
         [SerializeField] private ParticleSystem healthEffect;
         [SerializeField] private ParticleSystem buffMoveSpeedEffect;
         [SerializeField] private ParticleSystem buffShootSpeedEffect;
+        [SerializeField] private ParticleSystem untiShootEffect;
         
         public void DashEffect(float dashDuration)
         {
@@ -40,6 +41,16 @@ namespace Player
             instance.transform.LookAt(directionSpawn);
             instance.transform.position = transform.parent.position;
             instance.transform.parent = transform.parent;
+            Destroy(instance.gameObject, instance.main.duration);
+        }
+
+        public void UntiShootEffect()
+        {
+            if(untiShootEffect == null) return;
+            ParticleSystem instance = Instantiate(untiShootEffect);
+            Vector3 directionSpawn = Vector3.down;
+            instance.transform.LookAt(directionSpawn);
+            instance.transform.position = transform.parent.position;
             Destroy(instance.gameObject, instance.main.duration);
         }
     }

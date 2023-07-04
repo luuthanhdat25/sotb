@@ -25,7 +25,7 @@ namespace Damage.RhythmScripts
         public enum SoundEffectEnum
         {
             ExplosionPlayer, Health, UpgradeItem, Buff, UntiPlayer, Dash,
-            ExplosionBoss, ExplosionNormalEnemy, Hurt,
+            ExplosionBoss, ExplosionNormalEnemy, Hurt, HurtByUnti,
             Button, ScoreRaise
         }
         
@@ -155,7 +155,7 @@ namespace Damage.RhythmScripts
             if (effectEnum.ToString().Equals(transform.name))
             {
                 Transform newSFX = Instantiate(transform);
-                AudioSource audioSource = newSFX.GetComponent<AudioSource>();
+                AudioSource audioSource = newSFX.GetComponent<AudioSource>();   
                 newSFX.gameObject.SetActive(true);
                 Destroy(newSFX.gameObject, audioSource.clip.length);
             }
@@ -215,7 +215,7 @@ namespace Damage.RhythmScripts
             }
         }
 
-        public void ScoreRaiseSound() => this.scoreRaiseSound?.SetActive(true);
+        public void ScoreRaiseSound(bool isOn) => this.scoreRaiseSound?.SetActive(isOn);
 
         public void PlayCurrentSoundTrack() => this.currentSoundTrack.Play();
 

@@ -3415,11 +3415,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 221060439}
+  - component: {fileID: 221060440}
+  - component: {fileID: 221060441}
   - component: {fileID: 221060438}
   - component: {fileID: 221060437}
   - component: {fileID: 221060436}
-  - component: {fileID: 221060440}
-  - component: {fileID: 221060441}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3528,8 +3528,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   energiesBar: {fileID: 979868990}
   boostceilBar: {fileID: 1673787653}
-  winUI: {fileID: 0}
-  lossUI: {fileID: 0}
   totalScoreText: {fileID: 1762046633}
   scoreText: {fileID: 1707755417}
   scoreIncreaseDuration: 1
@@ -13798,6 +13796,7 @@ MonoBehaviour:
   healthEffect: {fileID: 2326543802315963543, guid: 4c0c1cf135e760940bdefcbc8fee8290, type: 3}
   buffMoveSpeedEffect: {fileID: 3041365346118127637, guid: d2324b62c2b662842bc3f84f090e4672, type: 3}
   buffShootSpeedEffect: {fileID: 5791643492118192291, guid: dfdc627fc16c44e4899fe0ac2b819995, type: 3}
+  untiShootEffect: {fileID: 0}
 --- !u!4 &924461572
 Transform:
   m_ObjectHideFlags: 0
@@ -15990,7 +15989,6 @@ MonoBehaviour:
   scrollSpeedDefault: 0.4
   rateDashSpeed: 1.2
   speedLight: 8
-  currentSpeed: 0
 --- !u!4 &1021093379
 Transform:
   m_ObjectHideFlags: 0
@@ -29117,15 +29115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  deathCount: 0
-  audioSpawner: {fileID: 0}
   sceneManager: {fileID: 339937721}
-  onScoreChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1765794550
 Transform:
   m_ObjectHideFlags: 0

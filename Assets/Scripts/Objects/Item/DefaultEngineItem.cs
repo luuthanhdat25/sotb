@@ -13,7 +13,7 @@ namespace Damage
             PlayerCtrl.Instance.PlayerAnimations.TurnOnDefaultEngine();
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(true);
             PlayerCtrl.Instance.ItemMagnet.SetRadiusItemMagnet(10);
-            UsersInterfaceManager.Instance.SetActiveEnergiesBar(true);
+            UIManager.Instance.SetActiveEnergiesBar(true);
             AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.UpgradeItem);
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }

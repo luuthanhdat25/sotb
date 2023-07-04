@@ -31800,6 +31800,7 @@ MonoBehaviour:
   healthEffect: {fileID: 2326543802315963543, guid: 4c0c1cf135e760940bdefcbc8fee8290, type: 3}
   buffMoveSpeedEffect: {fileID: 3041365346118127637, guid: d2324b62c2b662842bc3f84f090e4672, type: 3}
   buffShootSpeedEffect: {fileID: 5791643492118192291, guid: dfdc627fc16c44e4899fe0ac2b819995, type: 3}
+  untiShootEffect: {fileID: 3098419466302920072, guid: ff45c3567286cdd4fb036851f8d03462, type: 3}
 --- !u!4 &1415463885
 Transform:
   m_ObjectHideFlags: 0
@@ -38569,7 +38570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   deathCount: 0
-  audioSpawner: {fileID: 0}
   sceneManager: {fileID: 3707205406897229293}
   onScoreChanged:
     m_PersistentCalls:
@@ -57910,7 +57910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d895ea8e3d5984a99350415d06a006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 11
   deviation: 0
 --- !u!4 &8103845605798030028
 Transform:

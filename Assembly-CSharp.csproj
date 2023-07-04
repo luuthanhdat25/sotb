@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtArcShootNormalSMB.cs" />
      <Compile Include="Assets\InputSystems\PlayerInputActions.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtIdle2SMB.cs" />
+     <Compile Include="Assets\Scripts\Objects\UI\LevelInGameSceneManager.cs" />
      <Compile Include="Assets\Scripts\Components\Despawn\DespawnByTime.cs" />
      <Compile Include="Assets\Scripts\Objects\Item\DefaultEngineItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\BossShootLazer.cs" />
@@ -88,6 +89,7 @@
      <Compile Include="Assets\Scripts\Components\Spawner\SpawnerPooling.cs" />
      <Compile Include="Assets\Scripts\Objects\Player\PlayerParticleEffect.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\KlaEdIdleStateMachineBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Objects\UI\HUD\UIManager.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtCtrl.cs" />
      <Compile Include="Assets\Scripts\Objects\FX\FXDespawn.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtLazerSlideSMB.cs" />
@@ -128,10 +130,10 @@
      <Compile Include="Assets\Scripts\Objects\Item\ShieldItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndShootSMB.cs" />
      <Compile Include="Assets\Scripts\RepeatMonoBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\HUD\UsersInterfaceManager.cs" />
      <Compile Include="Assets\Scripts\Objects\FX\FXSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\AbstractClass\Shoot.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtSpawnTorpedo.cs" />
+     <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerUntiDamageReceiver.cs" />
      <Compile Include="Assets\FastScriptReload\Examples\Scripts\FunctionLibrary.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\BackgroundScroller.cs" />

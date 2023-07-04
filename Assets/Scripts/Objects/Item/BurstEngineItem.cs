@@ -16,7 +16,7 @@ namespace Damage
             PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(true);
             PlayerCtrl.Instance.PlayerMovement.SetCanUseDashToTrue();
             
-            UsersInterfaceManager.Instance.SetActiveBoostceilBar(true);
+            UIManager.Instance.SetActiveBoostceilBar(true);
             Invoke("SetActiveTutorial", 1f);
             AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.UpgradeItem);
             

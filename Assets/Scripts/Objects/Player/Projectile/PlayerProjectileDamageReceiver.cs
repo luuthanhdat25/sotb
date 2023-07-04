@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class PlayerProjectileDamageReceiver : DamageReceiver
 {
-    private Vector3 fxOffSet = new Vector3(0, 0.4f, 0);
+    protected Vector3 fxOffSet = new Vector3(0, 0.4f, 0);
     protected override void OnDead()
     {
         this.CreateImpactFX();
         PlayerProjectileSpawner.Instance.Despawn(transform.parent);
     }
     
-    private void CreateImpactFX()
+    protected virtual void CreateImpactFX()
     {
         string fxName = this.GetRandomImpactFXName();
         Transform fxImpact = FXSpawner.Instance.Spawn(fxName);

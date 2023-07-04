@@ -12,6 +12,8 @@ public class FXSpawner : SpawnerPooling
     public static String impact_1 = "Impact_1";
     public static String impact_2 = "Impact_2";
     public static String impact_3= "Impact_3";
+    public static String untiCollision= "UntiCollision";
+    public static String untiImpact= "UntiImpact";
     protected override void Awake()
     {
         base.Awake();

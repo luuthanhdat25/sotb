@@ -18242,6 +18242,7 @@ MonoBehaviour:
   healthEffect: {fileID: 2326543802315963543, guid: 4c0c1cf135e760940bdefcbc8fee8290, type: 3}
   buffMoveSpeedEffect: {fileID: 3041365346118127637, guid: d2324b62c2b662842bc3f84f090e4672, type: 3}
   buffShootSpeedEffect: {fileID: 5791643492118192291, guid: dfdc627fc16c44e4899fe0ac2b819995, type: 3}
+  untiShootEffect: {fileID: 3098419466302920072, guid: ff45c3567286cdd4fb036851f8d03462, type: 3}
 --- !u!4 &999425208
 Transform:
   m_ObjectHideFlags: 0
@@ -26928,9 +26929,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 465210761}
   - {fileID: 2823399801153204318}
   - {fileID: 1304296680975632911}
-  - {fileID: 465210761}
   m_Father: {fileID: 1777190034}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29512,17 +29513,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6057587597191699098, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
-      propertyPath: sourceOne
-      value: 
-      objectReference: {fileID: 8300000, guid: 2f3e654b85474b9419c5b98998ffe535, type: 3}
-    - target: {fileID: 6057587597191699098, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
       propertyPath: backgroundScroller
       value: 
       objectReference: {fileID: 1021093378}
-    - target: {fileID: 9192638158310798390, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31290,7 +31283,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 2000
   deathCount: 0
-  audioSpawner: {fileID: 0}
   sceneManager: {fileID: 6276599608200740759}
   onScoreChanged:
     m_PersistentCalls:
@@ -37434,7 +37426,7 @@ GameObject:
   - component: {fileID: 2725400938503081745}
   - component: {fileID: 5566262077733360656}
   - component: {fileID: 5848867156804068828}
-  - component: {fileID: 6495372811578338679}
+  - component: {fileID: 7469131920339272670}
   m_Layer: 6
   m_Name: Damage Sender/Reciever
   m_TagString: Untagged
@@ -37667,9 +37659,9 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1136364478156137549}
+  - {fileID: 7469131920339272669}
   - {fileID: 8649700284227780260}
   - {fileID: 6716667243567920543}
-  - {fileID: 7469131920339272669}
   m_Father: {fileID: 1477062705}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44112,21 +44104,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6495372811578338679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784089926820166577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c78d4f96cbfb116419c03c11f6d5751a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hpCurrent: 1
-  hpMax: 8
-  isDead: 0
 --- !u!50 &6603503871326040560
 Rigidbody2D:
   serializedVersion: 4
@@ -44975,6 +44952,23 @@ Transform:
   m_Father: {fileID: 1304296680975632911}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7469131920339272670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784089926820166577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77b749dcbdd94781bb5d1ddb60d6eda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpCurrent: 1
+  hpMax: 8
+  isDead: 0
+  collisionEffect: {fileID: 4679154144712317661, guid: 7e73416d10f04ba46bcb9338279c086d, type: 3}
+  explosionEffect: {fileID: 4254933551872971960, guid: a5d5b51ca7d42eb4e8b9f6d2f715f97c, type: 3}
 --- !u!1 &7471790381434870801
 GameObject:
   m_ObjectHideFlags: 0
@@ -45271,7 +45265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d895ea8e3d5984a99350415d06a006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 11
   deviation: 0
 --- !u!4 &8190287041817061680
 Transform:

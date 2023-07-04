@@ -1867,9 +1867,9 @@ MonoBehaviour:
   fadeInDuration: 2
   currentSoundTrack: {fileID: 165593228}
   backgroundAudioList:
-  - {fileID: 8300000, guid: 061545fcb47c6884783c32f8901a5cb7, type: 3}
-  - {fileID: 8300000, guid: bc75f5837eaac2746905c4daf54df676, type: 3}
-  - {fileID: 8300000, guid: 408cf6d02d96b6d47a8ee8133193d812, type: 3}
+  - {fileID: 8300000, guid: 553fcbfbd9dda5343b770cffa3ec6736, type: 3}
+  - {fileID: 8300000, guid: 7a2f7080c15cfe8468aa072729d1ecf4, type: 3}
+  - {fileID: 8300000, guid: cec92140e9a89014689ccc354003ae0c, type: 3}
   buttonSound: {fileID: 107331237}
 --- !u!4 &851810272
 Transform:
