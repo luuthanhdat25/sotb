@@ -3963,11 +3963,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 221060439}
+  - component: {fileID: 221060440}
+  - component: {fileID: 221060441}
   - component: {fileID: 221060438}
   - component: {fileID: 221060437}
   - component: {fileID: 221060436}
-  - component: {fileID: 221060440}
-  - component: {fileID: 221060441}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4073,12 +4073,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f6b581e6c54a989079d1187f681008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energiesBar: {fileID: 0}
-  boostceilBar: {fileID: 0}
-  winUI: {fileID: 0}
-  lossUI: {fileID: 0}
+  levelInGameSceneManager: {fileID: 6276599608200740759}
+  energiesBar: {fileID: 4044917967941207771}
+  boostceilBar: {fileID: 4044917969424179936}
   totalScoreText: {fileID: 2405676399625045843}
   scoreText: {fileID: 4044917969524284540}
+  totalAppUI: {fileID: 2405676400562969377}
+  appButtonUI: {fileID: 2405676400427372732}
+  playerHud: {fileID: 4044917969119373897}
+  pauseUIContent: {fileID: 2405676400622548855}
+  continueButton: {fileID: 6750400295537514523}
+  restartButton: {fileID: 6750400296350640055}
+  restartMenu: {fileID: 2405676400925879731}
+  noRestarButton: {fileID: 2405676400112126011}
+  combackButton: {fileID: 2405676401403564424}
+  combackMenu: {fileID: 2405676399917432152}
+  noCombackButton: {fileID: 2405676399494765774}
+  quitButton: {fileID: 6750400294592736921}
+  quitMenu: {fileID: 2405676401210630172}
+  noQuitButton: {fileID: 2405676400585373894}
+  nextLevelUIContent: {fileID: 0}
+  nextLevelButton: {fileID: 0}
+  winGameUIContent: {fileID: 2405676400314687798}
   scoreIncreaseDuration: 2
 --- !u!95 &221060441
 Animator:
@@ -4125,7 +4141,7 @@ Transform:
   m_GameObject: {fileID: 224242064}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: -2.3, z: 0}
-  m_LocalScale: {x: 0.75, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 495102581}
@@ -11550,6 +11566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d944141c09e4c3a9b278119dd4c2ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winGameRadius: 10
 --- !u!58 &596291937
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18800,7 +18817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272c54a43946a6f4cab8723b60e8cb5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeedDefault: 0.7
+  scrollSpeedDefault: 0.8
   rateDashSpeed: 1.2
   speedLight: 4
 --- !u!4 &1021093379
@@ -31282,14 +31299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 2000
-  deathCount: 0
   sceneManager: {fileID: 6276599608200740759}
-  onScoreChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1765794550
 Transform:
   m_ObjectHideFlags: 0
@@ -37066,7 +37076,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 18.929705}
+  m_Size: {x: 0.45, y: 18.929705}
   m_EdgeRadius: 0
 --- !u!114 &2134441746
 MonoBehaviour:
@@ -38023,7 +38033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1136364478156137549}
-  - component: {fileID: 1929995580949263627}
+  - component: {fileID: 1929995580949263628}
   m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
@@ -38031,7 +38041,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1929995580949263627
+--- !u!114 &1929995580949263628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38040,7 +38050,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1929995580949263626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d40deb772a84032b29047b022fae5d0, type: 3}
+  m_Script: {fileID: 11500000, guid: b6648d7fdeba3fa43b9c162f29bd81c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 300
@@ -44016,24 +44026,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundScroller: {fileID: 1021093378}
-  timeFadeIn: 7
-  isPause: 0
-  totalAppUI: {fileID: 2405676400562969377}
-  appButtonUI: {fileID: 2405676400427372732}
-  playerHud: {fileID: 4044917969119373897}
-  score: {fileID: 2405676399625045842}
-  pauseUIContent: {fileID: 2405676400622548855}
-  continueButton: {fileID: 6750400295537514523}
-  restartButton: {fileID: 6750400296350640055}
-  restartMenu: {fileID: 2405676400925879731}
-  noRestarButton: {fileID: 2405676400112126011}
-  combackButton: {fileID: 2405676401403564424}
-  combackMenu: {fileID: 2405676399917432152}
-  noCombackButton: {fileID: 2405676399494765774}
-  quitButton: {fileID: 6750400294592736921}
-  quitMenu: {fileID: 2405676401210630172}
-  noQuitButton: {fileID: 2405676400585373894}
-  winGameUIContent: {fileID: 2405676400314687798}
+  timeFadeIn: 3
+  timeFadeOut: 3
 --- !u!114 &6288897951963312364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44554,9 +44548,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6276599608200740759}
-        m_TargetAssemblyTypeName: DefaultNamespace.Objects.UI.Level_3.LevelThreeSceneManager,
+        m_TargetAssemblyTypeName: DefaultNamespace.Objects.UI.LevelInGameSceneManager,
           Assembly-CSharp
-        m_MethodName: Continue
+        m_MethodName: ContinueScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

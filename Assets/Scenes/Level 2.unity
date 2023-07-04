@@ -4354,7 +4354,7 @@ Transform:
   - {fileID: 221060439}
   - {fileID: 349620786}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &168495192
 GameObject:
@@ -4464,7 +4464,7 @@ MonoBehaviour:
   bossNautolanSpinningBulletShoot: {fileID: 2096131365}
   bossNautolanShockWaveShoot: {fileID: 2010819012}
   bossNautolanDamageReciever: {fileID: 1920696576}
-  timeWait: 1
+  timeWait: 0.9
   numberOfShootAttacks: 6
   speedFollow: 10
   timeShootInOneTime: 0.7
@@ -5497,11 +5497,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 221060439}
+  - component: {fileID: 221060440}
+  - component: {fileID: 221060441}
   - component: {fileID: 221060438}
   - component: {fileID: 221060437}
   - component: {fileID: 221060436}
-  - component: {fileID: 221060440}
-  - component: {fileID: 221060441}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5608,12 +5608,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f6b581e6c54a989079d1187f681008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energiesBar: {fileID: 0}
-  boostceilBar: {fileID: 0}
-  winUI: {fileID: 0}
-  lossUI: {fileID: 0}
+  levelInGameSceneManager: {fileID: 3707205406897229293}
+  energiesBar: {fileID: 5280441695414923198}
+  boostceilBar: {fileID: 5280441696113019781}
   totalScoreText: {fileID: 7627276221193243626}
   scoreText: {fileID: 5280441696213267737}
+  totalAppUI: {fileID: 7627276219987810200}
+  appButtonUI: {fileID: 7627276220928056325}
+  playerHud: {fileID: 5280441696584287020}
+  pauseUIContent: {fileID: 7627276220045294542}
+  continueButton: {fileID: 1519146781198537890}
+  restartButton: {fileID: 1519146779866245902}
+  restartMenu: {fileID: 7627276220480807178}
+  noRestarButton: {fileID: 7627276220740764802}
+  combackButton: {fileID: 7627276219750538545}
+  combackMenu: {fileID: 7627276221489787361}
+  noCombackButton: {fileID: 7627276221065056375}
+  quitButton: {fileID: 1519146781329629728}
+  quitMenu: {fileID: 7627276219691822245}
+  noQuitButton: {fileID: 7627276220008150143}
+  nextLevelUIContent: {fileID: 7627276220815437199}
+  nextLevelButton: {fileID: 7627276220769173810}
+  winGameUIContent: {fileID: 0}
   scoreIncreaseDuration: 1
 --- !u!95 &221060441
 Animator:
@@ -6812,7 +6828,7 @@ Transform:
   - {fileID: 1385963838}
   - {fileID: 4406481845448138236}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &278638756
 GameObject:
@@ -12082,13 +12098,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511003135}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1777442723}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &511003137
 MonoBehaviour:
@@ -23476,13 +23492,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004777874}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1777442723}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1008604702
 GameObject:
@@ -23810,7 +23826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272c54a43946a6f4cab8723b60e8cb5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeedDefault: 0.5
+  scrollSpeedDefault: 0.6
   rateDashSpeed: 1.2
   speedLight: 4
 --- !u!4 &1021093379
@@ -25679,10 +25695,10 @@ MonoBehaviour:
   miniNautolanAnimator: {fileID: 1087027931}
   minibossNautolanModelShipAnimation: {fileID: 1982332375}
   minibossNautolanShoot: {fileID: 914431922}
-  timeWait: 1.5
-  numberOfShootAttacks: 5
-  speedFollow: 7
-  timeShootInOneTime: 1
+  timeWait: 1
+  numberOfShootAttacks: 6
+  speedFollow: 8
+  timeShootInOneTime: 0.9
   numberOfChaseAttacks: 3
   speedChase: 9.5
 --- !u!95 &1087027931
@@ -38569,14 +38585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  deathCount: 0
   sceneManager: {fileID: 3707205406897229293}
-  onScoreChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1765794550
 Transform:
   m_ObjectHideFlags: 0
@@ -38584,13 +38593,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765794548}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1777442723}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1769495100
 GameObject:
@@ -39025,7 +39034,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 511003136}
+  - {fileID: 1765794550}
+  - {fileID: 1004777876}
+  - {fileID: 3707205406897229294}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41864,7 +41877,7 @@ Transform:
   - {fileID: 880031136}
   - {fileID: 1158623580}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1938104972
 GameObject:
@@ -47791,9 +47804,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3707205406897229293}
-        m_TargetAssemblyTypeName: DefaultNamespace.Objects.UI.Level_1.LevelOneSceneManager,
+        m_TargetAssemblyTypeName: DefaultNamespace.Objects.UI.LevelInGameSceneManager,
           Assembly-CSharp
-        m_MethodName: Continue
+        m_MethodName: ContinueScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48142,10 +48155,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1929995580949263626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d40deb772a84032b29047b022fae5d0, type: 3}
+  m_Script: {fileID: 11500000, guid: b6648d7fdeba3fa43b9c162f29bd81c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 300
+  rotationSpeed: 100
 --- !u!1 &2153653881442272064
 GameObject:
   m_ObjectHideFlags: 0
@@ -49070,24 +49083,6 @@ MonoBehaviour:
   backgroundScroller: {fileID: 1021093378}
   timeFadeIn: 3
   timeFadeOut: 3
-  isPause: 0
-  totalAppUI: {fileID: 7627276219987810200}
-  appButtonUI: {fileID: 7627276220928056325}
-  playerHud: {fileID: 5280441696584287020}
-  score: {fileID: 7627276221193243627}
-  pauseUIContent: {fileID: 7627276220045294542}
-  continueButton: {fileID: 1519146781198537890}
-  restartButton: {fileID: 1519146779866245902}
-  restartMenu: {fileID: 7627276220480807178}
-  noRestarButton: {fileID: 7627276220740764802}
-  combackButton: {fileID: 7627276219750538545}
-  combackMenu: {fileID: 7627276221489787361}
-  noCombackButton: {fileID: 7627276221065056375}
-  quitButton: {fileID: 1519146781329629728}
-  quitMenu: {fileID: 7627276219691822245}
-  noQuitButton: {fileID: 7627276220008150143}
-  nextLevelUIContent: {fileID: 7627276220815437199}
-  nextLevelButton: {fileID: 7627276220769173810}
 --- !u!4 &3707205406897229294
 Transform:
   m_ObjectHideFlags: 0
@@ -49095,13 +49090,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3707205406897229292}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1777442723}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &3754204754368027348
 Rigidbody2D:
@@ -50574,6 +50569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d944141c09e4c3a9b278119dd4c2ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winGameRadius: 10
 --- !u!4 &4406481846162733988
 Transform:
   m_ObjectHideFlags: 0
@@ -57238,7 +57234,7 @@ GameObject:
   - component: {fileID: 7627276221193243625}
   - component: {fileID: 7627276221193243626}
   m_Layer: 5
-  m_Name: Score
+  m_Name: Total Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Damage.RhythmScripts;
 using DefaultNamespace;
@@ -24,7 +25,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float paddingTop;
     [SerializeField] private float paddingBottom;
 
-    private void Start() => InitializeBounds();
+    private void Start()
+    {
+        InitializeBounds();
+        SubcribeEvent();
+    }
 
     private void InitializeBounds()
     {
@@ -33,7 +38,12 @@ public class PlayerMovement : MonoBehaviour
         minBounds = mainCamera.ViewportToWorldPoint(new Vector2(0, 0));
         maxBounds = mainCamera.ViewportToWorldPoint(new Vector2(1, 1));
     }
-    //---------------------------------------------------------------------------//
+    
+    private void SubcribeEvent()
+    {
+        GameManager.Instance.LossGameEvent += (object sender, EventArgs e) => canMoveNormal = false;
+    }
+    
     private void FixedUpdate() => HandleMovement();
 
     private void HandleMovement()

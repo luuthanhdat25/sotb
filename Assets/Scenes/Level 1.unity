@@ -3526,10 +3526,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f6b581e6c54a989079d1187f681008, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelInGameSceneManager: {fileID: 339937721}
   energiesBar: {fileID: 979868990}
   boostceilBar: {fileID: 1673787653}
   totalScoreText: {fileID: 1762046633}
   scoreText: {fileID: 1707755417}
+  totalAppUI: {fileID: 556740315}
+  appButtonUI: {fileID: 1496589638}
+  playerHud: {fileID: 2083058092}
+  pauseUIContent: {fileID: 579994253}
+  continueButton: {fileID: 8992721698952523233}
+  restartButton: {fileID: 8992721697620382285}
+  restartMenu: {fileID: 1015912521}
+  noRestarButton: {fileID: 1276050881}
+  combackButton: {fileID: 319071346}
+  combackMenu: {fileID: 2024392866}
+  noCombackButton: {fileID: 1633331508}
+  quitButton: {fileID: 8992721699117194083}
+  quitMenu: {fileID: 260347366}
+  noQuitButton: {fileID: 542756156}
+  nextLevelUIContent: {fileID: 1350276300}
+  nextLevelButton: {fileID: 1337751665}
+  winGameUIContent: {fileID: 0}
   scoreIncreaseDuration: 1
 --- !u!95 &221060441
 Animator:
@@ -5253,24 +5271,6 @@ MonoBehaviour:
   backgroundScroller: {fileID: 1021093378}
   timeFadeIn: 7
   timeFadeOut: 3
-  isPause: 0
-  totalAppUI: {fileID: 556740315}
-  appButtonUI: {fileID: 1496589638}
-  playerHud: {fileID: 2083058092}
-  score: {fileID: 1762046632}
-  pauseUIContent: {fileID: 579994253}
-  continueButton: {fileID: 8992721698952523233}
-  restartButton: {fileID: 8992721697620382285}
-  restartMenu: {fileID: 1015912521}
-  noRestarButton: {fileID: 1276050881}
-  combackButton: {fileID: 319071346}
-  combackMenu: {fileID: 2024392866}
-  noCombackButton: {fileID: 1633331508}
-  quitButton: {fileID: 8992721699117194083}
-  quitMenu: {fileID: 260347366}
-  noQuitButton: {fileID: 542756156}
-  nextLevelUIContent: {fileID: 1350276300}
-  nextLevelButton: {fileID: 1337751665}
 --- !u!4 &339937722
 Transform:
   m_ObjectHideFlags: 0
@@ -18391,7 +18391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43e5508461f5ea146bb13bf8d8bd6ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeDelayStartWave: 6
+  timeDelayStartWave: 4
   wavePrefabManager: {fileID: 0}
   currentWave: {fileID: 0}
   wavesCurrentStartTime: 0
@@ -39160,6 +39160,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6057587597191699098, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
+      propertyPath: sourceOne
+      value: 
+      objectReference: {fileID: 8300000, guid: 18b7bfb63199c1c4da541fe7e8ce25b7, type: 3}
+    - target: {fileID: 6057587597191699098, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
+      propertyPath: timeFadeOutMusic
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057587597191699098, guid: a32d8ee257f2cd640ba436edca4d6b3c, type: 3}
       propertyPath: backgroundScroller
       value: 
       objectReference: {fileID: 1021093378}
@@ -40032,6 +40040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d944141c09e4c3a9b278119dd4c2ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winGameRadius: 10
 --- !u!50 &6890823271113597835
 Rigidbody2D:
   serializedVersion: 4
@@ -42770,9 +42779,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 339937721}
-        m_TargetAssemblyTypeName: DefaultNamespace.Objects.UI.Level_1.LevelOneSceneManager,
+        m_TargetAssemblyTypeName: DefaultNamespace.Objects.UI.LevelInGameSceneManager,
           Assembly-CSharp
-        m_MethodName: Continue
+        m_MethodName: ContinueScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

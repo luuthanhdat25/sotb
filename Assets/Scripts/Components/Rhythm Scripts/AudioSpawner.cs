@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,7 @@ namespace Damage.RhythmScripts
     public class AudioSpawner : RepeatMonoBehaviour
     {
         public static AudioSpawner Instance { get; set; }
+        [SerializeField] private float timeFadeOutMusic = 5;
         [SerializeField] private BackgroundScroller backgroundScroller;
         [SerializeField] private Transform soundTrackAudioTransform;
         [SerializeField] private AudioClip sourceOne, sourceTwo;
@@ -19,6 +21,7 @@ namespace Damage.RhythmScripts
         [SerializeField] private List<Transform> soundEffectEnemyList;
         [SerializeField] private List<Transform> soundUIList;
         [SerializeField] private GameObject scoreRaiseSound;
+        
         private float startVolume;
         private bool isChangeSong = true;
         public bool IsChangeSong => isChangeSong;
@@ -95,6 +98,33 @@ namespace Damage.RhythmScripts
             LoadTransforms(UI, soundUIList);
         }
 
+        private void Start() => SubcribeEvent();
+
+        private void SubcribeEvent()
+        {
+            GameManager.Instance.WinGameEvent += OnFadeOutMusic;
+            GameManager.Instance.LossGameEvent += OnFadeOutMusic;
+        }
+        
+        private void OnFadeOutMusic(object o, EventArgs e) => StartCoroutine(FadeOutCoroutine(timeFadeOutMusic));
+
+        private IEnumerator FadeOutCoroutine(float timeFadeOut)
+        {
+            float startVolume = this.currentSoundTrack.volume;
+            float timer = 0f;
+
+            while (timer < timeFadeOut)
+            {
+                timer += Time.fixedDeltaTime;
+                float t = timer / timeFadeOut;
+                this.currentSoundTrack.volume = Mathf.Lerp(startVolume, 0f, t);
+                yield return new WaitForFixedUpdate();
+            }
+
+            this.currentSoundTrack.volume = 0f;
+            this.currentSoundTrack.Pause();
+        }
+        
         public void PlayStartAudioSource()
         {
             currentSoundTrack.clip = sourceOne;
@@ -122,26 +152,7 @@ namespace Damage.RhythmScripts
             backgroundScroller?.ReverseBackground();
             currentSoundTrack.Play();
         }
-
-        public void FadeOutMusic(float timeFadeOut) => StartCoroutine(FadeOutCoroutine(timeFadeOut));
         
-        private IEnumerator FadeOutCoroutine(float timeFadeOut)
-        {
-            float startVolume = this.currentSoundTrack.volume;
-            float timer = 0f;
-
-            while (timer < timeFadeOut)
-            {
-                timer += Time.fixedDeltaTime;
-                float t = timer / timeFadeOut;
-                this.currentSoundTrack.volume = Mathf.Lerp(startVolume, 0f, t);
-                yield return new WaitForFixedUpdate();
-            }
-
-            this.currentSoundTrack.volume = 0f;
-            this.currentSoundTrack.Pause();
-        }
-
         public void SpawnPlayerEffect(SoundEffectEnum effectEnum)
         {
             foreach (Transform transform in this.soundEffectPlayerList)

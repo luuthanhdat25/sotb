@@ -11,74 +11,85 @@ namespace DefaultNamespace
 {
     public class GameManager : RepeatMonoBehaviour
     {
+        public static GameManager Instance { get; private set; }
+        
+        [SerializeField] private int score = 0;
+        [SerializeField] private RepeatSceneManager sceneManager;
+ 
+        private enum GameState
+        {
+            Started, Pause,
+            PlayerDead,
+            WinGame, LossGame
+        }
+        
+        private GameState gameState;
+        
         public class ScoreEventArgs : EventArgs
         {
             public int Score { get; set; }
         }
         
-        public static GameManager Instance { get; private set; }
+        public event EventHandler<ScoreEventArgs> ScoreChangedEvent;
+        public event EventHandler<ScoreEventArgs> ScoreResultsEvent;
         
-        [SerializeField] private int score = 0;
-        [SerializeField] private RepeatSceneManager sceneManager;
+        //public event EventHandler OnPauseGame;
+        //public event EventHandler OnContinueGame;
+        //public event EventHandler PlayerDead;
+        public event EventHandler WinGameEvent;
+        public event EventHandler LossGameEvent;
         
-        
-        public event EventHandler<ScoreEventArgs> OnScoreChanged;
-        public event EventHandler<ScoreEventArgs> OnScoreResults;
-        
-        private enum GameState
-        {
-            Started, Pause, WinGame,
-            GameOver,
-        }
-        private GameState gameState = GameState.Started;
-
-        public bool IsFinishGame() => gameState != GameState.Started;
         
         protected override void Awake()
         {
             if(Instance != null) Debug.LogError("There is more than one PlayerCtrl instance");
             Instance = this;
-        }
-        
-        public void GameOver()
-        {
-            gameState = GameState.GameOver;
-            PlayerCtrl.Instance.PlayerMovement.SetCanMoveNormal(false);
-            AudioSpawner.Instance.FadeOutMusic(5);
-            StartCoroutine(DelayGameOver());
-        }
 
-        IEnumerator DelayGameOver()
-        {
-            yield return new WaitForSeconds(2f);
-            OnScoreResults?.Invoke(this, new ScoreEventArgs(){Score = this.score});
-            AudioSpawner.Instance.UIEffect();
-            if(score > 0) AudioSpawner.Instance.ScoreRaiseSound(true);
-            sceneManager.LossGame();
+            gameState = GameState.Started;
         }
         
         public void WinGame()
         {
             gameState = GameState.WinGame;
-            PlayerCtrl.Instance.ItemMagnet.SetRadiusItemMagnet(10f);
-            AudioSpawner.Instance.FadeOutMusic(5);
+            WinGameEvent?.Invoke(this, EventArgs.Empty);
             StartCoroutine(DelayWinGame());
         }
         
         private IEnumerator DelayWinGame()
         {
             yield return new WaitForSeconds(4);
-            OnScoreResults?.Invoke(this, new ScoreEventArgs(){Score = this.score});
+            ScoreResultsEvent?.Invoke(this, new ScoreEventArgs(){Score = this.score});
+            ////
             if(score > 0) AudioSpawner.Instance.ScoreRaiseSound(true);
             sceneManager.WinGame();
         }
         
+        public void GameOver()
+        {
+            gameState = GameState.LossGame;
+            LossGameEvent?.Invoke(this, EventArgs.Empty);
+            StartCoroutine(DelayGameOver());
+        }
+
+        IEnumerator DelayGameOver()
+        {
+            yield return new WaitForSeconds(2f);
+            ScoreResultsEvent?.Invoke(this, new ScoreEventArgs(){Score = this.score});
+            if(score > 0) AudioSpawner.Instance.ScoreRaiseSound(true);
+            AudioSpawner.Instance.UIEffect();
+            sceneManager.LossGame();
+        }
+        
+        
+        
         public void IncreaseScore(int amount)
         {
             score += amount;
-            OnScoreChanged?.Invoke(this, new ScoreEventArgs(){Score = this.score});
+            ScoreChangedEvent?.Invoke(this, new ScoreEventArgs(){Score = this.score});
         }
         
         public int GetScore() => this.score;
+        
+        public bool IsFinishGame() => gameState != GameState.Started;
     }
 }

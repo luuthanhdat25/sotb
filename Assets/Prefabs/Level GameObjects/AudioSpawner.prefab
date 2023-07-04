@@ -154,8 +154,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1987314150}
-  - component: {fileID: 1987314152}
   - component: {fileID: 1987314151}
+  - component: {fileID: 1987314152}
   m_Layer: 0
   m_Name: Hurt
   m_TagString: Untagged
@@ -178,6 +178,22 @@ Transform:
   m_Father: {fileID: 6057587597972452787}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1987314151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987314149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74261822b33637445aa88dd7a9606eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minVolume: 0.5
+  maxVolume: 0.8
+  minPitch: 0.7
+  maxPitch: 0.9
 --- !u!82 &1987314152
 AudioSource:
   m_ObjectHideFlags: 0
@@ -274,22 +290,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1987314151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1987314149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74261822b33637445aa88dd7a9606eb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minVolume: 0.7
-  maxVolume: 1
-  minPitch: 0.7
-  maxPitch: 0.9
 --- !u!1 &6057587596188530349
 GameObject:
   m_ObjectHideFlags: 0
@@ -846,7 +846,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1106,6 +1106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3fd45f66c14b80a430fa19f08ba52c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeFadeOutMusic: 5
   backgroundScroller: {fileID: 0}
   soundTrackAudioTransform: {fileID: 6057587597011038471}
   sourceOne: {fileID: 8300000, guid: 2f3e654b85474b9419c5b98998ffe535, type: 3}

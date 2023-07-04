@@ -112,7 +112,6 @@
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MiniBossKla_edCtrl.cs" />
      <Compile Include="Assets\Scripts\Components\Rhythm Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Projectiles\ProjectileModelRotateAroundCenter.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageReceiver.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyNormalDamageReciever.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtShootNormal.cs" />
@@ -505,7 +504,6 @@
      <Folder Include="Assets\Animations\Enemy\EA_1" />
      <Folder Include="Assets\Prefabs\Position" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
-     <Folder Include="Assets\Audio\Soundtrack\Full" />
      <Folder Include="Assets\Scripts\Resources\Player" />
      <Folder Include="Assets\FastScriptReload" />
      <Folder Include="Assets\Scripts\Resources\Item" />
