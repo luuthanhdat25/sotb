@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c14d7d4888ead49955efa0af970e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMoveToPosDefault: 5
+  speedMoveToPosDefault: 5.5
   numberOfState: 2
 --- !u!1101 &-332278553431812347
 AnimatorStateTransition:
@@ -310,6 +310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeShootInOneTime: 2
   speedFollow: 5
+  numberOfAttacks: 0
 --- !u!1102 &6687162559648407201
 AnimatorState:
   serializedVersion: 6

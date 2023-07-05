@@ -3,6 +3,7 @@ using Damage.RhythmScripts;
 using Enemy.Boss;
 using Enemy.Boss.Nairan.Miniboss;
 using Enemy.Boss.Nairan.Miniboss.Boss;
+using Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser;
 using Objects.Enemy.AttackEnemy;
 using UnityEngine;
 
@@ -19,6 +20,9 @@ namespace Objects.Enemy.Boss.Nairan.Dreadnought
         public BossNairanDreadnoughtShootNormal BossNairanDreadnoughtShootNormal => bossNairanDreadnoughtShootNormal;
         [SerializeField] private BossNairanDreadnoughtSpawnTorpedo bossNairanDreadnoughtSpawnTorpedo;
         public BossNairanDreadnoughtSpawnTorpedo BossNairanDreadnoughtSpawnTorpedo => bossNairanDreadnoughtSpawnTorpedo;
+        [SerializeField] private BossNairanDreadnoughtDamageReciever bossNairanDreadnoughtDamageReciever;
+        public BossNairanDreadnoughtDamageReciever BossNairanDreadnoughtDamageReciever => bossNairanDreadnoughtDamageReciever;
+        
         [SerializeField] private SpriteRenderer engineSpriteRenderer;
         [SerializeField] private PolygonCollider2D polygonCollider2D;
         

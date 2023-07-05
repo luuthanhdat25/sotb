@@ -6,5 +6,6 @@ using UnityEngine;
 public class EnemySO : ScriptableObject
 {
     public int hpMax = 4;
+    public int scoreGain = 100;
     public List<DropRate> dropList;
 }

@@ -19,6 +19,10 @@ namespace Damage
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }
         
-        private void SetActiveTutorial() => tutorialUI?.SetActive(true);
+        private void SetActiveTutorial()
+        {
+            tutorialUI?.SetActive(true);
+            AudioSpawner.Instance.UIEffect();
+        }
     }
 }

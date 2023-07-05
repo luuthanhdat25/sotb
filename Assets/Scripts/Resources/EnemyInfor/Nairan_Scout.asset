@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98dd48acc920941ae68e3cd57fc3cb, type: 3}
   m_Name: Nairan_Scout
   m_EditorClassIdentifier: 
-  hpMax: 2
+  hpMax: 3
+  scoreGain: 199
   dropList:
   - itemPrefab: {fileID: 3017870256857563869, guid: 919c922aa118ec049af9dce657664bab, type: 3}
     dropRate: 20

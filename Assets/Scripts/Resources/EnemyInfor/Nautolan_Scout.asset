@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98dd48acc920941ae68e3cd57fc3cb, type: 3}
   m_Name: Nautolan_Scout
   m_EditorClassIdentifier: 
-  hpMax: 2
+  hpMax: 3
+  scoreGain: 149
   dropList:
   - itemPrefab: {fileID: 7468104912061709676, guid: 7e6712b81d404744db1ab2de21b9ebc5, type: 3}
     dropRate: 15

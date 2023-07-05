@@ -296,23 +296,26 @@ namespace Objects.UI.HUD
             quitButton?.transform.gameObject.SetActive(false);
             
             totalScoreText?.gameObject.SetActive(true);
-            timerFinishedGame?.gameObject.SetActive(true);
             StartCoroutine(Congratulation());
         }
 
         private void OnUpdateWinTimer(object sender, GameManager.TimeFinishEventArgs args)
         {
+            if (timerFinishedGame == null) return;
             float time = args.Time;
             int minutes = Mathf.FloorToInt(time / 60f);
             int seconds = Mathf.FloorToInt(time % 60f);
             int milliseconds = Mathf.FloorToInt((time * 100f) % 100f);
-            timerFinishedGame.text = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+            timerFinishedGame.text = string.Format("Time: {0:00}:{1:00}:{2:00}", minutes, seconds, milliseconds);
         }
 
         private IEnumerator Congratulation()
         {
             yield return new WaitForSeconds(3f);
-            winGameUIContent?.gameObject.SetActive(true);
+            timerFinishedGame?.gameObject.SetActive(true); PlayUIEffect();
+            yield return new WaitForSeconds(3f);
+            //AddMoreMusic
+            winGameUIContent?.gameObject.SetActive(true); PlayUIEffect();
             yield return new WaitForSeconds(2f);
             appButtonUI?.gameObject.SetActive(true);
             combackButton.Select();

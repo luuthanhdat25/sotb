@@ -6,6 +6,7 @@ namespace Player
     public class PlayerParticleEffect : MonoBehaviour
     {
         [SerializeField] private ParticleSystem dashEffect;
+        [SerializeField] private ParticleSystem subDashEffect;
         [SerializeField] private ParticleSystem healthEffect;
         [SerializeField] private ParticleSystem buffMoveSpeedEffect;
         [SerializeField] private ParticleSystem buffShootSpeedEffect;
@@ -13,14 +14,19 @@ namespace Player
         
         public void DashEffect(float dashDuration)
         {
-            if(dashEffect == null) return;
-            ParticleSystem instance = Instantiate(dashEffect);
+            if(this.dashEffect == null || this.subDashEffect == null) return;
+            ParticleSystem insDashEffect = Instantiate(this.dashEffect);
+            ParticleSystem insSubDashEffect = Instantiate(this.subDashEffect);
             Vector3 directionSpawn = GetOppositeVector(GameInput.Instance.GetRawInputNormalized());
-            instance.transform.LookAt(directionSpawn);
-            instance.transform.position = transform.parent.position;
-            instance.transform.parent = transform.parent;
-            Destroy(instance.gameObject, dashDuration);
+            
+            insDashEffect.transform.LookAt(directionSpawn);
+            insSubDashEffect.transform.LookAt(directionSpawn);
+            insDashEffect.transform.position = insSubDashEffect.transform.position = transform.parent.position;
+            insSubDashEffect.transform.parent = transform.parent;
+            Destroy(insDashEffect.gameObject, dashDuration + insDashEffect.main.duration);
+            Destroy(insSubDashEffect.gameObject, insSubDashEffect.main.duration);
         }
+        
         public Vector2 GetOppositeVector(Vector2 vector) => new Vector2(-vector.x, -vector.y);
         
         public void HealthEffect()

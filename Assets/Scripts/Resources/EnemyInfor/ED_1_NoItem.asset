@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: ED_1_NoItem
   m_EditorClassIdentifier: 
   hpMax: 2
+  scoreGain: 109
   dropList:
   - itemPrefab: {fileID: 7468104912061709676, guid: 7e6712b81d404744db1ab2de21b9ebc5, type: 3}
     dropRate: 10

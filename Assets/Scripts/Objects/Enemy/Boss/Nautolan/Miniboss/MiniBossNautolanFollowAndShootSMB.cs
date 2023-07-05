@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MiniBossNautolanFollowAndShootSMB : AbsFollowAndShootSMB
 {
-    protected override float GetRandomYValue() => Random.Range(-1.5f, 1f);
+    protected override float GetRandomYValue() => Random.Range(-3f, 0.5f);
     protected override float GetSpeedFollow() => MinibossNautolanCtrl.Instance.GetSpeedFollow();
     protected override float GetTimeShootOneTime() => MinibossNautolanCtrl.Instance.GetTimeShootOneTime();
 

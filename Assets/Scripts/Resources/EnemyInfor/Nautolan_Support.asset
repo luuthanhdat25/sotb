@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Nautolan_Support
   m_EditorClassIdentifier: 
   hpMax: 3
+  scoreGain: 159
   dropList:
   - itemPrefab: {fileID: 7468104912061709676, guid: 7e6712b81d404744db1ab2de21b9ebc5, type: 3}
     dropRate: 15
@@ -23,8 +24,8 @@ MonoBehaviour:
     maxDrop: 1
     minDrop: 0
   - itemPrefab: {fileID: 4809335115012410466, guid: a67c00984b1277f469b5e7da636dbed6, type: 3}
-    dropRate: 15
-    maxDrop: 2
+    dropRate: 12
+    maxDrop: 1
     minDrop: 0
   - itemPrefab: {fileID: 6975302522514199112, guid: 58805eec1c9892940bbb004f8cf578de, type: 3}
     dropRate: 10

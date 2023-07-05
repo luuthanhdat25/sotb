@@ -47,7 +47,7 @@ public class BossNairanBattlecruiserRotateLazerSMB : StateMachineBehaviour
             if (!isStopTimer && timer >= BossNairanBattlecruiserCtrl.Instance.TimeDelayBeforeShoot)
             {
                 animator.transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
-                rotationSpeed += (rotationSpeed * Time.deltaTime) / 3;
+                rotationSpeed += (rotationSpeed * Time.deltaTime) / 4;
                 totalRotation += Mathf.Abs(rotationSpeed * Time.deltaTime);
                 if (totalRotation >= degreeRotate)
                 {

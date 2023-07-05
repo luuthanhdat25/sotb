@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98dd48acc920941ae68e3cd57fc3cb, type: 3}
   m_Name: Nairan_Torpedo
   m_EditorClassIdentifier: 
-  hpMax: 6
+  hpMax: 8
+  scoreGain: 229
   dropList:
   - itemPrefab: {fileID: 3017870256857563869, guid: 919c922aa118ec049af9dce657664bab, type: 3}
     dropRate: 15

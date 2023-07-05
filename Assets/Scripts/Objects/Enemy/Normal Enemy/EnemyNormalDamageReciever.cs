@@ -7,6 +7,7 @@ namespace Enemy
     public class EnemyNormalDamageReciever : EnemyDamageReceiver
     {
         [SerializeField] private DropBom dropBom = null;
+        
         protected override void OnDead()
         {
             base.OnDead();

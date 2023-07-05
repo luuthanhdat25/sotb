@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98dd48acc920941ae68e3cd57fc3cb, type: 3}
   m_Name: Mini_Nautolan_Frigate
   m_EditorClassIdentifier: 
-  hpMax: 60
+  hpMax: 70
+  scoreGain: 1999
   dropList:
   - itemPrefab: {fileID: 7468104912061709676, guid: 7e6712b81d404744db1ab2de21b9ebc5, type: 3}
-    dropRate: 70
+    dropRate: 80
     maxDrop: 2
     minDrop: 1
   - itemPrefab: {fileID: 3017870256857563869, guid: 919c922aa118ec049af9dce657664bab, type: 3}
     dropRate: 80
     maxDrop: 2
-    minDrop: 2
+    minDrop: 1
   - itemPrefab: {fileID: 4809335115012410466, guid: a67c00984b1277f469b5e7da636dbed6, type: 3}
     dropRate: 80
     maxDrop: 3
-    minDrop: 2
+    minDrop: 1

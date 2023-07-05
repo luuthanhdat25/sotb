@@ -54,7 +54,7 @@ public class Kla_ed_FollowAndShootSMB : AbsFollowAndShootSMB
         return randomValue;
     }
     
-    protected override float GetRandomYValue() => Random.Range(-2f, 1f);
+    protected override float GetRandomYValue() => Random.Range(-3f, 0.8f);
     protected override float GetSpeedFollow() => MiniBossKla_edCtrl.Instance.GetSpeedFollow();
 
     protected override float GetTimeShootOneTime() => MiniBossKla_edCtrl.Instance.GetTimeShootOneTime();

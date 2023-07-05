@@ -27,6 +27,7 @@ namespace Enemy
         public override void Reborn()
         {
             this.hpMax = this.enemySO.hpMax;
+            this.scorePlus = this.enemySO.scoreGain;
             base.Reborn();
         }
 

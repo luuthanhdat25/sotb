@@ -14,6 +14,8 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
         public BossShootLazer BossShootLazer => bossShootLazer;
         [SerializeField] private BossNairanBattlecruiserShootShockWave bossNairanBattlecruiserShootShockWave;
         public BossNairanBattlecruiserShootShockWave BossNairanBattlecruiserShootShockWave => bossNairanBattlecruiserShootShockWave;
+        [SerializeField] private BossNairanBattlecruiserDamageReciever bossNairanBattlecruiserDamageReciever;
+        public BossNairanBattlecruiserDamageReciever BossNairanBattlecruiserDamageReciever => bossNairanBattlecruiserDamageReciever;
 
         private bool isDead = false;
         public bool IsDead => isDead;
@@ -95,8 +97,7 @@ namespace Enemy.Boss.Nairan.Miniboss.Boss.Battlecruiser
         }
         
         private void PlayExplosionAudio() => AudioSpawner.Instance.SpawnEnemyEffect(AudioSpawner.SoundEffectEnum.ExplosionBoss);
-
-
+        
         public override Vector3 GetDefaultPosition()
         {
             if (DoubleBossNairanCtrl.Instance.Isdle2) 

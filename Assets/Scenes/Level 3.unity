@@ -3194,17 +3194,18 @@ MonoBehaviour:
   bossModelShipAnimation: {fileID: 1377600778}
   bossShootLazer: {fileID: 1116048703}
   bossNairanBattlecruiserShootShockWave: {fileID: 2096131365}
+  bossNairanBattlecruiserDamageReciever: {fileID: 1920696576}
   speedArcShockWave: 0.5
   startPosition: {fileID: 1081726796}
   endPosition: {fileID: 472012737}
   numberOfLoop: 1
-  rotationSpeed: 14
-  speedGoToReadyPosition: 7
+  rotationSpeed: 20
+  speedGoToReadyPosition: 8
   degreeRotate: 720
-  numberOfShootAttacks: 3
-  speedFollow: 14
-  timeShootInOneTime: 1.5
-  timeDelayBeforeShoot: 0.7
+  numberOfShootAttacks: 4
+  speedFollow: 15
+  timeShootInOneTime: 1.2
+  timeDelayBeforeShoot: 0.6
 --- !u!1 &181280578
 GameObject:
   m_ObjectHideFlags: 0
@@ -10099,7 +10100,7 @@ MonoBehaviour:
   fullHealthModel: {fileID: 0}
   destroyHealthModel: {fileID: 0}
   spritesToBlur: []
-  blurOpacity: 0.5
+  blurOpacity: 0.1
 --- !u!95 &536302656
 Animator:
   serializedVersion: 5
@@ -18258,6 +18259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashEffect: {fileID: 8747092440504046311, guid: ec437ad455a6e1d43ab3ade491fd5ec6, type: 3}
+  subDashEffect: {fileID: 1032494751310590712, guid: cdbdb4496bcc8d24fae4f1cdcf2c7e90, type: 3}
   healthEffect: {fileID: 2326543802315963543, guid: 4c0c1cf135e760940bdefcbc8fee8290, type: 3}
   buffMoveSpeedEffect: {fileID: 3041365346118127637, guid: d2324b62c2b662842bc3f84f090e4672, type: 3}
   buffShootSpeedEffect: {fileID: 5791643492118192291, guid: dfdc627fc16c44e4899fe0ac2b819995, type: 3}
@@ -20612,10 +20614,10 @@ MonoBehaviour:
   healthBar: {fileID: 1727794120543248949}
   isIdle2: 0
   stateNumber: 0
-  timeWaitIdleOne: 1
+  timeWaitIdleOne: 0.8
   defaultPosOneBattlecruiser: {fileID: 3134303013853986421}
   defaultPosOneDreadnought: {fileID: 7223150381638194343}
-  timeWaitIdleTwo: 0.7
+  timeWaitIdleTwo: 0.5
   speedSlide: 5.7
   timeDelayBeforeSlide: 1
   numOfShootAttackSWBattlecruiser: 3
@@ -35827,20 +35829,21 @@ MonoBehaviour:
   bossShootLazer: {fileID: 1567709292}
   bossNairanDreadnoughtShootNormal: {fileID: 692908273}
   bossNairanDreadnoughtSpawnTorpedo: {fileID: 882611008}
+  bossNairanDreadnoughtDamageReciever: {fileID: 1670182417}
   engineSpriteRenderer: {fileID: 1803180706}
   polygonCollider2D: {fileID: 1670182415}
   speedArcShockWave: 0.6
   startPosition: {fileID: 472012737}
   endPosition: {fileID: 1081726796}
   numberOfLoop: 2
-  speedGoToReadyPosition: 7
+  speedGoToReadyPosition: 8
   firingRate: 0.15
-  spawnRate: 0.35
-  timeDelayBeforeSpawn: 0.4
-  timeSpawnTorpedo: 5
-  numberOfShootAttacks: 3
+  spawnRate: 0.3
+  timeDelayBeforeSpawn: 0.3
+  timeSpawnTorpedo: 4.5
+  numberOfShootAttacks: 4
   timeDelayBeforeShoot: 0.7
-  timeShootInOneTime: 1.4
+  timeShootInOneTime: 1.2
   timeDelayTeleport: 1.2
 --- !u!95 &2064543255
 Animator:
@@ -43939,7 +43942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d90e3ca6f0f4056b093a0e5a3199dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
+  damage: 10
 --- !u!114 &5987177163711192711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45221,7 +45224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpCurrent: 1
-  hpMax: 8
+  hpMax: 10
   isDead: 0
   collisionEffect: {fileID: 4679154144712317661, guid: 7e73416d10f04ba46bcb9338279c086d, type: 3}
   explosionEffect: {fileID: 4254933551872971960, guid: a5d5b51ca7d42eb4e8b9f6d2f715f97c, type: 3}

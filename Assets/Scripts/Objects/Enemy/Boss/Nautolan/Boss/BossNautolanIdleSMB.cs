@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class BossNautolanIdleSMB : AbsIdleSMB
 {
-    int stateNumber;
     protected override void ChangeState(Animator animator)
     {
-        if (!BossNautolanCtrl.Instance.BossNautolanDamageReciever.IsLowerHealth(52))
+        int stateNumber;
+        if (!BossNautolanCtrl.Instance.BossNautolanDamageReciever.IsLowerHealth(60))
             stateNumber = GetRandomState(1, 3);
         else 
-            stateNumber = GetRandomState(3, 4);
+            stateNumber = GetRandomState(2, 4);
         Debug.Log("Boss Nautolan boss state: " + stateNumber);
         switch (stateNumber)
         {

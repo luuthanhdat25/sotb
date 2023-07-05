@@ -107,7 +107,7 @@ namespace DefaultNamespace
             this.timeFinished = DataManager.Instance.GetTimeFinished();
         }
         
-        private void Update()
+        private void FixedUpdate()
         {
             if(!isStopTimer) 
                 UpdateTimeCounter();
@@ -115,7 +115,7 @@ namespace DefaultNamespace
 
         private void UpdateTimeCounter()
         {
-            timeFinished += Time.deltaTime;
+            timeFinished += Time.fixedDeltaTime;
             UIManager.Instance.UpdateTimerUI(timeFinished);
         }
         
@@ -136,7 +136,7 @@ namespace DefaultNamespace
             sceneManager.WinGame();
             
             //SaveDataJson();
-            DataManager.Instance.SaveData(this.score, this.timeFinished);
+            DataManager.Instance?.SaveData(this.score, this.timeFinished);
         }
         
         /*private void SaveDataJson()

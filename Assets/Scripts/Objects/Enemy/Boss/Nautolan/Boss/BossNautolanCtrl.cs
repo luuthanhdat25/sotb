@@ -60,7 +60,7 @@ public class BossNautolanCtrl : RepeatMonoBehaviour
 
     private IEnumerator Start()
     {
-        yield return new WaitForSeconds(66.5f);
+        yield return new WaitForSeconds(63f);
         timeWait = 0.8f;
         numberOfShootAttacks = 8;
         speedFollow = 13;

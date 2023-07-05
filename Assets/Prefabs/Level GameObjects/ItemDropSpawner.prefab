@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763d978c2ba04a0d94040cf2a42e140d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTargetSpeed: 6
+  moveToTargetSpeed: 7
   addValue: 1
 --- !u!1 &2313618985054159722
 GameObject:
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 042d1ba943e147e4b83f63d7bf0c2e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTargetSpeed: 6
+  moveToTargetSpeed: 7
   reductionRate: 1.5
   timeEffective: 4
 --- !u!1 &2806883791192791513
@@ -843,7 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c189f0b64c6e48d6b8e71126cb6b9507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTargetSpeed: 6
+  moveToTargetSpeed: 7
   addValue: 1.5
   timeEffective: 4
 --- !u!1 &5063235989385984506
@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162e4196e8024fca86fc3fca2c8e076d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveToTargetSpeed: 6
+  moveToTargetSpeed: 7
   timeEffective: 6
 --- !u!1 &6267979602095716063
 GameObject:
