@@ -2,7 +2,6 @@ using System.Collections;
 using Damage.RhythmScripts;
 using DefaultNamespace;
 using DefaultNamespace.Objects.UI;
-using Mono.Cecil.Cil;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,6 +21,7 @@ namespace Objects.UI.HUD
         [Header("Score")]
         [SerializeField] private TMP_Text totalScoreText;
         [SerializeField] private TMP_Text scoreText;
+        [SerializeField] private TMP_Text timerText;
         
         [Header("BigUI")]
         [SerializeField] private Transform totalAppUI;
@@ -55,6 +55,7 @@ namespace Objects.UI.HUD
 
         [Header("Win Game UI")]
         [SerializeField] private Transform winGameUIContent;
+        [SerializeField] private TMP_Text timerFinishedGame;
         
         [Header("Else")]
         [SerializeField] private float scoreIncreaseDuration = 1.0f;
@@ -74,8 +75,9 @@ namespace Objects.UI.HUD
         
         private void Start()
         {
-            GameManager.Instance.ScoreChangedEvent += OnUpdatingScore;
+            GameManager.Instance.ScoreChangedEvent += OnUpdatingScore; 
             GameManager.Instance.ScoreResultsEvent += OnTotalScoreResultEvent;
+            GameManager.Instance.TimeResultsEvent += OnUpdateWinTimer;
             this.LoadAnimator();
             this.LoadRestart();
             this.LoadComback();
@@ -209,7 +211,16 @@ namespace Objects.UI.HUD
             
             AudioSpawner.Instance.ScoreRaiseSound(false);
         }
-
+        
+        public void UpdateTimerUI(float time)
+        {
+            int minutes = Mathf.FloorToInt(time / 60f);
+            int seconds = Mathf.FloorToInt(time % 60f);
+            //timerText.text = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+            //int milliseconds = Mathf.FloorToInt((time * 100f) % 100f);
+            timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
+        
         public void PauseUI()
         {
             continueButton?.Select();
@@ -285,10 +296,19 @@ namespace Objects.UI.HUD
             quitButton?.transform.gameObject.SetActive(false);
             
             totalScoreText?.gameObject.SetActive(true);
-            //Other infor
+            timerFinishedGame?.gameObject.SetActive(true);
             StartCoroutine(Congratulation());
         }
-        
+
+        private void OnUpdateWinTimer(object sender, GameManager.TimeFinishEventArgs args)
+        {
+            float time = args.Time;
+            int minutes = Mathf.FloorToInt(time / 60f);
+            int seconds = Mathf.FloorToInt(time % 60f);
+            int milliseconds = Mathf.FloorToInt((time * 100f) % 100f);
+            timerFinishedGame.text = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+        }
+
         private IEnumerator Congratulation()
         {
             yield return new WaitForSeconds(3f);
@@ -305,6 +325,8 @@ namespace Objects.UI.HUD
         public void SetActiveEnergiesBar(bool isTrue) => energiesBar.gameObject.SetActive(isTrue);
         
         public void SetActiveScoreHUD(bool isTrue) => scoreText.gameObject.SetActive(isTrue);
+        
+        public void SetActiveTimerHUD(bool isTrue) => timerText.gameObject.SetActive(isTrue);
 
         public void SetActiveBoostceilBar(bool isTrue) => boostceilBar.gameObject.SetActive(isTrue);
     }

@@ -202,6 +202,7 @@
      <Compile Include="Assets\Scripts\Objects\Item\ShootSpeedUpItem.cs" />
      <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanCtrl.cs" />
      <Compile Include="Assets\Scripts\Components\Rhythm Scripts\AudioSpawner.cs" />
+     <Compile Include="Assets\Scripts\DataManager.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\EnergiesBar.cs" />
      <Compile Include="Assets\Scripts\Objects\UI\Player\BootCeilsBar.cs" />
      <Compile Include="Assets\Scripts\Components\Audio\AudioSourseEnableRandom.cs" />
@@ -381,6 +382,7 @@
      <Folder Include="Assets\Prefabs\Position\Enemy\Defence" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Weapons" />
+     <None Include="Assets\saveFile.json" />
      <None Include="Assets\FastScriptReload\Plugins\Harmony\net48\0Harmony.xml" />
      <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Base\PNGs" />
      <Folder Include="Assets\Sprites\Void_PickupsPack\Engines\PNGs" />

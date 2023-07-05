@@ -15,6 +15,7 @@ namespace Damage
             PlayerCtrl.Instance.PlayerAnimations.FullHealth();
             PlayerCtrl.Instance.ItemMagnet.SetRadiusItemMagnet(1);
             UIManager.Instance.SetActiveScoreHUD(true);
+            UIManager.Instance.SetActiveTimerHUD(true);
             AudioSpawner.Instance.SpawnPlayerEffect(AudioSpawner.SoundEffectEnum.UpgradeItem);
             ItemDropSpawner.Instance.Despawn(transform.parent);
         }

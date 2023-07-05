@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -89,5 +90,7 @@ public class BackgroundScroller : MonoBehaviour
         }
         currentSpeed = scrollSpeedDefault;
         isInSceneTransitions = false;
+        
+        GameManager.Instance.SetIsStopTimer(false);
     }
 }

@@ -2,9 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Damage.RhythmScripts
 {
@@ -144,7 +142,7 @@ namespace Damage.RhythmScripts
             }
         }
 
-        private bool IsChangeSoundTrack() => !isChangeSong && !currentSoundTrack.isPlaying && Time.timeScale != 0 && !GameManager.Instance.IsFinishGame();
+        private bool IsChangeSoundTrack() => !isChangeSong && !currentSoundTrack.isPlaying && Time.timeScale != 0 && !GameManager.Instance.IsFinishGame() && !GameInput.Instance.IsEscapePressed();
 
         private void ChangeMusic()
         {

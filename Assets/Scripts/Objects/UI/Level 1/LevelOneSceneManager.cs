@@ -9,6 +9,7 @@ namespace DefaultNamespace.Objects.UI.Level_1
         public override void WinGame()
         {
             isPause = true;
+            GameManager.Instance.SetIsStopTimer(true);
             UIManager.Instance.WinLevelUI();
         }
         
