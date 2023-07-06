@@ -22,7 +22,7 @@ namespace Damage.RhythmScripts
         
         private float startVolume;
         private bool isChangeSong = true;
-        public bool IsChangeSong => isChangeSong;
+        
         public enum SoundEffectEnum
         {
             ExplosionPlayer, Health, UpgradeItem, Buff, UntiPlayer, Dash,
@@ -105,23 +105,6 @@ namespace Damage.RhythmScripts
         }
         
         private void OnFadeOutMusic(object o, EventArgs e) => StartCoroutine(FadeOutCoroutine(timeFadeOutMusic));
-
-        private IEnumerator FadeOutCoroutine(float timeFadeOut)
-        {
-            float startVolume = this.currentSoundTrack.volume;
-            float timer = 0f;
-
-            while (timer < timeFadeOut)
-            {
-                timer += Time.fixedDeltaTime;
-                float t = timer / timeFadeOut;
-                this.currentSoundTrack.volume = Mathf.Lerp(startVolume, 0f, t);
-                yield return new WaitForFixedUpdate();
-            }
-
-            this.currentSoundTrack.volume = 0f;
-            this.currentSoundTrack.Pause();
-        }
         
         public void PlayStartAudioSource()
         {
@@ -129,7 +112,6 @@ namespace Damage.RhythmScripts
             currentSoundTrack.Play();
             isChangeSong = false;
         }
-        
         
         private void FixedUpdate()
         {
@@ -142,7 +124,11 @@ namespace Damage.RhythmScripts
             }
         }
 
-        private bool IsChangeSoundTrack() => !isChangeSong && !currentSoundTrack.isPlaying && Time.timeScale != 0 && !GameManager.Instance.IsFinishGame() && !GameInput.Instance.IsEscapePressed();
+        private bool IsChangeSoundTrack() 
+            => !isChangeSong && !currentSoundTrack.isPlaying 
+                             && Time.timeScale != 0 
+                             && !GameManager.Instance.IsPauseGame()
+                             && !GameInput.Instance.IsEscapePressed();
 
         private void ChangeMusic()
         {
@@ -222,6 +208,23 @@ namespace Damage.RhythmScripts
                 yield return null;
                 elapsedTime += Time.deltaTime;
             }
+        }
+        
+        private IEnumerator FadeOutCoroutine(float timeFadeOut)
+        {
+            float startVolume = this.currentSoundTrack.volume;
+            float timer = 0f;
+
+            while (timer < timeFadeOut)
+            {
+                timer += Time.fixedDeltaTime;
+                float t = timer / timeFadeOut;
+                this.currentSoundTrack.volume = Mathf.Lerp(startVolume, 0f, t);
+                yield return new WaitForFixedUpdate();
+            }
+
+            this.currentSoundTrack.volume = 0f;
+            this.currentSoundTrack.Pause();
         }
 
         public void ScoreRaiseSound(bool isOn) => this.scoreRaiseSound?.SetActive(isOn);

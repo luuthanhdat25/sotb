@@ -54,6 +54,7 @@ namespace Enemy
         }
         
         public int HpCurrent => hpCurrent;
+        
         public int HpMax => hpMax;
     }
 }

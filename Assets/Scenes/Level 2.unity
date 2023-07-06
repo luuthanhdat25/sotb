@@ -4469,7 +4469,7 @@ MonoBehaviour:
   numberOfShootAttacks: 5
   speedFollow: 10
   timeShootInOneTime: 0.7
-  curveHeight: 3.5
+  curveHeight: 4
   speedArc: 0.55
   speedToStartPosition: 6.5
   startPoint: {fileID: 1081726796}
@@ -26469,10 +26469,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Timer
       objectReference: {fileID: 0}
-    - target: {fileID: 5087677675472739673, guid: bae09ca9d50292745bb32b0997e38dd4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29862,7 +29858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e09b3ea1fd534fb0ac9cdef746db4e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 12
+  moveSpeed: 11.5
 --- !u!1 &1252568924
 GameObject:
   m_ObjectHideFlags: 0
@@ -35897,7 +35893,7 @@ MonoBehaviour:
   spawnStartTime: 149
   spawnRate: 0.5
   enemyMoveSpeed: 5
-  pathPrefabs: {fileID: 162003461242351404, guid: ee4264a229c752a4cae9236c03ad585e, type: 3}
+  pathPrefabs: {fileID: 162003461242351404, guid: 4dd51647852b7e342952620837fe571c, type: 3}
   prefabsManager: {fileID: 160209235}
   enemyPrefabsList:
   - {fileID: 173792482}
@@ -42474,6 +42470,9 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: 2d8d26319d11bb541b0f13cff1d580ca, type: 2}
   scorePlus: 1000
+  shootSpeedItem: {fileID: 7468104912061709676, guid: 7e6712b81d404744db1ab2de21b9ebc5, type: 3}
+  moveSpeedItem: {fileID: 3017870256857563869, guid: 919c922aa118ec049af9dce657664bab, type: 3}
+  energyItem: {fileID: 4809335115012410466, guid: a67c00984b1277f469b5e7da636dbed6, type: 3}
 --- !u!1 &1926392190
 GameObject:
   m_ObjectHideFlags: 0
@@ -50361,7 +50360,7 @@ MonoBehaviour:
   - {fileID: 4406481844395792802}
   - {fileID: 4406481845858990899}
   - {fileID: 4406481845625403805}
-  blurOpacity: 0.15
+  blurOpacity: 0.1
 --- !u!4 &4406481845156404933
 Transform:
   m_ObjectHideFlags: 0
@@ -51086,7 +51085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c6127e970e69245844be3921d0f800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicMoveSpeed: 5
+  basicMoveSpeed: 5.7
   canMoveNormal: 1
   canUseDash: 1
   dashSpeed: 10
@@ -54996,8 +54995,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -47, y: 232.8}
-  m_SizeDelta: {x: 50.03, y: 50.03}
+  m_AnchoredPosition: {x: -77.649994, y: -409.72003}
+  m_SizeDelta: {x: 66.68, y: 66.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6038728405738021730
 MonoBehaviour:
@@ -55046,8 +55045,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
-  m_fontSizeBase: 80
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -55131,8 +55130,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.8, y: 232.8}
-  m_SizeDelta: {x: 168.22, y: 55.69}
+  m_AnchoredPosition: {x: 39.8, y: -411}
+  m_SizeDelta: {x: 168.22, y: 64.117}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6038728406781964496
 GameObject:
@@ -55876,7 +55875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424d919775f14b4b982aafd153d678ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firingRate: 0.45
+  firingRate: 0.42
   isFiring: 0
   leftGunPosition: {fileID: 4406481845615989636}
   rightGunPosition: {fileID: 4406481845646113959}

@@ -128,7 +128,7 @@ namespace DefaultNamespace
         
         private IEnumerator DelayWinGame()
         {
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(5f);
             ScoreResultsEvent?.Invoke(this, new ScoreEventArgs(){Score = this.score});
             TimeResultsEvent?.Invoke(this, new TimeFinishEventArgs(){Time = this.timeFinished});
             
@@ -176,8 +176,14 @@ namespace DefaultNamespace
         
         public int GetScore() => this.score;
         
-        public bool IsFinishGame() => gameState != GameState.Started;
-        
+        public bool IsFinishGame() => gameState == GameState.WinGame || gameState == GameState.LossGame;
+
+        public void PauseGame() => this.gameState = GameState.Pause;
+
+        public void ContinueGame() => this.gameState = GameState.Started;
+
+        public bool IsPauseGame() => this.gameState == GameState.Pause;
+
         /*private class PLayerData
         {
             public int score;

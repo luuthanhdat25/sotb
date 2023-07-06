@@ -17,6 +17,7 @@ public class ItemDropSpawner : SpawnerPooling
         ItemDropSpawner.instance = this;
     }
 
+    //Drop all items once time
     public virtual void Drop(List<DropRate> dropList, Vector3 pos)
     {
         foreach (DropRate dropRate in dropList)
@@ -32,6 +33,14 @@ public class ItemDropSpawner : SpawnerPooling
                 }
             }
         }
+    }
+    
+    //Drop one item once time
+    public virtual void Drop(Transform itemDrop, Vector3 pos)
+    {
+        Transform newItemDrop = this.Spawn(itemDrop.name);
+        newItemDrop.position = this.RandomizePosition(pos);
+        newItemDrop.gameObject.SetActive(true);
     }
     
     private Vector3 RandomizePosition(Vector3 originPosition)

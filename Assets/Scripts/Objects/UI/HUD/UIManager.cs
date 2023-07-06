@@ -216,8 +216,6 @@ namespace Objects.UI.HUD
         {
             int minutes = Mathf.FloorToInt(time / 60f);
             int seconds = Mathf.FloorToInt(time % 60f);
-            //timerText.text = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
-            //int milliseconds = Mathf.FloorToInt((time * 100f) % 100f);
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
         
@@ -250,10 +248,11 @@ namespace Objects.UI.HUD
         {
             isWinOrLoss = true;
             playerHud?.gameObject.SetActive(false);
-            pauseUIContent?.gameObject.SetActive(false);
-            appButtonUI?.gameObject.SetActive(false);
+            //pauseUIContent?.gameObject.SetActive(false);
 
             totalAppUI?.gameObject.SetActive(true);
+            appButtonUI?.gameObject.SetActive(false);
+            
             totalScoreText?.gameObject.SetActive(true);
             StartCoroutine(NextLevelButtonActive());
         }

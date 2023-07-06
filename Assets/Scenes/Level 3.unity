@@ -3203,8 +3203,8 @@ MonoBehaviour:
   speedGoToReadyPosition: 8
   degreeRotate: 720
   numberOfShootAttacks: 4
-  speedFollow: 15
-  timeShootInOneTime: 1.2
+  speedFollow: 14
+  timeShootInOneTime: 1.3
   timeDelayBeforeShoot: 0.6
 --- !u!1 &181280578
 GameObject:
@@ -15191,7 +15191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c6127e970e69245844be3921d0f800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicMoveSpeed: 6
+  basicMoveSpeed: 7
   canMoveNormal: 1
   canUseDash: 1
   dashSpeed: 10
@@ -18821,7 +18821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272c54a43946a6f4cab8723b60e8cb5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeedDefault: 0.8
+  scrollSpeedDefault: 1
   rateDashSpeed: 1.2
   speedLight: 4
 --- !u!4 &1021093379
@@ -20482,10 +20482,10 @@ MonoBehaviour:
   minibossNairanShootNormal: {fileID: 914431922}
   bossShootLazer: {fileID: 2005280265}
   timeWait: 0.8
-  numberOfShootAttacks: 9
+  numberOfShootAttacks: 8
   speedFollow: 11
   timeShootInOneTime: 0.8
-  speedSlide: 8
+  speedSlide: 5.8
   timeDelayBeforeSlide: 1.2
 --- !u!114 &1087027932
 MonoBehaviour:
@@ -20614,17 +20614,17 @@ MonoBehaviour:
   healthBar: {fileID: 1727794120543248949}
   isIdle2: 0
   stateNumber: 0
-  timeWaitIdleOne: 0.8
+  timeWaitIdleOne: 0.7
   defaultPosOneBattlecruiser: {fileID: 3134303013853986421}
   defaultPosOneDreadnought: {fileID: 7223150381638194343}
   timeWaitIdleTwo: 0.5
-  speedSlide: 5.7
+  speedSlide: 4.8
   timeDelayBeforeSlide: 1
   numOfShootAttackSWBattlecruiser: 3
   speedFollowSWBattlecruiser: 13
   timeShootOneTimeSWBattlecruiser: 1.7
-  numOfShootAttackNDreadnought: 5
-  speedFollowNDreadnought: 9
+  numOfShootAttackNDreadnought: 4
+  speedFollowNDreadnought: 8.5
   timeShootOneTimeNDreadnought: 0.8
 --- !u!4 &1097696551
 Transform:

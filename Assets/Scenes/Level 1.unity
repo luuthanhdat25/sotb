@@ -17885,7 +17885,7 @@ MonoBehaviour:
   speedFollow: 7
   timeShootInOneTime: 1.5
   numberOfChaseAttacks: 3
-  speedChase: 9
+  speedChase: 8.5
 --- !u!114 &1087027932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24653,7 +24653,7 @@ MonoBehaviour:
   spawnStartTime: 128
   spawnRate: 0.5
   enemyMoveSpeed: 5
-  pathPrefabs: {fileID: 162003461242351404, guid: ee4264a229c752a4cae9236c03ad585e, type: 3}
+  pathPrefabs: {fileID: 162003461242351404, guid: 4dd51647852b7e342952620837fe571c, type: 3}
   prefabsManager: {fileID: 1254145658}
   enemyPrefabsList:
   - {fileID: 1087027929}
@@ -35071,6 +35071,8 @@ MonoBehaviour:
   isDead: 0
   enemySO: {fileID: 11400000, guid: e0612b02e172cb7429e3fc665bacd090, type: 2}
   scorePlus: 1000
+  shootSpeedItem: {fileID: 7468104912061709676, guid: 7e6712b81d404744db1ab2de21b9ebc5, type: 3}
+  energyItem: {fileID: 4809335115012410466, guid: a67c00984b1277f469b5e7da636dbed6, type: 3}
 --- !u!114 &1950825966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38225,7 +38227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424d919775f14b4b982aafd153d678ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firingRate: 0.6
+  firingRate: 0.55
   isFiring: 0
   leftGunPosition: {fileID: 6890823271640599446}
   rightGunPosition: {fileID: 6890823271704798389}
@@ -39517,8 +39519,44 @@ PrefabInstance:
     m_TransformParent: {fileID: 221060439}
     m_Modifications:
     - target: {fileID: 2912957368755323110, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
+      propertyPath: m_fontSize
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912957368755323110, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912957368755323110, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912957368755323113, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 66.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912957368755323113, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 46.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912957368755323113, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -435.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912957368834915611, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 66.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912957368834915611, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 66.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912957368834915611, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -52.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2912957368834915611, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -435.39996
       objectReference: {fileID: 0}
     - target: {fileID: 2912957369801200468, guid: a8c17d7502183da42a02b054088bf6ed, type: 3}
       propertyPath: m_Name
@@ -40619,6 +40657,10 @@ PrefabInstance:
     - target: {fileID: 5087677675472739673, guid: bae09ca9d50292745bb32b0997e38dd4, type: 3}
       propertyPath: m_Name
       value: Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087677675472739673, guid: bae09ca9d50292745bb32b0997e38dd4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42418,7 +42460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c6127e970e69245844be3921d0f800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicMoveSpeed: 4.5
+  basicMoveSpeed: 4.8
   canMoveNormal: 0
   canUseDash: 0
   dashSpeed: 10
@@ -42999,7 +43041,7 @@ MonoBehaviour:
   fullHealthModel: {fileID: 6890823271144037904}
   destroyHealthModel: {fileID: 958944166}
   spritesToBlur: []
-  blurOpacity: 0.5
+  blurOpacity: 0.1
 --- !u!4 &6890823271986841303
 Transform:
   m_ObjectHideFlags: 0

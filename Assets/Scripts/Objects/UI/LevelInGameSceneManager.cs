@@ -24,6 +24,7 @@ namespace DefaultNamespace.Objects.UI
         public virtual void StopGame()
         {
             Time.timeScale = 0;
+            GameManager.Instance.PauseGame();
             GameManager.Instance.SetIsStopTimer(true);
             AudioSpawner.Instance.PauseCurrentSoundTrack();
         }
@@ -38,6 +39,7 @@ namespace DefaultNamespace.Objects.UI
         protected virtual void ContinueGame()
         {
             Time.timeScale = 1;
+            GameManager.Instance.ContinueGame();
             GameManager.Instance.SetIsStopTimer(false);
             AudioSpawner.Instance.PlayCurrentSoundTrack();
         }
