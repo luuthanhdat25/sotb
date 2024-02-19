@@ -20,7 +20,7 @@ In this immersive space shooter, you'll navigate perilous cosmic landscapes, eng
 
 ## Installation
 
-You can play the game directly in your browser or download it from the following link: [Sound of the Bullets on itch.io](luuthanhdat.itch.io/sotb)
+You can play the game directly in your browser or download it from the following link: [Sound of the Bullets on itch.io]((https://luuthanhdat.itch.io/sotb))
 
 ## License
 
