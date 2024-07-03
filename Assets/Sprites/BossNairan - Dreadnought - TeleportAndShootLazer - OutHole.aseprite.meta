@@ -1,7 +1,458 @@
 fileFormatVersion: 2
 guid: 121880914aaac234592766e83d1b7ecb
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -15.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 156
+      y: 125
+      width: 4
+      height: 4
+    spriteID: 41d5c5511e56cca4591415f2210117fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 156, y: 125}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -7.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 156
+      y: 109
+      width: 8
+      height: 8
+    spriteID: 67ddbf1d754888c4b8afadef24e88279
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 156, y: 109}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -4.1428576}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 156
+      y: 87
+      width: 14
+      height: 14
+    spriteID: 1d69eebd79b2e794e8a314f6f8d4d879
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 156, y: 87}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -2.2083335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 142
+      width: 24
+      height: 24
+    spriteID: 9e2eb12a10253d84fbd7e8ad11d4b049
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 100, y: 142}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -0.893617}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 87
+      width: 48
+      height: 47
+    spriteID: e25163efac08916428ecdeb98a3a8d64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 100, y: 87}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_5
+    originalName: 
+    pivot: {x: 0.49333334, y: -0.34666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 100
+      y: 4
+      width: 75
+      height: 75
+    spriteID: 779ce2ec9356ce24591c0da7b6dee344
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 100, y: 4}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -0.23255813}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 209
+      width: 88
+      height: 86
+    spriteID: 00b14f9a0ec10aa4896f625fd63f19c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 209}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.21978022}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 88
+      height: 91
+    spriteID: c32455d25b24fc447971ae4950961371
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_8
+    originalName: 
+    pivot: {x: 0.5063291, y: -0.17346938}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 103
+      width: 79
+      height: 98
+    spriteID: 0eb4db2bea2b24a4bbded5099b491219
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 103}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -0.17346938}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 303
+      width: 70
+      height: 98
+    spriteID: 126368a0e4c6ff6489befab06d2633c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 303}
+  - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: -0.17346938}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 409
+      width: 68
+      height: 98
+    spriteID: b20a43125bd7b6b4eae0f8f71f3df58a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 409}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 2080469551
+    name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 62
+        width: 4
+        height: 4
+      spriteId: 41d5c5511e56cca4591415f2210117fb
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 60
+        width: 8
+        height: 8
+      spriteId: 67ddbf1d754888c4b8afadef24e88279
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 57
+        y: 58
+        width: 14
+        height: 14
+      spriteId: 1d69eebd79b2e794e8a314f6f8d4d879
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 52
+        y: 53
+        width: 24
+        height: 24
+      spriteId: 9e2eb12a10253d84fbd7e8ad11d4b049
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 42
+        width: 48
+        height: 47
+      spriteId: e25163efac08916428ecdeb98a3a8d64
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 27
+        y: 26
+        width: 75
+        height: 75
+      spriteId: 779ce2ec9356ce24591c0da7b6dee344
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 20
+        width: 88
+        height: 86
+      spriteId: 00b14f9a0ec10aa4896f625fd63f19c0
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 20
+        width: 88
+        height: 91
+      spriteId: c32455d25b24fc447971ae4950961371
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 17
+        width: 79
+        height: 98
+      spriteId: 0eb4db2bea2b24a4bbded5099b491219
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 29
+        y: 17
+        width: 70
+        height: 98
+      spriteId: 126368a0e4c6ff6489befab06d2633c5
+    - name: BossNairan - Dreadnought - TeleportAndShootLazer - OutHole_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 30
+        y: 17
+        width: 68
+        height: 98
+      spriteId: b20a43125bd7b6b4eae0f8f71f3df58a
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 128, y: 128}

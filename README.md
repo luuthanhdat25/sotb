@@ -1,6 +1,6 @@
 # Sound of the Bullets
 
-![Screenshot](link_to_image.png)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/SUD29cyeamc/0.jpg)](https://www.youtube.com/watch?v=SUD29cyeamc)
 
 ## Overview
 

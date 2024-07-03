@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Workspace\\Game\\Sotb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5779A802-A218-3381-94AF-0CBD9B144071}|Assembly-CSharp.csproj|d:\\workspace\\game\\sotb\\assets\\scripts\\objects\\enemy\\normal enemy\\attackenemy\\attackenemybehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5779A802-A218-3381-94AF-0CBD9B144071}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objects\\enemy\\normal enemy\\attackenemy\\attackenemybehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5779A802-A218-3381-94AF-0CBD9B144071}|Assembly-CSharp.csproj|d:\\workspace\\game\\sotb\\assets\\scripts\\objects\\enemy\\normal enemy\\enemybehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5779A802-A218-3381-94AF-0CBD9B144071}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objects\\enemy\\normal enemy\\enemybehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttackEnemyBehaviour.cs",
+              "DocumentMoniker": "D:\\Workspace\\Game\\Sotb\\Assets\\Scripts\\Objects\\Enemy\\Normal Enemy\\AttackEnemy\\AttackEnemyBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Objects\\Enemy\\Normal Enemy\\AttackEnemy\\AttackEnemyBehaviour.cs",
+              "ToolTip": "D:\\Workspace\\Game\\Sotb\\Assets\\Scripts\\Objects\\Enemy\\Normal Enemy\\AttackEnemy\\AttackEnemyBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Objects\\Enemy\\Normal Enemy\\AttackEnemy\\AttackEnemyBehaviour.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T02:36:46.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyBehaviour.cs",
+              "DocumentMoniker": "D:\\Workspace\\Game\\Sotb\\Assets\\Scripts\\Objects\\Enemy\\Normal Enemy\\EnemyBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Objects\\Enemy\\Normal Enemy\\EnemyBehaviour.cs",
+              "ToolTip": "D:\\Workspace\\Game\\Sotb\\Assets\\Scripts\\Objects\\Enemy\\Normal Enemy\\EnemyBehaviour.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Objects\\Enemy\\Normal Enemy\\EnemyBehaviour.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T02:36:38.275Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,11 +1,8 @@
 using System;
-using System.IO;
 using System.Collections;
 using Damage.RhythmScripts;
 using Objects.UI.HUD;
-using Player;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace DefaultNamespace
 {
@@ -17,7 +14,7 @@ namespace DefaultNamespace
         [SerializeField] private int score = 0;
         [SerializeField] private float timeFinished = 0;
         [SerializeField] private RepeatSceneManager sceneManager;
-        //private const string SAVE_DATA_PATH = "/saveFile.json";
+
         private bool isStopTimer = true;
         
         private enum GameState
@@ -43,9 +40,6 @@ namespace DefaultNamespace
         public event EventHandler<ScoreEventArgs> ScoreResultsEvent;
         public event EventHandler<TimeFinishEventArgs> TimeResultsEvent;
         
-        //public event EventHandler OnPauseGame;
-        //public event EventHandler OnContinueGame;
-        //public event EventHandler PlayerDead;
         public event EventHandler WinGameEvent;
         public event EventHandler LossGameEvent;
         
@@ -56,39 +50,7 @@ namespace DefaultNamespace
             Instance = this;
             
             gameState = GameState.Started;
-
-            //ReadDateFormFileJson();
         }
-
-        /*private void ReadDateFormFileJson()
-        {
-            if (isLevelOne)
-            {
-                PLayerData pLayerData = new PLayerData();
-                pLayerData.score = 0;
-                pLayerData.timeFinished = 0;
-            
-                string json = JsonUtility.ToJson(pLayerData);
-                File.WriteAllText(Application.dataPath + SAVE_DATA_PATH, json);
-                Debug.Log(json);
-            }
-            else
-            {
-                try
-                {
-                    string json = File.ReadAllText(Application.dataPath + SAVE_DATA_PATH);
-                    PLayerData loadedPLayerData = JsonUtility.FromJson<PLayerData>(json);
-                    this.score = loadedPLayerData.score; 
-                    this.timeFinished = loadedPLayerData.timeFinished;
-                    //Update time
-                    Debug.Log($"Score: {score}; Time: {timeFinished}");
-                }
-                catch (FileNotFoundException e)
-                {
-                    Debug.Log(e.ToString());
-                }
-            }
-        }*/
 
         private void Start()
         {
@@ -139,17 +101,6 @@ namespace DefaultNamespace
             DataManager.Instance?.SaveData(this.score, this.timeFinished);
         }
         
-        /*private void SaveDataJson()
-        {
-            PLayerData pLayerData = new PLayerData();
-            pLayerData.score = this.score;
-            pLayerData.timeFinished = this.timeFinished;
-            
-            string json = JsonUtility.ToJson(pLayerData);
-            File.WriteAllText(Application.dataPath + SAVE_DATA_PATH, json);
-            Debug.Log(json);
-        }*/
-        
         public void GameOver()
         {
             gameState = GameState.LossGame;
@@ -183,11 +134,5 @@ namespace DefaultNamespace
         public void ContinueGame() => this.gameState = GameState.Started;
 
         public bool IsPauseGame() => this.gameState == GameState.Pause;
-
-        /*private class PLayerData
-        {
-            public int score;
-            public float timeFinished;
-        }*/
     }
 }

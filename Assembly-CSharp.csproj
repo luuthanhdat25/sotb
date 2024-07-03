@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
     <LangVersion>9.0</LangVersion>
-    <_TargetFrameworkDirectories>non_empty_path_generated_by_unity.rider.package</_TargetFrameworkDirectories>
-    <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_unity.rider.package</_FullFrameworkReferenceAssemblyPaths>
-    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,8 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{02a87957-18a2-8133-94af-0cbd9b144071}</ProjectGuid>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{5779A802-A218-3381-94AF-0CBD9B144071}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -25,13 +22,21 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>Temp\Bin\Debug\Assembly-CSharp\</OutputPath>
-    <DefineConstants>UNITY_2022_2_4;UNITY_2022_2;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;-diag-job-temp-memory-leak-validation;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2022_3_29;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <NoWarn>0169,0649</NoWarn>
+    <NoWarn>0169;USG0001</NoWarn>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
-    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169;USG0001</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -40,1241 +45,1322 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorStyle>Legacy</UnityProjectGeneratorStyle>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2022.3.29f1</UnityVersion>
+  </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="D:\Unity\2022.2.4f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
-    <Analyzer Include="D:\Unity\2022.2.4f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
+    <Analyzer Include="D:\App\Visual Studio\Cache\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="D:\Unity\2022.3.29f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
+    <Analyzer Include="D:\Unity\2022.3.29f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserRotateLazerSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationDefaultEngineMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanShockWaveShoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Energies and Boost ceil\PlayerEnergies.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserLazerSliderSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDamageSender.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MiniBossNairanCtrl.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUpgradeEngineMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\MoveSpeedUpItem.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\PlayerItemReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Energies and Boost ceil\PlayerBoostCeils.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanIdleSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\EnemyAttackShoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanIdleSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\DoubleBossHealthBar.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerUnti.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\ItemDropSpawner.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\BomProjectileDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\IPauseGame.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\BossHealthBar.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\BomEnemy\DropBom.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDespawnByDistance.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanModelShipAnimation.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_edDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\Menu Scene\MenuSceneManager.cs" />
-     <Compile Include="Assets\Scripts\Components\Rhythm Scripts\WavePrefabManager.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtArcShootNormalSMB.cs" />
-     <Compile Include="Assets\InputSystems\PlayerInputActions.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtIdle2SMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\LevelInGameSceneManager.cs" />
-     <Compile Include="Assets\Scripts\Components\Despawn\DespawnByTime.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\DefaultEngineItem.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\BossShootLazer.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\RepeatSceneManager.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanModelShipAnimation.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MiniBossNairanFollowAndShootSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanChasePlayerSMB.cs" />
-     <Compile Include="Assets\Scripts\Components\Damage\DamageReceiver.cs" />
-     <Compile Include="Assets\Scripts\Components\Spawner\SpawnerPooling.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\PlayerParticleEffect.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\KlaEdIdleStateMachineBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\HUD\UIManager.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtCtrl.cs" />
-     <Compile Include="Assets\Scripts\Objects\FX\FXDespawn.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtLazerSlideSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanArcBomSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Camera\CameraAnimation.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\DoubleBossNairanCtrl.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_FollowAndShootSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\UntiWeaponItem.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiseArcShockWaveSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanShoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\TorpedoEnemy\SpawnTorpedoEnemy.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanIdleStateMachineBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserModelShipAnimation.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\AttackEnemyBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\ItemMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\Player\ResourcePlayerBar.cs" />
-     <Compile Include="Assets\RotateWhenEnable.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileSpawner.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MiniBossKla_edCtrl.cs" />
-     <Compile Include="Assets\Scripts\Components\Rhythm Scripts\WaveSpawner.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageReceiver.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyNormalDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtShootNormal.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsLazerSlideSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\AbsEnemyShoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanModelShipAnimation.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDamageReceiver.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDespawnByTime.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanBomShoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\Item.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserIdle2SMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserIdleSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanFollowAndShootShockWaveSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\PlayerCtrl.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\ShieldItem.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndShootSMB.cs" />
-     <Compile Include="Assets\Scripts\RepeatMonoBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Objects\FX\FXSpawner.cs" />
-     <Compile Include="Assets\Scripts\Objects\AbstractClass\Shoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtSpawnTorpedo.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerUntiDamageReceiver.cs" />
-     <Compile Include="Assets\FastScriptReload\Examples\Scripts\FunctionLibrary.cs" />
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\BackgroundScroller.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtModelShipAnimation.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserCtrl.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtTeleportAndShootLazerSMB.cs" />
-     <Compile Include="Assets\Scripts\Resources\Item\DropRate.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyMovement.cs" />
-     <Compile Include="Assets\Scripts\Components\Rhythm Scripts\SyncCenter.cs" />
-     <Compile Include="Assets\Scripts\Resources\EnemyInfor\EnemySO.cs" />
-     <Compile Include="Assets\Scripts\Components\Time\TimeManager.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanShootNormal.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\EnergyItem.cs" />
-     <Compile Include="Assets\Scripts\Components\InputSystem\GameInput.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageSender.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectilesMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\AbstractClass\ObjectMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_ed_NormalShoot.cs" />
-     <Compile Include="Assets\Scripts\Components\Despawn\DespawnByDistance.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserDamageReciever.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDespawnByDistance.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUntiShooting.cs" />
-     <Compile Include="Assets\Scripts\Components\Damage\DamageSender.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanCtrl.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\Level 3\LevelThreeSceneManager.cs" />
-     <Compile Include="Assets\Scripts\Components\Pathfinder\Pathfinder.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NairanScoutProjectileMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageSender.cs" />
-     <Compile Include="Assets\Scripts\Components\Spawner\EnemySpawner.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MiniBossNairanLazerSlideSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\NormalWeaponItem.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyLazerDamageSender.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDespawn.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsChasePlayerSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\Troubled Enemy\TroubleEnemyBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtFollowAndShootNormalSMB.cs" />
-     <Compile Include="Assets\FastScriptReload\Examples\Scripts\Graph.cs" />
-     <Compile Include="Assets\Scripts\Components\Despawn\DespawnByDistanceCamera.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtSpawnTorpedoSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NautolanScoutProjectileMovement.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimations.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\Menu Scene\MenuUI.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationBaseShooting.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanFollowAndShootSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\AbsBossCtrl.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\Level 1\LevelOneSceneManager.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserShootShockWave.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanArcShootSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDamageSender.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanSpinningBulletShoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Components\Audio\MenuAudioManager.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\ItemMagnet.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\AbsBossShoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_ChasePlayerSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsArcShootSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserFollowAndShootShockWaveSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\BurstEngineItem.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileSpawner.cs" />
-     <Compile Include="Assets\Scripts\Components\SFX\SFXCtrl.cs" />
-     <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerShoot.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDamageReceiver.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_edModelShipAnimation.cs" />
-     <Compile Include="Assets\Scripts\Objects\Item\ShootSpeedUpItem.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanCtrl.cs" />
-     <Compile Include="Assets\Scripts\Components\Rhythm Scripts\AudioSpawner.cs" />
-     <Compile Include="Assets\Scripts\DataManager.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\Player\EnergiesBar.cs" />
-     <Compile Include="Assets\Scripts\Objects\UI\Player\BootCeilsBar.cs" />
-     <Compile Include="Assets\Scripts\Components\Audio\AudioSourseEnableRandom.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtIdleSMB.cs" />
-     <Compile Include="Assets\Scripts\Components\Despawn\Despawn.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsIdleSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsFollowAndShootSMB.cs" />
-     <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserFollowAndShootLazerSMB.cs" />
-     <Folder Include="Assets" />
-     <Folder Include="Assets\Scenes" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Weapons\Aseprite" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews\Kla&apos;ed\Shield" />
-     <Folder Include="Assets\Scripts\Resources\EnemyInfor" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Designs - Base\Aseprite" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapon Effects - Projectiles" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Projectiles" />
-     <Folder Include="Assets\Sprites\FX\Demo\FX001" />
-     <Folder Include="Assets\Animations\Enemy\Nairan" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <Folder Include="Assets\Animations\Item" />
-     <Folder Include="Assets\TextMesh Pro\Sprites" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss" />
-     <Folder Include="Assets\FastScriptReload\Plugins" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Weapons" />
-     <Folder Include="Assets\Sprites\Background\Materials" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack\Engines\Aseprite" />
-     <Folder Include="Assets\Scripts\Objects\UI" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapons\Aseprite" />
-     <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
-     <Folder Include="Assets\Animations\Player\Basic Shooting" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Designs - Base\PNGs" />
-     <Folder Include="Assets\Prefabs\Path" />
-     <Folder Include="Assets\Sprites\FX\Demo\FX002" />
-     <Folder Include="Assets\Sprites\UI\Button" />
-     <Folder Include="Assets\Prefabs\Background" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nairan" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\Aseprite" />
-     <None Include="Assets\Sprites\Void_PickupsPack\Readme.txt" />
-     <Folder Include="Assets\Scripts\Objects\UI\Level 3" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack\Shield Generators" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy\Troubled Enemy" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship" />
-     <Folder Include="Assets\Prefabs\Wave" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Shields\Aseprite" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\FastScriptReload\Plugins\Harmony\HarmonyLicense.txt" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Destruction" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engine Effects" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Destruction\PNGs" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy" />
-     <Folder Include="Assets\FastScriptReload\Examples\Point" />
-     <Folder Include="Assets\Sprites\FX\Sprites\Smoke" />
-     <Folder Include="Assets\Sprites\VFX sprites" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack\Weapons\PNGs" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Destruction\Aseprite" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack\Shield Generators\Aseprite" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engines\PNGs" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Projectiles" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapon Effects - Projectiles\PNGs" />
-     <Folder Include="Assets\Scripts\Components\Time" />
-     <Folder Include="Assets\Prefabs\Enemy\Nautolan" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Destruction" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main ship weapons\Aseprite" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy\BomEnemy" />
-     <Folder Include="Assets\Animations\FX\Smoke" />
-     <Folder Include="Assets\Sprites\Background" />
-     <Folder Include="Assets\Prefabs\Item" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Weapons\PNGs" />
-     <Folder Include="Assets\TextMesh Pro\Resources\Fonts &amp; Materials" />
-     <Folder Include="Assets\Scripts\Objects\UI\HUD" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\PNGs" />
-     <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX002\Anim" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <Folder Include="Assets\Prefabs\Level GameObjects" />
-     <Folder Include="Assets\Scripts\Objects\UI\Menu Scene" />
-     <Folder Include="Assets\Scripts\Objects\UI\Level 1" />
-     <Folder Include="Assets\Scripts" />
-     <Folder Include="Assets\Animations\Camera" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Boss Behaviour" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Projectile" />
-     <Folder Include="Assets\TextMesh Pro\Resources" />
-     <Folder Include="Assets\Animations\MenuScene" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Weapons" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Bases" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapons" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews" />
-     <Folder Include="Assets\Scripts\Objects\AbstractClass" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapon Effects - Projectiles" />
-     <Folder Include="Assets\Sprites\FX" />
-     <Folder Include="Assets\Scripts\Objects\Enemy" />
-     <Folder Include="Assets\8-Bit Style Sound Effects\Lo-Fi_8-Bit_11025Hz [Tiny Files]" />
-     <Folder Include="Assets\Scripts\Objects\UI\Level 2" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Weapons" />
-     <Folder Include="Assets\Scripts\Components\Despawn" />
-     <Folder Include="Assets\Prefabs\Path\Long" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan" />
-     <None Include="Assets\FastScriptReload\Plugins\ImmersiveVrToolsCommon\ImmersiveVRToolsCommonLicense.txt" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Projectiles\PNGs" />
-     <None Include="Assets\FastScriptReload\Third-Party Notices.txt" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Shields\Aseprite" />
-     <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX002" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <Folder Include="Assets\Scripts\Objects\Player\Energies and Boost ceil" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engine Effects\PNGs" />
-     <Folder Include="Assets\Scripts\Components\Damage" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Projectiles" />
-     <Folder Include="Assets\Animations\Enemy\Kla&apos;ed" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Engine" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Engine\Aseprite" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Shields\PNGs" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews\Kla&apos;ed\Bases" />
-     <Folder Include="Assets\Audio\Soundtrack" />
-     <Folder Include="Assets\TextMesh Pro" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews\Kla&apos;ed\Projectiles" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Shield" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapons" />
-     <Folder Include="Assets\Animations\Player\Unti Shooting" />
-     <Folder Include="Assets\Audio\SFX\Gameplay" />
-     <None Include="Assets\FastScriptReload\Examples\Point\Point Surface.shader" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Shield\Aseprite" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapons\PNGs" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Destruction" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Shields" />
-     <Folder Include="Assets\FastScriptReload\Examples\Scripts" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews" />
-     <Folder Include="Assets\Sprites\FX\Demo\FX003" />
-     <Folder Include="Assets\FastScriptReload\Plugins\Harmony" />
-     <Folder Include="Assets\Prefabs\Enemy\Kla&apos;ed" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Engine\PNGs" />
-     <Folder Include="Assets\Animations\Enemy\ED_1" />
-     <Folder Include="Assets\Scripts\Components\Spawner" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Bases" />
-     <Folder Include="Assets\Animations\Player\Movement" />
-     <Folder Include="Assets\Cutscene" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Destruction\PNGs" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Shields" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapon Effects - Projectiles\PNGs" />
-     <Folder Include="Assets\Scripts\Resources" />
-     <Folder Include="Assets\Sprites\FX\Sprites\LightFX\FX003\Anim" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main ship weapons\PNGs" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser" />
-     <Folder Include="Assets\Animations\Enemy" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Designs - Base" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Base" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Bases\PNGs" />
-     <Folder Include="Assets\Animations\Enemy\ET_1" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Shields" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Shields" />
-     <Folder Include="Assets\Scripts\Components\SFX" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Designs - Base\PNGs" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Shield\PNGs" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed" />
-     <None Include="Assets\Sprites\Nairan_Ship_Level 3\Readme.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews\Kla&apos;ed\Engine" />
-     <Folder Include="Assets\Scripts\Objects\Player\Damage" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Destruction" />
-     <Folder Include="Assets\Scripts\Components\Rhythm Scripts" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <Folder Include="Assets\Scripts\Objects\Item" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Weapons\Aseprite" />
-     <Folder Include="Assets\Sprites\UI" />
-     <Folder Include="Assets\Prefabs\Position\Enemy\Defence" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Weapons" />
-     <None Include="Assets\saveFile.json" />
-     <None Include="Assets\FastScriptReload\Plugins\Harmony\net48\0Harmony.xml" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Base\PNGs" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack\Engines\PNGs" />
-     <Folder Include="Assets\Prefabs\Enemy" />
-     <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX001" />
-     <Folder Include="Assets\FastScriptReload\Plugins\Roslyn" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects\PNGs\Boss" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapon Effects - Projectiles\Aseprite" />
-     <Folder Include="Assets\Scripts\Components\InputSystem" />
-     <Folder Include="Assets\Audio" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Bases\Aseprite" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <Folder Include="Assets\InputSystems" />
-     <Folder Include="Assets\Animations\Enemy\Nautolan" />
-     <Folder Include="Assets\TextMesh Pro\Shaders" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Engine Effects" />
-     <None Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Readme.txt" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engines" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Weapons\PNGs" />
-     <Folder Include="Assets\Prefabs\Enemy\Nairan" />
-     <Folder Include="Assets\Animations\Enemy\ED_2" />
-     <Folder Include="Assets\Sprites\FX\Sprites\Smoke\FX001\Anim" />
-     <Folder Include="Assets\Animations\Projectile" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Shields\PNGs" />
-     <Folder Include="Assets\Animations\Player\Health State" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main ship weapons" />
-     <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
-     <Folder Include="Assets\FastScriptReload\Scripts" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Shields\PNGs" />
-     <Folder Include="Assets\TextMesh Pro\Fonts" />
-     <Folder Include="Assets\Prefabs\Projectile" />
-     <Folder Include="Assets\Animations\Level 1 Scene" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Bases" />
-     <Folder Include="Assets\Scripts\Objects\Camera" />
-     <Folder Include="Assets\Scripts\Objects\UI\Player" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Projectiles\Aseprite" />
-     <Folder Include="Assets\Sprites\UI\Font" />
-     <Folder Include="Assets\Sprites\FX\Sprites" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Destruction" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Weapons\PNGs" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Destruction\Aseprite" />
-     <Folder Include="Assets\Scripts\Objects\Player\ItemCollect" />
-     <Folder Include="Assets\Prefabs" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engines\Aseprite" />
-     <Folder Include="Assets\Prefabs\Position\Player" />
-     <Folder Include="Assets\Scripts\Objects\Projectiles" />
-     <Folder Include="Assets\Prefabs\Player Ship" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Boss Behaviour" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Designs - Base" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy" />
-     <None Include="Assets\Sprites\Nautolan_Ship_Level 2\Readme.txt" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Destruction" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews\Kla&apos;ed\Weapons" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Boss Behaviour" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapon Effects - Projectiles\Aseprite" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Shields" />
-     <Folder Include="Assets\Scripts\Objects" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews\Kla&apos;ed" />
-     <Folder Include="Assets\Scripts\Components" />
-     <Folder Include="Assets\FastScriptReload\Plugins\Harmony\net48" />
-     <Folder Include="Assets\Scripts\Objects\Player" />
-     <Folder Include="Assets\Animations\Level 2 Scene" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack" />
-     <Folder Include="Assets\FastScriptReload\Examples" />
-     <None Include="Assets\FastScriptReload\Plugins\Roslyn\RoslynLicense.txt" />
-     <Folder Include="Assets\Scripts\Objects\FX" />
-     <Folder Include="Assets\Animations\FX" />
-     <Folder Include="Assets\Scripts\Components\Audio" />
-     <Folder Include="Assets\Scripts\Objects\Player\Animation" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Destruction\PNGs" />
-     <Folder Include="Assets\Sprites" />
-     <Folder Include="Assets\FastScriptReload\Examples\Scenes" />
-     <Folder Include="Assets\Sprites\FX\Prefabs" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack\Shield Generators\PNGs" />
-     <Folder Include="Assets\8-Bit Style Sound Effects" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Shields\Aseprite" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack\Weapons\Aseprite" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews\Nautolan\Engines" />
-     <Folder Include="Assets\Audio\SFX" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan" />
-     <Folder Include="Assets\Animations\Player" />
-     <Folder Include="Assets\Audio\SFX\UI" />
-     <Folder Include="Assets\Prefabs\Position\Enemy\Attack" />
-     <Folder Include="Assets\Sprites\FX\Sprites\LightFX" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip\Main Ship\Main Ship - Engine Effects\Aseprite" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Engine Effects\Aseprite" />
-     <Folder Include="Assets\Sprites\FX\Demo" />
-     <Folder Include="Assets\Prefabs\Particle Effect" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\_Previews" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack\Engines" />
-     <Folder Include="Assets\Sprites\FX\Sprites\LightFX\FX003" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Normal Enemy\TorpedoEnemy" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss" />
-     <Folder Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\FastScriptReload\Plugins\Roslyn\Microsoft.CSharp.dll.IMPORTANT.txt.txt" />
-     <Folder Include="Assets\Sprites\Foozle_MainShip" />
-     <Folder Include="Assets\TextMesh Pro\Documentation" />
-     <Folder Include="Assets\Animations\FX\Impact" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Engine Effects\PNGs" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Designs - Base\Aseprite" />
-     <Folder Include="Assets\Sprites\Void_PickupsPack\Weapons" />
-     <Folder Include="Assets\FastScriptReload\Documentation" />
-     <Folder Include="Assets\Scripts\Components\Pathfinder" />
-     <Folder Include="Assets\Animations" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Destruction\Aseprite" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Kla&apos;ed\Base\Aseprite" />
-     <Folder Include="Assets\FastScriptReload\Plugins\ImmersiveVrToolsCommon" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\Sprites\Foozle_MainShip\Readme.txt" />
-     <Folder Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\_Previews\Kla&apos;ed\Destruction" />
-     <Folder Include="Assets\Scripts\Objects\Player\Inputter" />
-     <Folder Include="Assets\Scripts\Objects\Player\Projectile" />
-     <Folder Include="Assets\Animations\Enemy\EA_1" />
-     <Folder Include="Assets\Prefabs\Position" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
-     <Folder Include="Assets\Scripts\Resources\Player" />
-     <Folder Include="Assets\FastScriptReload" />
-     <Folder Include="Assets\Scripts\Resources\Item" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-     <Folder Include="Assets\Sprites\Nautolan_Ship_Level 2\Nautolan\Engine Effects" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\_Previews\Nairan\Engines" />
-     <Folder Include="Assets\Sprites\Nairan_Ship_Level 3\Nairan\Weapons\Aseprite" />
-     <Folder Include="Assets\Prefabs\Position\Enemy" />
-     <Folder Include="Assets\Animations\Level 3 Scene" />
-     <Reference Include="UnityEngine">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.AIModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ARModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.AccessibilityModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.AndroidJNIModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.AnimationModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.AssetBundleModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.AudioModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ClothModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ClusterInputModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ClusterRendererModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ContentLoadModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.ContentLoadModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.CoreModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.CrashReportingModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.DSPGraphModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.DirectorModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.GIModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.GameCenterModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.GridModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.HotReloadModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.IMGUIModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ImageConversionModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.InputModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.InputLegacyModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.JSONSerializeModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.LocalizationModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ParticleSystemModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.PerformanceReportingModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.PhysicsModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.Physics2DModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ProfilerModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.PropertiesModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.PropertiesModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ScreenCaptureModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.SharedInternalsModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.SpriteMaskModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.SpriteShapeModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.StreamingModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.SubstanceModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.SubsystemsModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.TLSModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.TerrainModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.TerrainPhysicsModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.TextCoreFontEngineModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.TextCoreTextEngineModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.TextRenderingModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.TilemapModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UIModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UIElementsModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UmbraModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityAnalyticsModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityConnectModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityCurlModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityTestProtocolModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityWebRequestModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.VFXModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.VRModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.VehiclesModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.VideoModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.VirtualTexturingModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.WindModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.XRModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.CoreModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.DeviceSimulatorModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.DiagnosticsModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.EditorToolbarModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.EditorToolbarModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.GraphViewModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.PresetsUIModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.PresetsUIModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.QuickSearchModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.SceneTemplateModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.SceneViewModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneViewModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.TextCoreFontEngineModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.TextCoreTextEngineModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.UIBuilderModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.UIElementsModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.UIElementsSamplesModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.UnityConnectModule">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>D:\Workspace\Game\Sotb\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Collections.LowLevel.ILSupport">
-     <HintPath>D:\Workspace\Game\Sotb\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>D:\Workspace\Game\Sotb\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Cecil">
-     <HintPath>D:\Workspace\Game\Sotb\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\Workspace\Game\Sotb\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>D:\Workspace\Game\Sotb\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
-     </Reference>
-     <Reference Include="netstandard">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
-     </Reference>
-     <Reference Include="Microsoft.Win32.Primitives">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
-     </Reference>
-     <Reference Include="System.AppContext">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.AppContext.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Buffers">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Buffers.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Collections.Concurrent">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Collections">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Collections.NonGeneric">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Collections.Specialized">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
-     </Reference>
-     <Reference Include="System.ComponentModel">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.dll</HintPath>
-     </Reference>
-     <Reference Include="System.ComponentModel.EventBasedAsync">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
-     </Reference>
-     <Reference Include="System.ComponentModel.Primitives">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
-     </Reference>
-     <Reference Include="System.ComponentModel.TypeConverter">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Console">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Console.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Data.Common">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Data.Common.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Diagnostics.Contracts">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Diagnostics.Debug">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Diagnostics.FileVersionInfo">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Diagnostics.Process">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Diagnostics.StackTrace">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Diagnostics.TextWriterTraceListener">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Diagnostics.Tools">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Diagnostics.TraceSource">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Diagnostics.Tracing">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Drawing.Primitives">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Dynamic.Runtime">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Globalization.Calendars">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Globalization">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Globalization.Extensions">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.Compression">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.Compression.ZipFile">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.FileSystem">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.FileSystem.DriveInfo">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.FileSystem.Primitives">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.FileSystem.Watcher">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.IsolatedStorage">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.MemoryMappedFiles">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.Pipes">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.UnmanagedMemoryStream">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Linq">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Linq.Expressions">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Linq.Parallel">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Linq.Queryable">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Memory">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Memory.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.Http">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Http.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.NameResolution">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.NetworkInformation">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.Ping">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Ping.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.Primitives">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.Requests">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Requests.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.Security">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Security.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.Sockets">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.WebHeaderCollection">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.WebSockets.Client">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net.WebSockets">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Numerics.Vectors">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Numerics.Vectors.dll</HintPath>
-     </Reference>
-     <Reference Include="System.ObjectModel">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ObjectModel.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Reflection.DispatchProxy">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.DispatchProxy.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Reflection">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Reflection.Emit">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Reflection.Emit.ILGeneration">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.ILGeneration.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Reflection.Emit.Lightweight">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.Lightweight.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Reflection.Extensions">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Reflection.Primitives">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Resources.Reader">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Resources.ResourceManager">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Resources.Writer">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.CompilerServices.VisualC">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.Extensions">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.Handles">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.InteropServices">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.Numerics">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.Serialization.Formatters">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.Serialization.Json">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.Serialization.Primitives">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.Serialization.Xml">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Security.Claims">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Claims.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Security.Cryptography.Algorithms">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Security.Cryptography.Csp">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Security.Cryptography.Encoding">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Security.Cryptography.Primitives">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Security.Cryptography.X509Certificates">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Security.Principal">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Principal.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Security.SecureString">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Text.Encoding">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Text.Encoding.Extensions">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Text.RegularExpressions">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Threading">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Threading.Overlapped">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Threading.Tasks">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Threading.Tasks.Extensions">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Extensions.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Threading.Tasks.Parallel">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Threading.Thread">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Threading.ThreadPool">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Threading.Timer">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
-     </Reference>
-     <Reference Include="System.ValueTuple">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ValueTuple.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Xml.ReaderWriter">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Xml.XDocument">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Xml.XmlDocument">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Xml.XmlSerializer">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Xml.XPath">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Xml.XPath.XDocument">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
-     </Reference>
-     <Reference Include="mscorlib">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll</HintPath>
-     </Reference>
-     <Reference Include="System.ComponentModel.Composition">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Core">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Data">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Data.dll</HintPath>
-     </Reference>
-     <Reference Include="System">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Drawing">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Drawing.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.Compression.FileSystem">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Net">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Net.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Numerics">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Numerics.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Runtime.Serialization">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
-     </Reference>
-     <Reference Include="System.ServiceModel.Web">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Transactions">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Transactions.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Web">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Web.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Windows">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Windows.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Xml">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Xml.Linq">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Linq.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Xml.Serialization">
-     <HintPath>D:\Unity\2022.2.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.IK.Runtime">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="PsdPlugin">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Common.Path.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Animation.Runtime">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Tilemap.Extras">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Rider.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.PixelPerfect.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InternalAPIEngineBridge.001">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Common.Runtime">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InputSystem">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Collections">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Psdimporter.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InternalAPIEditorBridge.001">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.SpriteShape.Runtime">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.PixelPerfect">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Mathematics">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Common.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TextMeshPro">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.State">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.SpriteShape.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Tilemap.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Animation.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.IK.Editor">
-     <HintPath>D:\Workspace\Game\Sotb\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
-     </Reference>
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserRotateLazerSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationDefaultEngineMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanShockWaveShoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Energies and Boost ceil\PlayerEnergies.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserLazerSliderSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDamageSender.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MiniBossNairanCtrl.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUpgradeEngineMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\MoveSpeedUpItem.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\PlayerItemReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Energies and Boost ceil\PlayerBoostCeils.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanIdleSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\EnemyAttackShoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanIdleSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\DoubleBossHealthBar.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerUnti.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\ItemDropSpawner.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\BomProjectileDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\IPauseGame.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\BossHealthBar.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\BomEnemy\DropBom.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDespawnByDistance.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanModelShipAnimation.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_edDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\Menu Scene\MenuSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Components\Rhythm Scripts\WavePrefabManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtArcShootNormalSMB.cs" />
+    <Compile Include="Assets\InputSystems\PlayerInputActions.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtIdle2SMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\LevelInGameSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Components\Despawn\DespawnByTime.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\DefaultEngineItem.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\BossShootLazer.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\RepeatSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanModelShipAnimation.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MiniBossNairanFollowAndShootSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanChasePlayerSMB.cs" />
+    <Compile Include="Assets\Scripts\Components\Damage\DamageReceiver.cs" />
+    <Compile Include="Assets\Scripts\Components\Spawner\SpawnerPooling.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\PlayerParticleEffect.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\KlaEdIdleStateMachineBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\HUD\UIManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtCtrl.cs" />
+    <Compile Include="Assets\Scripts\Objects\FX\FXDespawn.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtLazerSlideSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanArcBomSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Camera\CameraAnimation.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\DoubleBossNairanCtrl.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_FollowAndShootSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\UntiWeaponItem.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiseArcShockWaveSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanShoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\TorpedoEnemy\SpawnTorpedoEnemy.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanIdleStateMachineBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserModelShipAnimation.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\AttackEnemy\AttackEnemyBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\ItemMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\Player\ResourcePlayerBar.cs" />
+    <Compile Include="Assets\RotateWhenEnable.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileSpawner.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MiniBossKla_edCtrl.cs" />
+    <Compile Include="Assets\Scripts\Components\Rhythm Scripts\WaveSpawner.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageReceiver.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyNormalDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtShootNormal.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsLazerSlideSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\AbsEnemyShoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanModelShipAnimation.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDamageReceiver.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDespawnByTime.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanBomShoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\Item.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserIdle2SMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserIdleSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanFollowAndShootShockWaveSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\PlayerCtrl.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\ShieldItem.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MiniBossNautolanFollowAndShootSMB.cs" />
+    <Compile Include="Assets\Scripts\RepeatMonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Objects\FX\FXSpawner.cs" />
+    <Compile Include="Assets\Scripts\Objects\AbstractClass\Shoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtSpawnTorpedo.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerUntiDamageReceiver.cs" />
+    <Compile Include="Assets\FastScriptReload\Examples\Scripts\FunctionLibrary.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\BackgroundScroller.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtModelShipAnimation.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserCtrl.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtTeleportAndShootLazerSMB.cs" />
+    <Compile Include="Assets\Scripts\Resources\Item\DropRate.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\Components\Rhythm Scripts\SyncCenter.cs" />
+    <Compile Include="Assets\Scripts\Resources\EnemyInfor\EnemySO.cs" />
+    <Compile Include="Assets\Scripts\Components\Time\TimeManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MinibossNairanShootNormal.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\EnergyItem.cs" />
+    <Compile Include="Assets\Scripts\Components\InputSystem\GameInput.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileDamageSender.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectilesMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\AbstractClass\ObjectMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_ed_NormalShoot.cs" />
+    <Compile Include="Assets\Scripts\Components\Despawn\DespawnByDistance.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserDamageReciever.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDespawnByDistance.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationUntiShooting.cs" />
+    <Compile Include="Assets\Scripts\Components\Damage\DamageSender.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanCtrl.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\Level 3\LevelThreeSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Components\Pathfinder\Pathfinder.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NairanScoutProjectileMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Damage\PlayerDamageSender.cs" />
+    <Compile Include="Assets\Scripts\Components\Spawner\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Miniboss\MiniBossNairanLazerSlideSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\NormalWeaponItem.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyLazerDamageSender.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileDespawn.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsChasePlayerSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\Troubled Enemy\TroubleEnemyBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtFollowAndShootNormalSMB.cs" />
+    <Compile Include="Assets\FastScriptReload\Examples\Scripts\Graph.cs" />
+    <Compile Include="Assets\Scripts\Components\Despawn\DespawnByDistanceCamera.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Projectile\PlayerProjectileMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtSpawnTorpedoSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\NautolanScoutProjectileMovement.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimations.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\Menu Scene\MenuUI.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Animation\PlayerAnimationBaseShooting.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanFollowAndShootSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\AbsBossCtrl.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\Level 1\LevelOneSceneManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserShootShockWave.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanArcShootSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDamageSender.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Boss\BossNautolanSpinningBulletShoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\EnemyBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Components\Audio\MenuAudioManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\ItemCollect\ItemMagnet.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Normal Enemy\DefenceEnemy\DefenceEnemyBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\AbsBossShoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\Kla_ed_ChasePlayerSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsArcShootSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserFollowAndShootShockWaveSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\BurstEngineItem.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Projectile\EnemyProjectileSpawner.cs" />
+    <Compile Include="Assets\Scripts\Components\SFX\SFXCtrl.cs" />
+    <Compile Include="Assets\Scripts\Objects\Player\Inputter\PlayerShoot.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\EnemyDamageReceiver.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Kla&apos;ed\MinibossKla_edModelShipAnimation.cs" />
+    <Compile Include="Assets\Scripts\Objects\Item\ShootSpeedUpItem.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nautolan\Miniboss\MinibossNautolanCtrl.cs" />
+    <Compile Include="Assets\Scripts\Components\Rhythm Scripts\AudioSpawner.cs" />
+    <Compile Include="Assets\Scripts\DataManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\Player\EnergiesBar.cs" />
+    <Compile Include="Assets\Scripts\Objects\UI\Player\BootCeilsBar.cs" />
+    <Compile Include="Assets\Scripts\Components\Audio\AudioSourseEnableRandom.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Dreadnought\BossNairanDreadnoughtIdleSMB.cs" />
+    <Compile Include="Assets\Scripts\Components\Despawn\Despawn.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsIdleSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\BossStateMachineBehaviour\AbsFollowAndShootSMB.cs" />
+    <Compile Include="Assets\Scripts\Objects\Enemy\Boss\Nairan\Battlecruiser\BossNairanBattlecruiserFollowAndShootLazerSMB.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Sprites\Void_PickupsPack\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\FastScriptReload\Plugins\Harmony\HarmonyLicense.txt" />
+    <None Include="Assets\FastScriptReload\Plugins\ImmersiveVrToolsCommon\ImmersiveVRTools.Common.Runtime.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\FastScriptReload\Plugins\Roslyn\System.Collections.Immutable.dll" />
+    <None Include="Assets\FastScriptReload\Plugins\ImmersiveVrToolsCommon\ImmersiveVRToolsCommonLicense.txt" />
+    <None Include="Assets\FastScriptReload\Third-Party Notices.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\FastScriptReload\Examples\Point\Point Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\Sprites\Nairan_Ship_Level 3\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\FastScriptReload\Plugins\Harmony\net48\0Harmony.dll" />
+    <None Include="Assets\FastScriptReload\Plugins\Harmony\net48\0Harmony.xml" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Sprites\Kla&apos;ed_Ship_Level 1\Readme.txt" />
+    <None Include="Assets\FastScriptReload\Plugins\Roslyn\System.Reflection.Metadata.dll" />
+    <None Include="Assets\FastScriptReload\Plugins\Roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Sprites\Nautolan_Ship_Level 2\Readme.txt" />
+    <None Include="Assets\FastScriptReload\Plugins\Roslyn\RoslynLicense.txt" />
+    <None Include="Assets\FastScriptReload\Plugins\Roslyn\System.Threading.Tasks.Extensions.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\FastScriptReload\Plugins\Roslyn\Microsoft.CodeAnalysis.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\FastScriptReload\Plugins\Roslyn\Microsoft.CSharp.dll" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\FastScriptReload\Plugins\Roslyn\Microsoft.CSharp.dll.IMPORTANT.txt.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Sprites\Foozle_MainShip\Readme.txt" />
+    <None Include="Assets\FastScriptReload\Plugins\ImmersiveVrToolsCommon\ImmersiveVRTools.Common.Editor.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.ContentLoadModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.PropertiesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.EditorToolbarModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.EditorToolbarModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.PresetsUIModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.PresetsUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.SceneViewModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneViewModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Android.GradleProject">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.GradleProject.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.AppContext.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Buffers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Console.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Data.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Memory.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Http.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Numerics.Vectors.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.DispatchProxy.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.ILGeneration.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.Lightweight.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Drawing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Numerics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Transactions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Windows.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:\Unity\2022.3.29f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.Notifications.csproj">
+      <Project>{F8F9649D-E880-373A-DD76-975AEA98A84A}</Project>
+      <Name>Unity.Notifications</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.IK.Runtime.csproj">
+      <Project>{7725FB86-A23B-9B72-F1AB-3E1FDFD4A8C8}</Project>
+      <Name>Unity.2D.IK.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.csproj">
+      <Project>{1A224AC0-588E-E637-C2F8-A03957DE5049}</Project>
+      <Name>Unity.AI.Navigation</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Burst.Editor.csproj">
+      <Project>{B210C255-9BB2-F610-A66F-3D5FA7794B79}</Project>
+      <Name>Unity.Burst.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Path.Editor.csproj">
+      <Project>{1567EFDD-0EE2-15FE-8297-793B7B4EBC44}</Project>
+      <Name>Unity.2D.Common.Path.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AdaptivePerformance.Simulator.Extension.csproj">
+      <Project>{CF6D8F39-21DD-46EA-CF51-3B37CD550047}</Project>
+      <Name>Unity.AdaptivePerformance.Simulator.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.PixelPerfect.Editor.csproj">
+      <Project>{E0A97CE3-0F40-B892-6ABC-C9D839C9DE79}</Project>
+      <Name>Unity.2D.PixelPerfect.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{174E1D00-5DEE-DBFA-4A36-023A819B7D1B}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AdaptivePerformance.Simulator.Editor.csproj">
+      <Project>{33D95577-BB68-702A-73DD-B0E351741833}</Project>
+      <Name>Unity.AdaptivePerformance.Simulator.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Aseprite.Common.csproj">
+      <Project>{6B995A36-D9BF-50A8-C905-8D99DCC0C17C}</Project>
+      <Name>Unity.2D.Aseprite.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj">
+      <Project>{A3559A75-FF04-FC5C-B654-0EC2E8BD8962}</Project>
+      <Name>Unity.2D.Sprite.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
+      <Project>{425BA80A-0961-E043-AC8A-2FE5D63A28BE}</Project>
+      <Name>Unity.VisualScripting.Flow</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.Editor.csproj">
+      <Project>{5C6D6229-1E11-27A6-C541-83A4341BB93F}</Project>
+      <Name>Unity.Mathematics.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
+      <Project>{A0DD7174-23C5-9F4E-1065-A861B6EE5A1B}</Project>
+      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Collections.csproj">
+      <Project>{D9CA405B-01DE-9740-AA88-C94E16760B13}</Project>
+      <Name>Unity.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
+      <Project>{AF06C136-4535-FFDF-1E93-2C7271CB6CAB}</Project>
+      <Name>Unity.2D.SpriteShape.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.PixelPerfect.csproj">
+      <Project>{DA76E398-4738-8723-F813-1C9DB131CFAC}</Project>
+      <Name>Unity.2D.PixelPerfect</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{8F211A1A-56C2-22B7-327D-66D4C998AD1C}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Aseprite.Editor.csproj">
+      <Project>{B32FA460-51C0-5450-C114-81F8A309D3C7}</Project>
+      <Name>Unity.2D.Aseprite.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
+      <Project>{64F9110D-82E0-F4D3-568E-507F20221B17}</Project>
+      <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Notifications.Unified.csproj">
+      <Project>{D52AB932-C3AD-F112-EB63-7296EEE52449}</Project>
+      <Name>Unity.Notifications.Unified</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Profiling.Core.csproj">
+      <Project>{D342D4BA-7D96-6035-7CC5-57F82A8D8B71}</Project>
+      <Name>Unity.Profiling.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="PsdPlugin.csproj">
+      <Project>{5F4C626D-E6F5-EBEF-E5ED-FBC7A71F35A2}</Project>
+      <Name>PsdPlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{CF958844-9748-9866-DE49-792A4182761C}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Burst.csproj">
+      <Project>{ECB654C4-1604-DAEF-E0E1-5BB48A6923B1}</Project>
+      <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.Editor.csproj">
+      <Project>{54B8BDF6-B5D4-D38E-1E30-4CD18D53182B}</Project>
+      <Name>Unity.Timeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
+      <Project>{0B3C8329-297B-3DF1-E20F-81F06422A20B}</Project>
+      <Name>Unity.VisualScripting.Shared.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AdaptivePerformance.csproj">
+      <Project>{811FF27F-BD09-1D83-8838-AA403F57A900}</Project>
+      <Name>Unity.AdaptivePerformance</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Notifications.iOS.csproj">
+      <Project>{405E8FF2-C4C0-D7BC-B728-F659984CF0C0}</Project>
+      <Name>Unity.Notifications.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{EDF68AD2-EDFA-C6F4-0B0E-0685625FBBED}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{18AF6BE6-FCFE-4870-5C77-183B5BB3E846}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.csproj">
+      <Project>{50522D68-AE38-1E97-77D2-4BEAA830AD78}</Project>
+      <Name>Unity.VisualScripting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Runtime.csproj">
+      <Project>{663034B8-86F1-7197-075D-732F1043C925}</Project>
+      <Name>Unity.2D.Animation.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
+      <Project>{17B85068-3D21-31C2-7AE5-33F2B37BBB46}</Project>
+      <Name>Unity.VisualScripting.Core.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AdaptivePerformance.Profiler.Editor.csproj">
+      <Project>{3CC69E22-B4EB-9F67-B9F1-EC286D44C4A4}</Project>
+      <Name>Unity.AdaptivePerformance.Profiler.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
+      <Project>{3EB4A66A-DC1B-03E9-1287-F8C202ACC05A}</Project>
+      <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{8A247362-3029-84D3-A9AC-B5C617367B61}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AdaptivePerformance.UI.Editor.csproj">
+      <Project>{4BCC540B-48FE-132E-905E-32035A62B00D}</Project>
+      <Name>Unity.AdaptivePerformance.UI.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
+      <Project>{56BC6699-4E3B-168D-977A-FEDFD2F3E018}</Project>
+      <Name>Unity.VisualScripting.Flow.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEngineBridge.001.csproj">
+      <Project>{9F545B56-3F07-86C0-56E3-07C59734C011}</Project>
+      <Name>Unity.InternalAPIEngineBridge.001</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Runtime.csproj">
+      <Project>{82420505-9CC4-DA81-526C-DF70C66137A9}</Project>
+      <Name>Unity.2D.Common.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Timeline.csproj">
+      <Project>{7A62369B-C451-4E43-47C4-24FD09CB233A}</Project>
+      <Name>Unity.Timeline</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InputSystem.csproj">
+      <Project>{20EAFE32-3F18-99F7-CD31-A449E965E09F}</Project>
+      <Name>Unity.InputSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InputSystem.ForUI.csproj">
+      <Project>{BB655172-7A31-0E71-DDEE-EFBC6680FAD0}</Project>
+      <Name>Unity.InputSystem.ForUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
+      <Project>{79D13FF2-5D01-3A69-FE83-FAF966AB0D05}</Project>
+      <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.InternalAPIEditorBridge.001.csproj">
+      <Project>{23D5AD07-3B38-C9FF-25F6-EAC144E6AA35}</Project>
+      <Name>Unity.InternalAPIEditorBridge.001</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Psdimporter.Editor.csproj">
+      <Project>{C1DD2C6C-70BE-4D31-8D3E-6B70D357BB7C}</Project>
+      <Name>Unity.2D.Psdimporter.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Subsystem.Registration.csproj">
+      <Project>{A9A5BB1C-81FB-2704-F670-E316B92E9065}</Project>
+      <Name>Unity.Subsystem.Registration</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Updater.csproj">
+      <Project>{CB4B9E25-3ABD-7DE6-29B0-B74C79B5F4A8}</Project>
+      <Name>Unity.AI.Navigation.Updater</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mobile.AndroidLogcat.Editor.csproj">
+      <Project>{70D081E8-850D-CAC9-B770-1E24432975F4}</Project>
+      <Name>Unity.Mobile.AndroidLogcat.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
+      <Project>{69FA8B6D-CB7C-59A4-9C99-45F36596E2EB}</Project>
+      <Name>Unity.VisualScripting.State.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Mathematics.csproj">
+      <Project>{0528DA63-E217-DE47-B839-FC633EB83E29}</Project>
+      <Name>Unity.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Common.Editor.csproj">
+      <Project>{B34D5F1A-9B5F-159F-F4A8-7CF07963466B}</Project>
+      <Name>Unity.2D.Common.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{CE96433D-FC3E-7788-EB80-11D96E1243BD}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AdaptivePerformance.Editor.csproj">
+      <Project>{C265CE4E-7FA2-9E2F-AEF4-387D1DA4D79C}</Project>
+      <Name>Unity.AdaptivePerformance.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Editor.csproj">
+      <Project>{65D924B1-EDB1-B1EF-F5BF-58BA6E16CD10}</Project>
+      <Name>Unity.AI.Navigation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.State.csproj">
+      <Project>{640FB1BE-D071-CC9E-9F9F-F36B8DCE716C}</Project>
+      <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Notifications.Android.csproj">
+      <Project>{B8CDF730-B62A-EEA9-D23A-AF2EE473DDB9}</Project>
+      <Name>Unity.Notifications.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
+      <Project>{D5B8D37F-C6E8-9321-F27F-A66F6609A489}</Project>
+      <Name>Unity.2D.SpriteShape.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj">
+      <Project>{15E18A9F-E669-1082-7BC6-8EE9DD3C084B}</Project>
+      <Name>Unity.2D.Tilemap.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
+      <Project>{B6BBF46A-28CE-19B6-BA8B-3D82B3BD71FC}</Project>
+      <Name>Unity.2D.Animation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.IK.Editor.csproj">
+      <Project>{893EF433-9F05-F66D-16C6-33262DCC4C7A}</Project>
+      <Name>Unity.2D.IK.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
